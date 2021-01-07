@@ -1,0 +1,515 @@
+--------- beginning of main
+07-06 00:32:35.824 24039 24039 I zygote64: Late-enabling -Xcheck:jni
+--------- beginning of system
+07-06 00:32:35.987 24039 24039 I ActivityThread: handleStopService: token=android.os.BinderProxy@a7b801a not found.
+07-06 00:32:35.993 24039 24039 I TransferService: Starting Transfer Service to listen for network connectivity changes.
+07-06 00:32:35.994 24039 24039 W LogFactory: Truncating log tag length as it exceed 23, the limit imposed by Android on certain API Levels
+07-06 00:32:36.023 24039 24039 I TransferService: Registering the network receiver
+07-06 00:32:36.029 24039 24039 I TransferService: Moving the service out of the Foreground state.
+07-06 00:32:36.031 24039 24039 I TransferService: De-registering the network receiver.
+07-06 00:32:39.681 24039 24039 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-06 00:32:39.681 24039 24039 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-06 00:32:39.681 24039 24039 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-06 00:32:39.681 24039 24039 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-06 00:32:39.681 24039 24039 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-06 00:32:39.681 24039 24039 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-c0BM74Lnz63uwQ5IWXiyXw==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-c0BM74Lnz63uwQ5IWXiyXw==/lib/arm64, /data/app/com.example.edgesum-c0BM74Lnz63uwQ5IWXiyXw==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-06 00:32:39.681 24039 24039 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-06 00:32:39.681 24039 24039 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-06 00:32:39.681 24039 24039 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-06 00:32:39.681 24039 24039 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-06 00:32:39.681 24039 24039 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-06 00:32:39.682 24039 24039 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-06 00:32:39.682 24039 24039 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-06 00:32:39.682 24039 24039 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-06 00:32:39.682 24039 24039 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-06 00:32:39.682 24039 24039 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-06 00:32:39.682 24039 24039 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-06 00:32:39.682 24039 24039 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-06 00:32:39.682 24039 24039 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-06 00:32:39.682 24039 24039 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-06 00:32:39.682 24039 24039 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-06 00:32:39.682 24039 24039 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-06 00:32:39.682 24039 24039 I zygote64: 
+07-06 00:32:39.683 24039 24039 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-06 00:32:39.683 24039 24039 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-06 00:32:39.683 24039 24039 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-06 00:32:39.683 24039 24039 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-06 00:32:39.683 24039 24039 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-06 00:32:39.683 24039 24039 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-c0BM74Lnz63uwQ5IWXiyXw==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-c0BM74Lnz63uwQ5IWXiyXw==/lib/arm64, /data/app/com.example.edgesum-c0BM74Lnz63uwQ5IWXiyXw==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-06 00:32:39.683 24039 24039 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-06 00:32:39.683 24039 24039 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-06 00:32:39.683 24039 24039 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-06 00:32:39.683 24039 24039 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-06 00:32:39.683 24039 24039 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-06 00:32:39.683 24039 24039 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-06 00:32:39.683 24039 24039 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-06 00:32:39.683 24039 24039 I zygote64: 
+07-06 00:32:39.684 24039 24039 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-06 00:32:39.684 24039 24039 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-06 00:32:39.684 24039 24039 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-06 00:32:39.684 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-06 00:32:39.684 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-06 00:32:39.684 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-06 00:32:39.684 24039 24039 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-06 00:32:39.684 24039 24039 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-06 00:32:39.684 24039 24039 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-06 00:32:39.684 24039 24039 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-06 00:32:39.684 24039 24039 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-06 00:32:39.684 24039 24039 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-06 00:32:39.684 24039 24039 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-06 00:32:39.684 24039 24039 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-06 00:32:39.684 24039 24039 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-06 00:32:39.684 24039 24039 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-06 00:32:39.684 24039 24039 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-06 00:32:39.684 24039 24039 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-06 00:32:39.684 24039 24039 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-06 00:32:39.684 24039 24039 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-06 00:32:39.685 24039 24039 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-c0BM74Lnz63uwQ5IWXiyXw==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-c0BM74Lnz63uwQ5IWXiyXw==/lib/arm64, /data/app/com.example.edgesum-c0BM74Lnz63uwQ5IWXiyXw==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-06 00:32:39.685 24039 24039 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-06 00:32:39.685 24039 24039 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-06 00:32:39.685 24039 24039 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-06 00:32:39.685 24039 24039 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-06 00:32:39.685 24039 24039 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-06 00:32:39.685 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-06 00:32:39.685 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-06 00:32:39.685 24039 24039 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-06 00:32:39.685 24039 24039 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-06 00:32:39.685 24039 24039 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-06 00:32:39.685 24039 24039 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-06 00:32:39.685 24039 24039 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-06 00:32:39.685 24039 24039 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-06 00:32:39.685 24039 24039 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-06 00:32:39.685 24039 24039 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-06 00:32:39.685 24039 24039 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-06 00:32:39.685 24039 24039 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-06 00:32:39.685 24039 24039 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-06 00:32:39.685 24039 24039 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-06 00:32:39.685 24039 24039 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-06 00:32:39.685 24039 24039 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-06 00:32:39.685 24039 24039 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-06 00:32:39.685 24039 24039 I zygote64: 
+07-06 00:32:40.020 24039 24039 V Repo    : /storage/emulated/0/Movies/raw
+07-06 00:32:40.020 24039 24039 V Repo    : /storage/emulated/0/Movies/summarised
+07-06 00:32:40.042 24039 24039 V FileManager: External storage is readable
+07-06 00:32:40.044 24039 24039 V FileManager: Created new directory: /storage/emulated/0/Movies/raw
+07-06 00:32:40.051 24039 24039 V FileManager: External storage is readable
+07-06 00:32:40.053 24039 24039 V FileManager: Created new directory: /storage/emulated/0/Movies/summarised
+07-06 00:32:40.059 24039 24039 V FileManager: External storage is readable
+07-06 00:32:40.062 24039 24039 V FileManager: Created new directory: /storage/emulated/0/Download/nearby
+07-06 00:32:40.068 24039 24039 V FileManager: External storage is readable
+07-06 00:32:40.070 24039 24039 V FileManager: Created new directory: /storage/emulated/0/Movies/segment
+07-06 00:32:40.076 24039 24039 V FileManager: External storage is readable
+07-06 00:32:40.078 24039 24039 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum
+07-06 00:32:40.340 24039 24039 V VideoManager: getAllVideoFromExternalStorageFolder
+07-06 00:32:40.347 24039 24039 D VideoManager: /storage/emulated/0/Movies/summarised
+07-06 00:32:40.371 24039 24039 D VideoManager: 0 videos return
+07-06 00:32:40.441 24039 24039 V VideoManager: getAllVideoFromExternalStorageFolder
+07-06 00:32:40.447 24039 24039 D VideoManager: /storage/emulated/0/Movies/raw
+07-06 00:32:40.461 24039 24039 D VideoManager: 0 videos return
+07-06 00:32:40.548 24039 24063 D OpenGLRenderer: HWUI GL Pipeline
+07-06 00:32:40.575 24039 24039 I TransferService: Starting Transfer Service to listen for network connectivity changes.
+07-06 00:32:40.576 24039 24039 I TransferService: Registering the network receiver
+07-06 00:32:40.585 24039 24039 E TransferService: No notification is passed in the intent. Unable to transition to foreground.
+07-06 00:32:40.606 24039 24052 D MainActivity: Scanned /storage/emulated/0/Movies/raw
+07-06 00:32:40.606 24039 24052 D MainActivity:   -> uri=content://media/external/file/8206
+07-06 00:32:40.649 24039 24061 D MainActivity: Scanned /storage/emulated/0/Movies/summarised
+07-06 00:32:40.649 24039 24061 D MainActivity:   -> uri=content://media/external/file/8207
+07-06 00:32:40.774 24039 24063 I Adreno  : QUALCOMM build                   : 8e59954, I0be83d0d26
+07-06 00:32:40.774 24039 24063 I Adreno  : Build Date                       : 09/22/17
+07-06 00:32:40.774 24039 24063 I Adreno  : OpenGL ES Shader Compiler Version: EV031.21.02.00
+07-06 00:32:40.774 24039 24063 I Adreno  : Local Branch                     : O17A
+07-06 00:32:40.774 24039 24063 I Adreno  : Remote Branch                    : 
+07-06 00:32:40.774 24039 24063 I Adreno  : Remote Branch                    : 
+07-06 00:32:40.774 24039 24063 I Adreno  : Reconstruct Branch               : 
+07-06 00:32:40.775 24039 24063 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-06 00:32:40.783 24039 24063 I Adreno  : PFP: 0x00000000, ME: 0x00000000
+07-06 00:32:40.790 24039 24063 I zygote64: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+07-06 00:32:40.791 24039 24063 I OpenGLRenderer: Initialized EGL, version 1.4
+07-06 00:32:40.791 24039 24063 D OpenGLRenderer: Swap behavior 2
+07-06 00:32:40.813 24039 24044 I zygote64: Do partial code cache collection, code=23KB, data=29KB
+07-06 00:32:40.813 24039 24044 I zygote64: After code cache collection, code=23KB, data=29KB
+07-06 00:32:40.813 24039 24044 I zygote64: Increasing code cache capacity to 128KB
+07-06 00:32:40.827 24039 24039 I TransferNetworkLossHand: Network connectivity changed detected.
+07-06 00:32:40.829 24039 24039 I TransferNetworkLossHand: Network connected: false
+07-06 00:32:40.993 24039 24063 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+07-06 00:32:40.994 24039 24063 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-06 00:32:47.975 24039 24039 V MainActivity: Connect button clicked
+07-06 00:32:48.598 24039 24039 V ConnectionFragment: Discovery switch checked
+07-06 00:32:50.976 24039 24039 D NearbyFragment: Started discovering
+07-06 00:32:53.598 24039 24039 D NearbyFragment: Found endpoint njPJ: Galaxy S8 [2802]
+07-06 00:32:53.729 24039 24044 I zygote64: Do partial code cache collection, code=61KB, data=59KB
+07-06 00:32:53.729 24039 24044 I zygote64: After code cache collection, code=61KB, data=59KB
+07-06 00:32:53.729 24039 24044 I zygote64: Increasing code cache capacity to 256KB
+07-06 00:32:57.112 24039 24039 D NearbyFragment: Selected 'Endpoint{id=njPJ, name=Galaxy S8 [2802]}'
+07-06 00:32:57.206 24039 24044 I zygote64: Compiler allocated 4MB to compile void android.view.View.<init>(android.content.Context, android.util.AttributeSet, int, int)
+07-06 00:33:00.085 24039 24039 D NearbyFragment: Initiated connection with njPJ: Galaxy S8 [2802]
+07-06 00:33:00.258 24039 24039 D NearbyFragment: Requested connection with Endpoint{id=njPJ, name=Galaxy S8 [2802]}
+07-06 00:33:00.353 24039 24044 I zygote64: Do full code cache collection, code=121KB, data=99KB
+07-06 00:33:00.353 24039 24044 I zygote64: After code cache collection, code=114KB, data=61KB
+07-06 00:33:02.591 24039 24039 I NearbyFragment: Connected to Endpoint{id=njPJ, name=Galaxy S8 [2802]}
+07-06 00:33:04.169 24039 24039 V ConnectionFragment: Discovery switch unchecked
+07-06 00:33:04.169 24039 24039 D NearbyFragment: Stopped discovering
+07-06 00:33:11.983 24039 24039 I TransferNetworkLossHand: Network connectivity changed detected.
+07-06 00:33:11.986 24039 24039 I TransferNetworkLossHand: Network connected: true
+07-06 00:33:56.251 24039 24039 D NearbyFragment: onPayloadReceived(endpointId=njPJ, payload=com.google.android.gms.nearby.connection.Payload@6b51482)
+07-06 00:33:56.261 24039 24039 V NearbyFragment: Started downloading SUMMARISE:-7942625428593657888:20200312_150643.mp4:45.0_1.0_23_medium from Endpoint{id=njPJ, name=Galaxy S8 [2802]}
+07-06 00:33:56.292 24039 24039 D NearbyFragment: onPayloadReceived(endpointId=njPJ, payload=com.google.android.gms.nearby.connection.Payload@3951fc9)
+07-06 00:33:56.298 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:34:01.116 24039 24044 I zygote64: Do partial code cache collection, code=124KB, data=86KB
+07-06 00:34:01.116 24039 24044 I zygote64: After code cache collection, code=124KB, data=86KB
+07-06 00:34:01.116 24039 24044 I zygote64: Increasing code cache capacity to 512KB
+07-06 00:34:19.274 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:34:19.288 24039 24039 W NearbyFragment: Completed downloading 20200312_150643.mp4 from Endpoint{id=njPJ, name=Galaxy S8 [2802]} in 23.002s
+07-06 00:34:19.298 24039 24039 D NearbyFragment: Summarising 20200312_150643.mp4
+07-06 00:34:19.299 24039 24039 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_150643.mp4
+07-06 00:34:19.324 24039 24039 V VideoManager: videoFromCursor
+07-06 00:34:19.330 24039 24039 V ProcessingVideosEventHandler: onAdd
+07-06 00:34:19.332 24039 24039 V RawFootageEventHandler: onRemove
+07-06 00:34:19.345 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:34:19.355 24039 24270 V SummariserIntentService: onHandleIntent
+07-06 00:34:19.357 24039 24270 D SummariserIntentService: Video{id='8209', data='/storage/emulated/0/Download/Nearby/20200312_150643.mp4', name='20200312_150643.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 00:34:19.357 24039 24270 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_150643.mp4
+07-06 00:34:19.362 24039 24270 I mobile-ffmpeg: Loading mobile-ffmpeg.
+07-06 00:34:19.440 24039 24270 I mobile-ffmpeg: Loaded mobile-ffmpeg-full-gpl-arm64-v8a-4.3.2-20200415.
+07-06 00:34:19.442 24039 24271 D mobile-ffmpeg: Callback thread started.
+07-06 00:34:19.462 24039 24270 I FfmpegTools: Running ffmpeg with:
+07-06 00:34:19.462 24039 24270 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_150643.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_150643.txt -f null -
+07-06 00:34:19.472 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:34:19.618 24039 24271 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a20e65200] sws_param option is deprecated and ignored
+07-06 00:34:34.203 24039 24270 W Summariser: No activity detected
+07-06 00:34:34.209 24039 24270 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_150643.mp4
+07-06 00:34:34.217 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:34:34.356 24039 24270 W Summariser: Summarisation completed
+07-06 00:34:34.356 24039 24270 W Summariser:   filename: 20200312_150643.mp4
+07-06 00:34:34.356 24039 24270 W Summariser:   active sections: 0
+07-06 00:34:34.356 24039 24270 W Summariser:   time: 14.845s
+07-06 00:34:34.356 24039 24270 W Summariser:   original duration: 60.02
+07-06 00:34:34.356 24039 24270 W Summariser:   summarised duration: -1.00
+07-06 00:34:34.356 24039 24270 W Summariser:   noise tolerance: 45.00
+07-06 00:34:34.356 24039 24270 W Summariser:   quality: 23
+07-06 00:34:34.356 24039 24270 W Summariser:   speed: medium
+07-06 00:34:34.356 24039 24270 W Summariser:   freeze duration: 1.00
+07-06 00:34:34.362 24039 24270 V ProcessingVideosEventHandler: onRemove
+07-06 00:34:34.390 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:34:34.424 24039 24052 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 00:34:34.424 24039 24052 D SummariserIntentService:   -> uri=content://media/external/file/8207
+07-06 00:34:58.188 24039 24039 D NearbyFragment: onPayloadReceived(endpointId=njPJ, payload=com.google.android.gms.nearby.connection.Payload@4bb100)
+07-06 00:34:58.194 24039 24039 V NearbyFragment: Started downloading SUMMARISE:-8835305401931890770:20200312_150844.mp4:45.0_1.0_23_medium from Endpoint{id=njPJ, name=Galaxy S8 [2802]}
+07-06 00:34:58.200 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:34:58.703 24039 24039 D NearbyFragment: onPayloadReceived(endpointId=njPJ, payload=com.google.android.gms.nearby.connection.Payload@6288d39)
+07-06 00:35:53.749 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:35:53.755 24039 24039 W NearbyFragment: Completed downloading 20200312_150844.mp4 from Endpoint{id=njPJ, name=Galaxy S8 [2802]} in 55.555s
+07-06 00:35:53.762 24039 24039 D NearbyFragment: Summarising 20200312_150844.mp4
+07-06 00:35:53.763 24039 24039 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_150844.mp4
+07-06 00:35:53.787 24039 24039 V VideoManager: videoFromCursor
+07-06 00:35:53.791 24039 24039 V ProcessingVideosEventHandler: onAdd
+07-06 00:35:53.792 24039 24039 V RawFootageEventHandler: onRemove
+07-06 00:35:53.800 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:35:53.810 24039 24313 V SummariserIntentService: onHandleIntent
+07-06 00:35:53.812 24039 24313 D SummariserIntentService: Video{id='8210', data='/storage/emulated/0/Download/Nearby/20200312_150844.mp4', name='20200312_150844.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 00:35:53.812 24039 24313 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_150844.mp4
+07-06 00:35:53.817 24039 24313 I FfmpegTools: Running ffmpeg with:
+07-06 00:35:53.817 24039 24313 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_150844.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_150844.txt -f null -
+07-06 00:35:53.826 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:35:53.979 24039 24271 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a20e65200] sws_param option is deprecated and ignored
+07-06 00:36:09.862 24039 24313 D Summariser: No freeze file
+07-06 00:36:09.862 24039 24313 W Summariser: Whole video is active
+07-06 00:36:13.076 24039 24313 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_150844.mp4
+07-06 00:36:13.087 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:36:13.215 24039 24313 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_150844.mp4
+07-06 00:36:13.224 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:36:13.334 24039 24313 W Summariser: Summarisation completed
+07-06 00:36:13.334 24039 24313 W Summariser:   filename: 20200312_150844.mp4
+07-06 00:36:13.334 24039 24313 W Summariser:   active sections: -1
+07-06 00:36:13.334 24039 24313 W Summariser:   time: 19.260s
+07-06 00:36:13.334 24039 24313 W Summariser:   original duration: 60.02
+07-06 00:36:13.334 24039 24313 W Summariser:   summarised duration: 60.02
+07-06 00:36:13.334 24039 24313 W Summariser:   noise tolerance: 45.00
+07-06 00:36:13.334 24039 24313 W Summariser:   quality: 23
+07-06 00:36:13.334 24039 24313 W Summariser:   speed: medium
+07-06 00:36:13.334 24039 24313 W Summariser:   freeze duration: 1.00
+07-06 00:36:13.335 24039 24313 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_150844.mp4
+07-06 00:36:13.350 24039 24313 D VideoManager: videoCursor is null
+07-06 00:36:13.385 24039 24313 V VideoManager: videoFromCursor
+07-06 00:36:13.388 24039 24313 V SummarisedVideosEventHandler: onAdd
+07-06 00:36:13.393 24039 24313 W NearbyFragment: Sending 20200312_150844.mp4 to Galaxy S8 [2802]
+07-06 00:36:13.397 24039 24313 V ProcessingVideosEventHandler: onRemove
+07-06 00:36:13.430 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:36:13.456 24039 24051 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 00:36:13.456 24039 24051 D SummariserIntentService:   -> uri=content://media/external/file/8207
+07-06 00:36:40.938 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:36:41.146 24039 24039 D NearbyFragment: onPayloadReceived(endpointId=njPJ, payload=com.google.android.gms.nearby.connection.Payload@c59a5c4)
+07-06 00:36:41.151 24039 24039 V NearbyFragment: Started downloading SUMMARISE:-5548712177826684598:20200312_193528.mp4:45.0_1.0_23_medium from Endpoint{id=njPJ, name=Galaxy S8 [2802]}
+07-06 00:36:41.155 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:36:41.181 24039 24039 D NearbyFragment: onPayloadReceived(endpointId=njPJ, payload=com.google.android.gms.nearby.connection.Payload@c457cad)
+07-06 00:37:07.346 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:37:07.348 24039 24039 W NearbyFragment: Completed downloading 20200312_193528.mp4 from Endpoint{id=njPJ, name=Galaxy S8 [2802]} in 26.194s
+07-06 00:37:07.351 24039 24039 D NearbyFragment: Summarising 20200312_193528.mp4
+07-06 00:37:07.351 24039 24039 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_193528.mp4
+07-06 00:37:07.363 24039 24039 V VideoManager: videoFromCursor
+07-06 00:37:07.366 24039 24039 V ProcessingVideosEventHandler: onAdd
+07-06 00:37:07.366 24039 24039 V RawFootageEventHandler: onRemove
+07-06 00:37:07.373 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:37:07.380 24039 24361 V SummariserIntentService: onHandleIntent
+07-06 00:37:07.380 24039 24361 D SummariserIntentService: Video{id='8214', data='/storage/emulated/0/Download/Nearby/20200312_193528.mp4', name='20200312_193528.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 00:37:07.381 24039 24361 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_193528.mp4
+07-06 00:37:07.385 24039 24361 I FfmpegTools: Running ffmpeg with:
+07-06 00:37:07.385 24039 24361 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_193528.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_193528.txt -f null -
+07-06 00:37:07.393 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:37:07.511 24039 24271 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a20e65200] sws_param option is deprecated and ignored
+07-06 00:37:27.684 24039 24361 W Summariser: No activity detected
+07-06 00:37:27.687 24039 24361 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_193528.mp4
+07-06 00:37:27.695 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:37:27.771 24039 24361 W Summariser: Summarisation completed
+07-06 00:37:27.771 24039 24361 W Summariser:   filename: 20200312_193528.mp4
+07-06 00:37:27.771 24039 24361 W Summariser:   active sections: 0
+07-06 00:37:27.771 24039 24361 W Summariser:   time: 20.304s
+07-06 00:37:27.771 24039 24361 W Summariser:   original duration: 60.05
+07-06 00:37:27.771 24039 24361 W Summariser:   summarised duration: -1.00
+07-06 00:37:27.771 24039 24361 W Summariser:   noise tolerance: 45.00
+07-06 00:37:27.771 24039 24361 W Summariser:   quality: 23
+07-06 00:37:27.771 24039 24361 W Summariser:   speed: medium
+07-06 00:37:27.771 24039 24361 W Summariser:   freeze duration: 1.00
+07-06 00:37:27.775 24039 24361 V ProcessingVideosEventHandler: onRemove
+07-06 00:37:27.806 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:37:27.838 24039 24061 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 00:37:27.838 24039 24061 D SummariserIntentService:   -> uri=content://media/external/file/8207
+07-06 00:37:38.087 24039 24039 D NearbyFragment: onPayloadReceived(endpointId=njPJ, payload=com.google.android.gms.nearby.connection.Payload@522253a)
+07-06 00:37:38.090 24039 24039 V NearbyFragment: Started downloading SUMMARISE:-4890376193900158921:20200312_193728.mp4:45.0_1.0_23_medium from Endpoint{id=njPJ, name=Galaxy S8 [2802]}
+07-06 00:37:38.094 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:37:38.322 24039 24039 D NearbyFragment: onPayloadReceived(endpointId=njPJ, payload=com.google.android.gms.nearby.connection.Payload@bbdb5eb)
+07-06 00:37:54.049 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:37:54.052 24039 24039 W NearbyFragment: Completed downloading 20200312_193728.mp4 from Endpoint{id=njPJ, name=Galaxy S8 [2802]} in 15.958s
+07-06 00:37:54.055 24039 24039 D NearbyFragment: Summarising 20200312_193728.mp4
+07-06 00:37:54.056 24039 24039 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_193728.mp4
+07-06 00:37:54.066 24039 24039 V VideoManager: videoFromCursor
+07-06 00:37:54.069 24039 24039 V ProcessingVideosEventHandler: onAdd
+07-06 00:37:54.069 24039 24039 V RawFootageEventHandler: onRemove
+07-06 00:37:54.075 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:37:54.085 24039 24384 V SummariserIntentService: onHandleIntent
+07-06 00:37:54.087 24039 24384 D SummariserIntentService: Video{id='8215', data='/storage/emulated/0/Download/Nearby/20200312_193728.mp4', name='20200312_193728.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 00:37:54.087 24039 24384 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_193728.mp4
+07-06 00:37:54.091 24039 24384 I FfmpegTools: Running ffmpeg with:
+07-06 00:37:54.091 24039 24384 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_193728.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_193728.txt -f null -
+07-06 00:37:54.098 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:37:54.239 24039 24271 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a20e65200] sws_param option is deprecated and ignored
+07-06 00:38:15.087 24039 24384 D Summariser: No freeze file
+07-06 00:38:15.087 24039 24384 W Summariser: Whole video is active
+07-06 00:38:18.179 24039 24384 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_193728.mp4
+07-06 00:38:18.193 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:38:18.305 24039 24384 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_193728.mp4
+07-06 00:38:18.312 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:38:18.418 24039 24384 W Summariser: Summarisation completed
+07-06 00:38:18.418 24039 24384 W Summariser:   filename: 20200312_193728.mp4
+07-06 00:38:18.418 24039 24384 W Summariser:   active sections: -1
+07-06 00:38:18.418 24039 24384 W Summariser:   time: 24.088s
+07-06 00:38:18.418 24039 24384 W Summariser:   original duration: 60.02
+07-06 00:38:18.418 24039 24384 W Summariser:   summarised duration: 60.02
+07-06 00:38:18.418 24039 24384 W Summariser:   noise tolerance: 45.00
+07-06 00:38:18.418 24039 24384 W Summariser:   quality: 23
+07-06 00:38:18.418 24039 24384 W Summariser:   speed: medium
+07-06 00:38:18.418 24039 24384 W Summariser:   freeze duration: 1.00
+07-06 00:38:18.418 24039 24384 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_193728.mp4
+07-06 00:38:18.430 24039 24384 D VideoManager: videoCursor is null
+07-06 00:38:18.483 24039 24384 V VideoManager: videoFromCursor
+07-06 00:38:18.487 24039 24384 V SummarisedVideosEventHandler: onAdd
+07-06 00:38:18.491 24039 24384 W NearbyFragment: Sending 20200312_193728.mp4 to Galaxy S8 [2802]
+07-06 00:38:18.496 24039 24384 V ProcessingVideosEventHandler: onRemove
+07-06 00:38:18.522 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:38:18.565 24039 24052 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 00:38:18.565 24039 24052 D SummariserIntentService:   -> uri=content://media/external/file/8207
+07-06 00:38:33.848 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:38:42.861 24039 24039 D NearbyFragment: onPayloadReceived(endpointId=njPJ, payload=com.google.android.gms.nearby.connection.Payload@6bec4de)
+07-06 00:38:42.867 24039 24039 V NearbyFragment: Started downloading SUMMARISE:-7035783321645801628:20200312_193928.mp4:45.0_1.0_23_medium from Endpoint{id=njPJ, name=Galaxy S8 [2802]}
+07-06 00:38:42.874 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:38:43.141 24039 24039 D NearbyFragment: onPayloadReceived(endpointId=njPJ, payload=com.google.android.gms.nearby.connection.Payload@e9a6bf)
+07-06 00:38:58.040 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:38:58.042 24039 24039 W NearbyFragment: Completed downloading 20200312_193928.mp4 from Endpoint{id=njPJ, name=Galaxy S8 [2802]} in 15.170s
+07-06 00:38:58.046 24039 24039 D NearbyFragment: Summarising 20200312_193928.mp4
+07-06 00:38:58.047 24039 24039 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_193928.mp4
+07-06 00:38:58.061 24039 24039 V VideoManager: videoFromCursor
+07-06 00:38:58.064 24039 24039 V ProcessingVideosEventHandler: onAdd
+07-06 00:38:58.065 24039 24039 V RawFootageEventHandler: onRemove
+07-06 00:38:58.071 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:38:58.077 24039 24419 V SummariserIntentService: onHandleIntent
+07-06 00:38:58.077 24039 24419 D SummariserIntentService: Video{id='8253', data='/storage/emulated/0/Download/Nearby/20200312_193928.mp4', name='20200312_193928.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 00:38:58.078 24039 24419 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_193928.mp4
+07-06 00:38:58.080 24039 24419 I FfmpegTools: Running ffmpeg with:
+07-06 00:38:58.080 24039 24419 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_193928.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_193928.txt -f null -
+07-06 00:38:58.089 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:38:58.208 24039 24271 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a20e64fc0] sws_param option is deprecated and ignored
+07-06 00:39:18.234 24039 24419 W Summariser: No activity detected
+07-06 00:39:18.237 24039 24419 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_193928.mp4
+07-06 00:39:18.244 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:39:18.312 24039 24419 W Summariser: Summarisation completed
+07-06 00:39:18.312 24039 24419 W Summariser:   filename: 20200312_193928.mp4
+07-06 00:39:18.312 24039 24419 W Summariser:   active sections: 0
+07-06 00:39:18.312 24039 24419 W Summariser:   time: 20.156s
+07-06 00:39:18.312 24039 24419 W Summariser:   original duration: 60.89
+07-06 00:39:18.312 24039 24419 W Summariser:   summarised duration: -1.00
+07-06 00:39:18.312 24039 24419 W Summariser:   noise tolerance: 45.00
+07-06 00:39:18.312 24039 24419 W Summariser:   quality: 23
+07-06 00:39:18.312 24039 24419 W Summariser:   speed: medium
+07-06 00:39:18.312 24039 24419 W Summariser:   freeze duration: 1.00
+07-06 00:39:18.314 24039 24419 V ProcessingVideosEventHandler: onRemove
+07-06 00:39:18.342 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:39:18.520 24039 24052 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 00:39:18.520 24039 24052 D SummariserIntentService:   -> uri=content://media/external/file/8207
+07-06 00:39:41.122 24039 24039 D NearbyFragment: onPayloadReceived(endpointId=njPJ, payload=com.google.android.gms.nearby.connection.Payload@3835624)
+07-06 00:39:41.127 24039 24039 V NearbyFragment: Started downloading SUMMARISE:-5342600041585944609:20200312_194229.mp4:45.0_1.0_23_medium from Endpoint{id=njPJ, name=Galaxy S8 [2802]}
+07-06 00:39:41.130 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:39:41.163 24039 24039 D NearbyFragment: onPayloadReceived(endpointId=njPJ, payload=com.google.android.gms.nearby.connection.Payload@702d58d)
+07-06 00:39:56.018 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:39:56.020 24039 24039 W NearbyFragment: Completed downloading 20200312_194229.mp4 from Endpoint{id=njPJ, name=Galaxy S8 [2802]} in 14.891s
+07-06 00:39:56.022 24039 24039 D NearbyFragment: Summarising 20200312_194229.mp4
+07-06 00:39:56.023 24039 24039 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_194229.mp4
+07-06 00:39:56.031 24039 24039 V VideoManager: videoFromCursor
+07-06 00:39:56.034 24039 24039 V ProcessingVideosEventHandler: onAdd
+07-06 00:39:56.034 24039 24039 V RawFootageEventHandler: onRemove
+07-06 00:39:56.039 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:39:56.043 24039 24446 V SummariserIntentService: onHandleIntent
+07-06 00:39:56.044 24039 24446 D SummariserIntentService: Video{id='8254', data='/storage/emulated/0/Download/Nearby/20200312_194229.mp4', name='20200312_194229.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 00:39:56.044 24039 24446 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_194229.mp4
+07-06 00:39:56.047 24039 24446 I FfmpegTools: Running ffmpeg with:
+07-06 00:39:56.047 24039 24446 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_194229.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_194229.txt -f null -
+07-06 00:39:56.053 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:39:56.198 24039 24271 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a20e64fc0] sws_param option is deprecated and ignored
+07-06 00:40:16.735 24039 24446 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_194229.mp4
+07-06 00:40:16.745 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:40:16.867 24039 24446 W Summariser: 5 active sections found
+07-06 00:40:16.868 24039 24446 I FfmpegTools: Running ffmpeg with:
+07-06 00:40:16.868 24039 24446 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_194229.mp4 -filter_complex [0:v]trim=10.509000:19.517000,setpts=PTS-STARTPTS[v0];[0:a]atrim=10.509000:19.517000,asetpts=PTS-STARTPTS[a0];[0:v]trim=24.088000:29.259000,setpts=PTS-STARTPTS[v1];[0:a]atrim=24.088000:29.259000,asetpts=PTS-STARTPTS[a1];[0:v]trim=39.935000:40.269000,setpts=PTS-STARTPTS[v2];[0:a]atrim=39.935000:40.269000,asetpts=PTS-STARTPTS[a2];[0:v]trim=54.314000:54.615000,setpts=PTS-STARTPTS[v3];[0:a]atrim=54.314000:54.615000,asetpts=PTS-STARTPTS[a3];[0:v]trim=59.386000:60.020000,setpts=PTS-STARTPTS[v4];[0:a]atrim=59.386000:60.020000,asetpts=PTS-STARTPTS[a4];[v0][a0][v1][a1][v2][a2][v3][a3][v4][a4]concat=n=5:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/summarised/20200312_194229.mp4
+07-06 00:40:16.883 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:40:17.047 24039 24271 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a20e655c0] sws_param option is deprecated and ignored
+07-06 00:40:17.047 24039 24271 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a20e65d40] sws_param option is deprecated and ignored
+07-06 00:40:17.047 24039 24271 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a20e65b00] sws_param option is deprecated and ignored
+07-06 00:40:17.047 24039 24271 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a20e65f80] sws_param option is deprecated and ignored
+07-06 00:40:17.048 24039 24271 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a20e66100] sws_param option is deprecated and ignored
+07-06 00:41:21.028 24039 24446 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_194229.mp4
+07-06 00:41:21.036 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:41:21.149 24039 24446 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_194229.mp4
+07-06 00:41:21.204 24039 24446 W Summariser: Summarisation completed
+07-06 00:41:21.204 24039 24446 W Summariser:   filename: 20200312_194229.mp4
+07-06 00:41:21.204 24039 24446 W Summariser:   active sections: 5
+07-06 00:41:21.204 24039 24446 W Summariser:   time: 84.982s
+07-06 00:41:21.204 24039 24446 W Summariser:   original duration: 60.02
+07-06 00:41:21.204 24039 24446 W Summariser:   summarised duration: 15.51
+07-06 00:41:21.204 24039 24446 W Summariser:   noise tolerance: 45.00
+07-06 00:41:21.204 24039 24446 W Summariser:   quality: 23
+07-06 00:41:21.204 24039 24446 W Summariser:   speed: medium
+07-06 00:41:21.204 24039 24446 W Summariser:   freeze duration: 1.00
+07-06 00:41:21.205 24039 24446 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_194229.mp4
+07-06 00:41:21.223 24039 24446 D VideoManager: videoCursor is null
+07-06 00:41:21.258 24039 24446 V VideoManager: videoFromCursor
+07-06 00:41:21.265 24039 24446 V SummarisedVideosEventHandler: onAdd
+07-06 00:41:21.269 24039 24446 W NearbyFragment: Sending 20200312_194229.mp4 to Galaxy S8 [2802]
+07-06 00:41:21.273 24039 24446 V ProcessingVideosEventHandler: onRemove
+07-06 00:41:21.307 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:41:21.325 24039 24052 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 00:41:21.325 24039 24052 D SummariserIntentService:   -> uri=content://media/external/file/8207
+07-06 00:41:21.436 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:41:34.067 24039 24039 D NearbyFragment: onPayloadReceived(endpointId=njPJ, payload=com.google.android.gms.nearby.connection.Payload@f2301a8)
+07-06 00:41:34.069 24039 24039 V NearbyFragment: Started downloading SUMMARISE:-6814678684699202676:20200312_194930.mp4:45.0_1.0_23_medium from Endpoint{id=njPJ, name=Galaxy S8 [2802]}
+07-06 00:41:34.072 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:41:34.213 24039 24039 D NearbyFragment: onPayloadReceived(endpointId=njPJ, payload=com.google.android.gms.nearby.connection.Payload@c5914c1)
+07-06 00:41:47.887 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:41:47.890 24039 24039 W NearbyFragment: Completed downloading 20200312_194930.mp4 from Endpoint{id=njPJ, name=Galaxy S8 [2802]} in 13.818s
+07-06 00:41:47.903 24039 24039 D NearbyFragment: Summarising 20200312_194930.mp4
+07-06 00:41:47.904 24039 24039 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_194930.mp4
+07-06 00:41:47.928 24039 24039 V VideoManager: videoFromCursor
+07-06 00:41:47.936 24039 24039 V ProcessingVideosEventHandler: onAdd
+07-06 00:41:47.937 24039 24039 V RawFootageEventHandler: onRemove
+07-06 00:41:47.950 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:41:48.021 24039 24495 V SummariserIntentService: onHandleIntent
+07-06 00:41:48.024 24039 24495 D SummariserIntentService: Video{id='8256', data='/storage/emulated/0/Download/Nearby/20200312_194930.mp4', name='20200312_194930.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 00:41:48.024 24039 24495 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_194930.mp4
+07-06 00:41:48.028 24039 24495 I FfmpegTools: Running ffmpeg with:
+07-06 00:41:48.028 24039 24495 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_194930.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_194930.txt -f null -
+07-06 00:41:48.034 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:41:48.168 24039 24271 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a20e64fc0] sws_param option is deprecated and ignored
+07-06 00:42:08.820 24039 24495 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_194930.mp4
+07-06 00:42:08.827 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:42:08.946 24039 24495 W Summariser: 2 active sections found
+07-06 00:42:08.947 24039 24495 I FfmpegTools: Running ffmpeg with:
+07-06 00:42:08.947 24039 24495 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_194930.mp4 -filter_complex [0:v]trim=6.773000:18.017000,setpts=PTS-STARTPTS[v0];[0:a]atrim=6.773000:18.017000,asetpts=PTS-STARTPTS[a0];[0:v]trim=49.078000:60.020000,setpts=PTS-STARTPTS[v1];[0:a]atrim=49.078000:60.020000,asetpts=PTS-STARTPTS[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/summarised/20200312_194930.mp4
+07-06 00:42:08.960 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:42:09.106 24039 24271 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a20e64e40] sws_param option is deprecated and ignored
+07-06 00:42:09.107 24039 24271 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a20e652c0] sws_param option is deprecated and ignored
+07-06 00:43:37.224 24039 24495 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_194930.mp4
+07-06 00:43:37.234 24039 24271 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a20ea4800] Found duplicated MOOV Atom. Skipped it
+07-06 00:43:37.340 24039 24495 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_194930.mp4
+07-06 00:43:37.386 24039 24053 I zygote64: Waiting for a blocking GC ProfileSaver
+07-06 00:43:37.399 24039 24495 W Summariser: Summarisation completed
+07-06 00:43:37.399 24039 24495 W Summariser:   filename: 20200312_194930.mp4
+07-06 00:43:37.399 24039 24495 W Summariser:   active sections: 2
+07-06 00:43:37.399 24039 24495 W Summariser:   time: 109.196s
+07-06 00:43:37.399 24039 24495 W Summariser:   original duration: 60.02
+07-06 00:43:37.399 24039 24495 W Summariser:   summarised duration: 22.25
+07-06 00:43:37.399 24039 24495 W Summariser:   noise tolerance: 45.00
+07-06 00:43:37.399 24039 24495 W Summariser:   quality: 23
+07-06 00:43:37.399 24039 24495 W Summariser:   speed: medium
+07-06 00:43:37.399 24039 24495 W Summariser:   freeze duration: 1.00
+07-06 00:43:37.400 24039 24495 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_194930.mp4
+07-06 00:43:37.408 24039 24053 I zygote64: WaitForGcToComplete blocked ProfileSaver on ProfileSaver for 21.858ms
+07-06 00:43:37.415 24039 24495 D VideoManager: videoCursor is null
+07-06 00:43:37.445 24039 24495 V VideoManager: videoFromCursor
+07-06 00:43:37.448 24039 24495 V SummarisedVideosEventHandler: onAdd
+07-06 00:43:37.452 24039 24495 W NearbyFragment: Sending 20200312_194930.mp4 to Galaxy S8 [2802]
+07-06 00:43:37.455 24039 24495 V ProcessingVideosEventHandler: onRemove
+07-06 00:43:37.469 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete
+07-06 00:43:37.472 24039 24044 I zygote64: Do full code cache collection, code=250KB, data=173KB
+07-06 00:43:37.473 24039 24044 I zygote64: After code cache collection, code=161KB, data=93KB
+07-06 00:43:37.508 24039 24061 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 00:43:37.508 24039 24061 D SummariserIntentService:   -> uri=content://media/external/file/8207
+07-06 00:43:37.653 24039 24039 V NearbyFragment: Transfer to Endpoint{id=njPJ, name=Galaxy S8 [2802]} complete

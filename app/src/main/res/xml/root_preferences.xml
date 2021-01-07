@@ -1,0 +1,148 @@
+<!--
+  ~ Copyright 2018 The app Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/workflow_header">
+        <CheckBoxPreference
+            android:id="@+id/remove_raw_preference"
+            android:defaultValue="false"
+            app:key="@string/remove_raw_key"
+            app:summary="@string/remove_raw_summary"
+            app:title="@string/remove_raw_title" />
+        <SeekBarPreference
+            android:id="@+id/download_delay_preference"
+            android:max="100"
+            app:defaultValue="1"
+            app:key="@string/download_delay_key"
+            app:min="1"
+            app:persistent="true"
+            app:showSeekBarValue="true"
+            app:title="@string/download_delay_title" />
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            app:key="auto_retrieval"
+            app:summaryOff="@string/auto_retrieval_summary_off"
+            app:summaryOn="@string/auto_retrieval_summary_on"
+            app:title="@string/auto_retrieval_title" />
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            app:key="auto_summarise"
+            app:summaryOff="@string/auto_summarise_summary_off"
+            app:summaryOn="@string/auto_summarise_summary_on"
+            app:title="@string/auto_summarise_title" />
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            app:key="auto_upload"
+            app:summaryOff="@string/auto_upload_summary_off"
+            app:summaryOn="@string/auto_upload_summary_on"
+            app:title="@string/auto_upload_title" />
+        <ListPreference
+            android:id="@+id/scheduling_algorithm_preference"
+            app:defaultValue="@string/best_algorithm_key"
+            app:entries="@array/algorithm_titles"
+            app:entryValues="@array/algorithm_keys"
+            app:key="@string/scheduling_algorithm_key"
+            app:persistent="true"
+            app:title="@string/scheduling_algorithm_title"
+            app:useSimpleSummaryProvider="true" />
+        <CheckBoxPreference
+            android:id="@+id/fast_scheduling_preference"
+            android:defaultValue="false"
+            app:key="@string/fast_scheduling_key"
+            app:summary="@string/fast_scheduling_summary"
+            app:title="@string/fast_scheduling_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/video_header">
+        <SeekBarPreference
+            android:id="@+id/quality_preference"
+            android:max="51"
+            app:defaultValue="23"
+            app:key="@string/quality_key"
+            app:min="0"
+            app:persistent="true"
+            app:showSeekBarValue="true"
+            app:title="@string/quality_title" />
+        <SeekBarPreference
+            android:id="@+id/duration_preference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="100"
+            app:defaultValue="10"
+            app:key="@string/duration_key"
+            app:min="1"
+            app:persistent="true"
+            app:showSeekBarValue="true"
+            app:title="@string/duration_title" />
+        <SeekBarPreference
+            android:id="@+id/noise_tolerence_preference"
+            android:max="100"
+            app:defaultValue="60"
+            app:key="@string/noise_key"
+            app:min="0"
+            app:persistent="true"
+            app:showSeekBarValue="true"
+            app:title="@string/noise_tolerance_title" />
+        <ListPreference
+            android:id="@+id/encoding_speed_preference"
+            app:defaultValue="medium"
+            app:entries="@array/speed_values"
+            app:entryValues="@array/speed_values"
+            app:key="@string/encoding_speed_key"
+            app:persistent="true"
+            app:title="@string/encoding_speed_title"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/segmentation_header">
+        <SwitchPreferenceCompat
+            android:id="@+id/enable_segment_preference"
+            app:defaultValue="false"
+            app:key="@string/enable_segment_key"
+            app:summaryOff="@string/enable_segment_summary_off"
+            app:summaryOn="@string/enable_segment_summary_on"
+            app:title="@string/enable_segment_title" />
+        <SwitchPreferenceCompat
+            android:id="@+id/auto_segment_preference"
+            app:defaultValue="false"
+            app:dependency="@string/enable_segment_key"
+            app:key="@string/auto_segment_key"
+            app:summary="@string/auto_segment_summary"
+            app:title="@string/auto_segment_title" />
+        <SeekBarPreference
+            android:id="@+id/manual_segment_preference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="10"
+            app:defaultValue="true"
+            app:dependency="@string/enable_segment_key"
+            app:key="@string/manual_segment_key"
+            app:min="2"
+            app:persistent="true"
+            app:showSeekBarValue="true"
+            app:title="@string/manual_segment_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Summarised Videos">
+        <Preference
+            android:defaultValue="true"
+            app:key="view_summarised_video"
+            app:title="View Summarised Videos" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

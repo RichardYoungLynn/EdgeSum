@@ -1,0 +1,251 @@
+--------- beginning of main
+07-04 23:11:35.954  5189  5189 I zygote64: Late-enabling -Xcheck:jni
+07-04 23:11:36.251  5189  5189 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-04 23:11:36.251  5189  5189 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-04 23:11:36.251  5189  5189 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 23:11:36.251  5189  5189 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 23:11:36.251  5189  5189 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 23:11:36.251  5189  5189 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-yvZ6Cgq1U-3ywixalvPEKA==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-yvZ6Cgq1U-3ywixalvPEKA==/lib/arm64, /data/app/com.example.edgesum-yvZ6Cgq1U-3ywixalvPEKA==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-04 23:11:36.251  5189  5189 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-04 23:11:36.251  5189  5189 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-04 23:11:36.251  5189  5189 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-04 23:11:36.251  5189  5189 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 23:11:36.251  5189  5189 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 23:11:36.251  5189  5189 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 23:11:36.251  5189  5189 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 23:11:36.251  5189  5189 I zygote64: 
+07-04 23:11:36.252  5189  5189 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-04 23:11:36.252  5189  5189 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-04 23:11:36.252  5189  5189 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 23:11:36.252  5189  5189 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 23:11:36.252  5189  5189 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 23:11:36.252  5189  5189 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-yvZ6Cgq1U-3ywixalvPEKA==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-yvZ6Cgq1U-3ywixalvPEKA==/lib/arm64, /data/app/com.example.edgesum-yvZ6Cgq1U-3ywixalvPEKA==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-04 23:11:36.252  5189  5189 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-04 23:11:36.252  5189  5189 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-04 23:11:36.252  5189  5189 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-04 23:11:36.252  5189  5189 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 23:11:36.252  5189  5189 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 23:11:36.252  5189  5189 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 23:11:36.252  5189  5189 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 23:11:36.252  5189  5189 I zygote64: 
+07-04 23:11:36.253  5189  5189 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-04 23:11:36.253  5189  5189 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-04 23:11:36.253  5189  5189 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 23:11:36.253  5189  5189 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 23:11:36.253  5189  5189 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 23:11:36.253  5189  5189 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-yvZ6Cgq1U-3ywixalvPEKA==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-yvZ6Cgq1U-3ywixalvPEKA==/lib/arm64, /data/app/com.example.edgesum-yvZ6Cgq1U-3ywixalvPEKA==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-04 23:11:36.253  5189  5189 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-04 23:11:36.253  5189  5189 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-04 23:11:36.253  5189  5189 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-04 23:11:36.253  5189  5189 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 23:11:36.253  5189  5189 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 23:11:36.253  5189  5189 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 23:11:36.253  5189  5189 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 23:11:36.253  5189  5189 I zygote64: 
+07-04 23:11:36.464  5189  5189 V Repo    : /storage/emulated/0/Movies/raw
+07-04 23:11:36.464  5189  5189 V Repo    : /storage/emulated/0/Movies/summarised
+07-04 23:11:36.479  5189  5189 V FileManager: External storage is readable
+07-04 23:11:36.482  5189  5189 V FileManager: Created new directory: /storage/emulated/0/Movies/raw
+07-04 23:11:36.485  5189  5189 V FileManager: External storage is readable
+07-04 23:11:36.486  5189  5189 V FileManager: Created new directory: /storage/emulated/0/Movies/summarised
+07-04 23:11:36.490  5189  5189 V FileManager: External storage is readable
+07-04 23:11:36.493  5189  5189 V FileManager: Created new directory: /storage/emulated/0/Download/nearby
+07-04 23:11:36.498  5189  5189 V FileManager: External storage is readable
+07-04 23:11:36.500  5189  5189 V FileManager: Created new directory: /storage/emulated/0/Movies/segment
+07-04 23:11:36.504  5189  5189 V FileManager: External storage is readable
+07-04 23:11:36.506  5189  5189 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum
+07-04 23:11:36.648  5189  5189 V VideoManager: getAllVideoFromExternalStorageFolder
+07-04 23:11:36.654  5189  5189 D VideoManager: /storage/emulated/0/Movies/summarised
+07-04 23:11:36.663  5189  5189 D VideoManager: 0 videos return
+07-04 23:11:36.728  5189  5189 V VideoManager: getAllVideoFromExternalStorageFolder
+07-04 23:11:36.735  5189  5189 D VideoManager: /storage/emulated/0/Movies/raw
+07-04 23:11:36.744  5189  5189 D VideoManager: 0 videos return
+07-04 23:11:36.798  5189  5227 D OpenGLRenderer: HWUI GL Pipeline
+07-04 23:11:36.838  5189  5189 I TransferService: Starting Transfer Service to listen for network connectivity changes.
+07-04 23:11:36.843  5189  5189 W LogFactory: Truncating log tag length as it exceed 23, the limit imposed by Android on certain API Levels
+07-04 23:11:36.867  5189  5189 I TransferService: Registering the network receiver
+07-04 23:11:36.869  5189  5189 E TransferService: No notification is passed in the intent. Unable to transition to foreground.
+07-04 23:11:36.957  5189  5226 D MainActivity: Scanned /storage/emulated/0/Movies/summarised
+07-04 23:11:36.957  5189  5226 D MainActivity:   -> uri=content://media/external/file/999
+07-04 23:11:36.980  5189  5202 D MainActivity: Scanned /storage/emulated/0/Movies/raw
+07-04 23:11:36.980  5189  5202 D MainActivity:   -> uri=content://media/external/file/1000
+07-04 23:11:36.985  5189  5227 I Adreno  : QUALCOMM build                   : 8e59954, I0be83d0d26
+07-04 23:11:36.985  5189  5227 I Adreno  : Build Date                       : 09/22/17
+07-04 23:11:36.985  5189  5227 I Adreno  : OpenGL ES Shader Compiler Version: EV031.21.02.00
+07-04 23:11:36.985  5189  5227 I Adreno  : Local Branch                     : O17A
+07-04 23:11:36.985  5189  5227 I Adreno  : Remote Branch                    : 
+07-04 23:11:36.985  5189  5227 I Adreno  : Remote Branch                    : 
+07-04 23:11:36.985  5189  5227 I Adreno  : Reconstruct Branch               : 
+07-04 23:11:36.986  5189  5227 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-04 23:11:36.994  5189  5195 I zygote64: Do partial code cache collection, code=23KB, data=29KB
+07-04 23:11:36.994  5189  5195 I zygote64: After code cache collection, code=23KB, data=29KB
+07-04 23:11:36.994  5189  5195 I zygote64: Increasing code cache capacity to 128KB
+07-04 23:11:36.994  5189  5227 I Adreno  : PFP: 0x00000000, ME: 0x00000000
+07-04 23:11:37.007  5189  5227 I zygote64: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+07-04 23:11:37.009  5189  5227 I OpenGLRenderer: Initialized EGL, version 1.4
+07-04 23:11:37.009  5189  5227 D OpenGLRenderer: Swap behavior 2
+07-04 23:11:37.037  5189  5227 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+07-04 23:11:37.038  5189  5227 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-04 23:11:57.267  5189  5189 V MainActivity: Connect button clicked
+07-04 23:12:00.941  5189  5189 V ConnectionFragment: Discovery switch checked
+07-04 23:12:01.261  5189  5195 I zygote64: Do partial code cache collection, code=54KB, data=59KB
+07-04 23:12:01.262  5189  5195 I zygote64: After code cache collection, code=54KB, data=59KB
+07-04 23:12:01.262  5189  5195 I zygote64: Increasing code cache capacity to 256KB
+07-04 23:12:02.946  5189  5189 D NearbyFragment: Started discovering
+07-04 23:12:05.135  5189  5189 D NearbyFragment: Found endpoint MGMd: Nexus 5X [34d8]
+07-04 23:12:26.980  5189  5189 D NearbyFragment: Selected 'Endpoint{id=MGMd, name=Nexus 5X [34d8]}'
+07-04 23:12:27.030  5189  5195 I zygote64: Compiler allocated 4MB to compile void android.view.View.<init>(android.content.Context, android.util.AttributeSet, int, int)
+07-04 23:13:09.615  5189  5189 D NearbyFragment: Initiated connection with MGMd: Nexus 5X [34d8]
+07-04 23:13:09.891  5189  5189 D NearbyFragment: Requested connection with Endpoint{id=MGMd, name=Nexus 5X [34d8]}
+07-04 23:13:09.918  5189  5195 I zygote64: Do full code cache collection, code=125KB, data=98KB
+07-04 23:13:09.919  5189  5195 I zygote64: After code cache collection, code=122KB, data=62KB
+07-04 23:13:09.970  5189  5195 I zygote64: Do partial code cache collection, code=123KB, data=71KB
+07-04 23:13:09.970  5189  5195 I zygote64: After code cache collection, code=123KB, data=71KB
+07-04 23:13:09.970  5189  5195 I zygote64: Increasing code cache capacity to 512KB
+07-04 23:13:12.198  5189  5189 I NearbyFragment: Connected to Endpoint{id=MGMd, name=Nexus 5X [34d8]}
+07-04 23:13:13.182  5189  5189 V ConnectionFragment: Discovery switch unchecked
+07-04 23:13:13.182  5189  5189 D NearbyFragment: Stopped discovering
+07-04 23:13:21.082  5189  5189 I TransferNetworkLossHand: Network connectivity changed detected.
+07-04 23:13:21.092  5189  5189 I TransferNetworkLossHand: Network connected: true
+07-04 23:20:24.804  5189  5189 D NearbyFragment: onPayloadReceived(endpointId=MGMd, payload=com.google.android.gms.nearby.connection.Payload@6b67591)
+07-04 23:20:24.814  5189  5189 V NearbyFragment: Started downloading SUMMARISE:-5784984442767142738:20200312_194930.mp4:45.0_1.0_23_medium from Endpoint{id=MGMd, name=Nexus 5X [34d8]}
+07-04 23:20:24.825  5189  5189 V NearbyFragment: Transfer to Endpoint{id=MGMd, name=Nexus 5X [34d8]} complete
+07-04 23:20:24.838  5189  5189 D NearbyFragment: onPayloadReceived(endpointId=MGMd, payload=com.google.android.gms.nearby.connection.Payload@c28c364)
+07-04 23:20:40.852  5189  5189 V NearbyFragment: Transfer to Endpoint{id=MGMd, name=Nexus 5X [34d8]} complete
+07-04 23:20:40.868  5189  5189 W NearbyFragment: Completed downloading 20200312_194930.mp4 from Endpoint{id=MGMd, name=Nexus 5X [34d8]} in 16.033s
+07-04 23:20:40.874  5189  5189 D NearbyFragment: Summarising 20200312_194930.mp4
+07-04 23:20:40.875  5189  5189 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_194930.mp4
+07-04 23:20:40.894  5189  5189 D VideoManager: videoCursor is null
+07-04 23:20:40.933  5189  5189 V VideoManager: videoFromCursor
+07-04 23:20:40.936  5189  5189 V ProcessingVideosEventHandler: onAdd
+07-04 23:20:40.937  5189  5189 V RawFootageEventHandler: onRemove
+07-04 23:20:40.949  5189  5189 V NearbyFragment: Transfer to Endpoint{id=MGMd, name=Nexus 5X [34d8]} complete
+07-04 23:20:40.956  5189  5994 V SummariserIntentService: onHandleIntent
+07-04 23:20:40.957  5189  5994 D SummariserIntentService: Video{id='1002', data='/storage/emulated/0/Download/Nearby/20200312_194930.mp4', name='20200312_194930.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-04 23:20:40.957  5189  5994 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_194930.mp4
+07-04 23:20:40.960  5189  5994 I mobile-ffmpeg: Loading mobile-ffmpeg.
+07-04 23:20:41.062  5189  5994 I mobile-ffmpeg: Loaded mobile-ffmpeg-full-gpl-arm64-v8a-4.3.2-20200415.
+07-04 23:20:41.064  5189  5995 D mobile-ffmpeg: Callback thread started.
+07-04 23:20:41.112  5189  5995 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x72ca637000] Found duplicated MOOV Atom. Skipped it
+07-04 23:20:41.278  5189  5995 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x72ca748dc0] sws_param option is deprecated and ignored
+07-04 23:20:53.397  5189  5994 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_194930.mp4
+07-04 23:20:53.401  5189  5995 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x72ca637000] Found duplicated MOOV Atom. Skipped it
+07-04 23:20:53.477  5189  5994 W Summariser: 2 active sections found
+07-04 23:20:53.477  5189  5994 I FfmpegTools: Running ffmpeg with:
+07-04 23:20:53.477  5189  5994 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_194930.mp4 -filter_complex [0:v]trim=6.773000:18.017000,setpts=PTS-STARTPTS[v0];[0:a]atrim=6.773000:18.017000,asetpts=PTS-STARTPTS[a0];[0:v]trim=49.078000:60.020000,setpts=PTS-STARTPTS[v1];[0:a]atrim=49.078000:60.020000,asetpts=PTS-STARTPTS[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/summarised/20200312_194930.mp4
+07-04 23:20:53.486  5189  5995 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x72ca637000] Found duplicated MOOV Atom. Skipped it
+07-04 23:20:53.630  5189  5995 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x72ca748c40] sws_param option is deprecated and ignored
+07-04 23:20:53.630  5189  5995 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x72ca753980] sws_param option is deprecated and ignored
+07-04 23:21:51.487  5189  5994 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_194930.mp4
+07-04 23:21:51.492  5189  5995 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x72ca637000] Found duplicated MOOV Atom. Skipped it
+07-04 23:21:51.578  5189  5994 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_194930.mp4
+07-04 23:21:51.622  5189  5994 W Summariser: Summarisation completed
+07-04 23:21:51.622  5189  5994 W Summariser:   filename: 20200312_194930.mp4
+07-04 23:21:51.622  5189  5994 W Summariser:   active sections: 2
+07-04 23:21:51.622  5189  5994 W Summariser:   time: 70.526s
+07-04 23:21:51.622  5189  5994 W Summariser:   original duration: 60.02
+07-04 23:21:51.622  5189  5994 W Summariser:   summarised duration: 22.25
+07-04 23:21:51.622  5189  5994 W Summariser:   noise tolerance: 45.00
+07-04 23:21:51.622  5189  5994 W Summariser:   quality: 23
+07-04 23:21:51.622  5189  5994 W Summariser:   speed: medium
+07-04 23:21:51.622  5189  5994 W Summariser:   freeze duration: 1.00
+07-04 23:21:51.622  5189  5994 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_194930.mp4
+07-04 23:21:51.635  5189  5994 D VideoManager: videoCursor is null
+07-04 23:21:51.696  5189  5994 V VideoManager: videoFromCursor
+07-04 23:21:51.698  5189  5994 V SummarisedVideosEventHandler: onAdd
+07-04 23:21:51.703  5189  5994 W NearbyFragment: Sending 20200312_194930.mp4 to Nexus 5X [34d8]
+07-04 23:21:51.706  5189  5994 V ProcessingVideosEventHandler: onRemove
+07-04 23:21:51.750  5189  5189 V NearbyFragment: Transfer to Endpoint{id=MGMd, name=Nexus 5X [34d8]} complete
+07-04 23:21:51.784  5189  5202 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-04 23:21:51.784  5189  5202 D SummariserIntentService:   -> uri=content://media/external/file/999
+07-04 23:21:51.962  5189  5189 V NearbyFragment: Transfer to Endpoint{id=MGMd, name=Nexus 5X [34d8]} complete

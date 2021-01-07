@@ -1,0 +1,955 @@
+--------- beginning of main
+07-06 02:47:30.261 14200 14200 I zygote  : Late-enabling -Xcheck:jni
+--------- beginning of system
+07-06 02:47:30.382 14200 14200 I ActivityThread: handleStopService: token=android.os.BinderProxy@12f5aad not found.
+07-06 02:47:30.387 14200 14200 I TransferService: Starting Transfer Service to listen for network connectivity changes.
+07-06 02:47:30.389 14200 14200 W LogFactory: Truncating log tag length as it exceed 23, the limit imposed by Android on certain API Levels
+07-06 02:47:30.414 14200 14200 I TransferService: Registering the network receiver
+07-06 02:47:30.417 14200 14200 I TransferService: Moving the service out of the Foreground state.
+07-06 02:47:30.418 14200 14200 I TransferService: De-registering the network receiver.
+07-06 02:47:32.357 14200 14200 I zygote  : Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-06 02:47:32.357 14200 14200 I zygote  :   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-06 02:47:32.357 14200 14200 I zygote  :   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-06 02:47:32.357 14200 14200 I zygote  :   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.os.Looper.loop() (Looper.java:164)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-06 02:47:32.357 14200 14200 I zygote  :   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-06 02:47:32.357 14200 14200 I zygote  : Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-YzI1NIeHkS8kN2Z2Ls5RAg==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-YzI1NIeHkS8kN2Z2Ls5RAg==/lib/arm, /data/app/com.example.edgesum-YzI1NIeHkS8kN2Z2Ls5RAg==/base.apk!/lib/armeabi-v7a, /system/lib, /system/vendor/lib]]
+07-06 02:47:32.357 14200 14200 I zygote  :   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-06 02:47:32.357 14200 14200 I zygote  :   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-06 02:47:32.357 14200 14200 I zygote  :   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-06 02:47:32.357 14200 14200 I zygote  :   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-06 02:47:32.357 14200 14200 I zygote  :   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.os.Looper.loop() (Looper.java:164)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-06 02:47:32.357 14200 14200 I zygote  :   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-06 02:47:32.357 14200 14200 I zygote  :   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-06 02:47:32.357 14200 14200 I zygote  : 
+07-06 02:47:32.360 14200 14200 I zygote  : Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-06 02:47:32.360 14200 14200 I zygote  :   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-06 02:47:32.360 14200 14200 I zygote  :   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-06 02:47:32.360 14200 14200 I zygote  :   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.os.Looper.loop() (Looper.java:164)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-06 02:47:32.360 14200 14200 I zygote  :   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-06 02:47:32.360 14200 14200 I zygote  : Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-YzI1NIeHkS8kN2Z2Ls5RAg==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-YzI1NIeHkS8kN2Z2Ls5RAg==/lib/arm, /data/app/com.example.edgesum-YzI1NIeHkS8kN2Z2Ls5RAg==/base.apk!/lib/armeabi-v7a, /system/lib, /system/vendor/lib]]
+07-06 02:47:32.360 14200 14200 I zygote  :   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-06 02:47:32.360 14200 14200 I zygote  :   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-06 02:47:32.360 14200 14200 I zygote  :   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-06 02:47:32.360 14200 14200 I zygote  :   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-06 02:47:32.360 14200 14200 I zygote  :   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.os.Looper.loop() (Looper.java:164)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-06 02:47:32.360 14200 14200 I zygote  :   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-06 02:47:32.360 14200 14200 I zygote  :   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-06 02:47:32.360 14200 14200 I zygote  : 
+07-06 02:47:32.361 14200 14200 I zygote  : Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-06 02:47:32.361 14200 14200 I zygote  :   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-06 02:47:32.361 14200 14200 I zygote  :   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-06 02:47:32.361 14200 14200 I zygote  :   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.os.Looper.loop() (Looper.java:164)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-06 02:47:32.361 14200 14200 I zygote  :   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-06 02:47:32.361 14200 14200 I zygote  : Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-YzI1NIeHkS8kN2Z2Ls5RAg==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-YzI1NIeHkS8kN2Z2Ls5RAg==/lib/arm, /data/app/com.example.edgesum-YzI1NIeHkS8kN2Z2Ls5RAg==/base.apk!/lib/armeabi-v7a, /system/lib, /system/vendor/lib]]
+07-06 02:47:32.361 14200 14200 I zygote  :   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-06 02:47:32.361 14200 14200 I zygote  :   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-06 02:47:32.361 14200 14200 I zygote  :   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-06 02:47:32.361 14200 14200 I zygote  :   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-06 02:47:32.361 14200 14200 I zygote  :   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.os.Looper.loop() (Looper.java:164)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-06 02:47:32.361 14200 14200 I zygote  :   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-06 02:47:32.361 14200 14200 I zygote  :   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-06 02:47:32.361 14200 14200 I zygote  : 
+07-06 02:47:32.627 14200 14200 V Repo    : /storage/emulated/0/Movies/raw
+07-06 02:47:32.627 14200 14200 V Repo    : /storage/emulated/0/Movies/summarised
+07-06 02:47:32.644 14200 14200 V FileManager: External storage is readable
+07-06 02:47:32.647 14200 14200 V FileManager: Created new directory: /storage/emulated/0/Movies/raw
+07-06 02:47:32.651 14200 14200 V FileManager: External storage is readable
+07-06 02:47:32.652 14200 14200 V FileManager: Created new directory: /storage/emulated/0/Movies/summarised
+07-06 02:47:32.656 14200 14200 V FileManager: External storage is readable
+07-06 02:47:32.657 14200 14200 V FileManager: Created new directory: /storage/emulated/0/Download/nearby
+07-06 02:47:32.660 14200 14200 V FileManager: External storage is readable
+07-06 02:47:32.661 14200 14200 V FileManager: Created new directory: /storage/emulated/0/Movies/segment
+07-06 02:47:32.665 14200 14200 V FileManager: External storage is readable
+07-06 02:47:32.667 14200 14200 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum
+07-06 02:47:32.869 14200 14200 V VideoManager: getAllVideoFromExternalStorageFolder
+07-06 02:47:32.874 14200 14200 D VideoManager: /storage/emulated/0/Movies/summarised
+07-06 02:47:32.889 14200 14200 D VideoManager: 0 videos return
+07-06 02:47:32.929 14200 14205 I zygote  : Do partial code cache collection, code=10KB, data=19KB
+07-06 02:47:32.931 14200 14205 I zygote  : After code cache collection, code=10KB, data=19KB
+07-06 02:47:32.931 14200 14205 I zygote  : Increasing code cache capacity to 128KB
+07-06 02:47:32.935 14200 14205 I zygote  : Do partial code cache collection, code=10KB, data=37KB
+07-06 02:47:32.938 14200 14205 I zygote  : After code cache collection, code=10KB, data=37KB
+07-06 02:47:32.939 14200 14205 I zygote  : Increasing code cache capacity to 256KB
+07-06 02:47:32.939 14200 14205 I zygote  : Compiler allocated 4MB to compile void android.widget.TextView.<init>(android.content.Context, android.util.AttributeSet, int, int)
+07-06 02:47:32.940 14200 14200 V VideoManager: getAllVideoFromExternalStorageFolder
+07-06 02:47:32.944 14200 14200 D VideoManager: /storage/emulated/0/Movies/raw
+07-06 02:47:32.958 14200 14200 D VideoManager: 0 videos return
+07-06 02:47:33.023 14200 14224 D OpenGLRenderer: HWUI GL Pipeline
+07-06 02:47:33.040 14200 14200 I TransferService: Starting Transfer Service to listen for network connectivity changes.
+07-06 02:47:33.040 14200 14200 I TransferService: Registering the network receiver
+07-06 02:47:33.044 14200 14200 E TransferService: No notification is passed in the intent. Unable to transition to foreground.
+07-06 02:47:33.063 14200 14218 D MainActivity: Scanned /storage/emulated/0/Movies/raw
+07-06 02:47:33.063 14200 14218 D MainActivity:   -> uri=content://media/external/file/1526
+07-06 02:47:33.167 14200 14200 W StaticLayout: maxLineHeight should not be -1.  maxLines:1 lineCount:1
+07-06 02:47:33.172 14200 14218 D MainActivity: Scanned /storage/emulated/0/Movies/summarised
+07-06 02:47:33.172 14200 14218 D MainActivity:   -> uri=content://media/external/file/1527
+07-06 02:47:33.183 14200 14200 W StaticLayout: maxLineHeight should not be -1.  maxLines:1 lineCount:1
+07-06 02:47:33.195 14200 14200 I chatty  : uid=10086(com.example.edgesum) identical 1 line
+07-06 02:47:33.208 14200 14200 W StaticLayout: maxLineHeight should not be -1.  maxLines:1 lineCount:1
+07-06 02:47:33.246 14200 14224 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: QUALCOMM Build: 06/17/16, f19e6a9, I9e7a63e7c4
+07-06 02:47:33.251 14200 14224 I zygote  : android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+07-06 02:47:33.251 14200 14224 I OpenGLRenderer: Initialized EGL, version 1.4
+07-06 02:47:33.251 14200 14224 D OpenGLRenderer: Swap behavior 1
+07-06 02:47:33.260 14200 14224 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:607>: EGL_BAD_ATTRIBUTE
+07-06 02:47:33.264 14200 14224 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:607>: EGL_BAD_ATTRIBUTE
+07-06 02:47:33.265 14200 14224 D vndksupport: Loading /vendor/lib/hw/gralloc.msm8974.so from current namespace instead of sphal namespace.
+07-06 02:47:33.267 14200 14200 W StaticLayout: maxLineHeight should not be -1.  maxLines:1 lineCount:1
+07-06 02:47:33.285 14200 14200 W StaticLayout: maxLineHeight should not be -1.  maxLines:1 lineCount:1
+07-06 02:47:33.299 14200 14200 I TransferNetworkLossHand: Network connectivity changed detected.
+07-06 02:47:33.301 14200 14200 I TransferNetworkLossHand: Network connected: true
+07-06 02:47:33.457 14200 14224 D vndksupport: Loading /vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+07-06 02:47:33.458 14200 14224 D vndksupport: Loading /vendor/lib/hw/gralloc.msm8974.so from current namespace instead of sphal namespace.
+07-06 02:47:39.453 14200 14200 V MainActivity: Connect button clicked
+07-06 02:47:40.334 14200 14200 V ConnectionFragment: Auto-send switch checked
+07-06 02:47:40.376 14200 14200 W NearbyFragment: Preferences:
+07-06 02:47:40.376 14200 14200 W NearbyFragment:   Auto download: true
+07-06 02:47:40.376 14200 14200 W NearbyFragment:   Algorithm: best
+07-06 02:47:40.376 14200 14200 W NearbyFragment:   Fast scheduling: false
+07-06 02:47:40.376 14200 14200 W NearbyFragment:   Segmentation: false
+07-06 02:47:40.376 14200 14200 W NearbyFragment:   Auto segmentation: false
+07-06 02:47:40.376 14200 14200 W NearbyFragment:   Segment number: 2
+07-06 02:47:40.376 14200 14200 W NearbyFragment:   Noise tolerance: 45.00
+07-06 02:47:40.376 14200 14200 W NearbyFragment:   Quality: 23
+07-06 02:47:40.376 14200 14200 W NearbyFragment:   Speed: medium
+07-06 02:47:40.376 14200 14200 W NearbyFragment:   Freeze duration: 1.00
+07-06 02:47:40.376 14200 14200 W NearbyFragment: Download delay: 1s
+07-06 02:47:40.376 14200 14200 W NearbyFragment: Started downloading from dashcam
+07-06 02:47:40.378 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:47:40.385 14200 14278 V DashDownloadManager: Started downloading: 20200312_150643.mp4
+07-06 02:47:40.430 14200 14278 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-06 02:47:41.788 14200 14200 V MainActivity: Navigation summarised button clicked
+07-06 02:47:41.848 14200 14200 W StaticLayout: maxLineHeight should not be -1.  maxLines:1 lineCount:1
+07-06 02:47:41.861 14200 14200 W StaticLayout: maxLineHeight should not be -1.  maxLines:1 lineCount:1
+07-06 02:47:55.132 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_150643.mp4
+07-06 02:47:55.139 14200 14278 D VideoManager: videoCursor is null
+07-06 02:47:55.158 14200 14278 V VideoManager: videoFromCursor
+07-06 02:47:55.160 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_150643.mp4 in 14.733s
+07-06 02:47:55.161 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_150643.mp4
+07-06 02:47:55.165 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:47:55.181 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 02:47:55.183 14200 14285 D SummariserIntentService: Video{id='1745', data='/storage/emulated/0/Movies/raw/20200312_150643.mp4', name='20200312_150643.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 02:47:55.183 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_150643.mp4
+07-06 02:47:55.187 14200 14285 I mobile-ffmpeg: Loading mobile-ffmpeg.
+07-06 02:47:55.268 14200 14285 I mobile-ffmpeg: Loaded mobile-ffmpeg-full-gpl-arm-v7a-neon-4.3.2-20200415.
+07-06 02:47:55.269 14200 14286 D mobile-ffmpeg: Callback thread started.
+07-06 02:47:55.272 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:47:55.272 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_150643.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_150643.txt -f null -
+07-06 02:47:55.280 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x9363cc00] Found duplicated MOOV Atom. Skipped it
+07-06 02:47:55.427 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x93549820] sws_param option is deprecated and ignored
+07-06 02:47:56.177 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:47:56.181 14200 14278 V DashDownloadManager: Started downloading: 20200312_150744.mp4
+07-06 02:48:09.692 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_150744.mp4
+07-06 02:48:09.697 14200 14278 D VideoManager: videoCursor is null
+07-06 02:48:09.715 14200 14278 V VideoManager: videoFromCursor
+07-06 02:48:09.717 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_150744.mp4 in 13.510s
+07-06 02:48:09.718 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_150744.mp4
+07-06 02:48:09.718 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:48:10.724 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:48:10.728 14200 14278 V DashDownloadManager: Started downloading: 20200312_150844.mp4
+07-06 02:48:23.230 14200 14285 W Summariser: No activity detected
+07-06 02:48:23.232 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_150643.mp4
+07-06 02:48:23.239 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x93642a00] Found duplicated MOOV Atom. Skipped it
+07-06 02:48:23.346 14200 14285 W Summariser: Summarisation completed
+07-06 02:48:23.346 14200 14285 W Summariser:   filename: 20200312_150643.mp4
+07-06 02:48:23.346 14200 14285 W Summariser:   active sections: 0
+07-06 02:48:23.346 14200 14285 W Summariser:   time: 28.047s
+07-06 02:48:23.346 14200 14285 W Summariser:   original duration: 60.02
+07-06 02:48:23.346 14200 14285 W Summariser:   summarised duration: -1.00
+07-06 02:48:23.346 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 02:48:23.346 14200 14285 W Summariser:   quality: 23
+07-06 02:48:23.346 14200 14285 W Summariser:   speed: medium
+07-06 02:48:23.346 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 02:48:23.347 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 02:48:23.356 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 02:48:23.358 14200 14285 D SummariserIntentService: Video{id='1746', data='/storage/emulated/0/Movies/raw/20200312_150744.mp4', name='20200312_150744.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 02:48:23.358 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_150744.mp4
+07-06 02:48:23.363 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:48:23.363 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_150744.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_150744.txt -f null -
+07-06 02:48:23.370 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8dc72000] Found duplicated MOOV Atom. Skipped it
+07-06 02:48:23.405 14200 14213 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 02:48:23.405 14200 14213 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 02:48:23.415 14200 14205 I zygote  : Do full code cache collection, code=118KB, data=106KB
+07-06 02:48:23.417 14200 14205 I zygote  : After code cache collection, code=118KB, data=77KB
+07-06 02:48:23.490 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8dceab00] sws_param option is deprecated and ignored
+07-06 02:48:24.365 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_150844.mp4
+07-06 02:48:24.370 14200 14278 D VideoManager: videoCursor is null
+07-06 02:48:24.391 14200 14278 V VideoManager: videoFromCursor
+07-06 02:48:24.393 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_150844.mp4 in 13.636s
+07-06 02:48:24.393 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_150844.mp4
+07-06 02:48:24.394 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:48:25.398 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:48:25.403 14200 14278 V DashDownloadManager: Started downloading: 20200312_150944.mp4
+07-06 02:48:38.784 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_150944.mp4
+07-06 02:48:38.790 14200 14278 D VideoManager: videoCursor is null
+07-06 02:48:38.815 14200 14278 V VideoManager: videoFromCursor
+07-06 02:48:38.818 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_150944.mp4 in 13.381s
+07-06 02:48:38.818 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_150944.mp4
+07-06 02:48:38.819 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:48:39.824 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:48:39.829 14200 14278 V DashDownloadManager: Started downloading: 20200312_151044.mp4
+07-06 02:48:51.272 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_150744.mp4
+07-06 02:48:51.280 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8dc73800] Found duplicated MOOV Atom. Skipped it
+07-06 02:48:51.364 14200 14285 W Summariser: 1 active sections found
+07-06 02:48:51.365 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:48:51.365 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_150744.mp4 -filter_complex [0:v]trim=55.250000:60.020000,setpts=PTS-STARTPTS[v0];[0:a]atrim=55.250000:60.020000,asetpts=PTS-STARTPTS[a0];[v0][a0]concat=n=1:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/summarised/20200312_150744.mp4
+07-06 02:48:51.381 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8caf5600] Found duplicated MOOV Atom. Skipped it
+07-06 02:48:51.509 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8dc75e40] sws_param option is deprecated and ignored
+07-06 02:48:53.783 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_151044.mp4
+07-06 02:48:53.789 14200 14278 D VideoManager: videoCursor is null
+07-06 02:48:53.827 14200 14278 V VideoManager: videoFromCursor
+07-06 02:48:53.830 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_151044.mp4 in 13.953s
+07-06 02:48:53.830 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_151044.mp4
+07-06 02:48:53.831 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:48:54.838 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:48:54.843 14200 14278 V DashDownloadManager: Started downloading: 20200312_193528.mp4
+07-06 02:49:09.023 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193528.mp4
+07-06 02:49:09.029 14200 14278 D VideoManager: videoCursor is null
+07-06 02:49:09.052 14200 14278 V VideoManager: videoFromCursor
+07-06 02:49:09.055 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_193528.mp4 in 14.180s
+07-06 02:49:09.055 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_193528.mp4
+07-06 02:49:09.056 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:49:10.062 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:49:10.067 14200 14278 V DashDownloadManager: Started downloading: 20200312_193628.mp4
+07-06 02:49:24.242 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193628.mp4
+07-06 02:49:24.250 14200 14278 D VideoManager: videoCursor is null
+07-06 02:49:24.291 14200 14278 V VideoManager: videoFromCursor
+07-06 02:49:24.295 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_193628.mp4 in 14.174s
+07-06 02:49:24.295 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_193628.mp4
+07-06 02:49:24.296 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:49:25.310 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:49:25.317 14200 14278 V DashDownloadManager: Started downloading: 20200312_193728.mp4
+07-06 02:49:38.856 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193728.mp4
+07-06 02:49:38.864 14200 14278 D VideoManager: videoCursor is null
+07-06 02:49:38.893 14200 14278 V VideoManager: videoFromCursor
+07-06 02:49:38.896 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_193728.mp4 in 13.538s
+07-06 02:49:38.897 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_193728.mp4
+07-06 02:49:38.898 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:49:39.006 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_150744.mp4
+07-06 02:49:39.016 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8caf5600] Found duplicated MOOV Atom. Skipped it
+07-06 02:49:39.123 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_150744.mp4
+07-06 02:49:39.244 14200 14285 W Summariser: Summarisation completed
+07-06 02:49:39.244 14200 14285 W Summariser:   filename: 20200312_150744.mp4
+07-06 02:49:39.244 14200 14285 W Summariser:   active sections: 1
+07-06 02:49:39.244 14200 14285 W Summariser:   time: 75.643s
+07-06 02:49:39.244 14200 14285 W Summariser:   original duration: 60.02
+07-06 02:49:39.244 14200 14285 W Summariser:   summarised duration: 4.83
+07-06 02:49:39.244 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 02:49:39.244 14200 14285 W Summariser:   quality: 23
+07-06 02:49:39.244 14200 14285 W Summariser:   speed: medium
+07-06 02:49:39.244 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 02:49:39.245 14200 14285 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_150744.mp4
+07-06 02:49:39.253 14200 14285 D VideoManager: videoCursor is null
+07-06 02:49:39.280 14200 14285 V VideoManager: videoFromCursor
+07-06 02:49:39.285 14200 14285 V SummarisedVideosEventHandler: onAdd
+07-06 02:49:39.285 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 02:49:39.293 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 02:49:39.296 14200 14285 D SummariserIntentService: Video{id='1747', data='/storage/emulated/0/Movies/raw/20200312_150844.mp4', name='20200312_150844.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 02:49:39.297 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_150844.mp4
+07-06 02:49:39.311 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:49:39.311 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_150844.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_150844.txt -f null -
+07-06 02:49:39.325 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8ca67600] Found duplicated MOOV Atom. Skipped it
+07-06 02:49:39.587 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8dc76260] sws_param option is deprecated and ignored
+07-06 02:49:39.914 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:49:39.921 14200 14278 V DashDownloadManager: Started downloading: 20200312_193828.mp4
+07-06 02:49:40.029 14200 14383 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 02:49:40.029 14200 14383 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 02:49:53.614 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193828.mp4
+07-06 02:49:53.621 14200 14278 D VideoManager: videoCursor is null
+07-06 02:49:53.652 14200 14278 V VideoManager: videoFromCursor
+07-06 02:49:53.660 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_193828.mp4 in 13.692s
+07-06 02:49:53.661 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_193828.mp4
+07-06 02:49:53.661 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:49:54.665 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:49:54.670 14200 14278 V DashDownloadManager: Started downloading: 20200312_193928.mp4
+07-06 02:50:08.363 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193928.mp4
+07-06 02:50:08.372 14200 14278 D VideoManager: videoCursor is null
+07-06 02:50:08.394 14200 14278 V VideoManager: videoFromCursor
+07-06 02:50:08.397 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_193928.mp4 in 13.692s
+07-06 02:50:08.397 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_193928.mp4
+07-06 02:50:08.398 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:50:09.404 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:50:09.409 14200 14278 V DashDownloadManager: Started downloading: 20200312_194129.mp4
+07-06 02:50:16.126 14200 14285 D Summariser: No freeze file
+07-06 02:50:16.126 14200 14285 W Summariser: Whole video is active
+07-06 02:50:16.220 14200 14205 I zygote  : Do partial code cache collection, code=126KB, data=93KB
+07-06 02:50:16.221 14200 14205 I zygote  : After code cache collection, code=126KB, data=93KB
+07-06 02:50:16.221 14200 14205 I zygote  : Increasing code cache capacity to 512KB
+07-06 02:50:23.018 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194129.mp4
+07-06 02:50:23.024 14200 14278 D VideoManager: videoCursor is null
+07-06 02:50:23.167 14200 14278 V VideoManager: videoFromCursor
+07-06 02:50:23.169 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_194129.mp4 in 13.608s
+07-06 02:50:23.170 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_194129.mp4
+07-06 02:50:23.170 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:50:23.497 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_150844.mp4
+07-06 02:50:23.505 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x93514000] Found duplicated MOOV Atom. Skipped it
+07-06 02:50:23.608 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_150844.mp4
+07-06 02:50:23.616 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8db7d200] Found duplicated MOOV Atom. Skipped it
+07-06 02:50:23.715 14200 14285 W Summariser: Summarisation completed
+07-06 02:50:23.715 14200 14285 W Summariser:   filename: 20200312_150844.mp4
+07-06 02:50:23.715 14200 14285 W Summariser:   active sections: -1
+07-06 02:50:23.715 14200 14285 W Summariser:   time: 44.198s
+07-06 02:50:23.715 14200 14285 W Summariser:   original duration: 60.02
+07-06 02:50:23.715 14200 14285 W Summariser:   summarised duration: 60.02
+07-06 02:50:23.715 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 02:50:23.715 14200 14285 W Summariser:   quality: 23
+07-06 02:50:23.715 14200 14285 W Summariser:   speed: medium
+07-06 02:50:23.715 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 02:50:23.716 14200 14285 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_150844.mp4
+07-06 02:50:23.721 14200 14285 D VideoManager: videoCursor is null
+07-06 02:50:23.745 14200 14285 V VideoManager: videoFromCursor
+07-06 02:50:23.747 14200 14285 V SummarisedVideosEventHandler: onAdd
+07-06 02:50:23.748 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 02:50:23.764 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 02:50:23.764 14200 14285 D SummariserIntentService: Video{id='1748', data='/storage/emulated/0/Movies/raw/20200312_150944.mp4', name='20200312_150944.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 02:50:23.764 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_150944.mp4
+07-06 02:50:23.774 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:50:23.774 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_150944.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_150944.txt -f null -
+07-06 02:50:23.784 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8dbf1400] Found duplicated MOOV Atom. Skipped it
+07-06 02:50:24.013 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8dc76a40] sws_param option is deprecated and ignored
+07-06 02:50:24.175 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:50:24.181 14200 14278 V DashDownloadManager: Started downloading: 20200312_194229.mp4
+07-06 02:50:24.245 14200 14218 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 02:50:24.245 14200 14218 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 02:50:38.828 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194229.mp4
+07-06 02:50:38.834 14200 14278 D VideoManager: videoCursor is null
+07-06 02:50:39.115 14200 14278 V VideoManager: videoFromCursor
+07-06 02:50:39.117 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_194229.mp4 in 14.646s
+07-06 02:50:39.118 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_194229.mp4
+07-06 02:50:39.119 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:50:40.124 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:50:40.128 14200 14278 V DashDownloadManager: Started downloading: 20200312_194330.mp4
+07-06 02:50:55.054 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194330.mp4
+07-06 02:50:55.063 14200 14278 D VideoManager: videoCursor is null
+07-06 02:50:55.093 14200 14278 V VideoManager: videoFromCursor
+07-06 02:50:55.097 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_194330.mp4 in 14.924s
+07-06 02:50:55.098 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_194330.mp4
+07-06 02:50:55.098 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:50:56.105 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:50:56.111 14200 14278 V DashDownloadManager: Started downloading: 20200312_194730.mp4
+07-06 02:51:00.406 14200 14285 W Summariser: 1 active sections found
+07-06 02:51:00.408 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:51:00.408 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_150944.mp4 -filter_complex [0:v]trim=0.000000:7.006000,setpts=PTS-STARTPTS[v0];[0:a]atrim=0.000000:7.006000,asetpts=PTS-STARTPTS[a0];[v0][a0]concat=n=1:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/summarised/20200312_150944.mp4
+07-06 02:51:00.430 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8cee2c00] Found duplicated MOOV Atom. Skipped it
+07-06 02:51:00.648 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x935493a0] sws_param option is deprecated and ignored
+07-06 02:51:10.846 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194730.mp4
+07-06 02:51:10.880 14200 14278 D VideoManager: videoCursor is null
+07-06 02:51:10.917 14200 14278 V VideoManager: videoFromCursor
+07-06 02:51:10.921 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_194730.mp4 in 14.733s
+07-06 02:51:10.921 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_194730.mp4
+07-06 02:51:10.923 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:51:11.931 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:51:11.938 14200 14278 V DashDownloadManager: Started downloading: 20200312_194830.mp4
+07-06 02:51:25.979 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194830.mp4
+07-06 02:51:25.987 14200 14278 D VideoManager: videoCursor is null
+07-06 02:51:26.135 14200 14278 V VideoManager: videoFromCursor
+07-06 02:51:26.138 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_194830.mp4 in 14.040s
+07-06 02:51:26.139 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_194830.mp4
+07-06 02:51:26.140 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:51:27.151 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:51:27.157 14200 14278 V DashDownloadManager: Started downloading: 20200312_194930.mp4
+07-06 02:51:40.065 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_150944.mp4
+07-06 02:51:40.076 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8cee2c00] Found duplicated MOOV Atom. Skipped it
+07-06 02:51:40.211 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_150944.mp4
+07-06 02:51:40.302 14200 14285 W Summariser: Summarisation completed
+07-06 02:51:40.302 14200 14285 W Summariser:   filename: 20200312_150944.mp4
+07-06 02:51:40.302 14200 14285 W Summariser:   active sections: 1
+07-06 02:51:40.302 14200 14285 W Summariser:   time: 76.297s
+07-06 02:51:40.302 14200 14285 W Summariser:   original duration: 60.02
+07-06 02:51:40.302 14200 14285 W Summariser:   summarised duration: 7.07
+07-06 02:51:40.302 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 02:51:40.302 14200 14285 W Summariser:   quality: 23
+07-06 02:51:40.302 14200 14285 W Summariser:   speed: medium
+07-06 02:51:40.302 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 02:51:40.303 14200 14285 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_150944.mp4
+07-06 02:51:40.311 14200 14285 D VideoManager: videoCursor is null
+07-06 02:51:40.335 14200 14285 V VideoManager: videoFromCursor
+07-06 02:51:40.338 14200 14285 V SummarisedVideosEventHandler: onAdd
+07-06 02:51:40.339 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 02:51:40.356 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 02:51:40.357 14200 14285 D SummariserIntentService: Video{id='1749', data='/storage/emulated/0/Movies/raw/20200312_151044.mp4', name='20200312_151044.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 02:51:40.357 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_151044.mp4
+07-06 02:51:40.364 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:51:40.364 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_151044.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_151044.txt -f null -
+07-06 02:51:40.390 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8ca4ce00] Found duplicated MOOV Atom. Skipped it
+07-06 02:51:40.645 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x93549a00] sws_param option is deprecated and ignored
+07-06 02:51:41.053 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194930.mp4
+07-06 02:51:41.072 14200 14278 D VideoManager: videoCursor is null
+07-06 02:51:41.110 14200 14278 V VideoManager: videoFromCursor
+07-06 02:51:41.123 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_194930.mp4 in 13.895s
+07-06 02:51:41.124 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_194930.mp4
+07-06 02:51:41.125 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:51:41.214 14200 14213 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 02:51:41.214 14200 14213 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 02:51:42.131 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:51:42.136 14200 14278 V DashDownloadManager: Started downloading: 20200312_195230.mp4
+07-06 02:51:55.920 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_195230.mp4
+07-06 02:51:55.929 14200 14278 D VideoManager: videoCursor is null
+07-06 02:51:55.953 14200 14278 V VideoManager: videoFromCursor
+07-06 02:51:55.957 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_195230.mp4 in 13.782s
+07-06 02:51:55.958 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_195230.mp4
+07-06 02:51:55.959 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:51:56.975 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:51:56.981 14200 14278 V DashDownloadManager: Started downloading: 20200312_195330.mp4
+07-06 02:52:11.340 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_195330.mp4
+07-06 02:52:11.346 14200 14278 D VideoManager: videoCursor is null
+07-06 02:52:11.367 14200 14278 V VideoManager: videoFromCursor
+07-06 02:52:11.370 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_195330.mp4 in 14.358s
+07-06 02:52:11.370 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_195330.mp4
+07-06 02:52:11.371 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:52:12.376 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:52:12.380 14200 14278 V DashDownloadManager: Started downloading: 20200312_195430.mp4
+07-06 02:52:15.296 14200 14285 W Summariser: No activity detected
+07-06 02:52:15.299 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_151044.mp4
+07-06 02:52:15.308 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8ca7de00] Found duplicated MOOV Atom. Skipped it
+07-06 02:52:15.393 14200 14285 W Summariser: Summarisation completed
+07-06 02:52:15.393 14200 14285 W Summariser:   filename: 20200312_151044.mp4
+07-06 02:52:15.393 14200 14285 W Summariser:   active sections: 0
+07-06 02:52:15.393 14200 14285 W Summariser:   time: 34.939s
+07-06 02:52:15.393 14200 14285 W Summariser:   original duration: 60.02
+07-06 02:52:15.393 14200 14285 W Summariser:   summarised duration: -1.00
+07-06 02:52:15.393 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 02:52:15.393 14200 14285 W Summariser:   quality: 23
+07-06 02:52:15.393 14200 14285 W Summariser:   speed: medium
+07-06 02:52:15.393 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 02:52:15.393 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 02:52:15.400 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 02:52:15.401 14200 14285 D SummariserIntentService: Video{id='1750', data='/storage/emulated/0/Movies/raw/20200312_193528.mp4', name='20200312_193528.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 02:52:15.401 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_193528.mp4
+07-06 02:52:15.406 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:52:15.406 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_193528.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_193528.txt -f null -
+07-06 02:52:15.422 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8db7cc00] Found duplicated MOOV Atom. Skipped it
+07-06 02:52:15.433 14200 14212 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 02:52:15.433 14200 14212 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 02:52:15.559 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8de62a60] sws_param option is deprecated and ignored
+07-06 02:52:25.906 14200 14278 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_195430.mp4
+07-06 02:52:25.921 14200 14278 D VideoManager: videoCursor is null
+07-06 02:52:25.954 14200 14278 V VideoManager: videoFromCursor
+07-06 02:52:25.957 14200 14278 W DashDownloadManager: Successfully downloaded 20200312_195430.mp4 in 13.525s
+07-06 02:52:25.958 14200 14278 V DownloadTestVideosTask: Entering callback for download completion of 20200312_195430.mp4
+07-06 02:52:25.959 14200 14278 V ProcessingVideosEventHandler: onAdd
+07-06 02:52:26.968 14200 14278 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-06 02:52:26.972 14200 14278 D DownloadTestVideosTask: No new videos
+07-06 02:52:26.973 14200 14278 W NearbyFragment: Stopped downloading from dashcam
+07-06 02:52:46.374 14200 14285 W Summariser: No activity detected
+07-06 02:52:46.378 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_193528.mp4
+07-06 02:52:46.388 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x9396c800] Found duplicated MOOV Atom. Skipped it
+07-06 02:52:46.490 14200 14285 W Summariser: Summarisation completed
+07-06 02:52:46.490 14200 14285 W Summariser:   filename: 20200312_193528.mp4
+07-06 02:52:46.490 14200 14285 W Summariser:   active sections: 0
+07-06 02:52:46.490 14200 14285 W Summariser:   time: 30.974s
+07-06 02:52:46.490 14200 14285 W Summariser:   original duration: 60.05
+07-06 02:52:46.490 14200 14285 W Summariser:   summarised duration: -1.00
+07-06 02:52:46.490 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 02:52:46.490 14200 14285 W Summariser:   quality: 23
+07-06 02:52:46.490 14200 14285 W Summariser:   speed: medium
+07-06 02:52:46.490 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 02:52:46.490 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 02:52:46.499 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 02:52:46.500 14200 14285 D SummariserIntentService: Video{id='1751', data='/storage/emulated/0/Movies/raw/20200312_193628.mp4', name='20200312_193628.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 02:52:46.500 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_193628.mp4
+07-06 02:52:46.525 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:52:46.525 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_193628.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_193628.txt -f null -
+07-06 02:52:46.549 14200 14396 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 02:52:46.549 14200 14396 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 02:52:46.553 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8d9e1e00] Found duplicated MOOV Atom. Skipped it
+07-06 02:52:46.791 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8dceada0] sws_param option is deprecated and ignored
+07-06 02:53:20.793 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_193628.mp4
+07-06 02:53:20.801 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0xa2736c00] Found duplicated MOOV Atom. Skipped it
+07-06 02:53:20.898 14200 14285 W Summariser: 1 active sections found
+07-06 02:53:20.899 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:53:20.899 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_193628.mp4 -filter_complex [0:v]trim=54.016000:60.020000,setpts=PTS-STARTPTS[v0];[0:a]atrim=54.016000:60.020000,asetpts=PTS-STARTPTS[a0];[v0][a0]concat=n=1:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/summarised/20200312_193628.mp4
+07-06 02:53:20.915 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8cef9600] Found duplicated MOOV Atom. Skipped it
+07-06 02:53:21.065 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8cf7b780] sws_param option is deprecated and ignored
+07-06 02:54:03.883 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_193628.mp4
+07-06 02:54:03.893 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8cef9600] Found duplicated MOOV Atom. Skipped it
+07-06 02:54:04.029 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_193628.mp4
+07-06 02:54:04.111 14200 14285 W Summariser: Summarisation completed
+07-06 02:54:04.111 14200 14285 W Summariser:   filename: 20200312_193628.mp4
+07-06 02:54:04.111 14200 14285 W Summariser:   active sections: 1
+07-06 02:54:04.111 14200 14285 W Summariser:   time: 77.361s
+07-06 02:54:04.111 14200 14285 W Summariser:   original duration: 60.02
+07-06 02:54:04.111 14200 14285 W Summariser:   summarised duration: 6.07
+07-06 02:54:04.111 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 02:54:04.111 14200 14285 W Summariser:   quality: 23
+07-06 02:54:04.111 14200 14285 W Summariser:   speed: medium
+07-06 02:54:04.111 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 02:54:04.111 14200 14285 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_193628.mp4
+07-06 02:54:04.137 14200 14285 D VideoManager: videoCursor is null
+07-06 02:54:04.211 14200 14285 V VideoManager: videoFromCursor
+07-06 02:54:04.214 14200 14285 V SummarisedVideosEventHandler: onAdd
+07-06 02:54:04.218 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 02:54:04.227 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 02:54:04.229 14200 14285 D SummariserIntentService: Video{id='1752', data='/storage/emulated/0/Movies/raw/20200312_193728.mp4', name='20200312_193728.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 02:54:04.230 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_193728.mp4
+07-06 02:54:04.234 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:54:04.234 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_193728.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_193728.txt -f null -
+07-06 02:54:04.273 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8c97ca00] Found duplicated MOOV Atom. Skipped it
+07-06 02:54:04.591 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8cf7bc60] sws_param option is deprecated and ignored
+07-06 02:54:04.862 14200 14383 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 02:54:04.862 14200 14383 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 02:54:39.298 14200 14285 D Summariser: No freeze file
+07-06 02:54:39.298 14200 14285 W Summariser: Whole video is active
+07-06 02:54:45.065 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_193728.mp4
+07-06 02:54:45.073 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8c97ca00] Found duplicated MOOV Atom. Skipped it
+07-06 02:54:45.176 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_193728.mp4
+07-06 02:54:45.185 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0xa3998a00] Found duplicated MOOV Atom. Skipped it
+07-06 02:54:45.284 14200 14285 W Summariser: Summarisation completed
+07-06 02:54:45.284 14200 14285 W Summariser:   filename: 20200312_193728.mp4
+07-06 02:54:45.284 14200 14285 W Summariser:   active sections: -1
+07-06 02:54:45.284 14200 14285 W Summariser:   time: 40.833s
+07-06 02:54:45.284 14200 14285 W Summariser:   original duration: 60.02
+07-06 02:54:45.284 14200 14285 W Summariser:   summarised duration: 60.02
+07-06 02:54:45.284 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 02:54:45.284 14200 14285 W Summariser:   quality: 23
+07-06 02:54:45.284 14200 14285 W Summariser:   speed: medium
+07-06 02:54:45.284 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 02:54:45.286 14200 14285 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_193728.mp4
+07-06 02:54:45.294 14200 14285 D VideoManager: videoCursor is null
+07-06 02:54:45.359 14200 14285 V VideoManager: videoFromCursor
+07-06 02:54:45.361 14200 14285 V SummarisedVideosEventHandler: onAdd
+07-06 02:54:45.364 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 02:54:45.372 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 02:54:45.374 14200 14285 D SummariserIntentService: Video{id='1754', data='/storage/emulated/0/Movies/raw/20200312_193828.mp4', name='20200312_193828.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 02:54:45.374 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_193828.mp4
+07-06 02:54:45.377 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:54:45.377 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_193828.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_193828.txt -f null -
+07-06 02:54:45.398 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8ca61200] Found duplicated MOOV Atom. Skipped it
+07-06 02:54:45.628 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8cf7c380] sws_param option is deprecated and ignored
+07-06 02:54:45.734 14200 14205 I zygote  : Do full code cache collection, code=253KB, data=192KB
+07-06 02:54:45.752 14200 14205 I zygote  : After code cache collection, code=243KB, data=151KB
+07-06 02:54:45.819 14200 14212 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 02:54:45.819 14200 14212 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 02:55:13.994 14200 14285 W Summariser: 1 active sections found
+07-06 02:55:13.995 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:55:13.995 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_193828.mp4 -filter_complex [0:v]trim=0.000000:14.212000,setpts=PTS-STARTPTS[v0];[0:a]atrim=0.000000:14.212000,asetpts=PTS-STARTPTS[a0];[v0][a0]concat=n=1:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/summarised/20200312_193828.mp4
+07-06 02:55:14.012 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8c2cb400] Found duplicated MOOV Atom. Skipped it
+07-06 02:55:14.197 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8dc5ec00] sws_param option is deprecated and ignored
+07-06 02:56:09.136 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_193828.mp4
+07-06 02:56:09.146 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8c2cb400] Found duplicated MOOV Atom. Skipped it
+07-06 02:56:09.293 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_193828.mp4
+07-06 02:56:09.385 14200 14285 W Summariser: Summarisation completed
+07-06 02:56:09.385 14200 14285 W Summariser:   filename: 20200312_193828.mp4
+07-06 02:56:09.385 14200 14285 W Summariser:   active sections: 1
+07-06 02:56:09.385 14200 14285 W Summariser:   time: 83.760s
+07-06 02:56:09.385 14200 14285 W Summariser:   original duration: 60.02
+07-06 02:56:09.385 14200 14285 W Summariser:   summarised duration: 14.28
+07-06 02:56:09.385 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 02:56:09.385 14200 14285 W Summariser:   quality: 23
+07-06 02:56:09.385 14200 14285 W Summariser:   speed: medium
+07-06 02:56:09.385 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 02:56:09.386 14200 14285 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_193828.mp4
+07-06 02:56:09.403 14200 14285 D VideoManager: videoCursor is null
+07-06 02:56:09.452 14200 14285 V VideoManager: videoFromCursor
+07-06 02:56:09.455 14200 14285 V SummarisedVideosEventHandler: onAdd
+07-06 02:56:09.456 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 02:56:09.466 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 02:56:09.467 14200 14285 D SummariserIntentService: Video{id='1755', data='/storage/emulated/0/Movies/raw/20200312_193928.mp4', name='20200312_193928.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 02:56:09.467 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_193928.mp4
+07-06 02:56:09.475 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:56:09.475 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_193928.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_193928.txt -f null -
+07-06 02:56:09.510 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a1bd800] Found duplicated MOOV Atom. Skipped it
+07-06 02:56:09.697 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8dc5f380] sws_param option is deprecated and ignored
+07-06 02:56:10.196 14200 14396 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 02:56:10.196 14200 14396 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 02:56:44.554 14200 14285 W Summariser: No activity detected
+07-06 02:56:44.556 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_193928.mp4
+07-06 02:56:44.563 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a1bf000] Found duplicated MOOV Atom. Skipped it
+07-06 02:56:44.634 14200 14285 W Summariser: Summarisation completed
+07-06 02:56:44.634 14200 14285 W Summariser:   filename: 20200312_193928.mp4
+07-06 02:56:44.634 14200 14285 W Summariser:   active sections: 0
+07-06 02:56:44.634 14200 14285 W Summariser:   time: 35.083s
+07-06 02:56:44.634 14200 14285 W Summariser:   original duration: 60.89
+07-06 02:56:44.634 14200 14285 W Summariser:   summarised duration: -1.00
+07-06 02:56:44.634 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 02:56:44.634 14200 14285 W Summariser:   quality: 23
+07-06 02:56:44.634 14200 14285 W Summariser:   speed: medium
+07-06 02:56:44.634 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 02:56:44.635 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 02:56:44.640 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 02:56:44.641 14200 14285 D SummariserIntentService: Video{id='1756', data='/storage/emulated/0/Movies/raw/20200312_194129.mp4', name='20200312_194129.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 02:56:44.641 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_194129.mp4
+07-06 02:56:44.644 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:56:44.644 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_194129.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_194129.txt -f null -
+07-06 02:56:44.670 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a1ba800] Found duplicated MOOV Atom. Skipped it
+07-06 02:56:44.706 14200 14213 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 02:56:44.706 14200 14213 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 02:56:44.792 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x9364da20] sws_param option is deprecated and ignored
+07-06 02:57:12.744 14200 14214 I zygote  : Waiting for a blocking GC ProfileSaver
+07-06 02:57:12.762 14200 14285 W Summariser: 2 active sections found
+07-06 02:57:12.763 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:57:12.763 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_194129.mp4 -filter_complex [0:v]trim=29.127000:39.369000,setpts=PTS-STARTPTS[v0];[0:a]atrim=29.127000:39.369000,asetpts=PTS-STARTPTS[a0];[0:v]trim=49.345000:49.812000,setpts=PTS-STARTPTS[v1];[0:a]atrim=49.345000:49.812000,asetpts=PTS-STARTPTS[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/summarised/20200312_194129.mp4
+07-06 02:57:12.774 14200 14214 I zygote  : WaitForGcToComplete blocked ProfileSaver on ProfileSaver for 29.811ms
+07-06 02:57:12.787 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8c641a00] Found duplicated MOOV Atom. Skipped it
+07-06 02:57:12.917 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x9364fb80] sws_param option is deprecated and ignored
+07-06 02:57:12.917 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x9364fca0] sws_param option is deprecated and ignored
+07-06 02:58:08.127 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_194129.mp4
+07-06 02:58:08.137 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8c641a00] Found duplicated MOOV Atom. Skipped it
+07-06 02:58:08.218 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_194129.mp4
+07-06 02:58:08.325 14200 14285 W Summariser: Summarisation completed
+07-06 02:58:08.325 14200 14285 W Summariser:   filename: 20200312_194129.mp4
+07-06 02:58:08.325 14200 14285 W Summariser:   active sections: 2
+07-06 02:58:08.325 14200 14285 W Summariser:   time: 83.484s
+07-06 02:58:08.325 14200 14285 W Summariser:   original duration: 60.02
+07-06 02:58:08.325 14200 14285 W Summariser:   summarised duration: 10.77
+07-06 02:58:08.325 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 02:58:08.325 14200 14285 W Summariser:   quality: 23
+07-06 02:58:08.325 14200 14285 W Summariser:   speed: medium
+07-06 02:58:08.325 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 02:58:08.326 14200 14285 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_194129.mp4
+07-06 02:58:08.347 14200 14285 D VideoManager: videoCursor is null
+07-06 02:58:08.415 14200 14285 V VideoManager: videoFromCursor
+07-06 02:58:08.417 14200 14285 V SummarisedVideosEventHandler: onAdd
+07-06 02:58:08.421 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 02:58:08.429 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 02:58:08.431 14200 14285 D SummariserIntentService: Video{id='1758', data='/storage/emulated/0/Movies/raw/20200312_194229.mp4', name='20200312_194229.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 02:58:08.431 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_194229.mp4
+07-06 02:58:08.436 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:58:08.436 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_194229.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_194229.txt -f null -
+07-06 02:58:08.463 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8dbdf200] Found duplicated MOOV Atom. Skipped it
+07-06 02:58:08.730 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x93549340] sws_param option is deprecated and ignored
+07-06 02:58:09.082 14200 14212 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 02:58:09.082 14200 14212 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 02:58:09.164 14200 14205 I zygote  : Do partial code cache collection, code=247KB, data=176KB
+07-06 02:58:09.166 14200 14205 I zygote  : After code cache collection, code=247KB, data=176KB
+07-06 02:58:09.166 14200 14205 I zygote  : Increasing code cache capacity to 1024KB
+07-06 02:58:44.587 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_194229.mp4
+07-06 02:58:44.595 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x93510800] Found duplicated MOOV Atom. Skipped it
+07-06 02:58:44.728 14200 14285 W Summariser: 5 active sections found
+07-06 02:58:44.728 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:58:44.728 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_194229.mp4 -filter_complex [0:v]trim=10.509000:19.517000,setpts=PTS-STARTPTS[v0];[0:a]atrim=10.509000:19.517000,asetpts=PTS-STARTPTS[a0];[0:v]trim=24.088000:29.259000,setpts=PTS-STARTPTS[v1];[0:a]atrim=24.088000:29.259000,asetpts=PTS-STARTPTS[a1];[0:v]trim=39.935000:40.269000,setpts=PTS-STARTPTS[v2];[0:a]atrim=39.935000:40.269000,asetpts=PTS-STARTPTS[a2];[0:v]trim=54.314000:54.615000,setpts=PTS-STARTPTS[v3];[0:a]atrim=54.314000:54.615000,asetpts=PTS-STARTPTS[a3];[0:v]trim=59.386000:60.020000,setpts=PTS-STARTPTS[v4];[0:a]atrim=59.386000:60.020000,asetpts=PTS-STARTPTS[a4];[v0][a0][v1][a1][v2][a2][v3][a3][v4][a4]concat=n=5:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/summarised/20200312_194229.mp4
+07-06 02:58:44.744 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8dcdfa00] Found duplicated MOOV Atom. Skipped it
+07-06 02:58:44.900 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8de621c0] sws_param option is deprecated and ignored
+07-06 02:58:44.901 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8de622e0] sws_param option is deprecated and ignored
+07-06 02:58:44.901 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8de620a0] sws_param option is deprecated and ignored
+07-06 02:58:44.901 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8de624c0] sws_param option is deprecated and ignored
+07-06 02:58:44.901 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8de625e0] sws_param option is deprecated and ignored
+07-06 02:59:57.710 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_194229.mp4
+07-06 02:59:57.720 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8dcdfa00] Found duplicated MOOV Atom. Skipped it
+07-06 02:59:57.847 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_194229.mp4
+07-06 02:59:57.926 14200 14285 W Summariser: Summarisation completed
+07-06 02:59:57.926 14200 14285 W Summariser:   filename: 20200312_194229.mp4
+07-06 02:59:57.926 14200 14285 W Summariser:   active sections: 5
+07-06 02:59:57.926 14200 14285 W Summariser:   time: 109.276s
+07-06 02:59:57.926 14200 14285 W Summariser:   original duration: 60.02
+07-06 02:59:57.926 14200 14285 W Summariser:   summarised duration: 15.51
+07-06 02:59:57.926 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 02:59:57.926 14200 14285 W Summariser:   quality: 23
+07-06 02:59:57.926 14200 14285 W Summariser:   speed: medium
+07-06 02:59:57.926 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 02:59:57.926 14200 14285 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_194229.mp4
+07-06 02:59:57.945 14200 14285 D VideoManager: videoCursor is null
+07-06 02:59:58.016 14200 14285 V VideoManager: videoFromCursor
+07-06 02:59:58.020 14200 14285 V SummarisedVideosEventHandler: onAdd
+07-06 02:59:58.024 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 02:59:58.049 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 02:59:58.050 14200 14285 D SummariserIntentService: Video{id='1759', data='/storage/emulated/0/Movies/raw/20200312_194330.mp4', name='20200312_194330.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 02:59:58.050 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_194330.mp4
+07-06 02:59:58.058 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 02:59:58.058 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_194330.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_194330.txt -f null -
+07-06 02:59:58.087 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8c5c4e00] Found duplicated MOOV Atom. Skipped it
+07-06 02:59:58.314 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8de622e0] sws_param option is deprecated and ignored
+07-06 02:59:58.833 14200 14218 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 02:59:58.833 14200 14218 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 03:00:27.382 14200 14285 W Summariser: No activity detected
+07-06 03:00:27.385 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_194330.mp4
+07-06 03:00:27.395 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8bfbb200] Found duplicated MOOV Atom. Skipped it
+07-06 03:00:27.485 14200 14285 W Summariser: Summarisation completed
+07-06 03:00:27.485 14200 14285 W Summariser:   filename: 20200312_194330.mp4
+07-06 03:00:27.485 14200 14285 W Summariser:   active sections: 0
+07-06 03:00:27.485 14200 14285 W Summariser:   time: 29.331s
+07-06 03:00:27.485 14200 14285 W Summariser:   original duration: 60.02
+07-06 03:00:27.485 14200 14285 W Summariser:   summarised duration: -1.00
+07-06 03:00:27.485 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 03:00:27.485 14200 14285 W Summariser:   quality: 23
+07-06 03:00:27.485 14200 14285 W Summariser:   speed: medium
+07-06 03:00:27.485 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 03:00:27.486 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 03:00:27.492 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 03:00:27.493 14200 14285 D SummariserIntentService: Video{id='1760', data='/storage/emulated/0/Movies/raw/20200312_194730.mp4', name='20200312_194730.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 03:00:27.493 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_194730.mp4
+07-06 03:00:27.498 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 03:00:27.498 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_194730.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_194730.txt -f null -
+07-06 03:00:27.538 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8d9f0e00] Found duplicated MOOV Atom. Skipped it
+07-06 03:00:27.558 14200 14383 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 03:00:27.558 14200 14383 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 03:00:27.703 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8dceae00] sws_param option is deprecated and ignored
+07-06 03:01:04.108 14200 14285 W Summariser: No activity detected
+07-06 03:01:04.111 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_194730.mp4
+07-06 03:01:04.119 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8d9fd600] Found duplicated MOOV Atom. Skipped it
+07-06 03:01:04.181 14200 14285 W Summariser: Summarisation completed
+07-06 03:01:04.181 14200 14285 W Summariser:   filename: 20200312_194730.mp4
+07-06 03:01:04.181 14200 14285 W Summariser:   active sections: 0
+07-06 03:01:04.181 14200 14285 W Summariser:   time: 36.616s
+07-06 03:01:04.181 14200 14285 W Summariser:   original duration: 60.02
+07-06 03:01:04.181 14200 14285 W Summariser:   summarised duration: -1.00
+07-06 03:01:04.181 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 03:01:04.181 14200 14285 W Summariser:   quality: 23
+07-06 03:01:04.181 14200 14285 W Summariser:   speed: medium
+07-06 03:01:04.181 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 03:01:04.181 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 03:01:04.191 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 03:01:04.192 14200 14285 D SummariserIntentService: Video{id='1761', data='/storage/emulated/0/Movies/raw/20200312_194830.mp4', name='20200312_194830.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 03:01:04.192 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_194830.mp4
+07-06 03:01:04.195 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 03:01:04.195 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_194830.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_194830.txt -f null -
+07-06 03:01:04.241 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8c1c0e00] Found duplicated MOOV Atom. Skipped it
+07-06 03:01:04.282 14200 14212 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 03:01:04.282 14200 14212 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 03:01:04.410 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8dc5f8c0] sws_param option is deprecated and ignored
+07-06 03:01:33.011 14200 14285 W Summariser: 4 active sections found
+07-06 03:01:33.011 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 03:01:33.011 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_194830.mp4 -filter_complex [0:v]trim=6.839000:10.742000,setpts=PTS-STARTPTS[v0];[0:a]atrim=6.839000:10.742000,asetpts=PTS-STARTPTS[a0];[0:v]trim=16.781000:22.419000,setpts=PTS-STARTPTS[v1];[0:a]atrim=16.781000:22.419000,asetpts=PTS-STARTPTS[a1];[0:v]trim=30.393000:35.731000,setpts=PTS-STARTPTS[v2];[0:a]atrim=30.393000:35.731000,asetpts=PTS-STARTPTS[a2];[0:v]trim=42.971000:47.041000,setpts=PTS-STARTPTS[v3];[0:a]atrim=42.971000:47.041000,asetpts=PTS-STARTPTS[a3];[v0][a0][v1][a1][v2][a2][v3][a3]concat=n=4:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/summarised/20200312_194830.mp4
+07-06 03:01:33.027 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x92429400] Found duplicated MOOV Atom. Skipped it
+07-06 03:01:33.203 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8dc761a0] sws_param option is deprecated and ignored
+07-06 03:01:33.203 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8dc762c0] sws_param option is deprecated and ignored
+07-06 03:01:33.204 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8dc764a0] sws_param option is deprecated and ignored
+07-06 03:01:33.205 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8dc766e0] sws_param option is deprecated and ignored
+07-06 03:03:04.018 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_194830.mp4
+07-06 03:03:04.028 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x92429400] Found duplicated MOOV Atom. Skipped it
+07-06 03:03:04.152 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_194830.mp4
+07-06 03:03:04.232 14200 14285 W Summariser: Summarisation completed
+07-06 03:03:04.232 14200 14285 W Summariser:   filename: 20200312_194830.mp4
+07-06 03:03:04.232 14200 14285 W Summariser:   active sections: 4
+07-06 03:03:04.232 14200 14285 W Summariser:   time: 119.824s
+07-06 03:03:04.232 14200 14285 W Summariser:   original duration: 60.02
+07-06 03:03:04.232 14200 14285 W Summariser:   summarised duration: 19.02
+07-06 03:03:04.232 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 03:03:04.232 14200 14285 W Summariser:   quality: 23
+07-06 03:03:04.232 14200 14285 W Summariser:   speed: medium
+07-06 03:03:04.232 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 03:03:04.232 14200 14285 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_194830.mp4
+07-06 03:03:04.248 14200 14285 D VideoManager: videoCursor is null
+07-06 03:03:04.313 14200 14285 V VideoManager: videoFromCursor
+07-06 03:03:04.316 14200 14285 V SummarisedVideosEventHandler: onAdd
+07-06 03:03:04.318 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 03:03:04.325 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 03:03:04.325 14200 14285 D SummariserIntentService: Video{id='1763', data='/storage/emulated/0/Movies/raw/20200312_194930.mp4', name='20200312_194930.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 03:03:04.325 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_194930.mp4
+07-06 03:03:04.331 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 03:03:04.331 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_194930.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_194930.txt -f null -
+07-06 03:03:04.367 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a1bd800] Found duplicated MOOV Atom. Skipped it
+07-06 03:03:04.584 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8dc76800] sws_param option is deprecated and ignored
+07-06 03:03:05.048 14200 14212 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 03:03:05.048 14200 14212 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 03:03:41.796 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_194930.mp4
+07-06 03:03:41.803 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8db6ea00] Found duplicated MOOV Atom. Skipped it
+07-06 03:03:41.901 14200 14285 W Summariser: 2 active sections found
+07-06 03:03:41.902 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 03:03:41.902 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_194930.mp4 -filter_complex [0:v]trim=6.773000:18.017000,setpts=PTS-STARTPTS[v0];[0:a]atrim=6.773000:18.017000,asetpts=PTS-STARTPTS[a0];[0:v]trim=49.078000:60.020000,setpts=PTS-STARTPTS[v1];[0:a]atrim=49.078000:60.020000,asetpts=PTS-STARTPTS[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/summarised/20200312_194930.mp4
+07-06 03:03:41.917 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8c121600] Found duplicated MOOV Atom. Skipped it
+07-06 03:03:42.060 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8cf7d160] sws_param option is deprecated and ignored
+07-06 03:03:42.060 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8cf7d280] sws_param option is deprecated and ignored
+07-06 03:05:21.533 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_194930.mp4
+07-06 03:05:21.543 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8c121600] Found duplicated MOOV Atom. Skipped it
+07-06 03:05:21.665 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_194930.mp4
+07-06 03:05:21.746 14200 14285 W Summariser: Summarisation completed
+07-06 03:05:21.746 14200 14285 W Summariser:   filename: 20200312_194930.mp4
+07-06 03:05:21.746 14200 14285 W Summariser:   active sections: 2
+07-06 03:05:21.746 14200 14285 W Summariser:   time: 137.204s
+07-06 03:05:21.746 14200 14285 W Summariser:   original duration: 60.02
+07-06 03:05:21.746 14200 14285 W Summariser:   summarised duration: 22.25
+07-06 03:05:21.746 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 03:05:21.746 14200 14285 W Summariser:   quality: 23
+07-06 03:05:21.746 14200 14285 W Summariser:   speed: medium
+07-06 03:05:21.746 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 03:05:21.747 14200 14285 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_194930.mp4
+07-06 03:05:21.764 14200 14285 D VideoManager: videoCursor is null
+07-06 03:05:21.852 14200 14285 V VideoManager: videoFromCursor
+07-06 03:05:21.859 14200 14285 V SummarisedVideosEventHandler: onAdd
+07-06 03:05:21.863 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 03:05:21.878 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 03:05:21.884 14200 14285 D SummariserIntentService: Video{id='1764', data='/storage/emulated/0/Movies/raw/20200312_195230.mp4', name='20200312_195230.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 03:05:21.884 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_195230.mp4
+07-06 03:05:21.906 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 03:05:21.906 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_195230.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_195230.txt -f null -
+07-06 03:05:21.963 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8afc3a00] Found duplicated MOOV Atom. Skipped it
+07-06 03:05:22.245 14200 14212 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 03:05:22.245 14200 14212 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 03:05:22.246 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8cf7dd00] sws_param option is deprecated and ignored
+07-06 03:05:50.842 14200 14285 W Summariser: 1 active sections found
+07-06 03:05:50.843 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 03:05:50.843 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_195230.mp4 -filter_complex [0:v]trim=22.020000:28.926000,setpts=PTS-STARTPTS[v0];[0:a]atrim=22.020000:28.926000,asetpts=PTS-STARTPTS[a0];[v0][a0]concat=n=1:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/summarised/20200312_195230.mp4
+07-06 03:05:50.867 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a1b7200] Found duplicated MOOV Atom. Skipped it
+07-06 03:05:51.031 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x9364d360] sws_param option is deprecated and ignored
+07-06 03:06:30.857 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_195230.mp4
+07-06 03:06:30.867 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a1b7200] Found duplicated MOOV Atom. Skipped it
+07-06 03:06:30.953 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_195230.mp4
+07-06 03:06:31.049 14200 14285 W Summariser: Summarisation completed
+07-06 03:06:31.049 14200 14285 W Summariser:   filename: 20200312_195230.mp4
+07-06 03:06:31.049 14200 14285 W Summariser:   active sections: 1
+07-06 03:06:31.049 14200 14285 W Summariser:   time: 68.968s
+07-06 03:06:31.049 14200 14285 W Summariser:   original duration: 60.02
+07-06 03:06:31.049 14200 14285 W Summariser:   summarised duration: 6.97
+07-06 03:06:31.049 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 03:06:31.049 14200 14285 W Summariser:   quality: 23
+07-06 03:06:31.049 14200 14285 W Summariser:   speed: medium
+07-06 03:06:31.049 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 03:06:31.050 14200 14285 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_195230.mp4
+07-06 03:06:31.077 14200 14285 D VideoManager: videoCursor is null
+07-06 03:06:31.135 14200 14285 V VideoManager: videoFromCursor
+07-06 03:06:31.137 14200 14285 V SummarisedVideosEventHandler: onAdd
+07-06 03:06:31.141 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 03:06:31.149 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 03:06:31.150 14200 14285 D SummariserIntentService: Video{id='1765', data='/storage/emulated/0/Movies/raw/20200312_195330.mp4', name='20200312_195330.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 03:06:31.150 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_195330.mp4
+07-06 03:06:31.155 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 03:06:31.155 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_195330.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_195330.txt -f null -
+07-06 03:06:31.186 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8afc2200] Found duplicated MOOV Atom. Skipped it
+07-06 03:06:31.451 14200 14218 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 03:06:31.451 14200 14218 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 03:06:31.463 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x9364e260] sws_param option is deprecated and ignored
+07-06 03:07:00.726 14200 14285 W Summariser: 5 active sections found
+07-06 03:07:00.727 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 03:07:00.727 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_195330.mp4 -filter_complex [0:v]trim=15.014000:23.055000,setpts=PTS-STARTPTS[v0];[0:a]atrim=15.014000:23.055000,asetpts=PTS-STARTPTS[a0];[0:v]trim=24.756000:28.560000,setpts=PTS-STARTPTS[v1];[0:a]atrim=24.756000:28.560000,asetpts=PTS-STARTPTS[a1];[0:v]trim=35.766000:39.970000,setpts=PTS-STARTPTS[v2];[0:a]atrim=35.766000:39.970000,asetpts=PTS-STARTPTS[a2];[0:v]trim=43.306000:47.176000,setpts=PTS-STARTPTS[v3];[0:a]atrim=43.306000:47.176000,asetpts=PTS-STARTPTS[a3];[0:v]trim=52.381000:55.817000,setpts=PTS-STARTPTS[v4];[0:a]atrim=52.381000:55.817000,asetpts=PTS-STARTPTS[a4];[v0][a0][v1][a1][v2][a2][v3][a3][v4][a4]concat=n=5:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/summarised/20200312_195330.mp4
+07-06 03:07:00.748 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x93643c00] Found duplicated MOOV Atom. Skipped it
+07-06 03:07:00.884 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x93549f40] sws_param option is deprecated and ignored
+07-06 03:07:00.886 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8de60060] sws_param option is deprecated and ignored
+07-06 03:07:00.888 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x93549e20] sws_param option is deprecated and ignored
+07-06 03:07:00.891 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x9364d3c0] sws_param option is deprecated and ignored
+07-06 03:07:00.893 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8de60300] sws_param option is deprecated and ignored
+07-06 03:08:43.697 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_195330.mp4
+07-06 03:08:43.709 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x93643c00] Found duplicated MOOV Atom. Skipped it
+07-06 03:08:43.793 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_195330.mp4
+07-06 03:08:43.869 14200 14285 W Summariser: Summarisation completed
+07-06 03:08:43.869 14200 14285 W Summariser:   filename: 20200312_195330.mp4
+07-06 03:08:43.869 14200 14285 W Summariser:   active sections: 5
+07-06 03:08:43.869 14200 14285 W Summariser:   time: 132.544s
+07-06 03:08:43.869 14200 14285 W Summariser:   original duration: 60.02
+07-06 03:08:43.869 14200 14285 W Summariser:   summarised duration: 23.42
+07-06 03:08:43.869 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 03:08:43.869 14200 14285 W Summariser:   quality: 23
+07-06 03:08:43.869 14200 14285 W Summariser:   speed: medium
+07-06 03:08:43.869 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 03:08:43.870 14200 14285 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_195330.mp4
+07-06 03:08:43.886 14200 14285 D VideoManager: videoCursor is null
+07-06 03:08:43.946 14200 14285 V VideoManager: videoFromCursor
+07-06 03:08:43.949 14200 14285 V SummarisedVideosEventHandler: onAdd
+07-06 03:08:43.950 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 03:08:43.969 14200 14285 V SummariserIntentService: onHandleIntent
+07-06 03:08:43.973 14200 14285 D SummariserIntentService: Video{id='1766', data='/storage/emulated/0/Movies/raw/20200312_195430.mp4', name='20200312_195430.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-06 03:08:43.973 14200 14285 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_195430.mp4
+07-06 03:08:43.977 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 03:08:43.977 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_195430.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_195430.txt -f null -
+07-06 03:08:44.003 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8d8e1000] Found duplicated MOOV Atom. Skipped it
+07-06 03:08:44.279 14200 14396 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 03:08:44.279 14200 14396 D SummariserIntentService:   -> uri=content://media/external/file/1527
+07-06 03:08:44.390 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8de607e0] sws_param option is deprecated and ignored
+07-06 03:09:13.080 14200 14285 W Summariser: 5 active sections found
+07-06 03:09:13.081 14200 14285 I FfmpegTools: Running ffmpeg with:
+07-06 03:09:13.081 14200 14285 I FfmpegTools:   -y -i /storage/emulated/0/Movies/raw/20200312_195430.mp4 -filter_complex [0:v]trim=6.739000:12.010000,setpts=PTS-STARTPTS[v0];[0:a]atrim=6.739000:12.010000,asetpts=PTS-STARTPTS[a0];[0:v]trim=19.450000:23.354000,setpts=PTS-STARTPTS[v1];[0:a]atrim=19.450000:23.354000,asetpts=PTS-STARTPTS[a1];[0:v]trim=30.093000:34.263000,setpts=PTS-STARTPTS[v2];[0:a]atrim=30.093000:34.263000,asetpts=PTS-STARTPTS[a2];[0:v]trim=38.801000:42.671000,setpts=PTS-STARTPTS[v3];[0:a]atrim=38.801000:42.671000,asetpts=PTS-STARTPTS[a3];[0:v]trim=50.244000:54.882000,setpts=PTS-STARTPTS[v4];[0:a]atrim=50.244000:54.882000,asetpts=PTS-STARTPTS[a4];[v0][a0][v1][a1][v2][a2][v3][a3][v4][a4]concat=n=5:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/summarised/20200312_195430.mp4
+07-06 03:09:13.102 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8cb6b000] Found duplicated MOOV Atom. Skipped it
+07-06 03:09:13.281 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8de77a40] sws_param option is deprecated and ignored
+07-06 03:09:13.284 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8de77b60] sws_param option is deprecated and ignored
+07-06 03:09:13.286 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8de77920] sws_param option is deprecated and ignored
+07-06 03:09:13.288 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x8de77d40] sws_param option is deprecated and ignored
+07-06 03:09:13.290 14200 14286 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x935493a0] sws_param option is deprecated and ignored
+07-06 03:10:44.509 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/raw/20200312_195430.mp4
+07-06 03:10:44.519 14200 14286 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x8cb6b000] Found duplicated MOOV Atom. Skipped it
+07-06 03:10:44.644 14200 14285 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/summarised/20200312_195430.mp4
+07-06 03:10:44.722 14200 14285 W Summariser: Summarisation completed
+07-06 03:10:44.722 14200 14285 W Summariser:   filename: 20200312_195430.mp4
+07-06 03:10:44.722 14200 14285 W Summariser:   active sections: 5
+07-06 03:10:44.722 14200 14285 W Summariser:   time: 120.534s
+07-06 03:10:44.722 14200 14285 W Summariser:   original duration: 60.02
+07-06 03:10:44.722 14200 14285 W Summariser:   summarised duration: 21.92
+07-06 03:10:44.722 14200 14285 W Summariser:   noise tolerance: 45.00
+07-06 03:10:44.722 14200 14285 W Summariser:   quality: 23
+07-06 03:10:44.722 14200 14285 W Summariser:   speed: medium
+07-06 03:10:44.722 14200 14285 W Summariser:   freeze duration: 1.00
+07-06 03:10:44.723 14200 14285 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_195430.mp4
+07-06 03:10:44.743 14200 14285 D VideoManager: videoCursor is null
+07-06 03:10:44.811 14200 14285 V VideoManager: videoFromCursor
+07-06 03:10:44.814 14200 14285 V SummarisedVideosEventHandler: onAdd
+07-06 03:10:44.815 14200 14285 V ProcessingVideosEventHandler: onRemove
+07-06 03:10:45.094 14200 14396 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-06 03:10:45.094 14200 14396 D SummariserIntentService:   -> uri=content://media/external/file/1527

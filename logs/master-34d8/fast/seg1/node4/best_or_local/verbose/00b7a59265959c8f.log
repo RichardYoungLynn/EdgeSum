@@ -1,0 +1,1904 @@
+--------- beginning of main
+07-03 01:37:52.462  5238  5238 I zygote64: Late-enabling -Xcheck:jni
+--------- beginning of system
+07-03 01:37:52.632  5238  5238 I ActivityThread: handleStopService: token=android.os.BinderProxy@966a103 not found.
+07-03 01:37:52.638  5238  5238 I TransferService: Starting Transfer Service to listen for network connectivity changes.
+07-03 01:37:52.640  5238  5238 W LogFactory: Truncating log tag length as it exceed 23, the limit imposed by Android on certain API Levels
+07-03 01:37:52.667  5238  5238 I TransferService: Registering the network receiver
+07-03 01:37:52.671  5238  5238 I TransferService: Moving the service out of the Foreground state.
+07-03 01:37:52.673  5238  5238 I TransferService: De-registering the network receiver.
+07-03 01:38:04.872  5238  5238 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-03 01:38:04.872  5238  5238 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-03 01:38:04.872  5238  5238 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-03 01:38:04.872  5238  5238 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-03 01:38:04.872  5238  5238 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-03 01:38:04.872  5238  5238 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-HAjk0Fo0od1IEt1CHLU0cQ==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-HAjk0Fo0od1IEt1CHLU0cQ==/lib/arm64, /data/app/com.example.edgesum-HAjk0Fo0od1IEt1CHLU0cQ==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-03 01:38:04.872  5238  5238 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-03 01:38:04.872  5238  5238 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-03 01:38:04.872  5238  5238 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-03 01:38:04.872  5238  5238 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-03 01:38:04.872  5238  5238 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-03 01:38:04.872  5238  5238 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-03 01:38:04.872  5238  5238 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-03 01:38:04.873  5238  5238 I zygote64: 
+07-03 01:38:04.873  5238  5238 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-03 01:38:04.873  5238  5238 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-03 01:38:04.873  5238  5238 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-03 01:38:04.873  5238  5238 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-03 01:38:04.873  5238  5238 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-03 01:38:04.873  5238  5238 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-HAjk0Fo0od1IEt1CHLU0cQ==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-HAjk0Fo0od1IEt1CHLU0cQ==/lib/arm64, /data/app/com.example.edgesum-HAjk0Fo0od1IEt1CHLU0cQ==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-03 01:38:04.873  5238  5238 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-03 01:38:04.873  5238  5238 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-03 01:38:04.873  5238  5238 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-03 01:38:04.873  5238  5238 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-03 01:38:04.873  5238  5238 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-03 01:38:04.873  5238  5238 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-03 01:38:04.874  5238  5238 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-03 01:38:04.874  5238  5238 I zygote64: 
+07-03 01:38:04.874  5238  5238 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-03 01:38:04.874  5238  5238 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-03 01:38:04.874  5238  5238 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-03 01:38:04.874  5238  5238 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-03 01:38:04.874  5238  5238 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-03 01:38:04.874  5238  5238 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-HAjk0Fo0od1IEt1CHLU0cQ==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-HAjk0Fo0od1IEt1CHLU0cQ==/lib/arm64, /data/app/com.example.edgesum-HAjk0Fo0od1IEt1CHLU0cQ==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-03 01:38:04.874  5238  5238 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-03 01:38:04.874  5238  5238 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-03 01:38:04.874  5238  5238 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-03 01:38:04.874  5238  5238 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-03 01:38:04.874  5238  5238 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-03 01:38:04.874  5238  5238 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-03 01:38:04.875  5238  5238 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-03 01:38:04.875  5238  5238 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-03 01:38:04.875  5238  5238 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-03 01:38:04.875  5238  5238 I zygote64: 
+07-03 01:38:05.052  5238  5238 V Repo    : /storage/emulated/0/Movies/raw
+07-03 01:38:05.053  5238  5238 V Repo    : /storage/emulated/0/Movies/summarised
+07-03 01:38:05.067  5238  5238 V FileManager: External storage is readable
+07-03 01:38:05.068  5238  5238 V FileManager: Created new directory: /storage/emulated/0/Movies/raw
+07-03 01:38:05.072  5238  5238 V FileManager: External storage is readable
+07-03 01:38:05.073  5238  5238 V FileManager: Created new directory: /storage/emulated/0/Movies/summarised
+07-03 01:38:05.078  5238  5238 V FileManager: External storage is readable
+07-03 01:38:05.079  5238  5238 V FileManager: Created new directory: /storage/emulated/0/Download/nearby
+07-03 01:38:05.086  5238  5238 V FileManager: External storage is readable
+07-03 01:38:05.087  5238  5238 V FileManager: Created new directory: /storage/emulated/0/Movies/segment
+07-03 01:38:05.092  5238  5238 V FileManager: External storage is readable
+07-03 01:38:05.093  5238  5238 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum
+07-03 01:38:05.232  5238  5238 V VideoManager: getAllVideoFromExternalStorageFolder
+07-03 01:38:05.237  5238  5238 D VideoManager: /storage/emulated/0/Movies/summarised
+07-03 01:38:05.247  5238  5238 D VideoManager: 0 videos return
+07-03 01:38:05.276  5238  5238 V VideoManager: getAllVideoFromExternalStorageFolder
+07-03 01:38:05.283  5238  5238 D VideoManager: /storage/emulated/0/Movies/raw
+07-03 01:38:05.288  5238  5238 D VideoManager: 0 videos return
+07-03 01:38:05.331  5238  5292 D OpenGLRenderer: HWUI GL Pipeline
+07-03 01:38:05.343  5238  5238 I TransferService: Starting Transfer Service to listen for network connectivity changes.
+07-03 01:38:05.344  5238  5238 I TransferService: Registering the network receiver
+07-03 01:38:05.346  5238  5238 E TransferService: No notification is passed in the intent. Unable to transition to foreground.
+07-03 01:38:05.429  5238  5251 D MainActivity: Scanned /storage/emulated/0/Movies/summarised
+07-03 01:38:05.429  5238  5251 D MainActivity:   -> uri=content://media/external/file/920
+07-03 01:38:05.452  5238  5292 I Adreno  : QUALCOMM build                   : 8e59954, I0be83d0d26
+07-03 01:38:05.452  5238  5292 I Adreno  : Build Date                       : 09/22/17
+07-03 01:38:05.452  5238  5292 I Adreno  : OpenGL ES Shader Compiler Version: EV031.21.02.00
+07-03 01:38:05.452  5238  5292 I Adreno  : Local Branch                     : O17A
+07-03 01:38:05.452  5238  5292 I Adreno  : Remote Branch                    : 
+07-03 01:38:05.452  5238  5292 I Adreno  : Remote Branch                    : 
+07-03 01:38:05.452  5238  5292 I Adreno  : Reconstruct Branch               : 
+07-03 01:38:05.453  5238  5292 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-03 01:38:05.465  5238  5251 D MainActivity: Scanned /storage/emulated/0/Movies/raw
+07-03 01:38:05.465  5238  5251 D MainActivity:   -> uri=content://media/external/file/919
+07-03 01:38:05.480  5238  5292 I Adreno  : PFP: 0x00000000, ME: 0x00000000
+07-03 01:38:05.483  5238  5243 I zygote64: Do partial code cache collection, code=23KB, data=29KB
+07-03 01:38:05.483  5238  5243 I zygote64: After code cache collection, code=23KB, data=29KB
+07-03 01:38:05.483  5238  5243 I zygote64: Increasing code cache capacity to 128KB
+07-03 01:38:05.489  5238  5292 I zygote64: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+07-03 01:38:05.490  5238  5292 I OpenGLRenderer: Initialized EGL, version 1.4
+07-03 01:38:05.490  5238  5292 D OpenGLRenderer: Swap behavior 2
+07-03 01:38:05.577  5238  5292 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+07-03 01:38:05.578  5238  5292 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-03 01:38:13.551  5238  5238 V MainActivity: Connect button clicked
+07-03 01:38:15.141  5238  5238 V ConnectionFragment: Discovery switch checked
+07-03 01:38:17.209  5238  5238 D NearbyFragment: Started discovering
+07-03 01:38:19.116  5238  5238 D NearbyFragment: Found endpoint 1NpN: Nexus 5X [34d8]
+07-03 01:38:19.206  5238  5243 I zygote64: Do partial code cache collection, code=53KB, data=57KB
+07-03 01:38:19.207  5238  5243 I zygote64: After code cache collection, code=53KB, data=57KB
+07-03 01:38:19.207  5238  5243 I zygote64: Increasing code cache capacity to 256KB
+07-03 01:38:38.106  5238  5238 D NearbyFragment: Selected 'Endpoint{id=1NpN, name=Nexus 5X [34d8]}'
+07-03 01:38:38.161  5238  5243 I zygote64: Compiler allocated 4MB to compile void android.view.View.<init>(android.content.Context, android.util.AttributeSet, int, int)
+07-03 01:38:42.767  5238  5238 D NearbyFragment: Initiated connection with 1NpN: Nexus 5X [34d8]
+07-03 01:38:42.923  5238  5238 D NearbyFragment: Requested connection with Endpoint{id=1NpN, name=Nexus 5X [34d8]}
+07-03 01:38:42.975  5238  5243 I zygote64: Do full code cache collection, code=120KB, data=99KB
+07-03 01:38:42.975  5238  5243 I zygote64: After code cache collection, code=117KB, data=62KB
+07-03 01:38:44.466  5238  5238 I NearbyFragment: Connected to Endpoint{id=1NpN, name=Nexus 5X [34d8]}
+07-03 01:38:45.316  5238  5243 I zygote64: Do partial code cache collection, code=125KB, data=85KB
+07-03 01:38:45.316  5238  5243 I zygote64: After code cache collection, code=125KB, data=85KB
+07-03 01:38:45.317  5238  5243 I zygote64: Increasing code cache capacity to 512KB
+07-03 01:38:45.410  5238  5238 V ConnectionFragment: Discovery switch unchecked
+07-03 01:38:45.410  5238  5238 D NearbyFragment: Stopped discovering
+07-03 01:38:53.313  5238  5238 I TransferNetworkLossHand: Network connectivity changed detected.
+07-03 01:38:53.328  5238  5238 I TransferNetworkLossHand: Network connected: true
+07-03 01:45:58.397  5238  5238 D NearbyFragment: onPayloadReceived(endpointId=1NpN, payload=com.google.android.gms.nearby.connection.Payload@7843a4b)
+07-03 01:45:58.405  5238  5238 V NearbyFragment: Started downloading SUMMARISE:-6221096033977102411:20200312_194930.mp4:45.0_1.0_23_medium from Endpoint{id=1NpN, name=Nexus 5X [34d8]}
+07-03 01:45:58.417  5238  5238 V NearbyFragment: Transfer to 1NpN: 100%
+07-03 01:45:58.420  5238  5238 V NearbyFragment: Transfer to 1NpN: 100%
+07-03 01:45:58.427  5238  5238 D NearbyFragment: onPayloadReceived(endpointId=1NpN, payload=com.google.android.gms.nearby.connection.Payload@8ef72e6)
+07-03 01:45:58.430  5238  5238 V NearbyFragment: Transfer to 1NpN: 0%
+07-03 01:45:58.461  5238  5238 V NearbyFragment: Transfer to 1NpN: 0%
+07-03 01:45:58.490  5238  5238 V NearbyFragment: Transfer to 1NpN: 0%
+07-03 01:45:58.524  5238  5238 V NearbyFragment: Transfer to 1NpN: 0%
+07-03 01:45:58.547  5238  5238 V NearbyFragment: Transfer to 1NpN: 0%
+07-03 01:45:58.577  5238  5238 V NearbyFragment: Transfer to 1NpN: 0%
+07-03 01:45:58.607  5238  5238 V NearbyFragment: Transfer to 1NpN: 0%
+07-03 01:45:58.638  5238  5238 V NearbyFragment: Transfer to 1NpN: 0%
+07-03 01:45:58.673  5238  5238 V NearbyFragment: Transfer to 1NpN: 0%
+07-03 01:45:58.700  5238  5238 V NearbyFragment: Transfer to 1NpN: 0%
+07-03 01:45:58.717  5238  5238 V NearbyFragment: Transfer to 1NpN: 1%
+07-03 01:45:58.740  5238  5238 V NearbyFragment: Transfer to 1NpN: 1%
+07-03 01:45:58.761  5238  5238 V NearbyFragment: Transfer to 1NpN: 1%
+07-03 01:45:58.774  5238  5238 V NearbyFragment: Transfer to 1NpN: 1%
+07-03 01:45:58.796  5238  5238 V NearbyFragment: Transfer to 1NpN: 1%
+07-03 01:45:58.807  5238  5238 V NearbyFragment: Transfer to 1NpN: 1%
+07-03 01:45:58.831  5238  5238 V NearbyFragment: Transfer to 1NpN: 1%
+07-03 01:45:58.852  5238  5238 V NearbyFragment: Transfer to 1NpN: 1%
+07-03 01:45:58.874  5238  5238 V NearbyFragment: Transfer to 1NpN: 1%
+07-03 01:45:58.884  5238  5238 V NearbyFragment: Transfer to 1NpN: 1%
+07-03 01:45:58.893  5238  5238 V NearbyFragment: Transfer to 1NpN: 1%
+07-03 01:45:58.907  5238  5238 V NearbyFragment: Transfer to 1NpN: 2%
+07-03 01:45:58.922  5238  5238 V NearbyFragment: Transfer to 1NpN: 2%
+07-03 01:45:58.938  5238  5238 V NearbyFragment: Transfer to 1NpN: 2%
+07-03 01:45:58.957  5238  5238 V NearbyFragment: Transfer to 1NpN: 2%
+07-03 01:45:58.980  5238  5238 V NearbyFragment: Transfer to 1NpN: 2%
+07-03 01:45:58.995  5238  5238 V NearbyFragment: Transfer to 1NpN: 2%
+07-03 01:45:59.019  5238  5238 V NearbyFragment: Transfer to 1NpN: 2%
+07-03 01:45:59.042  5238  5238 V NearbyFragment: Transfer to 1NpN: 2%
+07-03 01:45:59.054  5238  5238 V NearbyFragment: Transfer to 1NpN: 2%
+07-03 01:45:59.084  5238  5238 V NearbyFragment: Transfer to 1NpN: 2%
+07-03 01:45:59.092  5238  5238 V NearbyFragment: Transfer to 1NpN: 2%
+07-03 01:45:59.104  5238  5238 V NearbyFragment: Transfer to 1NpN: 3%
+07-03 01:45:59.117  5238  5238 V NearbyFragment: Transfer to 1NpN: 3%
+07-03 01:45:59.130  5238  5238 V NearbyFragment: Transfer to 1NpN: 3%
+07-03 01:45:59.144  5238  5238 V NearbyFragment: Transfer to 1NpN: 3%
+07-03 01:45:59.184  5238  5238 V NearbyFragment: Transfer to 1NpN: 3%
+07-03 01:45:59.200  5238  5238 V NearbyFragment: Transfer to 1NpN: 3%
+07-03 01:45:59.207  5238  5238 V NearbyFragment: Transfer to 1NpN: 3%
+07-03 01:45:59.223  5238  5238 V NearbyFragment: Transfer to 1NpN: 3%
+07-03 01:45:59.239  5238  5238 V NearbyFragment: Transfer to 1NpN: 3%
+07-03 01:45:59.251  5238  5238 V NearbyFragment: Transfer to 1NpN: 3%
+07-03 01:45:59.281  5238  5238 V NearbyFragment: Transfer to 1NpN: 4%
+07-03 01:45:59.293  5238  5238 V NearbyFragment: Transfer to 1NpN: 4%
+07-03 01:45:59.304  5238  5238 V NearbyFragment: Transfer to 1NpN: 4%
+07-03 01:45:59.323  5238  5238 V NearbyFragment: Transfer to 1NpN: 4%
+07-03 01:45:59.344  5238  5238 V NearbyFragment: Transfer to 1NpN: 4%
+07-03 01:45:59.377  5238  5238 V NearbyFragment: Transfer to 1NpN: 4%
+07-03 01:45:59.414  5238  5238 V NearbyFragment: Transfer to 1NpN: 4%
+07-03 01:45:59.428  5238  5238 V NearbyFragment: Transfer to 1NpN: 4%
+07-03 01:45:59.446  5238  5238 V NearbyFragment: Transfer to 1NpN: 4%
+07-03 01:45:59.481  5238  5238 V NearbyFragment: Transfer to 1NpN: 4%
+07-03 01:45:59.497  5238  5238 V NearbyFragment: Transfer to 1NpN: 4%
+07-03 01:45:59.513  5238  5238 V NearbyFragment: Transfer to 1NpN: 5%
+07-03 01:45:59.566  5238  5238 V NearbyFragment: Transfer to 1NpN: 5%
+07-03 01:45:59.587  5238  5238 V NearbyFragment: Transfer to 1NpN: 5%
+07-03 01:45:59.634  5238  5238 V NearbyFragment: Transfer to 1NpN: 5%
+07-03 01:45:59.661  5238  5238 V NearbyFragment: Transfer to 1NpN: 5%
+07-03 01:45:59.686  5238  5238 V NearbyFragment: Transfer to 1NpN: 5%
+07-03 01:45:59.720  5238  5238 V NearbyFragment: Transfer to 1NpN: 5%
+07-03 01:45:59.741  5238  5238 V NearbyFragment: Transfer to 1NpN: 5%
+07-03 01:45:59.750  5238  5238 V NearbyFragment: Transfer to 1NpN: 5%
+07-03 01:45:59.803  5238  5238 V NearbyFragment: Transfer to 1NpN: 5%
+07-03 01:45:59.811  5238  5238 V NearbyFragment: Transfer to 1NpN: 5%
+07-03 01:45:59.869  5238  5238 V NearbyFragment: Transfer to 1NpN: 6%
+07-03 01:45:59.921  5238  5238 V NearbyFragment: Transfer to 1NpN: 6%
+07-03 01:45:59.937  5238  5238 V NearbyFragment: Transfer to 1NpN: 6%
+07-03 01:45:59.960  5238  5238 V NearbyFragment: Transfer to 1NpN: 6%
+07-03 01:46:00.020  5238  5238 V NearbyFragment: Transfer to 1NpN: 6%
+07-03 01:46:00.037  5238  5238 V NearbyFragment: Transfer to 1NpN: 6%
+07-03 01:46:00.101  5238  5238 V NearbyFragment: Transfer to 1NpN: 6%
+07-03 01:46:00.110  5238  5238 V NearbyFragment: Transfer to 1NpN: 6%
+07-03 01:46:00.122  5238  5238 V NearbyFragment: Transfer to 1NpN: 6%
+07-03 01:46:00.180  5238  5238 V NearbyFragment: Transfer to 1NpN: 6%
+07-03 01:46:00.208  5238  5238 V NearbyFragment: Transfer to 1NpN: 7%
+07-03 01:46:00.228  5238  5238 V NearbyFragment: Transfer to 1NpN: 7%
+07-03 01:46:00.322  5238  5238 V NearbyFragment: Transfer to 1NpN: 7%
+07-03 01:46:00.361  5238  5238 V NearbyFragment: Transfer to 1NpN: 7%
+07-03 01:46:00.376  5238  5238 V NearbyFragment: Transfer to 1NpN: 7%
+07-03 01:46:00.380  5238  5238 V NearbyFragment: Transfer to 1NpN: 7%
+07-03 01:46:00.391  5238  5238 V NearbyFragment: Transfer to 1NpN: 7%
+07-03 01:46:00.402  5238  5238 V NearbyFragment: Transfer to 1NpN: 7%
+07-03 01:46:00.409  5238  5238 V NearbyFragment: Transfer to 1NpN: 7%
+07-03 01:46:00.653  5238  5238 V NearbyFragment: Transfer to 1NpN: 7%
+07-03 01:46:00.732  5238  5238 V NearbyFragment: Transfer to 1NpN: 7%
+07-03 01:46:00.738  5238  5238 V NearbyFragment: Transfer to 1NpN: 8%
+07-03 01:46:00.749  5238  5238 V NearbyFragment: Transfer to 1NpN: 8%
+07-03 01:46:00.756  5238  5238 V NearbyFragment: Transfer to 1NpN: 8%
+07-03 01:46:00.812  5238  5238 V NearbyFragment: Transfer to 1NpN: 8%
+07-03 01:46:00.897  5238  5238 V NearbyFragment: Transfer to 1NpN: 8%
+07-03 01:46:00.917  5238  5238 V NearbyFragment: Transfer to 1NpN: 8%
+07-03 01:46:00.925  5238  5238 V NearbyFragment: Transfer to 1NpN: 8%
+07-03 01:46:00.972  5238  5238 V NearbyFragment: Transfer to 1NpN: 8%
+07-03 01:46:00.985  5238  5238 V NearbyFragment: Transfer to 1NpN: 8%
+07-03 01:46:00.996  5238  5238 V NearbyFragment: Transfer to 1NpN: 8%
+07-03 01:46:01.036  5238  5238 V NearbyFragment: Transfer to 1NpN: 8%
+07-03 01:46:01.077  5238  5238 V NearbyFragment: Transfer to 1NpN: 9%
+07-03 01:46:01.087  5238  5238 V NearbyFragment: Transfer to 1NpN: 9%
+07-03 01:46:01.094  5238  5238 V NearbyFragment: Transfer to 1NpN: 9%
+07-03 01:46:01.106  5238  5238 V NearbyFragment: Transfer to 1NpN: 9%
+07-03 01:46:01.113  5238  5238 V NearbyFragment: Transfer to 1NpN: 9%
+07-03 01:46:01.120  5238  5238 V NearbyFragment: Transfer to 1NpN: 9%
+07-03 01:46:01.126  5238  5238 V NearbyFragment: Transfer to 1NpN: 9%
+07-03 01:46:01.144  5238  5238 V NearbyFragment: Transfer to 1NpN: 9%
+07-03 01:46:01.193  5238  5238 V NearbyFragment: Transfer to 1NpN: 9%
+07-03 01:46:01.228  5238  5238 V NearbyFragment: Transfer to 1NpN: 9%
+07-03 01:46:01.240  5238  5238 V NearbyFragment: Transfer to 1NpN: 10%
+07-03 01:46:01.249  5238  5238 V NearbyFragment: Transfer to 1NpN: 10%
+07-03 01:46:01.257  5238  5238 V NearbyFragment: Transfer to 1NpN: 10%
+07-03 01:46:01.267  5238  5238 V NearbyFragment: Transfer to 1NpN: 10%
+07-03 01:46:01.314  5238  5238 V NearbyFragment: Transfer to 1NpN: 10%
+07-03 01:46:01.342  5238  5238 V NearbyFragment: Transfer to 1NpN: 10%
+07-03 01:46:01.349  5238  5238 V NearbyFragment: Transfer to 1NpN: 10%
+07-03 01:46:01.506  5238  5238 V NearbyFragment: Transfer to 1NpN: 10%
+07-03 01:46:01.559  5238  5238 V NearbyFragment: Transfer to 1NpN: 10%
+07-03 01:46:01.578  5238  5238 V NearbyFragment: Transfer to 1NpN: 10%
+07-03 01:46:01.605  5238  5238 V NearbyFragment: Transfer to 1NpN: 10%
+07-03 01:46:01.623  5238  5238 V NearbyFragment: Transfer to 1NpN: 11%
+07-03 01:46:01.632  5238  5238 V NearbyFragment: Transfer to 1NpN: 11%
+07-03 01:46:01.641  5238  5238 V NearbyFragment: Transfer to 1NpN: 11%
+07-03 01:46:01.651  5238  5238 V NearbyFragment: Transfer to 1NpN: 11%
+07-03 01:46:01.679  5238  5238 V NearbyFragment: Transfer to 1NpN: 11%
+07-03 01:46:01.710  5238  5238 V NearbyFragment: Transfer to 1NpN: 11%
+07-03 01:46:01.748  5238  5238 V NearbyFragment: Transfer to 1NpN: 11%
+07-03 01:46:01.752  5238  5238 V NearbyFragment: Transfer to 1NpN: 11%
+07-03 01:46:01.792  5238  5238 V NearbyFragment: Transfer to 1NpN: 11%
+07-03 01:46:01.837  5238  5238 V NearbyFragment: Transfer to 1NpN: 11%
+07-03 01:46:01.850  5238  5238 V NearbyFragment: Transfer to 1NpN: 11%
+07-03 01:46:01.858  5238  5238 V NearbyFragment: Transfer to 1NpN: 12%
+07-03 01:46:01.864  5238  5238 V NearbyFragment: Transfer to 1NpN: 12%
+07-03 01:46:01.877  5238  5238 V NearbyFragment: Transfer to 1NpN: 12%
+07-03 01:46:01.893  5238  5238 V NearbyFragment: Transfer to 1NpN: 12%
+07-03 01:46:01.906  5238  5238 V NearbyFragment: Transfer to 1NpN: 12%
+07-03 01:46:01.916  5238  5238 V NearbyFragment: Transfer to 1NpN: 12%
+07-03 01:46:01.930  5238  5238 V NearbyFragment: Transfer to 1NpN: 12%
+07-03 01:46:01.948  5238  5238 V NearbyFragment: Transfer to 1NpN: 12%
+07-03 01:46:01.958  5238  5238 V NearbyFragment: Transfer to 1NpN: 12%
+07-03 01:46:01.963  5238  5238 V NearbyFragment: Transfer to 1NpN: 12%
+07-03 01:46:01.979  5238  5238 V NearbyFragment: Transfer to 1NpN: 13%
+07-03 01:46:02.002  5238  5238 V NearbyFragment: Transfer to 1NpN: 13%
+07-03 01:46:02.012  5238  5238 V NearbyFragment: Transfer to 1NpN: 13%
+07-03 01:46:02.025  5238  5238 V NearbyFragment: Transfer to 1NpN: 13%
+07-03 01:46:02.054  5238  5238 V NearbyFragment: Transfer to 1NpN: 13%
+07-03 01:46:02.074  5238  5238 V NearbyFragment: Transfer to 1NpN: 13%
+07-03 01:46:02.094  5238  5238 V NearbyFragment: Transfer to 1NpN: 13%
+07-03 01:46:02.101  5238  5238 V NearbyFragment: Transfer to 1NpN: 13%
+07-03 01:46:02.117  5238  5238 V NearbyFragment: Transfer to 1NpN: 13%
+07-03 01:46:02.135  5238  5238 V NearbyFragment: Transfer to 1NpN: 13%
+07-03 01:46:02.141  5238  5238 V NearbyFragment: Transfer to 1NpN: 13%
+07-03 01:46:02.160  5238  5238 V NearbyFragment: Transfer to 1NpN: 14%
+07-03 01:46:02.165  5238  5238 V NearbyFragment: Transfer to 1NpN: 14%
+07-03 01:46:02.191  5238  5238 V NearbyFragment: Transfer to 1NpN: 14%
+07-03 01:46:02.203  5238  5238 V NearbyFragment: Transfer to 1NpN: 14%
+07-03 01:46:02.210  5238  5238 V NearbyFragment: Transfer to 1NpN: 14%
+07-03 01:46:02.217  5238  5238 V NearbyFragment: Transfer to 1NpN: 14%
+07-03 01:46:02.233  5238  5238 V NearbyFragment: Transfer to 1NpN: 14%
+07-03 01:46:02.270  5238  5238 V NearbyFragment: Transfer to 1NpN: 14%
+07-03 01:46:02.280  5238  5238 V NearbyFragment: Transfer to 1NpN: 14%
+07-03 01:46:02.285  5238  5238 V NearbyFragment: Transfer to 1NpN: 14%
+07-03 01:46:02.295  5238  5238 V NearbyFragment: Transfer to 1NpN: 14%
+07-03 01:46:02.316  5238  5238 V NearbyFragment: Transfer to 1NpN: 15%
+07-03 01:46:02.338  5238  5238 V NearbyFragment: Transfer to 1NpN: 15%
+07-03 01:46:02.347  5238  5238 V NearbyFragment: Transfer to 1NpN: 15%
+07-03 01:46:02.365  5238  5238 V NearbyFragment: Transfer to 1NpN: 15%
+07-03 01:46:02.401  5238  5238 V NearbyFragment: Transfer to 1NpN: 15%
+07-03 01:46:02.416  5238  5238 V NearbyFragment: Transfer to 1NpN: 15%
+07-03 01:46:02.424  5238  5238 V NearbyFragment: Transfer to 1NpN: 15%
+07-03 01:46:02.438  5238  5238 V NearbyFragment: Transfer to 1NpN: 15%
+07-03 01:46:02.443  5238  5238 V NearbyFragment: Transfer to 1NpN: 15%
+07-03 01:46:02.465  5238  5238 V NearbyFragment: Transfer to 1NpN: 15%
+07-03 01:46:02.492  5238  5238 V NearbyFragment: Transfer to 1NpN: 16%
+07-03 01:46:02.497  5238  5238 V NearbyFragment: Transfer to 1NpN: 16%
+07-03 01:46:02.517  5238  5238 V NearbyFragment: Transfer to 1NpN: 16%
+07-03 01:46:02.529  5238  5238 V NearbyFragment: Transfer to 1NpN: 16%
+07-03 01:46:02.544  5238  5238 V NearbyFragment: Transfer to 1NpN: 16%
+07-03 01:46:02.548  5238  5238 V NearbyFragment: Transfer to 1NpN: 16%
+07-03 01:46:02.571  5238  5238 V NearbyFragment: Transfer to 1NpN: 16%
+07-03 01:46:02.590  5238  5238 V NearbyFragment: Transfer to 1NpN: 16%
+07-03 01:46:02.607  5238  5238 V NearbyFragment: Transfer to 1NpN: 16%
+07-03 01:46:02.620  5238  5238 V NearbyFragment: Transfer to 1NpN: 16%
+07-03 01:46:02.645  5238  5238 V NearbyFragment: Transfer to 1NpN: 16%
+07-03 01:46:02.654  5238  5238 V NearbyFragment: Transfer to 1NpN: 17%
+07-03 01:46:02.668  5238  5238 V NearbyFragment: Transfer to 1NpN: 17%
+07-03 01:46:02.675  5238  5238 V NearbyFragment: Transfer to 1NpN: 17%
+07-03 01:46:02.679  5238  5238 V NearbyFragment: Transfer to 1NpN: 17%
+07-03 01:46:02.689  5238  5238 V NearbyFragment: Transfer to 1NpN: 17%
+07-03 01:46:02.697  5238  5238 V NearbyFragment: Transfer to 1NpN: 17%
+07-03 01:46:02.707  5238  5238 V NearbyFragment: Transfer to 1NpN: 17%
+07-03 01:46:02.714  5238  5238 V NearbyFragment: Transfer to 1NpN: 17%
+07-03 01:46:02.758  5238  5238 V NearbyFragment: Transfer to 1NpN: 17%
+07-03 01:46:02.766  5238  5238 V NearbyFragment: Transfer to 1NpN: 17%
+07-03 01:46:02.781  5238  5238 V NearbyFragment: Transfer to 1NpN: 17%
+07-03 01:46:02.789  5238  5238 V NearbyFragment: Transfer to 1NpN: 18%
+07-03 01:46:02.801  5238  5238 V NearbyFragment: Transfer to 1NpN: 18%
+07-03 01:46:02.805  5238  5238 V NearbyFragment: Transfer to 1NpN: 18%
+07-03 01:46:02.819  5238  5238 V NearbyFragment: Transfer to 1NpN: 18%
+07-03 01:46:02.827  5238  5238 V NearbyFragment: Transfer to 1NpN: 18%
+07-03 01:46:02.834  5238  5238 V NearbyFragment: Transfer to 1NpN: 18%
+07-03 01:46:02.844  5238  5238 V NearbyFragment: Transfer to 1NpN: 18%
+07-03 01:46:02.853  5238  5238 V NearbyFragment: Transfer to 1NpN: 18%
+07-03 01:46:02.874  5238  5238 V NearbyFragment: Transfer to 1NpN: 18%
+07-03 01:46:02.883  5238  5238 V NearbyFragment: Transfer to 1NpN: 18%
+07-03 01:46:02.896  5238  5238 V NearbyFragment: Transfer to 1NpN: 19%
+07-03 01:46:02.905  5238  5238 V NearbyFragment: Transfer to 1NpN: 19%
+07-03 01:46:02.920  5238  5238 V NearbyFragment: Transfer to 1NpN: 19%
+07-03 01:46:02.952  5238  5238 V NearbyFragment: Transfer to 1NpN: 19%
+07-03 01:46:02.964  5238  5238 V NearbyFragment: Transfer to 1NpN: 19%
+07-03 01:46:02.974  5238  5238 V NearbyFragment: Transfer to 1NpN: 19%
+07-03 01:46:02.982  5238  5238 V NearbyFragment: Transfer to 1NpN: 19%
+07-03 01:46:02.991  5238  5238 V NearbyFragment: Transfer to 1NpN: 19%
+07-03 01:46:03.006  5238  5238 V NearbyFragment: Transfer to 1NpN: 19%
+07-03 01:46:03.011  5238  5238 V NearbyFragment: Transfer to 1NpN: 19%
+07-03 01:46:03.019  5238  5238 V NearbyFragment: Transfer to 1NpN: 19%
+07-03 01:46:03.023  5238  5238 V NearbyFragment: Transfer to 1NpN: 20%
+07-03 01:46:03.091  5238  5238 V NearbyFragment: Transfer to 1NpN: 20%
+07-03 01:46:03.098  5238  5238 V NearbyFragment: Transfer to 1NpN: 20%
+07-03 01:46:03.123  5238  5238 V NearbyFragment: Transfer to 1NpN: 20%
+07-03 01:46:03.141  5238  5238 V NearbyFragment: Transfer to 1NpN: 20%
+07-03 01:46:03.150  5238  5238 V NearbyFragment: Transfer to 1NpN: 20%
+07-03 01:46:03.219  5238  5238 V NearbyFragment: Transfer to 1NpN: 20%
+07-03 01:46:03.229  5238  5238 V NearbyFragment: Transfer to 1NpN: 20%
+07-03 01:46:03.250  5238  5238 V NearbyFragment: Transfer to 1NpN: 20%
+07-03 01:46:03.260  5238  5238 V NearbyFragment: Transfer to 1NpN: 20%
+07-03 01:46:03.265  5238  5238 V NearbyFragment: Transfer to 1NpN: 20%
+07-03 01:46:03.269  5238  5238 V NearbyFragment: Transfer to 1NpN: 21%
+07-03 01:46:03.285  5238  5238 V NearbyFragment: Transfer to 1NpN: 21%
+07-03 01:46:03.300  5238  5238 V NearbyFragment: Transfer to 1NpN: 21%
+07-03 01:46:03.321  5238  5238 V NearbyFragment: Transfer to 1NpN: 21%
+07-03 01:46:03.343  5238  5238 V NearbyFragment: Transfer to 1NpN: 21%
+07-03 01:46:03.350  5238  5238 V NearbyFragment: Transfer to 1NpN: 21%
+07-03 01:46:03.359  5238  5238 V NearbyFragment: Transfer to 1NpN: 21%
+07-03 01:46:03.380  5238  5238 V NearbyFragment: Transfer to 1NpN: 21%
+07-03 01:46:03.388  5238  5238 V NearbyFragment: Transfer to 1NpN: 21%
+07-03 01:46:03.392  5238  5238 V NearbyFragment: Transfer to 1NpN: 21%
+07-03 01:46:03.405  5238  5238 V NearbyFragment: Transfer to 1NpN: 22%
+07-03 01:46:03.410  5238  5238 V NearbyFragment: Transfer to 1NpN: 22%
+07-03 01:46:03.424  5238  5238 V NearbyFragment: Transfer to 1NpN: 22%
+07-03 01:46:03.428  5238  5238 V NearbyFragment: Transfer to 1NpN: 22%
+07-03 01:46:03.452  5238  5238 V NearbyFragment: Transfer to 1NpN: 22%
+07-03 01:46:03.454  5238  5238 V NearbyFragment: Transfer to 1NpN: 22%
+07-03 01:46:03.460  5238  5238 V NearbyFragment: Transfer to 1NpN: 22%
+07-03 01:46:03.508  5238  5238 V NearbyFragment: Transfer to 1NpN: 22%
+07-03 01:46:03.602  5238  5238 V NearbyFragment: Transfer to 1NpN: 22%
+07-03 01:46:03.613  5238  5238 V NearbyFragment: Transfer to 1NpN: 22%
+07-03 01:46:03.624  5238  5238 V NearbyFragment: Transfer to 1NpN: 22%
+07-03 01:46:03.635  5238  5238 V NearbyFragment: Transfer to 1NpN: 23%
+07-03 01:46:03.723  5238  5238 V NearbyFragment: Transfer to 1NpN: 23%
+07-03 01:46:03.739  5238  5238 V NearbyFragment: Transfer to 1NpN: 23%
+07-03 01:46:03.744  5238  5238 V NearbyFragment: Transfer to 1NpN: 23%
+07-03 01:46:03.766  5238  5238 V NearbyFragment: Transfer to 1NpN: 23%
+07-03 01:46:03.779  5238  5238 V NearbyFragment: Transfer to 1NpN: 23%
+07-03 01:46:03.785  5238  5238 V NearbyFragment: Transfer to 1NpN: 23%
+07-03 01:46:03.801  5238  5238 V NearbyFragment: Transfer to 1NpN: 23%
+07-03 01:46:03.817  5238  5238 V NearbyFragment: Transfer to 1NpN: 23%
+07-03 01:46:03.832  5238  5238 V NearbyFragment: Transfer to 1NpN: 23%
+07-03 01:46:03.845  5238  5238 V NearbyFragment: Transfer to 1NpN: 23%
+07-03 01:46:03.859  5238  5238 V NearbyFragment: Transfer to 1NpN: 24%
+07-03 01:46:03.874  5238  5238 V NearbyFragment: Transfer to 1NpN: 24%
+07-03 01:46:03.902  5238  5238 V NearbyFragment: Transfer to 1NpN: 24%
+07-03 01:46:03.921  5238  5238 V NearbyFragment: Transfer to 1NpN: 24%
+07-03 01:46:03.938  5238  5238 V NearbyFragment: Transfer to 1NpN: 24%
+07-03 01:46:03.948  5238  5238 V NearbyFragment: Transfer to 1NpN: 24%
+07-03 01:46:03.966  5238  5238 V NearbyFragment: Transfer to 1NpN: 24%
+07-03 01:46:04.031  5238  5238 V NearbyFragment: Transfer to 1NpN: 24%
+07-03 01:46:04.067  5238  5238 V NearbyFragment: Transfer to 1NpN: 24%
+07-03 01:46:04.083  5238  5238 V NearbyFragment: Transfer to 1NpN: 24%
+07-03 01:46:04.093  5238  5238 V NearbyFragment: Transfer to 1NpN: 25%
+07-03 01:46:04.099  5238  5238 V NearbyFragment: Transfer to 1NpN: 25%
+07-03 01:46:04.111  5238  5238 V NearbyFragment: Transfer to 1NpN: 25%
+07-03 01:46:04.116  5238  5238 V NearbyFragment: Transfer to 1NpN: 25%
+07-03 01:46:04.147  5238  5238 V NearbyFragment: Transfer to 1NpN: 25%
+07-03 01:46:04.156  5238  5238 V NearbyFragment: Transfer to 1NpN: 25%
+07-03 01:46:04.199  5238  5238 V NearbyFragment: Transfer to 1NpN: 25%
+07-03 01:46:04.235  5238  5238 V NearbyFragment: Transfer to 1NpN: 25%
+07-03 01:46:04.244  5238  5238 V NearbyFragment: Transfer to 1NpN: 25%
+07-03 01:46:04.254  5238  5238 V NearbyFragment: Transfer to 1NpN: 25%
+07-03 01:46:04.259  5238  5238 V NearbyFragment: Transfer to 1NpN: 25%
+07-03 01:46:04.271  5238  5238 V NearbyFragment: Transfer to 1NpN: 26%
+07-03 01:46:04.276  5238  5238 V NearbyFragment: Transfer to 1NpN: 26%
+07-03 01:46:04.291  5238  5238 V NearbyFragment: Transfer to 1NpN: 26%
+07-03 01:46:04.296  5238  5238 V NearbyFragment: Transfer to 1NpN: 26%
+07-03 01:46:04.310  5238  5238 V NearbyFragment: Transfer to 1NpN: 26%
+07-03 01:46:04.337  5238  5238 V NearbyFragment: Transfer to 1NpN: 26%
+07-03 01:46:04.346  5238  5238 V NearbyFragment: Transfer to 1NpN: 26%
+07-03 01:46:04.363  5238  5238 V NearbyFragment: Transfer to 1NpN: 26%
+07-03 01:46:04.369  5238  5238 V NearbyFragment: Transfer to 1NpN: 26%
+07-03 01:46:04.417  5238  5238 V NearbyFragment: Transfer to 1NpN: 26%
+07-03 01:46:04.425  5238  5238 V NearbyFragment: Transfer to 1NpN: 26%
+07-03 01:46:04.436  5238  5238 V NearbyFragment: Transfer to 1NpN: 27%
+07-03 01:46:04.448  5238  5238 V NearbyFragment: Transfer to 1NpN: 27%
+07-03 01:46:04.465  5238  5238 V NearbyFragment: Transfer to 1NpN: 27%
+07-03 01:46:04.474  5238  5238 V NearbyFragment: Transfer to 1NpN: 27%
+07-03 01:46:04.479  5238  5238 V NearbyFragment: Transfer to 1NpN: 27%
+07-03 01:46:04.491  5238  5238 V NearbyFragment: Transfer to 1NpN: 27%
+07-03 01:46:04.508  5238  5238 V NearbyFragment: Transfer to 1NpN: 27%
+07-03 01:46:04.517  5238  5238 V NearbyFragment: Transfer to 1NpN: 27%
+07-03 01:46:04.568  5238  5238 V NearbyFragment: Transfer to 1NpN: 27%
+07-03 01:46:04.578  5238  5238 V NearbyFragment: Transfer to 1NpN: 27%
+07-03 01:46:04.581  5238  5238 V NearbyFragment: Transfer to 1NpN: 27%
+07-03 01:46:04.589  5238  5238 V NearbyFragment: Transfer to 1NpN: 28%
+07-03 01:46:04.611  5238  5238 V NearbyFragment: Transfer to 1NpN: 28%
+07-03 01:46:04.615  5238  5238 V NearbyFragment: Transfer to 1NpN: 28%
+07-03 01:46:04.625  5238  5238 V NearbyFragment: Transfer to 1NpN: 28%
+07-03 01:46:04.656  5238  5238 V NearbyFragment: Transfer to 1NpN: 28%
+07-03 01:46:04.665  5238  5238 V NearbyFragment: Transfer to 1NpN: 28%
+07-03 01:46:04.676  5238  5238 V NearbyFragment: Transfer to 1NpN: 28%
+07-03 01:46:04.696  5238  5238 V NearbyFragment: Transfer to 1NpN: 28%
+07-03 01:46:04.700  5238  5238 V NearbyFragment: Transfer to 1NpN: 28%
+07-03 01:46:04.703  5238  5238 V NearbyFragment: Transfer to 1NpN: 28%
+07-03 01:46:04.723  5238  5238 V NearbyFragment: Transfer to 1NpN: 29%
+07-03 01:46:04.733  5238  5238 V NearbyFragment: Transfer to 1NpN: 29%
+07-03 01:46:04.754  5238  5238 V NearbyFragment: Transfer to 1NpN: 29%
+07-03 01:46:04.761  5238  5238 V NearbyFragment: Transfer to 1NpN: 29%
+07-03 01:46:04.767  5238  5238 V NearbyFragment: Transfer to 1NpN: 29%
+07-03 01:46:04.774  5238  5238 V NearbyFragment: Transfer to 1NpN: 29%
+07-03 01:46:04.780  5238  5238 V NearbyFragment: Transfer to 1NpN: 29%
+07-03 01:46:04.784  5238  5238 V NearbyFragment: Transfer to 1NpN: 29%
+07-03 01:46:04.797  5238  5238 V NearbyFragment: Transfer to 1NpN: 29%
+07-03 01:46:04.802  5238  5238 V NearbyFragment: Transfer to 1NpN: 29%
+07-03 01:46:04.810  5238  5238 V NearbyFragment: Transfer to 1NpN: 29%
+07-03 01:46:04.818  5238  5238 V NearbyFragment: Transfer to 1NpN: 30%
+07-03 01:46:04.828  5238  5238 V NearbyFragment: Transfer to 1NpN: 30%
+07-03 01:46:04.842  5238  5238 V NearbyFragment: Transfer to 1NpN: 30%
+07-03 01:46:04.850  5238  5238 V NearbyFragment: Transfer to 1NpN: 30%
+07-03 01:46:04.864  5238  5238 V NearbyFragment: Transfer to 1NpN: 30%
+07-03 01:46:04.876  5238  5238 V NearbyFragment: Transfer to 1NpN: 30%
+07-03 01:46:04.908  5238  5238 V NearbyFragment: Transfer to 1NpN: 30%
+07-03 01:46:04.967  5238  5238 V NearbyFragment: Transfer to 1NpN: 30%
+07-03 01:46:04.978  5238  5238 V NearbyFragment: Transfer to 1NpN: 30%
+07-03 01:46:04.995  5238  5238 V NearbyFragment: Transfer to 1NpN: 30%
+07-03 01:46:05.013  5238  5238 V NearbyFragment: Transfer to 1NpN: 30%
+07-03 01:46:05.029  5238  5238 V NearbyFragment: Transfer to 1NpN: 31%
+07-03 01:46:05.032  5238  5238 V NearbyFragment: Transfer to 1NpN: 31%
+07-03 01:46:05.086  5238  5238 V NearbyFragment: Transfer to 1NpN: 31%
+07-03 01:46:05.095  5238  5238 V NearbyFragment: Transfer to 1NpN: 31%
+07-03 01:46:05.109  5238  5238 V NearbyFragment: Transfer to 1NpN: 31%
+07-03 01:46:05.132  5238  5238 V NearbyFragment: Transfer to 1NpN: 31%
+07-03 01:46:05.186  5238  5238 V NearbyFragment: Transfer to 1NpN: 31%
+07-03 01:46:05.193  5238  5238 V NearbyFragment: Transfer to 1NpN: 31%
+07-03 01:46:05.214  5238  5238 V NearbyFragment: Transfer to 1NpN: 31%
+07-03 01:46:05.220  5238  5238 V NearbyFragment: Transfer to 1NpN: 31%
+07-03 01:46:05.323  5238  5238 V NearbyFragment: Transfer to 1NpN: 32%
+07-03 01:46:05.376  5238  5238 V NearbyFragment: Transfer to 1NpN: 32%
+07-03 01:46:05.402  5238  5238 V NearbyFragment: Transfer to 1NpN: 32%
+07-03 01:46:05.409  5238  5238 V NearbyFragment: Transfer to 1NpN: 32%
+07-03 01:46:05.414  5238  5238 V NearbyFragment: Transfer to 1NpN: 32%
+07-03 01:46:05.439  5238  5238 V NearbyFragment: Transfer to 1NpN: 32%
+07-03 01:46:05.452  5238  5238 V NearbyFragment: Transfer to 1NpN: 32%
+07-03 01:46:05.457  5238  5238 V NearbyFragment: Transfer to 1NpN: 32%
+07-03 01:46:05.469  5238  5238 V NearbyFragment: Transfer to 1NpN: 32%
+07-03 01:46:05.474  5238  5238 V NearbyFragment: Transfer to 1NpN: 32%
+07-03 01:46:05.507  5238  5238 V NearbyFragment: Transfer to 1NpN: 32%
+07-03 01:46:05.526  5238  5238 V NearbyFragment: Transfer to 1NpN: 33%
+07-03 01:46:05.533  5238  5238 V NearbyFragment: Transfer to 1NpN: 33%
+07-03 01:46:05.538  5238  5238 V NearbyFragment: Transfer to 1NpN: 33%
+07-03 01:46:05.554  5238  5238 V NearbyFragment: Transfer to 1NpN: 33%
+07-03 01:46:05.622  5238  5238 V NearbyFragment: Transfer to 1NpN: 33%
+07-03 01:46:05.633  5238  5238 V NearbyFragment: Transfer to 1NpN: 33%
+07-03 01:46:05.644  5238  5238 V NearbyFragment: Transfer to 1NpN: 33%
+07-03 01:46:05.694  5238  5238 V NearbyFragment: Transfer to 1NpN: 33%
+07-03 01:46:05.720  5238  5238 V NearbyFragment: Transfer to 1NpN: 33%
+07-03 01:46:05.734  5238  5238 V NearbyFragment: Transfer to 1NpN: 33%
+07-03 01:46:05.739  5238  5238 V NearbyFragment: Transfer to 1NpN: 33%
+07-03 01:46:05.781  5238  5238 V NearbyFragment: Transfer to 1NpN: 34%
+07-03 01:46:05.787  5238  5238 V NearbyFragment: Transfer to 1NpN: 34%
+07-03 01:46:05.797  5238  5238 V NearbyFragment: Transfer to 1NpN: 34%
+07-03 01:46:05.801  5238  5238 V NearbyFragment: Transfer to 1NpN: 34%
+07-03 01:46:05.817  5238  5238 V NearbyFragment: Transfer to 1NpN: 34%
+07-03 01:46:05.825  5238  5238 V NearbyFragment: Transfer to 1NpN: 34%
+07-03 01:46:05.903  5238  5238 V NearbyFragment: Transfer to 1NpN: 34%
+07-03 01:46:05.910  5238  5238 V NearbyFragment: Transfer to 1NpN: 34%
+07-03 01:46:05.917  5238  5238 V NearbyFragment: Transfer to 1NpN: 34%
+07-03 01:46:05.952  5238  5238 V NearbyFragment: Transfer to 1NpN: 34%
+07-03 01:46:05.956  5238  5238 V NearbyFragment: Transfer to 1NpN: 35%
+07-03 01:46:05.966  5238  5238 V NearbyFragment: Transfer to 1NpN: 35%
+07-03 01:46:05.980  5238  5238 V NearbyFragment: Transfer to 1NpN: 35%
+07-03 01:46:05.986  5238  5238 V NearbyFragment: Transfer to 1NpN: 35%
+07-03 01:46:05.998  5238  5238 V NearbyFragment: Transfer to 1NpN: 35%
+07-03 01:46:06.001  5238  5238 V NearbyFragment: Transfer to 1NpN: 35%
+07-03 01:46:06.012  5238  5238 V NearbyFragment: Transfer to 1NpN: 35%
+07-03 01:46:06.032  5238  5238 V NearbyFragment: Transfer to 1NpN: 35%
+07-03 01:46:06.035  5238  5238 V NearbyFragment: Transfer to 1NpN: 35%
+07-03 01:46:06.058  5238  5238 V NearbyFragment: Transfer to 1NpN: 35%
+07-03 01:46:06.073  5238  5238 V NearbyFragment: Transfer to 1NpN: 35%
+07-03 01:46:06.084  5238  5238 V NearbyFragment: Transfer to 1NpN: 36%
+07-03 01:46:06.087  5238  5238 V NearbyFragment: Transfer to 1NpN: 36%
+07-03 01:46:06.110  5238  5238 V NearbyFragment: Transfer to 1NpN: 36%
+07-03 01:46:06.113  5238  5238 V NearbyFragment: Transfer to 1NpN: 36%
+07-03 01:46:06.136  5238  5238 V NearbyFragment: Transfer to 1NpN: 36%
+07-03 01:46:06.153  5238  5238 V NearbyFragment: Transfer to 1NpN: 36%
+07-03 01:46:06.158  5238  5238 V NearbyFragment: Transfer to 1NpN: 36%
+07-03 01:46:06.163  5238  5238 V NearbyFragment: Transfer to 1NpN: 36%
+07-03 01:46:06.187  5238  5238 V NearbyFragment: Transfer to 1NpN: 36%
+07-03 01:46:06.194  5238  5238 V NearbyFragment: Transfer to 1NpN: 36%
+07-03 01:46:06.200  5238  5238 V NearbyFragment: Transfer to 1NpN: 36%
+07-03 01:46:06.208  5238  5238 V NearbyFragment: Transfer to 1NpN: 37%
+07-03 01:46:06.218  5238  5238 V NearbyFragment: Transfer to 1NpN: 37%
+07-03 01:46:06.227  5238  5238 V NearbyFragment: Transfer to 1NpN: 37%
+07-03 01:46:06.238  5238  5238 V NearbyFragment: Transfer to 1NpN: 37%
+07-03 01:46:06.255  5238  5238 V NearbyFragment: Transfer to 1NpN: 37%
+07-03 01:46:06.259  5238  5238 V NearbyFragment: Transfer to 1NpN: 37%
+07-03 01:46:06.269  5238  5238 V NearbyFragment: Transfer to 1NpN: 37%
+07-03 01:46:06.273  5238  5238 V NearbyFragment: Transfer to 1NpN: 37%
+07-03 01:46:06.299  5238  5238 V NearbyFragment: Transfer to 1NpN: 37%
+07-03 01:46:06.308  5238  5238 V NearbyFragment: Transfer to 1NpN: 37%
+07-03 01:46:06.326  5238  5238 V NearbyFragment: Transfer to 1NpN: 38%
+07-03 01:46:06.336  5238  5238 V NearbyFragment: Transfer to 1NpN: 38%
+07-03 01:46:06.361  5238  5238 V NearbyFragment: Transfer to 1NpN: 38%
+07-03 01:46:06.378  5238  5238 V NearbyFragment: Transfer to 1NpN: 38%
+07-03 01:46:06.388  5238  5238 V NearbyFragment: Transfer to 1NpN: 38%
+07-03 01:46:06.392  5238  5238 V NearbyFragment: Transfer to 1NpN: 38%
+07-03 01:46:06.414  5238  5238 V NearbyFragment: Transfer to 1NpN: 38%
+07-03 01:46:06.419  5238  5238 V NearbyFragment: Transfer to 1NpN: 38%
+07-03 01:46:06.430  5238  5238 V NearbyFragment: Transfer to 1NpN: 38%
+07-03 01:46:06.440  5238  5238 V NearbyFragment: Transfer to 1NpN: 38%
+07-03 01:46:06.446  5238  5238 V NearbyFragment: Transfer to 1NpN: 38%
+07-03 01:46:06.467  5238  5238 V NearbyFragment: Transfer to 1NpN: 39%
+07-03 01:46:06.474  5238  5238 V NearbyFragment: Transfer to 1NpN: 39%
+07-03 01:46:06.480  5238  5238 V NearbyFragment: Transfer to 1NpN: 39%
+07-03 01:46:06.486  5238  5238 V NearbyFragment: Transfer to 1NpN: 39%
+07-03 01:46:06.492  5238  5238 V NearbyFragment: Transfer to 1NpN: 39%
+07-03 01:46:06.504  5238  5238 V NearbyFragment: Transfer to 1NpN: 39%
+07-03 01:46:06.509  5238  5238 V NearbyFragment: Transfer to 1NpN: 39%
+07-03 01:46:06.521  5238  5238 V NearbyFragment: Transfer to 1NpN: 39%
+07-03 01:46:06.525  5238  5238 V NearbyFragment: Transfer to 1NpN: 39%
+07-03 01:46:06.535  5238  5238 V NearbyFragment: Transfer to 1NpN: 39%
+07-03 01:46:06.542  5238  5238 V NearbyFragment: Transfer to 1NpN: 39%
+07-03 01:46:06.554  5238  5238 V NearbyFragment: Transfer to 1NpN: 40%
+07-03 01:46:06.574  5238  5238 V NearbyFragment: Transfer to 1NpN: 40%
+07-03 01:46:06.592  5238  5238 V NearbyFragment: Transfer to 1NpN: 40%
+07-03 01:46:06.598  5238  5238 V NearbyFragment: Transfer to 1NpN: 40%
+07-03 01:46:06.606  5238  5238 V NearbyFragment: Transfer to 1NpN: 40%
+07-03 01:46:06.614  5238  5238 V NearbyFragment: Transfer to 1NpN: 40%
+07-03 01:46:06.621  5238  5238 V NearbyFragment: Transfer to 1NpN: 40%
+07-03 01:46:06.646  5238  5238 V NearbyFragment: Transfer to 1NpN: 40%
+07-03 01:46:06.651  5238  5238 V NearbyFragment: Transfer to 1NpN: 40%
+07-03 01:46:06.659  5238  5238 V NearbyFragment: Transfer to 1NpN: 40%
+07-03 01:46:06.674  5238  5238 V NearbyFragment: Transfer to 1NpN: 41%
+07-03 01:46:06.680  5238  5238 V NearbyFragment: Transfer to 1NpN: 41%
+07-03 01:46:06.693  5238  5238 V NearbyFragment: Transfer to 1NpN: 41%
+07-03 01:46:06.707  5238  5238 V NearbyFragment: Transfer to 1NpN: 41%
+07-03 01:46:06.711  5238  5238 V NearbyFragment: Transfer to 1NpN: 41%
+07-03 01:46:06.736  5238  5238 V NearbyFragment: Transfer to 1NpN: 41%
+07-03 01:46:06.744  5238  5238 V NearbyFragment: Transfer to 1NpN: 41%
+07-03 01:46:06.755  5238  5238 V NearbyFragment: Transfer to 1NpN: 41%
+07-03 01:46:06.765  5238  5238 V NearbyFragment: Transfer to 1NpN: 41%
+07-03 01:46:06.771  5238  5238 V NearbyFragment: Transfer to 1NpN: 41%
+07-03 01:46:06.780  5238  5238 V NearbyFragment: Transfer to 1NpN: 41%
+07-03 01:46:06.793  5238  5238 V NearbyFragment: Transfer to 1NpN: 42%
+07-03 01:46:06.797  5238  5238 V NearbyFragment: Transfer to 1NpN: 42%
+07-03 01:46:06.818  5238  5238 V NearbyFragment: Transfer to 1NpN: 42%
+07-03 01:46:06.823  5238  5238 V NearbyFragment: Transfer to 1NpN: 42%
+07-03 01:46:06.848  5238  5238 V NearbyFragment: Transfer to 1NpN: 42%
+07-03 01:46:06.856  5238  5238 V NearbyFragment: Transfer to 1NpN: 42%
+07-03 01:46:06.863  5238  5238 V NearbyFragment: Transfer to 1NpN: 42%
+07-03 01:46:06.874  5238  5238 V NearbyFragment: Transfer to 1NpN: 42%
+07-03 01:46:06.879  5238  5238 V NearbyFragment: Transfer to 1NpN: 42%
+07-03 01:46:06.885  5238  5238 V NearbyFragment: Transfer to 1NpN: 42%
+07-03 01:46:06.891  5238  5238 V NearbyFragment: Transfer to 1NpN: 42%
+07-03 01:46:06.895  5238  5238 V NearbyFragment: Transfer to 1NpN: 43%
+07-03 01:46:06.906  5238  5238 V NearbyFragment: Transfer to 1NpN: 43%
+07-03 01:46:06.912  5238  5238 V NearbyFragment: Transfer to 1NpN: 43%
+07-03 01:46:06.927  5238  5238 V NearbyFragment: Transfer to 1NpN: 43%
+07-03 01:46:06.931  5238  5238 V NearbyFragment: Transfer to 1NpN: 43%
+07-03 01:46:06.953  5238  5238 V NearbyFragment: Transfer to 1NpN: 43%
+07-03 01:46:06.969  5238  5238 V NearbyFragment: Transfer to 1NpN: 43%
+07-03 01:46:06.974  5238  5238 V NearbyFragment: Transfer to 1NpN: 43%
+07-03 01:46:06.990  5238  5238 V NearbyFragment: Transfer to 1NpN: 43%
+07-03 01:46:06.994  5238  5238 V NearbyFragment: Transfer to 1NpN: 43%
+07-03 01:46:07.010  5238  5238 V NearbyFragment: Transfer to 1NpN: 44%
+07-03 01:46:07.020  5238  5238 V NearbyFragment: Transfer to 1NpN: 44%
+07-03 01:46:07.023  5238  5238 V NearbyFragment: Transfer to 1NpN: 44%
+07-03 01:46:07.027  5238  5238 V NearbyFragment: Transfer to 1NpN: 44%
+07-03 01:46:07.039  5238  5238 V NearbyFragment: Transfer to 1NpN: 44%
+07-03 01:46:07.055  5238  5238 V NearbyFragment: Transfer to 1NpN: 44%
+07-03 01:46:07.061  5238  5238 V NearbyFragment: Transfer to 1NpN: 44%
+07-03 01:46:07.085  5238  5238 V NearbyFragment: Transfer to 1NpN: 44%
+07-03 01:46:07.089  5238  5238 V NearbyFragment: Transfer to 1NpN: 44%
+07-03 01:46:07.102  5238  5238 V NearbyFragment: Transfer to 1NpN: 44%
+07-03 01:46:07.110  5238  5238 V NearbyFragment: Transfer to 1NpN: 44%
+07-03 01:46:07.118  5238  5238 V NearbyFragment: Transfer to 1NpN: 45%
+07-03 01:46:07.124  5238  5238 V NearbyFragment: Transfer to 1NpN: 45%
+07-03 01:46:07.132  5238  5238 V NearbyFragment: Transfer to 1NpN: 45%
+07-03 01:46:07.151  5238  5238 V NearbyFragment: Transfer to 1NpN: 45%
+07-03 01:46:07.155  5238  5238 V NearbyFragment: Transfer to 1NpN: 45%
+07-03 01:46:07.177  5238  5238 V NearbyFragment: Transfer to 1NpN: 45%
+07-03 01:46:07.182  5238  5238 V NearbyFragment: Transfer to 1NpN: 45%
+07-03 01:46:07.192  5238  5238 V NearbyFragment: Transfer to 1NpN: 45%
+07-03 01:46:07.197  5238  5238 V NearbyFragment: Transfer to 1NpN: 45%
+07-03 01:46:07.201  5238  5238 V NearbyFragment: Transfer to 1NpN: 45%
+07-03 01:46:07.212  5238  5238 V NearbyFragment: Transfer to 1NpN: 45%
+07-03 01:46:07.215  5238  5238 V NearbyFragment: Transfer to 1NpN: 46%
+07-03 01:46:07.223  5238  5238 V NearbyFragment: Transfer to 1NpN: 46%
+07-03 01:46:07.245  5238  5238 V NearbyFragment: Transfer to 1NpN: 46%
+07-03 01:46:07.255  5238  5238 V NearbyFragment: Transfer to 1NpN: 46%
+07-03 01:46:07.261  5238  5238 V NearbyFragment: Transfer to 1NpN: 46%
+07-03 01:46:07.284  5238  5238 V NearbyFragment: Transfer to 1NpN: 46%
+07-03 01:46:07.288  5238  5238 V NearbyFragment: Transfer to 1NpN: 46%
+07-03 01:46:07.294  5238  5238 V NearbyFragment: Transfer to 1NpN: 46%
+07-03 01:46:07.315  5238  5238 V NearbyFragment: Transfer to 1NpN: 46%
+07-03 01:46:07.327  5238  5238 V NearbyFragment: Transfer to 1NpN: 46%
+07-03 01:46:07.336  5238  5238 V NearbyFragment: Transfer to 1NpN: 47%
+07-03 01:46:07.341  5238  5238 V NearbyFragment: Transfer to 1NpN: 47%
+07-03 01:46:07.351  5238  5238 V NearbyFragment: Transfer to 1NpN: 47%
+07-03 01:46:07.355  5238  5238 V NearbyFragment: Transfer to 1NpN: 47%
+07-03 01:46:07.360  5238  5238 V NearbyFragment: Transfer to 1NpN: 47%
+07-03 01:46:07.367  5238  5238 V NearbyFragment: Transfer to 1NpN: 47%
+07-03 01:46:07.371  5238  5238 V NearbyFragment: Transfer to 1NpN: 47%
+07-03 01:46:07.375  5238  5238 V NearbyFragment: Transfer to 1NpN: 47%
+07-03 01:46:07.385  5238  5238 V NearbyFragment: Transfer to 1NpN: 47%
+07-03 01:46:07.397  5238  5238 V NearbyFragment: Transfer to 1NpN: 47%
+07-03 01:46:07.400  5238  5238 V NearbyFragment: Transfer to 1NpN: 47%
+07-03 01:46:07.409  5238  5238 V NearbyFragment: Transfer to 1NpN: 48%
+07-03 01:46:07.419  5238  5238 V NearbyFragment: Transfer to 1NpN: 48%
+07-03 01:46:07.423  5238  5238 V NearbyFragment: Transfer to 1NpN: 48%
+07-03 01:46:07.432  5238  5238 V NearbyFragment: Transfer to 1NpN: 48%
+07-03 01:46:07.436  5238  5238 V NearbyFragment: Transfer to 1NpN: 48%
+07-03 01:46:07.449  5238  5238 V NearbyFragment: Transfer to 1NpN: 48%
+07-03 01:46:07.453  5238  5238 V NearbyFragment: Transfer to 1NpN: 48%
+07-03 01:46:07.469  5238  5238 V NearbyFragment: Transfer to 1NpN: 48%
+07-03 01:46:07.474  5238  5238 V NearbyFragment: Transfer to 1NpN: 48%
+07-03 01:46:07.486  5238  5238 V NearbyFragment: Transfer to 1NpN: 48%
+07-03 01:46:07.490  5238  5238 V NearbyFragment: Transfer to 1NpN: 48%
+07-03 01:46:07.494  5238  5238 V NearbyFragment: Transfer to 1NpN: 49%
+07-03 01:46:07.503  5238  5238 V NearbyFragment: Transfer to 1NpN: 49%
+07-03 01:46:07.514  5238  5238 V NearbyFragment: Transfer to 1NpN: 49%
+07-03 01:46:07.522  5238  5238 V NearbyFragment: Transfer to 1NpN: 49%
+07-03 01:46:07.526  5238  5238 V NearbyFragment: Transfer to 1NpN: 49%
+07-03 01:46:07.532  5238  5238 V NearbyFragment: Transfer to 1NpN: 49%
+07-03 01:46:07.535  5238  5238 V NearbyFragment: Transfer to 1NpN: 49%
+07-03 01:46:07.550  5238  5238 V NearbyFragment: Transfer to 1NpN: 49%
+07-03 01:46:07.554  5238  5238 V NearbyFragment: Transfer to 1NpN: 49%
+07-03 01:46:07.563  5238  5238 V NearbyFragment: Transfer to 1NpN: 49%
+07-03 01:46:07.581  5238  5238 V NearbyFragment: Transfer to 1NpN: 50%
+07-03 01:46:07.587  5238  5238 V NearbyFragment: Transfer to 1NpN: 50%
+07-03 01:46:07.615  5238  5238 V NearbyFragment: Transfer to 1NpN: 50%
+07-03 01:46:07.622  5238  5238 V NearbyFragment: Transfer to 1NpN: 50%
+07-03 01:46:07.636  5238  5238 V NearbyFragment: Transfer to 1NpN: 50%
+07-03 01:46:07.640  5238  5238 V NearbyFragment: Transfer to 1NpN: 50%
+07-03 01:46:07.644  5238  5238 V NearbyFragment: Transfer to 1NpN: 50%
+07-03 01:46:07.664  5238  5238 V NearbyFragment: Transfer to 1NpN: 50%
+07-03 01:46:07.677  5238  5238 V NearbyFragment: Transfer to 1NpN: 50%
+07-03 01:46:07.680  5238  5238 V NearbyFragment: Transfer to 1NpN: 50%
+07-03 01:46:07.689  5238  5238 V NearbyFragment: Transfer to 1NpN: 50%
+07-03 01:46:07.697  5238  5238 V NearbyFragment: Transfer to 1NpN: 51%
+07-03 01:46:07.719  5238  5238 V NearbyFragment: Transfer to 1NpN: 51%
+07-03 01:46:07.723  5238  5238 V NearbyFragment: Transfer to 1NpN: 51%
+07-03 01:46:07.729  5238  5238 V NearbyFragment: Transfer to 1NpN: 51%
+07-03 01:46:07.738  5238  5238 V NearbyFragment: Transfer to 1NpN: 51%
+07-03 01:46:07.761  5238  5238 V NearbyFragment: Transfer to 1NpN: 51%
+07-03 01:46:07.776  5238  5238 V NearbyFragment: Transfer to 1NpN: 51%
+07-03 01:46:07.792  5238  5238 V NearbyFragment: Transfer to 1NpN: 51%
+07-03 01:46:07.797  5238  5238 V NearbyFragment: Transfer to 1NpN: 51%
+07-03 01:46:07.804  5238  5238 V NearbyFragment: Transfer to 1NpN: 51%
+07-03 01:46:07.807  5238  5238 V NearbyFragment: Transfer to 1NpN: 51%
+07-03 01:46:07.818  5238  5238 V NearbyFragment: Transfer to 1NpN: 52%
+07-03 01:46:07.822  5238  5238 V NearbyFragment: Transfer to 1NpN: 52%
+07-03 01:46:07.836  5238  5238 V NearbyFragment: Transfer to 1NpN: 52%
+07-03 01:46:07.840  5238  5238 V NearbyFragment: Transfer to 1NpN: 52%
+07-03 01:46:07.849  5238  5238 V NearbyFragment: Transfer to 1NpN: 52%
+07-03 01:46:07.853  5238  5238 V NearbyFragment: Transfer to 1NpN: 52%
+07-03 01:46:07.882  5238  5238 V NearbyFragment: Transfer to 1NpN: 52%
+07-03 01:46:07.896  5238  5238 V NearbyFragment: Transfer to 1NpN: 52%
+07-03 01:46:07.900  5238  5238 V NearbyFragment: Transfer to 1NpN: 52%
+07-03 01:46:07.905  5238  5238 V NearbyFragment: Transfer to 1NpN: 52%
+07-03 01:46:07.910  5238  5238 V NearbyFragment: Transfer to 1NpN: 52%
+07-03 01:46:07.917  5238  5238 V NearbyFragment: Transfer to 1NpN: 53%
+07-03 01:46:07.925  5238  5238 V NearbyFragment: Transfer to 1NpN: 53%
+07-03 01:46:07.933  5238  5238 V NearbyFragment: Transfer to 1NpN: 53%
+07-03 01:46:07.941  5238  5238 V NearbyFragment: Transfer to 1NpN: 53%
+07-03 01:46:07.949  5238  5238 V NearbyFragment: Transfer to 1NpN: 53%
+07-03 01:46:07.956  5238  5238 V NearbyFragment: Transfer to 1NpN: 53%
+07-03 01:46:07.965  5238  5238 V NearbyFragment: Transfer to 1NpN: 53%
+07-03 01:46:07.974  5238  5238 V NearbyFragment: Transfer to 1NpN: 53%
+07-03 01:46:07.985  5238  5238 V NearbyFragment: Transfer to 1NpN: 53%
+07-03 01:46:07.993  5238  5238 V NearbyFragment: Transfer to 1NpN: 53%
+07-03 01:46:08.002  5238  5238 V NearbyFragment: Transfer to 1NpN: 54%
+07-03 01:46:08.009  5238  5238 V NearbyFragment: Transfer to 1NpN: 54%
+07-03 01:46:08.018  5238  5238 V NearbyFragment: Transfer to 1NpN: 54%
+07-03 01:46:08.026  5238  5238 V NearbyFragment: Transfer to 1NpN: 54%
+07-03 01:46:08.035  5238  5238 V NearbyFragment: Transfer to 1NpN: 54%
+07-03 01:46:08.043  5238  5238 V NearbyFragment: Transfer to 1NpN: 54%
+07-03 01:46:08.049  5238  5238 V NearbyFragment: Transfer to 1NpN: 54%
+07-03 01:46:08.056  5238  5238 V NearbyFragment: Transfer to 1NpN: 54%
+07-03 01:46:08.063  5238  5238 V NearbyFragment: Transfer to 1NpN: 54%
+07-03 01:46:08.071  5238  5238 V NearbyFragment: Transfer to 1NpN: 54%
+07-03 01:46:08.079  5238  5238 V NearbyFragment: Transfer to 1NpN: 54%
+07-03 01:46:08.087  5238  5238 V NearbyFragment: Transfer to 1NpN: 55%
+07-03 01:46:08.096  5238  5238 V NearbyFragment: Transfer to 1NpN: 55%
+07-03 01:46:08.105  5238  5238 V NearbyFragment: Transfer to 1NpN: 55%
+07-03 01:46:08.117  5238  5238 V NearbyFragment: Transfer to 1NpN: 55%
+07-03 01:46:08.125  5238  5238 V NearbyFragment: Transfer to 1NpN: 55%
+07-03 01:46:08.125  5238  5238 V NearbyFragment: Transfer to 1NpN: 55%
+07-03 01:46:08.137  5238  5238 V NearbyFragment: Transfer to 1NpN: 55%
+07-03 01:46:08.152  5238  5238 V NearbyFragment: Transfer to 1NpN: 55%
+07-03 01:46:08.155  5238  5238 V NearbyFragment: Transfer to 1NpN: 55%
+07-03 01:46:08.164  5238  5238 V NearbyFragment: Transfer to 1NpN: 55%
+07-03 01:46:08.179  5238  5238 V NearbyFragment: Transfer to 1NpN: 55%
+07-03 01:46:08.183  5238  5238 V NearbyFragment: Transfer to 1NpN: 56%
+07-03 01:46:08.201  5238  5238 V NearbyFragment: Transfer to 1NpN: 56%
+07-03 01:46:08.205  5238  5238 V NearbyFragment: Transfer to 1NpN: 56%
+07-03 01:46:08.209  5238  5238 V NearbyFragment: Transfer to 1NpN: 56%
+07-03 01:46:08.224  5238  5238 V NearbyFragment: Transfer to 1NpN: 56%
+07-03 01:46:08.242  5238  5238 V NearbyFragment: Transfer to 1NpN: 56%
+07-03 01:46:08.248  5238  5238 V NearbyFragment: Transfer to 1NpN: 56%
+07-03 01:46:08.270  5238  5238 V NearbyFragment: Transfer to 1NpN: 56%
+07-03 01:46:08.278  5238  5238 V NearbyFragment: Transfer to 1NpN: 56%
+07-03 01:46:08.287  5238  5238 V NearbyFragment: Transfer to 1NpN: 56%
+07-03 01:46:08.292  5238  5238 V NearbyFragment: Transfer to 1NpN: 57%
+07-03 01:46:08.299  5238  5238 V NearbyFragment: Transfer to 1NpN: 57%
+07-03 01:46:08.305  5238  5238 V NearbyFragment: Transfer to 1NpN: 57%
+07-03 01:46:08.312  5238  5238 V NearbyFragment: Transfer to 1NpN: 57%
+07-03 01:46:08.317  5238  5238 V NearbyFragment: Transfer to 1NpN: 57%
+07-03 01:46:08.323  5238  5238 V NearbyFragment: Transfer to 1NpN: 57%
+07-03 01:46:08.328  5238  5238 V NearbyFragment: Transfer to 1NpN: 57%
+07-03 01:46:08.335  5238  5238 V NearbyFragment: Transfer to 1NpN: 57%
+07-03 01:46:08.345  5238  5238 V NearbyFragment: Transfer to 1NpN: 57%
+07-03 01:46:08.349  5238  5238 V NearbyFragment: Transfer to 1NpN: 57%
+07-03 01:46:08.357  5238  5238 V NearbyFragment: Transfer to 1NpN: 57%
+07-03 01:46:08.362  5238  5238 V NearbyFragment: Transfer to 1NpN: 58%
+07-03 01:46:08.371  5238  5238 V NearbyFragment: Transfer to 1NpN: 58%
+07-03 01:46:08.374  5238  5238 V NearbyFragment: Transfer to 1NpN: 58%
+07-03 01:46:08.391  5238  5238 V NearbyFragment: Transfer to 1NpN: 58%
+07-03 01:46:08.394  5238  5238 V NearbyFragment: Transfer to 1NpN: 58%
+07-03 01:46:08.403  5238  5238 V NearbyFragment: Transfer to 1NpN: 58%
+07-03 01:46:08.419  5238  5238 V NearbyFragment: Transfer to 1NpN: 58%
+07-03 01:46:08.423  5238  5238 V NearbyFragment: Transfer to 1NpN: 58%
+07-03 01:46:08.436  5238  5238 V NearbyFragment: Transfer to 1NpN: 58%
+07-03 01:46:08.443  5238  5238 V NearbyFragment: Transfer to 1NpN: 58%
+07-03 01:46:08.447  5238  5238 V NearbyFragment: Transfer to 1NpN: 58%
+07-03 01:46:08.452  5238  5238 V NearbyFragment: Transfer to 1NpN: 59%
+07-03 01:46:08.456  5238  5238 V NearbyFragment: Transfer to 1NpN: 59%
+07-03 01:46:08.462  5238  5238 V NearbyFragment: Transfer to 1NpN: 59%
+07-03 01:46:08.488  5238  5238 V NearbyFragment: Transfer to 1NpN: 59%
+07-03 01:46:08.497  5238  5238 V NearbyFragment: Transfer to 1NpN: 59%
+07-03 01:46:08.509  5238  5238 V NearbyFragment: Transfer to 1NpN: 59%
+07-03 01:46:08.513  5238  5238 V NearbyFragment: Transfer to 1NpN: 59%
+07-03 01:46:08.522  5238  5238 V NearbyFragment: Transfer to 1NpN: 59%
+07-03 01:46:08.525  5238  5238 V NearbyFragment: Transfer to 1NpN: 59%
+07-03 01:46:08.542  5238  5238 V NearbyFragment: Transfer to 1NpN: 59%
+07-03 01:46:08.627  5238  5238 V NearbyFragment: Transfer to 1NpN: 60%
+07-03 01:46:08.632  5238  5238 V NearbyFragment: Transfer to 1NpN: 60%
+07-03 01:46:08.703  5238  5238 V NearbyFragment: Transfer to 1NpN: 60%
+07-03 01:46:08.710  5238  5238 V NearbyFragment: Transfer to 1NpN: 60%
+07-03 01:46:08.716  5238  5238 V NearbyFragment: Transfer to 1NpN: 60%
+07-03 01:46:08.721  5238  5238 V NearbyFragment: Transfer to 1NpN: 60%
+07-03 01:46:08.724  5238  5238 V NearbyFragment: Transfer to 1NpN: 60%
+07-03 01:46:08.727  5238  5238 V NearbyFragment: Transfer to 1NpN: 60%
+07-03 01:46:08.732  5238  5238 V NearbyFragment: Transfer to 1NpN: 60%
+07-03 01:46:08.749  5238  5238 V NearbyFragment: Transfer to 1NpN: 60%
+07-03 01:46:08.752  5238  5238 V NearbyFragment: Transfer to 1NpN: 60%
+07-03 01:46:08.774  5238  5238 V NearbyFragment: Transfer to 1NpN: 61%
+07-03 01:46:08.781  5238  5238 V NearbyFragment: Transfer to 1NpN: 61%
+07-03 01:46:08.784  5238  5238 V NearbyFragment: Transfer to 1NpN: 61%
+07-03 01:46:08.788  5238  5238 V NearbyFragment: Transfer to 1NpN: 61%
+07-03 01:46:08.799  5238  5238 V NearbyFragment: Transfer to 1NpN: 61%
+07-03 01:46:08.807  5238  5238 V NearbyFragment: Transfer to 1NpN: 61%
+07-03 01:46:08.813  5238  5238 V NearbyFragment: Transfer to 1NpN: 61%
+07-03 01:46:08.820  5238  5238 V NearbyFragment: Transfer to 1NpN: 61%
+07-03 01:46:08.825  5238  5238 V NearbyFragment: Transfer to 1NpN: 61%
+07-03 01:46:08.835  5238  5238 V NearbyFragment: Transfer to 1NpN: 61%
+07-03 01:46:08.871  5238  5238 V NearbyFragment: Transfer to 1NpN: 61%
+07-03 01:46:08.902  5238  5238 V NearbyFragment: Transfer to 1NpN: 62%
+07-03 01:46:08.915  5238  5238 V NearbyFragment: Transfer to 1NpN: 62%
+07-03 01:46:08.927  5238  5238 V NearbyFragment: Transfer to 1NpN: 62%
+07-03 01:46:08.946  5238  5238 V NearbyFragment: Transfer to 1NpN: 62%
+07-03 01:46:08.956  5238  5238 V NearbyFragment: Transfer to 1NpN: 62%
+07-03 01:46:08.963  5238  5238 V NearbyFragment: Transfer to 1NpN: 62%
+07-03 01:46:08.974  5238  5238 V NearbyFragment: Transfer to 1NpN: 62%
+07-03 01:46:08.980  5238  5238 V NearbyFragment: Transfer to 1NpN: 62%
+07-03 01:46:08.987  5238  5238 V NearbyFragment: Transfer to 1NpN: 62%
+07-03 01:46:09.000  5238  5238 V NearbyFragment: Transfer to 1NpN: 62%
+07-03 01:46:09.004  5238  5238 V NearbyFragment: Transfer to 1NpN: 63%
+07-03 01:46:09.017  5238  5238 V NearbyFragment: Transfer to 1NpN: 63%
+07-03 01:46:09.037  5238  5238 V NearbyFragment: Transfer to 1NpN: 63%
+07-03 01:46:09.040  5238  5238 V NearbyFragment: Transfer to 1NpN: 63%
+07-03 01:46:09.046  5238  5238 V NearbyFragment: Transfer to 1NpN: 63%
+07-03 01:46:09.054  5238  5238 V NearbyFragment: Transfer to 1NpN: 63%
+07-03 01:46:09.060  5238  5238 V NearbyFragment: Transfer to 1NpN: 63%
+07-03 01:46:09.083  5238  5238 V NearbyFragment: Transfer to 1NpN: 63%
+07-03 01:46:09.090  5238  5238 V NearbyFragment: Transfer to 1NpN: 63%
+07-03 01:46:09.094  5238  5238 V NearbyFragment: Transfer to 1NpN: 63%
+07-03 01:46:09.107  5238  5238 V NearbyFragment: Transfer to 1NpN: 63%
+07-03 01:46:09.147  5238  5238 V NearbyFragment: Transfer to 1NpN: 64%
+07-03 01:46:09.151  5238  5238 V NearbyFragment: Transfer to 1NpN: 64%
+07-03 01:46:09.158  5238  5238 V NearbyFragment: Transfer to 1NpN: 64%
+07-03 01:46:09.171  5238  5238 V NearbyFragment: Transfer to 1NpN: 64%
+07-03 01:46:09.174  5238  5238 V NearbyFragment: Transfer to 1NpN: 64%
+07-03 01:46:09.184  5238  5238 V NearbyFragment: Transfer to 1NpN: 64%
+07-03 01:46:09.199  5238  5238 V NearbyFragment: Transfer to 1NpN: 64%
+07-03 01:46:09.203  5238  5238 V NearbyFragment: Transfer to 1NpN: 64%
+07-03 01:46:09.212  5238  5238 V NearbyFragment: Transfer to 1NpN: 64%
+07-03 01:46:09.222  5238  5238 V NearbyFragment: Transfer to 1NpN: 64%
+07-03 01:46:09.256  5238  5238 V NearbyFragment: Transfer to 1NpN: 64%
+07-03 01:46:09.264  5238  5238 V NearbyFragment: Transfer to 1NpN: 65%
+07-03 01:46:09.274  5238  5238 V NearbyFragment: Transfer to 1NpN: 65%
+07-03 01:46:09.280  5238  5238 V NearbyFragment: Transfer to 1NpN: 65%
+07-03 01:46:09.291  5238  5238 V NearbyFragment: Transfer to 1NpN: 65%
+07-03 01:46:09.297  5238  5238 V NearbyFragment: Transfer to 1NpN: 65%
+07-03 01:46:09.306  5238  5238 V NearbyFragment: Transfer to 1NpN: 65%
+07-03 01:46:09.309  5238  5238 V NearbyFragment: Transfer to 1NpN: 65%
+07-03 01:46:09.325  5238  5238 V NearbyFragment: Transfer to 1NpN: 65%
+07-03 01:46:09.330  5238  5238 V NearbyFragment: Transfer to 1NpN: 65%
+07-03 01:46:09.337  5238  5238 V NearbyFragment: Transfer to 1NpN: 65%
+07-03 01:46:09.342  5238  5238 V NearbyFragment: Transfer to 1NpN: 66%
+07-03 01:46:09.351  5238  5238 V NearbyFragment: Transfer to 1NpN: 66%
+07-03 01:46:09.359  5238  5238 V NearbyFragment: Transfer to 1NpN: 66%
+07-03 01:46:09.367  5238  5238 V NearbyFragment: Transfer to 1NpN: 66%
+07-03 01:46:09.375  5238  5238 V NearbyFragment: Transfer to 1NpN: 66%
+07-03 01:46:09.382  5238  5238 V NearbyFragment: Transfer to 1NpN: 66%
+07-03 01:46:09.393  5238  5238 V NearbyFragment: Transfer to 1NpN: 66%
+07-03 01:46:09.397  5238  5238 V NearbyFragment: Transfer to 1NpN: 66%
+07-03 01:46:09.404  5238  5238 V NearbyFragment: Transfer to 1NpN: 66%
+07-03 01:46:09.412  5238  5238 V NearbyFragment: Transfer to 1NpN: 66%
+07-03 01:46:09.419  5238  5238 V NearbyFragment: Transfer to 1NpN: 66%
+07-03 01:46:09.428  5238  5238 V NearbyFragment: Transfer to 1NpN: 67%
+07-03 01:46:09.442  5238  5238 V NearbyFragment: Transfer to 1NpN: 67%
+07-03 01:46:09.456  5238  5238 V NearbyFragment: Transfer to 1NpN: 67%
+07-03 01:46:09.470  5238  5238 V NearbyFragment: Transfer to 1NpN: 67%
+07-03 01:46:09.476  5238  5238 V NearbyFragment: Transfer to 1NpN: 67%
+07-03 01:46:09.484  5238  5238 V NearbyFragment: Transfer to 1NpN: 67%
+07-03 01:46:09.518  5238  5238 V NearbyFragment: Transfer to 1NpN: 67%
+07-03 01:46:09.529  5238  5238 V NearbyFragment: Transfer to 1NpN: 67%
+07-03 01:46:09.538  5238  5238 V NearbyFragment: Transfer to 1NpN: 67%
+07-03 01:46:09.546  5238  5238 V NearbyFragment: Transfer to 1NpN: 67%
+07-03 01:46:09.552  5238  5238 V NearbyFragment: Transfer to 1NpN: 67%
+07-03 01:46:09.556  5238  5238 V NearbyFragment: Transfer to 1NpN: 68%
+07-03 01:46:09.572  5238  5238 V NearbyFragment: Transfer to 1NpN: 68%
+07-03 01:46:09.578  5238  5238 V NearbyFragment: Transfer to 1NpN: 68%
+07-03 01:46:09.586  5238  5238 V NearbyFragment: Transfer to 1NpN: 68%
+07-03 01:46:09.594  5238  5238 V NearbyFragment: Transfer to 1NpN: 68%
+07-03 01:46:09.598  5238  5238 V NearbyFragment: Transfer to 1NpN: 68%
+07-03 01:46:09.608  5238  5238 V NearbyFragment: Transfer to 1NpN: 68%
+07-03 01:46:09.614  5238  5238 V NearbyFragment: Transfer to 1NpN: 68%
+07-03 01:46:09.636  5238  5238 V NearbyFragment: Transfer to 1NpN: 68%
+07-03 01:46:09.640  5238  5238 V NearbyFragment: Transfer to 1NpN: 68%
+07-03 01:46:09.653  5238  5238 V NearbyFragment: Transfer to 1NpN: 69%
+07-03 01:46:09.660  5238  5238 V NearbyFragment: Transfer to 1NpN: 69%
+07-03 01:46:09.666  5238  5238 V NearbyFragment: Transfer to 1NpN: 69%
+07-03 01:46:09.672  5238  5238 V NearbyFragment: Transfer to 1NpN: 69%
+07-03 01:46:09.676  5238  5238 V NearbyFragment: Transfer to 1NpN: 69%
+07-03 01:46:09.687  5238  5238 V NearbyFragment: Transfer to 1NpN: 69%
+07-03 01:46:09.693  5238  5238 V NearbyFragment: Transfer to 1NpN: 69%
+07-03 01:46:09.697  5238  5238 V NearbyFragment: Transfer to 1NpN: 69%
+07-03 01:46:09.704  5238  5238 V NearbyFragment: Transfer to 1NpN: 69%
+07-03 01:46:09.712  5238  5238 V NearbyFragment: Transfer to 1NpN: 69%
+07-03 01:46:09.719  5238  5238 V NearbyFragment: Transfer to 1NpN: 69%
+07-03 01:46:09.730  5238  5238 V NearbyFragment: Transfer to 1NpN: 70%
+07-03 01:46:09.738  5238  5238 V NearbyFragment: Transfer to 1NpN: 70%
+07-03 01:46:09.746  5238  5238 V NearbyFragment: Transfer to 1NpN: 70%
+07-03 01:46:09.754  5238  5238 V NearbyFragment: Transfer to 1NpN: 70%
+07-03 01:46:09.762  5238  5238 V NearbyFragment: Transfer to 1NpN: 70%
+07-03 01:46:09.768  5238  5238 V NearbyFragment: Transfer to 1NpN: 70%
+07-03 01:46:09.776  5238  5238 V NearbyFragment: Transfer to 1NpN: 70%
+07-03 01:46:09.790  5238  5238 V NearbyFragment: Transfer to 1NpN: 70%
+07-03 01:46:09.793  5238  5238 V NearbyFragment: Transfer to 1NpN: 70%
+07-03 01:46:09.800  5238  5238 V NearbyFragment: Transfer to 1NpN: 70%
+07-03 01:46:09.813  5238  5238 V NearbyFragment: Transfer to 1NpN: 70%
+07-03 01:46:09.816  5238  5238 V NearbyFragment: Transfer to 1NpN: 71%
+07-03 01:46:09.826  5238  5238 V NearbyFragment: Transfer to 1NpN: 71%
+07-03 01:46:09.836  5238  5238 V NearbyFragment: Transfer to 1NpN: 71%
+07-03 01:46:09.841  5238  5238 V NearbyFragment: Transfer to 1NpN: 71%
+07-03 01:46:09.852  5238  5238 V NearbyFragment: Transfer to 1NpN: 71%
+07-03 01:46:09.862  5238  5238 V NearbyFragment: Transfer to 1NpN: 71%
+07-03 01:46:09.868  5238  5238 V NearbyFragment: Transfer to 1NpN: 71%
+07-03 01:46:09.877  5238  5238 V NearbyFragment: Transfer to 1NpN: 71%
+07-03 01:46:09.880  5238  5238 V NearbyFragment: Transfer to 1NpN: 71%
+07-03 01:46:09.895  5238  5238 V NearbyFragment: Transfer to 1NpN: 71%
+07-03 01:46:09.899  5238  5238 V NearbyFragment: Transfer to 1NpN: 72%
+07-03 01:46:09.910  5238  5238 V NearbyFragment: Transfer to 1NpN: 72%
+07-03 01:46:09.929  5238  5238 V NearbyFragment: Transfer to 1NpN: 72%
+07-03 01:46:09.932  5238  5238 V NearbyFragment: Transfer to 1NpN: 72%
+07-03 01:46:09.953  5238  5238 V NearbyFragment: Transfer to 1NpN: 72%
+07-03 01:46:09.957  5238  5238 V NearbyFragment: Transfer to 1NpN: 72%
+07-03 01:46:09.960  5238  5238 V NearbyFragment: Transfer to 1NpN: 72%
+07-03 01:46:10.002  5238  5238 V NearbyFragment: Transfer to 1NpN: 72%
+07-03 01:46:10.017  5238  5238 V NearbyFragment: Transfer to 1NpN: 72%
+07-03 01:46:10.035  5238  5238 V NearbyFragment: Transfer to 1NpN: 72%
+07-03 01:46:10.041  5238  5238 V NearbyFragment: Transfer to 1NpN: 72%
+07-03 01:46:10.046  5238  5238 V NearbyFragment: Transfer to 1NpN: 73%
+07-03 01:46:10.086  5238  5238 V NearbyFragment: Transfer to 1NpN: 73%
+07-03 01:46:10.092  5238  5238 V NearbyFragment: Transfer to 1NpN: 73%
+07-03 01:46:10.112  5238  5238 V NearbyFragment: Transfer to 1NpN: 73%
+07-03 01:46:10.124  5238  5238 V NearbyFragment: Transfer to 1NpN: 73%
+07-03 01:46:10.132  5238  5238 V NearbyFragment: Transfer to 1NpN: 73%
+07-03 01:46:10.136  5238  5238 V NearbyFragment: Transfer to 1NpN: 73%
+07-03 01:46:10.139  5238  5238 V NearbyFragment: Transfer to 1NpN: 73%
+07-03 01:46:10.219  5238  5238 V NearbyFragment: Transfer to 1NpN: 73%
+07-03 01:46:10.224  5238  5238 V NearbyFragment: Transfer to 1NpN: 73%
+07-03 01:46:10.229  5238  5238 V NearbyFragment: Transfer to 1NpN: 73%
+07-03 01:46:10.268  5238  5238 V NearbyFragment: Transfer to 1NpN: 74%
+07-03 01:46:10.272  5238  5238 V NearbyFragment: Transfer to 1NpN: 74%
+07-03 01:46:10.277  5238  5238 V NearbyFragment: Transfer to 1NpN: 74%
+07-03 01:46:10.304  5238  5238 V NearbyFragment: Transfer to 1NpN: 74%
+07-03 01:46:10.311  5238  5238 V NearbyFragment: Transfer to 1NpN: 74%
+07-03 01:46:10.314  5238  5238 V NearbyFragment: Transfer to 1NpN: 74%
+07-03 01:46:10.352  5238  5238 V NearbyFragment: Transfer to 1NpN: 74%
+07-03 01:46:10.355  5238  5238 V NearbyFragment: Transfer to 1NpN: 74%
+07-03 01:46:10.370  5238  5238 V NearbyFragment: Transfer to 1NpN: 74%
+07-03 01:46:10.375  5238  5238 V NearbyFragment: Transfer to 1NpN: 74%
+07-03 01:46:10.378  5238  5238 V NearbyFragment: Transfer to 1NpN: 75%
+07-03 01:46:10.388  5238  5238 V NearbyFragment: Transfer to 1NpN: 75%
+07-03 01:46:10.392  5238  5238 V NearbyFragment: Transfer to 1NpN: 75%
+07-03 01:46:10.396  5238  5238 V NearbyFragment: Transfer to 1NpN: 75%
+07-03 01:46:10.440  5238  5238 V NearbyFragment: Transfer to 1NpN: 75%
+07-03 01:46:10.453  5238  5238 V NearbyFragment: Transfer to 1NpN: 75%
+07-03 01:46:10.459  5238  5238 V NearbyFragment: Transfer to 1NpN: 75%
+07-03 01:46:10.471  5238  5238 V NearbyFragment: Transfer to 1NpN: 75%
+07-03 01:46:10.474  5238  5238 V NearbyFragment: Transfer to 1NpN: 75%
+07-03 01:46:10.535  5238  5238 V NearbyFragment: Transfer to 1NpN: 75%
+07-03 01:46:10.539  5238  5238 V NearbyFragment: Transfer to 1NpN: 75%
+07-03 01:46:10.614  5238  5238 V NearbyFragment: Transfer to 1NpN: 76%
+07-03 01:46:10.624  5238  5238 V NearbyFragment: Transfer to 1NpN: 76%
+07-03 01:46:10.630  5238  5238 V NearbyFragment: Transfer to 1NpN: 76%
+07-03 01:46:10.638  5238  5238 V NearbyFragment: Transfer to 1NpN: 76%
+07-03 01:46:10.642  5238  5238 V NearbyFragment: Transfer to 1NpN: 76%
+07-03 01:46:10.698  5238  5238 V NearbyFragment: Transfer to 1NpN: 76%
+07-03 01:46:10.710  5238  5238 V NearbyFragment: Transfer to 1NpN: 76%
+07-03 01:46:10.717  5238  5238 V NearbyFragment: Transfer to 1NpN: 76%
+07-03 01:46:10.726  5238  5238 V NearbyFragment: Transfer to 1NpN: 76%
+07-03 01:46:10.804  5238  5238 V NearbyFragment: Transfer to 1NpN: 76%
+07-03 01:46:10.812  5238  5238 V NearbyFragment: Transfer to 1NpN: 76%
+07-03 01:46:10.827  5238  5238 V NearbyFragment: Transfer to 1NpN: 77%
+07-03 01:46:10.833  5238  5238 V NearbyFragment: Transfer to 1NpN: 77%
+07-03 01:46:10.837  5238  5238 V NearbyFragment: Transfer to 1NpN: 77%
+07-03 01:46:10.841  5238  5238 V NearbyFragment: Transfer to 1NpN: 77%
+07-03 01:46:10.863  5238  5238 V NearbyFragment: Transfer to 1NpN: 77%
+07-03 01:46:10.867  5238  5238 V NearbyFragment: Transfer to 1NpN: 77%
+07-03 01:46:10.875  5238  5238 V NearbyFragment: Transfer to 1NpN: 77%
+07-03 01:46:10.903  5238  5238 V NearbyFragment: Transfer to 1NpN: 77%
+07-03 01:46:10.906  5238  5238 V NearbyFragment: Transfer to 1NpN: 77%
+07-03 01:46:10.919  5238  5238 V NearbyFragment: Transfer to 1NpN: 77%
+07-03 01:46:10.976  5238  5238 V NearbyFragment: Transfer to 1NpN: 77%
+07-03 01:46:10.996  5238  5238 V NearbyFragment: Transfer to 1NpN: 78%
+07-03 01:46:11.012  5238  5238 V NearbyFragment: Transfer to 1NpN: 78%
+07-03 01:46:11.019  5238  5238 V NearbyFragment: Transfer to 1NpN: 78%
+07-03 01:46:11.024  5238  5238 V NearbyFragment: Transfer to 1NpN: 78%
+07-03 01:46:11.029  5238  5238 V NearbyFragment: Transfer to 1NpN: 78%
+07-03 01:46:11.035  5238  5238 V NearbyFragment: Transfer to 1NpN: 78%
+07-03 01:46:11.038  5238  5238 V NearbyFragment: Transfer to 1NpN: 78%
+07-03 01:46:11.043  5238  5238 V NearbyFragment: Transfer to 1NpN: 78%
+07-03 01:46:11.046  5238  5238 V NearbyFragment: Transfer to 1NpN: 78%
+07-03 01:46:11.054  5238  5238 V NearbyFragment: Transfer to 1NpN: 78%
+07-03 01:46:11.069  5238  5238 V NearbyFragment: Transfer to 1NpN: 79%
+07-03 01:46:11.076  5238  5238 V NearbyFragment: Transfer to 1NpN: 79%
+07-03 01:46:11.081  5238  5238 V NearbyFragment: Transfer to 1NpN: 79%
+07-03 01:46:11.085  5238  5238 V NearbyFragment: Transfer to 1NpN: 79%
+07-03 01:46:11.102  5238  5238 V NearbyFragment: Transfer to 1NpN: 79%
+07-03 01:46:11.106  5238  5238 V NearbyFragment: Transfer to 1NpN: 79%
+07-03 01:46:11.123  5238  5238 V NearbyFragment: Transfer to 1NpN: 79%
+07-03 01:46:11.129  5238  5238 V NearbyFragment: Transfer to 1NpN: 79%
+07-03 01:46:11.134  5238  5238 V NearbyFragment: Transfer to 1NpN: 79%
+07-03 01:46:11.138  5238  5238 V NearbyFragment: Transfer to 1NpN: 79%
+07-03 01:46:11.153  5238  5238 V NearbyFragment: Transfer to 1NpN: 79%
+07-03 01:46:11.157  5238  5238 V NearbyFragment: Transfer to 1NpN: 80%
+07-03 01:46:11.167  5238  5238 V NearbyFragment: Transfer to 1NpN: 80%
+07-03 01:46:11.182  5238  5238 V NearbyFragment: Transfer to 1NpN: 80%
+07-03 01:46:11.186  5238  5238 V NearbyFragment: Transfer to 1NpN: 80%
+07-03 01:46:11.195  5238  5238 V NearbyFragment: Transfer to 1NpN: 80%
+07-03 01:46:11.198  5238  5238 V NearbyFragment: Transfer to 1NpN: 80%
+07-03 01:46:11.208  5238  5238 V NearbyFragment: Transfer to 1NpN: 80%
+07-03 01:46:11.213  5238  5238 V NearbyFragment: Transfer to 1NpN: 80%
+07-03 01:46:11.229  5238  5238 V NearbyFragment: Transfer to 1NpN: 80%
+07-03 01:46:11.232  5238  5238 V NearbyFragment: Transfer to 1NpN: 80%
+07-03 01:46:11.244  5238  5238 V NearbyFragment: Transfer to 1NpN: 80%
+07-03 01:46:11.247  5238  5238 V NearbyFragment: Transfer to 1NpN: 81%
+07-03 01:46:11.260  5238  5238 V NearbyFragment: Transfer to 1NpN: 81%
+07-03 01:46:11.266  5238  5238 V NearbyFragment: Transfer to 1NpN: 81%
+07-03 01:46:11.272  5238  5238 V NearbyFragment: Transfer to 1NpN: 81%
+07-03 01:46:11.278  5238  5238 V NearbyFragment: Transfer to 1NpN: 81%
+07-03 01:46:11.289  5238  5238 V NearbyFragment: Transfer to 1NpN: 81%
+07-03 01:46:11.307  5238  5238 V NearbyFragment: Transfer to 1NpN: 81%
+07-03 01:46:11.313  5238  5238 V NearbyFragment: Transfer to 1NpN: 81%
+07-03 01:46:11.317  5238  5238 V NearbyFragment: Transfer to 1NpN: 81%
+07-03 01:46:11.326  5238  5238 V NearbyFragment: Transfer to 1NpN: 81%
+07-03 01:46:11.341  5238  5238 V NearbyFragment: Transfer to 1NpN: 82%
+07-03 01:46:11.345  5238  5238 V NearbyFragment: Transfer to 1NpN: 82%
+07-03 01:46:11.348  5238  5238 V NearbyFragment: Transfer to 1NpN: 82%
+07-03 01:46:11.376  5238  5238 V NearbyFragment: Transfer to 1NpN: 82%
+07-03 01:46:11.379  5238  5238 V NearbyFragment: Transfer to 1NpN: 82%
+07-03 01:46:11.395  5238  5238 V NearbyFragment: Transfer to 1NpN: 82%
+07-03 01:46:11.400  5238  5238 V NearbyFragment: Transfer to 1NpN: 82%
+07-03 01:46:11.431  5238  5238 V NearbyFragment: Transfer to 1NpN: 82%
+07-03 01:46:11.433  5238  5238 V NearbyFragment: Transfer to 1NpN: 82%
+07-03 01:46:11.451  5238  5238 V NearbyFragment: Transfer to 1NpN: 82%
+07-03 01:46:11.464  5238  5238 V NearbyFragment: Transfer to 1NpN: 82%
+07-03 01:46:11.468  5238  5238 V NearbyFragment: Transfer to 1NpN: 83%
+07-03 01:46:11.479  5238  5238 V NearbyFragment: Transfer to 1NpN: 83%
+07-03 01:46:11.495  5238  5238 V NearbyFragment: Transfer to 1NpN: 83%
+07-03 01:46:11.501  5238  5238 V NearbyFragment: Transfer to 1NpN: 83%
+07-03 01:46:11.513  5238  5238 V NearbyFragment: Transfer to 1NpN: 83%
+07-03 01:46:11.524  5238  5238 V NearbyFragment: Transfer to 1NpN: 83%
+07-03 01:46:11.533  5238  5238 V NearbyFragment: Transfer to 1NpN: 83%
+07-03 01:46:11.541  5238  5238 V NearbyFragment: Transfer to 1NpN: 83%
+07-03 01:46:11.562  5238  5238 V NearbyFragment: Transfer to 1NpN: 83%
+07-03 01:46:11.581  5238  5238 V NearbyFragment: Transfer to 1NpN: 83%
+07-03 01:46:11.587  5238  5238 V NearbyFragment: Transfer to 1NpN: 83%
+07-03 01:46:11.593  5238  5238 V NearbyFragment: Transfer to 1NpN: 84%
+07-03 01:46:11.597  5238  5238 V NearbyFragment: Transfer to 1NpN: 84%
+07-03 01:46:11.621  5238  5238 V NearbyFragment: Transfer to 1NpN: 84%
+07-03 01:46:11.627  5238  5238 V NearbyFragment: Transfer to 1NpN: 84%
+07-03 01:46:11.633  5238  5238 V NearbyFragment: Transfer to 1NpN: 84%
+07-03 01:46:11.637  5238  5238 V NearbyFragment: Transfer to 1NpN: 84%
+07-03 01:46:11.644  5238  5238 V NearbyFragment: Transfer to 1NpN: 84%
+07-03 01:46:11.647  5238  5238 V NearbyFragment: Transfer to 1NpN: 84%
+07-03 01:46:11.681  5238  5238 V NearbyFragment: Transfer to 1NpN: 84%
+07-03 01:46:11.685  5238  5238 V NearbyFragment: Transfer to 1NpN: 84%
+07-03 01:46:11.694  5238  5238 V NearbyFragment: Transfer to 1NpN: 85%
+07-03 01:46:11.700  5238  5238 V NearbyFragment: Transfer to 1NpN: 85%
+07-03 01:46:11.704  5238  5238 V NearbyFragment: Transfer to 1NpN: 85%
+07-03 01:46:11.707  5238  5238 V NearbyFragment: Transfer to 1NpN: 85%
+07-03 01:46:11.717  5238  5238 V NearbyFragment: Transfer to 1NpN: 85%
+07-03 01:46:11.721  5238  5238 V NearbyFragment: Transfer to 1NpN: 85%
+07-03 01:46:11.732  5238  5238 V NearbyFragment: Transfer to 1NpN: 85%
+07-03 01:46:11.736  5238  5238 V NearbyFragment: Transfer to 1NpN: 85%
+07-03 01:46:11.739  5238  5238 V NearbyFragment: Transfer to 1NpN: 85%
+07-03 01:46:11.749  5238  5238 V NearbyFragment: Transfer to 1NpN: 85%
+07-03 01:46:11.760  5238  5238 V NearbyFragment: Transfer to 1NpN: 85%
+07-03 01:46:11.765  5238  5238 V NearbyFragment: Transfer to 1NpN: 86%
+07-03 01:46:11.783  5238  5238 V NearbyFragment: Transfer to 1NpN: 86%
+07-03 01:46:11.788  5238  5238 V NearbyFragment: Transfer to 1NpN: 86%
+07-03 01:46:11.792  5238  5238 V NearbyFragment: Transfer to 1NpN: 86%
+07-03 01:46:11.813  5238  5238 V NearbyFragment: Transfer to 1NpN: 86%
+07-03 01:46:11.817  5238  5238 V NearbyFragment: Transfer to 1NpN: 86%
+07-03 01:46:11.824  5238  5238 V NearbyFragment: Transfer to 1NpN: 86%
+07-03 01:46:11.828  5238  5238 V NearbyFragment: Transfer to 1NpN: 86%
+07-03 01:46:11.836  5238  5238 V NearbyFragment: Transfer to 1NpN: 86%
+07-03 01:46:11.846  5238  5238 V NearbyFragment: Transfer to 1NpN: 86%
+07-03 01:46:11.850  5238  5238 V NearbyFragment: Transfer to 1NpN: 86%
+07-03 01:46:11.867  5238  5238 V NearbyFragment: Transfer to 1NpN: 87%
+07-03 01:46:11.870  5238  5238 V NearbyFragment: Transfer to 1NpN: 87%
+07-03 01:46:11.880  5238  5238 V NearbyFragment: Transfer to 1NpN: 87%
+07-03 01:46:11.885  5238  5238 V NearbyFragment: Transfer to 1NpN: 87%
+07-03 01:46:11.889  5238  5238 V NearbyFragment: Transfer to 1NpN: 87%
+07-03 01:46:11.893  5238  5238 V NearbyFragment: Transfer to 1NpN: 87%
+07-03 01:46:11.914  5238  5238 V NearbyFragment: Transfer to 1NpN: 87%
+07-03 01:46:11.922  5238  5238 V NearbyFragment: Transfer to 1NpN: 87%
+07-03 01:46:11.934  5238  5238 V NearbyFragment: Transfer to 1NpN: 87%
+07-03 01:46:11.938  5238  5238 V NearbyFragment: Transfer to 1NpN: 87%
+07-03 01:46:11.945  5238  5238 V NearbyFragment: Transfer to 1NpN: 88%
+07-03 01:46:11.949  5238  5238 V NearbyFragment: Transfer to 1NpN: 88%
+07-03 01:46:11.963  5238  5238 V NearbyFragment: Transfer to 1NpN: 88%
+07-03 01:46:11.973  5238  5238 V NearbyFragment: Transfer to 1NpN: 88%
+07-03 01:46:11.978  5238  5238 V NearbyFragment: Transfer to 1NpN: 88%
+07-03 01:46:11.986  5238  5238 V NearbyFragment: Transfer to 1NpN: 88%
+07-03 01:46:11.991  5238  5238 V NearbyFragment: Transfer to 1NpN: 88%
+07-03 01:46:12.004  5238  5238 V NearbyFragment: Transfer to 1NpN: 88%
+07-03 01:46:12.008  5238  5238 V NearbyFragment: Transfer to 1NpN: 88%
+07-03 01:46:12.024  5238  5238 V NearbyFragment: Transfer to 1NpN: 88%
+07-03 01:46:12.028  5238  5238 V NearbyFragment: Transfer to 1NpN: 88%
+07-03 01:46:12.032  5238  5238 V NearbyFragment: Transfer to 1NpN: 89%
+07-03 01:46:12.043  5238  5238 V NearbyFragment: Transfer to 1NpN: 89%
+07-03 01:46:12.049  5238  5238 V NearbyFragment: Transfer to 1NpN: 89%
+07-03 01:46:12.062  5238  5238 V NearbyFragment: Transfer to 1NpN: 89%
+07-03 01:46:12.080  5238  5238 V NearbyFragment: Transfer to 1NpN: 89%
+07-03 01:46:12.095  5238  5238 V NearbyFragment: Transfer to 1NpN: 89%
+07-03 01:46:12.110  5238  5238 V NearbyFragment: Transfer to 1NpN: 89%
+07-03 01:46:12.116  5238  5238 V NearbyFragment: Transfer to 1NpN: 89%
+07-03 01:46:12.122  5238  5238 V NearbyFragment: Transfer to 1NpN: 89%
+07-03 01:46:12.127  5238  5238 V NearbyFragment: Transfer to 1NpN: 89%
+07-03 01:46:12.138  5238  5238 V NearbyFragment: Transfer to 1NpN: 89%
+07-03 01:46:12.143  5238  5238 V NearbyFragment: Transfer to 1NpN: 90%
+07-03 01:46:12.149  5238  5238 V NearbyFragment: Transfer to 1NpN: 90%
+07-03 01:46:12.162  5238  5238 V NearbyFragment: Transfer to 1NpN: 90%
+07-03 01:46:12.166  5238  5238 V NearbyFragment: Transfer to 1NpN: 90%
+07-03 01:46:12.173  5238  5238 V NearbyFragment: Transfer to 1NpN: 90%
+07-03 01:46:12.188  5238  5238 V NearbyFragment: Transfer to 1NpN: 90%
+07-03 01:46:12.195  5238  5238 V NearbyFragment: Transfer to 1NpN: 90%
+07-03 01:46:12.231  5238  5238 V NearbyFragment: Transfer to 1NpN: 90%
+07-03 01:46:12.244  5238  5238 V NearbyFragment: Transfer to 1NpN: 90%
+07-03 01:46:12.250  5238  5238 V NearbyFragment: Transfer to 1NpN: 90%
+07-03 01:46:12.254  5238  5238 V NearbyFragment: Transfer to 1NpN: 91%
+07-03 01:46:12.262  5238  5238 V NearbyFragment: Transfer to 1NpN: 91%
+07-03 01:46:12.266  5238  5238 V NearbyFragment: Transfer to 1NpN: 91%
+07-03 01:46:12.269  5238  5238 V NearbyFragment: Transfer to 1NpN: 91%
+07-03 01:46:12.284  5238  5238 V NearbyFragment: Transfer to 1NpN: 91%
+07-03 01:46:12.290  5238  5238 V NearbyFragment: Transfer to 1NpN: 91%
+07-03 01:46:12.294  5238  5238 V NearbyFragment: Transfer to 1NpN: 91%
+07-03 01:46:12.304  5238  5238 V NearbyFragment: Transfer to 1NpN: 91%
+07-03 01:46:12.317  5238  5238 V NearbyFragment: Transfer to 1NpN: 91%
+07-03 01:46:12.331  5238  5238 V NearbyFragment: Transfer to 1NpN: 91%
+07-03 01:46:12.335  5238  5238 V NearbyFragment: Transfer to 1NpN: 91%
+07-03 01:46:12.339  5238  5238 V NearbyFragment: Transfer to 1NpN: 92%
+07-03 01:46:12.342  5238  5238 V NearbyFragment: Transfer to 1NpN: 92%
+07-03 01:46:12.360  5238  5238 V NearbyFragment: Transfer to 1NpN: 92%
+07-03 01:46:12.364  5238  5238 V NearbyFragment: Transfer to 1NpN: 92%
+07-03 01:46:12.376  5238  5238 V NearbyFragment: Transfer to 1NpN: 92%
+07-03 01:46:12.380  5238  5238 V NearbyFragment: Transfer to 1NpN: 92%
+07-03 01:46:12.393  5238  5238 V NearbyFragment: Transfer to 1NpN: 92%
+07-03 01:46:12.400  5238  5238 V NearbyFragment: Transfer to 1NpN: 92%
+07-03 01:46:12.406  5238  5238 V NearbyFragment: Transfer to 1NpN: 92%
+07-03 01:46:12.415  5238  5238 V NearbyFragment: Transfer to 1NpN: 92%
+07-03 01:46:12.425  5238  5238 V NearbyFragment: Transfer to 1NpN: 92%
+07-03 01:46:12.431  5238  5238 V NearbyFragment: Transfer to 1NpN: 93%
+07-03 01:46:12.449  5238  5238 V NearbyFragment: Transfer to 1NpN: 93%
+07-03 01:46:12.457  5238  5238 V NearbyFragment: Transfer to 1NpN: 93%
+07-03 01:46:12.463  5238  5238 V NearbyFragment: Transfer to 1NpN: 93%
+07-03 01:46:12.469  5238  5238 V NearbyFragment: Transfer to 1NpN: 93%
+07-03 01:46:12.480  5238  5238 V NearbyFragment: Transfer to 1NpN: 93%
+07-03 01:46:12.488  5238  5238 V NearbyFragment: Transfer to 1NpN: 93%
+07-03 01:46:12.499  5238  5238 V NearbyFragment: Transfer to 1NpN: 93%
+07-03 01:46:12.508  5238  5238 V NearbyFragment: Transfer to 1NpN: 93%
+07-03 01:46:12.540  5238  5238 V NearbyFragment: Transfer to 1NpN: 93%
+07-03 01:46:12.545  5238  5238 V NearbyFragment: Transfer to 1NpN: 94%
+07-03 01:46:12.556  5238  5238 V NearbyFragment: Transfer to 1NpN: 94%
+07-03 01:46:12.567  5238  5238 V NearbyFragment: Transfer to 1NpN: 94%
+07-03 01:46:12.576  5238  5238 V NearbyFragment: Transfer to 1NpN: 94%
+07-03 01:46:12.587  5238  5238 V NearbyFragment: Transfer to 1NpN: 94%
+07-03 01:46:12.591  5238  5238 V NearbyFragment: Transfer to 1NpN: 94%
+07-03 01:46:12.602  5238  5238 V NearbyFragment: Transfer to 1NpN: 94%
+07-03 01:46:12.606  5238  5238 V NearbyFragment: Transfer to 1NpN: 94%
+07-03 01:46:12.615  5238  5238 V NearbyFragment: Transfer to 1NpN: 94%
+07-03 01:46:12.631  5238  5238 V NearbyFragment: Transfer to 1NpN: 94%
+07-03 01:46:12.636  5238  5238 V NearbyFragment: Transfer to 1NpN: 94%
+07-03 01:46:12.645  5238  5238 V NearbyFragment: Transfer to 1NpN: 95%
+07-03 01:46:12.653  5238  5238 V NearbyFragment: Transfer to 1NpN: 95%
+07-03 01:46:12.662  5238  5238 V NearbyFragment: Transfer to 1NpN: 95%
+07-03 01:46:12.665  5238  5238 V NearbyFragment: Transfer to 1NpN: 95%
+07-03 01:46:12.672  5238  5238 V NearbyFragment: Transfer to 1NpN: 95%
+07-03 01:46:12.703  5238  5238 V NearbyFragment: Transfer to 1NpN: 95%
+07-03 01:46:12.709  5238  5238 V NearbyFragment: Transfer to 1NpN: 95%
+07-03 01:46:12.713  5238  5238 V NearbyFragment: Transfer to 1NpN: 95%
+07-03 01:46:12.732  5238  5238 V NearbyFragment: Transfer to 1NpN: 95%
+07-03 01:46:12.746  5238  5238 V NearbyFragment: Transfer to 1NpN: 95%
+07-03 01:46:12.761  5238  5238 V NearbyFragment: Transfer to 1NpN: 95%
+07-03 01:46:12.767  5238  5238 V NearbyFragment: Transfer to 1NpN: 96%
+07-03 01:46:12.776  5238  5238 V NearbyFragment: Transfer to 1NpN: 96%
+07-03 01:46:12.789  5238  5238 V NearbyFragment: Transfer to 1NpN: 96%
+07-03 01:46:12.795  5238  5238 V NearbyFragment: Transfer to 1NpN: 96%
+07-03 01:46:12.798  5238  5238 V NearbyFragment: Transfer to 1NpN: 96%
+07-03 01:46:12.805  5238  5238 V NearbyFragment: Transfer to 1NpN: 96%
+07-03 01:46:12.819  5238  5238 V NearbyFragment: Transfer to 1NpN: 96%
+07-03 01:46:12.821  5238  5238 V NearbyFragment: Transfer to 1NpN: 96%
+07-03 01:46:12.833  5238  5238 V NearbyFragment: Transfer to 1NpN: 96%
+07-03 01:46:12.844  5238  5238 V NearbyFragment: Transfer to 1NpN: 96%
+07-03 01:46:12.853  5238  5238 V NearbyFragment: Transfer to 1NpN: 97%
+07-03 01:46:12.871  5238  5238 V NearbyFragment: Transfer to 1NpN: 97%
+07-03 01:46:12.876  5238  5238 V NearbyFragment: Transfer to 1NpN: 97%
+07-03 01:46:12.939  5238  5238 V NearbyFragment: Transfer to 1NpN: 97%
+07-03 01:46:12.946  5238  5238 V NearbyFragment: Transfer to 1NpN: 97%
+07-03 01:46:12.952  5238  5238 V NearbyFragment: Transfer to 1NpN: 97%
+07-03 01:46:12.961  5238  5238 V NearbyFragment: Transfer to 1NpN: 97%
+07-03 01:46:12.966  5238  5238 V NearbyFragment: Transfer to 1NpN: 97%
+07-03 01:46:12.972  5238  5238 V NearbyFragment: Transfer to 1NpN: 97%
+07-03 01:46:12.976  5238  5238 V NearbyFragment: Transfer to 1NpN: 97%
+07-03 01:46:12.979  5238  5238 V NearbyFragment: Transfer to 1NpN: 97%
+07-03 01:46:12.985  5238  5238 V NearbyFragment: Transfer to 1NpN: 98%
+07-03 01:46:12.989  5238  5238 V NearbyFragment: Transfer to 1NpN: 98%
+07-03 01:46:12.995  5238  5238 V NearbyFragment: Transfer to 1NpN: 98%
+07-03 01:46:13.002  5238  5238 V NearbyFragment: Transfer to 1NpN: 98%
+07-03 01:46:13.011  5238  5238 V NearbyFragment: Transfer to 1NpN: 98%
+07-03 01:46:13.019  5238  5238 V NearbyFragment: Transfer to 1NpN: 98%
+07-03 01:46:13.025  5238  5238 V NearbyFragment: Transfer to 1NpN: 98%
+07-03 01:46:13.032  5238  5238 V NearbyFragment: Transfer to 1NpN: 98%
+07-03 01:46:13.047  5238  5238 V NearbyFragment: Transfer to 1NpN: 98%
+07-03 01:46:13.050  5238  5238 V NearbyFragment: Transfer to 1NpN: 98%
+07-03 01:46:13.057  5238  5238 V NearbyFragment: Transfer to 1NpN: 98%
+07-03 01:46:13.061  5238  5238 V NearbyFragment: Transfer to 1NpN: 99%
+07-03 01:46:13.078  5238  5238 V NearbyFragment: Transfer to 1NpN: 99%
+07-03 01:46:13.089  5238  5238 V NearbyFragment: Transfer to 1NpN: 99%
+07-03 01:46:13.103  5238  5238 V NearbyFragment: Transfer to 1NpN: 99%
+07-03 01:46:13.114  5238  5238 V NearbyFragment: Transfer to 1NpN: 99%
+07-03 01:46:13.119  5238  5238 V NearbyFragment: Transfer to 1NpN: 99%
+07-03 01:46:13.127  5238  5238 V NearbyFragment: Transfer to 1NpN: 99%
+07-03 01:46:13.156  5238  5238 V NearbyFragment: Transfer to 1NpN: 99%
+07-03 01:46:13.166  5238  5238 V NearbyFragment: Transfer to 1NpN: 99%
+07-03 01:46:13.171  5238  5238 V NearbyFragment: Transfer to 1NpN: 99%
+07-03 01:46:13.176  5238  5238 V NearbyFragment: Transfer to 1NpN: 100%
+07-03 01:46:13.177  5238  5238 V NearbyFragment: Transfer to 1NpN: 100%
+07-03 01:46:13.187  5238  5238 W NearbyFragment: Completed downloading 20200312_194930.mp4 from Endpoint{id=1NpN, name=Nexus 5X [34d8]} in 14.764s
+07-03 01:46:13.191  5238  5238 D NearbyFragment: Summarising 20200312_194930.mp4
+07-03 01:46:13.191  5238  5238 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_194930.mp4
+07-03 01:46:13.214  5238  5238 D VideoManager: videoCursor is null
+07-03 01:46:13.246  5238  5238 V VideoManager: videoFromCursor
+07-03 01:46:13.250  5238  5238 V ProcessingVideosEventHandler: onAdd
+07-03 01:46:13.251  5238  5238 V RawFootageEventHandler: onRemove
+07-03 01:46:13.261  5238  5238 V NearbyFragment: Transfer to 1NpN: 100%
+07-03 01:46:13.261  5238  5238 V NearbyFragment: Transfer to 1NpN: 100%
+07-03 01:46:13.267  5238  6008 V SummariserIntentService: onHandleIntent
+07-03 01:46:13.269  5238  6008 D SummariserIntentService: Video{id='924', data='/storage/emulated/0/Download/Nearby/20200312_194930.mp4', name='20200312_194930.mp4', size=69990400, visible=true, mimeType='video/mp4'}
+07-03 01:46:13.269  5238  6008 D SummariserIntentService: /storage/emulated/0/Movies/summarised/20200312_194930.mp4
+07-03 01:46:13.285  5238  6008 I mobile-ffmpeg: Loading mobile-ffmpeg.
+07-03 01:46:13.455  5238  6008 I mobile-ffmpeg: Loaded mobile-ffmpeg-full-gpl-arm64-v8a-4.3.2-20200415.
+07-03 01:46:13.457  5238  6009 D mobile-ffmpeg: Callback thread started.
+07-03 01:46:13.460  5238  6009 I mobile-ffmpeg: ffmpeg version v4.3-dev-2955
+07-03 01:46:13.460  5238  6009 I mobile-ffmpeg:  Copyright (c) 2000-2020 the FFmpeg developers
+07-03 01:46:13.460  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:13.460  5238  6009 I mobile-ffmpeg:   built with Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)
+07-03 01:46:13.460  5238  6009 I mobile-ffmpeg:   configuration: --cross-prefix=aarch64-linux-android- --sysroot=/files/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot --prefix=/home/taner/Projects/mobile-ffmpeg/prebuilt/android-arm64/ffmpeg --pkg-config=/usr/bin/pkg-config --enable-version3 --arch=aarch64 --cpu=armv8-a --cc=aarch64-linux-android24-clang --cxx=aarch64-linux-android24-clang++ --target-os=android --enable-neon --enable-asm --enable-inline-asm --enable-cross-compile --enable-pic --enable-jni --enable-optimizations --enable-swscale --enable-shared --enable-v4l2-m2m --disable-outdev=fbdev --disable-indev=fbdev --enable-small --disable-openssl --disable-xmm-clobber-test --disable-debug --enable-lto --disable-neon-clobber-test --disable-programs --disable-postproc --disable-doc --disable-htmlpages --disable-manpages --disable-podpages --disable-txtpages --disable-static --disable-sndio --disable-schannel --disable-securetransport --disable-xlib --disable-cuda --disable-cuvid --disable-nvenc --disable-vaapi --disable-vdpau --
+07-03 01:46:13.466  5238  6009 I mobile-ffmpeg:   libavutil      56. 42.102 / 56. 42.102
+07-03 01:46:13.466  5238  6009 I mobile-ffmpeg:   libavcodec     58. 78.102 / 58. 78.102
+07-03 01:46:13.466  5238  6009 I mobile-ffmpeg:   libavformat    58. 42.100 / 58. 42.100
+07-03 01:46:13.466  5238  6009 I mobile-ffmpeg:   libavdevice    58.  9.103 / 58.  9.103
+07-03 01:46:13.467  5238  6009 I mobile-ffmpeg:   libavfilter     7. 77.101 /  7. 77.101
+07-03 01:46:13.467  5238  6009 I mobile-ffmpeg:   libswscale      5.  6.101 /  5.  6.101
+07-03 01:46:13.467  5238  6009 I mobile-ffmpeg:   libswresample   3.  6.100 /  3.  6.100
+07-03 01:46:13.490  5238  6009 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a9cea9800] Found duplicated MOOV Atom. Skipped it
+07-03 01:46:14.144  5238  6009 I mobile-ffmpeg: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/storage/emulated/0/Download/Nearby/20200312_194930.mp4':
+07-03 01:46:14.144  5238  6009 I mobile-ffmpeg:   Metadata:
+07-03 01:46:14.144  5238  6009 I mobile-ffmpeg:     creation_time   : 
+07-03 01:46:14.145  5238  6009 I mobile-ffmpeg: 2020-03-12T08:50:30.000000Z
+07-03 01:46:14.145  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.145  5238  6009 I mobile-ffmpeg:     major_brand     : 
+07-03 01:46:14.145  5238  6009 I mobile-ffmpeg: mp42
+07-03 01:46:14.145  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.145  5238  6009 I mobile-ffmpeg:     minor_version   : 
+07-03 01:46:14.147  5238  6009 I mobile-ffmpeg: 1
+07-03 01:46:14.147  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.147  5238  6009 I mobile-ffmpeg:     compatible_brands: 
+07-03 01:46:14.147  5238  6009 I mobile-ffmpeg: mp42mp42
+07-03 01:46:14.147  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.148  5238  6009 I mobile-ffmpeg:   Duration: 
+07-03 01:46:14.148  5238  6009 I mobile-ffmpeg: 00:01:00.02
+07-03 01:46:14.148  5238  6009 I mobile-ffmpeg: , start: 
+07-03 01:46:14.148  5238  6009 I mobile-ffmpeg: 0.000000
+07-03 01:46:14.148  5238  6009 I mobile-ffmpeg: , bitrate: 
+07-03 01:46:14.149  5238  6009 I mobile-ffmpeg: 9328 kb/s
+07-03 01:46:14.149  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.149  5238  6009 I mobile-ffmpeg:     Stream #0:0
+07-03 01:46:14.149  5238  6009 I mobile-ffmpeg: (eng)
+07-03 01:46:14.149  5238  6009 I mobile-ffmpeg: : Video: h264 (avc1 / 0x31637661), yuvj420p(pc, bt709), 1280x720, 8383 kb/s
+07-03 01:46:14.149  5238  6009 I mobile-ffmpeg: , 
+07-03 01:46:14.149  5238  6009 I mobile-ffmpeg: 29.97 fps, 
+07-03 01:46:14.149  5238  6009 I mobile-ffmpeg: 29.97 tbr, 
+07-03 01:46:14.149  5238  6009 I mobile-ffmpeg: 1k tbn, 
+07-03 01:46:14.149  5238  6009 I mobile-ffmpeg: 2k tbc
+07-03 01:46:14.150  5238  6009 I mobile-ffmpeg:  (default)
+07-03 01:46:14.150  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.150  5238  6009 I mobile-ffmpeg:     Metadata:
+07-03 01:46:14.150  5238  6009 I mobile-ffmpeg:       creation_time   : 
+07-03 01:46:14.150  5238  6009 I mobile-ffmpeg: 2020-03-12T08:50:30.000000Z
+07-03 01:46:14.150  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.150  5238  6009 I mobile-ffmpeg:       handler_name    : 
+07-03 01:46:14.150  5238  6009 I mobile-ffmpeg: PittaSoft Video Media Handler
+07-03 01:46:14.150  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.150  5238  6009 I mobile-ffmpeg:     Stream #0:1
+07-03 01:46:14.150  5238  6009 I mobile-ffmpeg: (eng)
+07-03 01:46:14.150  5238  6009 I mobile-ffmpeg: : Audio: aac (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 47 kb/s
+07-03 01:46:14.151  5238  6009 I mobile-ffmpeg:  (default)
+07-03 01:46:14.151  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.151  5238  6009 I mobile-ffmpeg:     Metadata:
+07-03 01:46:14.151  5238  6009 I mobile-ffmpeg:       creation_time   : 
+07-03 01:46:14.151  5238  6009 I mobile-ffmpeg: 2020-03-12T08:50:30.000000Z
+07-03 01:46:14.151  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.151  5238  6009 I mobile-ffmpeg:       handler_name    : 
+07-03 01:46:14.151  5238  6009 I mobile-ffmpeg: PittaSoft Sound Media Handler
+07-03 01:46:14.151  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.153  5238  6009 I mobile-ffmpeg: Stream mapping:
+07-03 01:46:14.153  5238  6009 I mobile-ffmpeg:   Stream #0:0 -> #0:0
+07-03 01:46:14.153  5238  6009 I mobile-ffmpeg:  (h264 (native) -> wrapped_avframe (native))
+07-03 01:46:14.153  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.154  5238  6009 I mobile-ffmpeg:   Stream #0:1 -> #0:1
+07-03 01:46:14.154  5238  6009 I mobile-ffmpeg:  (aac (native) -> pcm_s16le (native))
+07-03 01:46:14.154  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.154  5238  6009 I mobile-ffmpeg: Press [q] to stop, [?] for help
+07-03 01:46:14.188  5238  6009 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a8b542c00] sws_param option is deprecated and ignored
+07-03 01:46:14.190  5238  6009 I mobile-ffmpeg: Output #0, null, to 'pipe:':
+07-03 01:46:14.190  5238  6009 I mobile-ffmpeg:   Metadata:
+07-03 01:46:14.190  5238  6009 I mobile-ffmpeg:     compatible_brands: 
+07-03 01:46:14.190  5238  6009 I mobile-ffmpeg: mp42mp42
+07-03 01:46:14.191  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.191  5238  6009 I mobile-ffmpeg:     major_brand     : 
+07-03 01:46:14.191  5238  6009 I mobile-ffmpeg: mp42
+07-03 01:46:14.191  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.191  5238  6009 I mobile-ffmpeg:     minor_version   : 
+07-03 01:46:14.191  5238  6009 I mobile-ffmpeg: 1
+07-03 01:46:14.191  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.191  5238  6009 I mobile-ffmpeg:     encoder         : 
+07-03 01:46:14.191  5238  6009 I mobile-ffmpeg: Lavf58.42.100
+07-03 01:46:14.191  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.191  5238  6009 I mobile-ffmpeg:     Stream #0:0
+07-03 01:46:14.191  5238  6009 I mobile-ffmpeg: (eng)
+07-03 01:46:14.191  5238  6009 I mobile-ffmpeg: : Video: wrapped_avframe, yuvj420p, 1280x720, q=2-31, 200 kb/s
+07-03 01:46:14.192  5238  6009 I mobile-ffmpeg: , 
+07-03 01:46:14.192  5238  6009 I mobile-ffmpeg: 29.97 fps, 
+07-03 01:46:14.192  5238  6009 I mobile-ffmpeg: 29.97 tbn, 
+07-03 01:46:14.192  5238  6009 I mobile-ffmpeg: 29.97 tbc
+07-03 01:46:14.192  5238  6009 I mobile-ffmpeg:  (default)
+07-03 01:46:14.192  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.192  5238  6009 I mobile-ffmpeg:     Metadata:
+07-03 01:46:14.192  5238  6009 I mobile-ffmpeg:       creation_time   : 
+07-03 01:46:14.192  5238  6009 I mobile-ffmpeg: 2020-03-12T08:50:30.000000Z
+07-03 01:46:14.192  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.192  5238  6009 I mobile-ffmpeg:       handler_name    : 
+07-03 01:46:14.192  5238  6009 I mobile-ffmpeg: PittaSoft Video Media Handler
+07-03 01:46:14.192  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.192  5238  6009 I mobile-ffmpeg:       encoder         : 
+07-03 01:46:14.192  5238  6009 I mobile-ffmpeg: Lavc58.78.102 wrapped_avframe
+07-03 01:46:14.193  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.193  5238  6009 I mobile-ffmpeg:     Stream #0:1
+07-03 01:46:14.193  5238  6009 I mobile-ffmpeg: (eng)
+07-03 01:46:14.193  5238  6009 I mobile-ffmpeg: : Audio: pcm_s16le, 16000 Hz, stereo, s16, 512 kb/s
+07-03 01:46:14.193  5238  6009 I mobile-ffmpeg:  (default)
+07-03 01:46:14.193  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.193  5238  6009 I mobile-ffmpeg:     Metadata:
+07-03 01:46:14.193  5238  6009 I mobile-ffmpeg:       creation_time   : 
+07-03 01:46:14.193  5238  6009 I mobile-ffmpeg: 2020-03-12T08:50:30.000000Z
+07-03 01:46:14.193  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.193  5238  6009 I mobile-ffmpeg:       handler_name    : 
+07-03 01:46:14.193  5238  6009 I mobile-ffmpeg: PittaSoft Sound Media Handler
+07-03 01:46:14.193  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.193  5238  6009 I mobile-ffmpeg:       encoder         : 
+07-03 01:46:14.194  5238  6009 I mobile-ffmpeg: Lavc58.78.102 pcm_s16le
+07-03 01:46:14.194  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:14.364  5238  6009 I mobile-ffmpeg: [freezedetect @ 0x7a8b511180] lavfi.freezedetect.freeze_start: 0
+07-03 01:46:14.655  5238  6009 I mobile-ffmpeg: frame=   86 fps=0.0 q=-0.0 size=N/A time=00:00:03.07 bitrate=N/A speed=6.13x    
+07-03 01:46:15.165  5238  6009 I mobile-ffmpeg: frame=  174 fps=173 q=-0.0 size=N/A time=00:00:05.95 bitrate=N/A speed= 5.9x    
+07-03 01:46:15.339  5238  6009 I mobile-ffmpeg: [freezedetect @ 0x7a8b511180] lavfi.freezedetect.freeze_duration: 6.773
+07-03 01:46:15.340  5238  6009 I mobile-ffmpeg: [freezedetect @ 0x7a8b511180] lavfi.freezedetect.freeze_end: 6.773
+07-03 01:46:15.670  5238  6009 I mobile-ffmpeg: frame=  256 fps=169 q=-0.0 size=N/A time=00:00:08.76 bitrate=N/A speed=5.78x    
+07-03 01:46:16.181  5238  6009 I mobile-ffmpeg: frame=  331 fps=163 q=-0.0 size=N/A time=00:00:11.20 bitrate=N/A speed=5.53x    
+07-03 01:46:16.685  5238  6009 I mobile-ffmpeg: frame=  413 fps=163 q=-0.0 size=N/A time=00:00:14.01 bitrate=N/A speed=5.54x    
+07-03 01:46:17.189  5238  6009 I mobile-ffmpeg: frame=  492 fps=162 q=-0.0 size=N/A time=00:00:16.57 bitrate=N/A speed=5.47x    
+07-03 01:46:17.676  5238  6009 I mobile-ffmpeg: [freezedetect @ 0x7a8b511180] lavfi.freezedetect.freeze_start: 18.017
+07-03 01:46:17.694  5238  6009 I mobile-ffmpeg: frame=  575 fps=163 q=-0.0 size=N/A time=00:00:19.32 bitrate=N/A speed=5.46x    
+07-03 01:46:18.198  5238  6009 I mobile-ffmpeg: frame=  657 fps=163 q=-0.0 size=N/A time=00:00:22.08 bitrate=N/A speed=5.47x    
+07-03 01:46:18.703  5238  6009 I mobile-ffmpeg: frame=  736 fps=162 q=-0.0 size=N/A time=00:00:24.70 bitrate=N/A speed=5.44x    
+07-03 01:46:19.200  5238  6009 I mobile-ffmpeg: frame=  805 fps=160 q=-0.0 size=N/A time=00:00:27.07 bitrate=N/A speed=5.36x    
+07-03 01:46:19.711  5238  6009 I mobile-ffmpeg: frame=  887 fps=160 q=-0.0 size=N/A time=00:00:29.76 bitrate=N/A speed=5.36x    
+07-03 01:46:20.211  5238  6009 I mobile-ffmpeg: frame=  954 fps=158 q=-0.0 size=N/A time=00:00:32.00 bitrate=N/A speed=5.29x    
+07-03 01:46:20.705  5238  6009 I mobile-ffmpeg: frame= 1034 fps=158 q=-0.0 size=N/A time=00:00:34.69 bitrate=N/A speed= 5.3x    
+07-03 01:46:21.208  5238  6009 I mobile-ffmpeg: frame= 1108 fps=157 q=-0.0 size=N/A time=00:00:37.18 bitrate=N/A speed=5.27x    
+07-03 01:46:21.725  5238  6009 I mobile-ffmpeg: frame= 1188 fps=157 q=-0.0 size=N/A time=00:00:39.80 bitrate=N/A speed=5.26x    
+07-03 01:46:22.220  5238  6009 I mobile-ffmpeg: frame= 1252 fps=155 q=-0.0 size=N/A time=00:00:41.98 bitrate=N/A speed=5.21x    
+07-03 01:46:22.729  5238  6009 I mobile-ffmpeg: frame= 1319 fps=154 q=-0.0 size=N/A time=00:00:44.16 bitrate=N/A speed=5.15x    
+07-03 01:46:23.227  5238  6009 I mobile-ffmpeg: frame= 1396 fps=154 q=-0.0 size=N/A time=00:00:46.78 bitrate=N/A speed=5.16x    
+07-03 01:46:23.729  5238  6009 I mobile-ffmpeg: frame= 1471 fps=154 q=-0.0 size=N/A time=00:00:49.28 bitrate=N/A speed=5.15x    
+07-03 01:46:23.734  5238  6009 I mobile-ffmpeg: [freezedetect @ 0x7a8b511180] lavfi.freezedetect.freeze_duration: 31.061
+07-03 01:46:23.734  5238  6009 I mobile-ffmpeg: [freezedetect @ 0x7a8b511180] lavfi.freezedetect.freeze_end: 49.078
+07-03 01:46:24.235  5238  6009 I mobile-ffmpeg: frame= 1540 fps=153 q=-0.0 size=N/A time=00:00:51.52 bitrate=N/A speed=5.11x    
+07-03 01:46:24.742  5238  6009 I mobile-ffmpeg: frame= 1614 fps=152 q=-0.0 size=N/A time=00:00:54.08 bitrate=N/A speed=5.11x    
+07-03 01:46:25.255  5238  6009 I mobile-ffmpeg: frame= 1680 fps=151 q=-0.0 size=N/A time=00:00:56.25 bitrate=N/A speed=5.07x    
+07-03 01:46:25.760  5238  6009 I mobile-ffmpeg: frame= 1747 fps=151 q=-0.0 size=N/A time=00:00:58.49 bitrate=N/A speed=5.04x    
+07-03 01:46:26.177  5238  6009 I mobile-ffmpeg: frame= 1800 fps=150 q=-0.0 Lsize=N/A time=00:01:00.06 bitrate=N/A speed=4.99x    
+07-03 01:46:26.177  5238  6009 I mobile-ffmpeg: video:942kB audio:3752kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 
+07-03 01:46:26.178  5238  6009 I mobile-ffmpeg: unknown
+07-03 01:46:26.178  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.245  5238  6009 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a9cea9800] Found duplicated MOOV Atom. Skipped it
+07-03 01:46:26.294  5238  6009 I mobile-ffmpeg: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/storage/emulated/0/Download/Nearby/20200312_194930.mp4':
+07-03 01:46:26.294  5238  6009 I mobile-ffmpeg:   Metadata:
+07-03 01:46:26.295  5238  6009 I mobile-ffmpeg:     creation_time   : 
+07-03 01:46:26.295  5238  6009 I mobile-ffmpeg: 2020-03-12T08:50:30.000000Z
+07-03 01:46:26.295  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.295  5238  6009 I mobile-ffmpeg:     major_brand     : 
+07-03 01:46:26.295  5238  6009 I mobile-ffmpeg: mp42
+07-03 01:46:26.295  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.295  5238  6009 I mobile-ffmpeg:     minor_version   : 
+07-03 01:46:26.295  5238  6009 I mobile-ffmpeg: 1
+07-03 01:46:26.295  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.295  5238  6009 I mobile-ffmpeg:     compatible_brands: 
+07-03 01:46:26.295  5238  6009 I mobile-ffmpeg: mp42mp42
+07-03 01:46:26.295  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.296  5238  6009 I mobile-ffmpeg:   Duration: 
+07-03 01:46:26.296  5238  6009 I mobile-ffmpeg: 00:01:00.02
+07-03 01:46:26.296  5238  6009 I mobile-ffmpeg: , start: 
+07-03 01:46:26.296  5238  6009 I mobile-ffmpeg: 0.000000
+07-03 01:46:26.296  5238  6009 I mobile-ffmpeg: , bitrate: 
+07-03 01:46:26.296  5238  6009 I mobile-ffmpeg: 9328 kb/s
+07-03 01:46:26.296  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.296  5238  6009 I mobile-ffmpeg:     Stream #0:0
+07-03 01:46:26.296  5238  6009 I mobile-ffmpeg: (eng)
+07-03 01:46:26.296  5238  6009 I mobile-ffmpeg: : Video: h264 (avc1 / 0x31637661), yuvj420p(pc, bt709), 1280x720, 8383 kb/s
+07-03 01:46:26.296  5238  6009 I mobile-ffmpeg: , 
+07-03 01:46:26.296  5238  6009 I mobile-ffmpeg: 29.97 fps, 
+07-03 01:46:26.296  5238  6009 I mobile-ffmpeg: 29.97 tbr, 
+07-03 01:46:26.296  5238  6009 I mobile-ffmpeg: 1k tbn, 
+07-03 01:46:26.296  5238  6009 I mobile-ffmpeg: 2k tbc
+07-03 01:46:26.297  5238  6009 I mobile-ffmpeg:  (default)
+07-03 01:46:26.297  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.297  5238  6009 I mobile-ffmpeg:     Metadata:
+07-03 01:46:26.297  5238  6009 I mobile-ffmpeg:       creation_time   : 
+07-03 01:46:26.297  5238  6009 I mobile-ffmpeg: 2020-03-12T08:50:30.000000Z
+07-03 01:46:26.297  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.297  5238  6009 I mobile-ffmpeg:       handler_name    : 
+07-03 01:46:26.297  5238  6009 I mobile-ffmpeg: PittaSoft Video Media Handler
+07-03 01:46:26.297  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.297  5238  6009 I mobile-ffmpeg:     Stream #0:1
+07-03 01:46:26.297  5238  6009 I mobile-ffmpeg: (eng)
+07-03 01:46:26.297  5238  6009 I mobile-ffmpeg: : Audio: aac (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 47 kb/s
+07-03 01:46:26.297  5238  6009 I mobile-ffmpeg:  (default)
+07-03 01:46:26.297  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.298  5238  6009 I mobile-ffmpeg:     Metadata:
+07-03 01:46:26.298  5238  6009 I mobile-ffmpeg:       creation_time   : 
+07-03 01:46:26.298  5238  6009 I mobile-ffmpeg: 2020-03-12T08:50:30.000000Z
+07-03 01:46:26.298  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.298  5238  6009 I mobile-ffmpeg:       handler_name    : 
+07-03 01:46:26.298  5238  6009 I mobile-ffmpeg: PittaSoft Sound Media Handler
+07-03 01:46:26.298  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.317  5238  6008 W Summariser: 2 active sections found
+07-03 01:46:26.318  5238  6008 I FfmpegTools: Running ffmpeg with:
+07-03 01:46:26.318  5238  6008 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_194930.mp4 -filter_complex [0:v]trim=6.773000:18.017000,setpts=PTS-STARTPTS[v0];[0:a]atrim=6.773000:18.017000,asetpts=PTS-STARTPTS[a0];[0:v]trim=49.078000:60.020000,setpts=PTS-STARTPTS[v1];[0:a]atrim=49.078000:60.020000,asetpts=PTS-STARTPTS[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/summarised/20200312_194930.mp4
+07-03 01:46:26.325  5238  6009 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a9cea9800] Found duplicated MOOV Atom. Skipped it
+07-03 01:46:26.372  5238  6009 I mobile-ffmpeg: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/storage/emulated/0/Download/Nearby/20200312_194930.mp4':
+07-03 01:46:26.372  5238  6009 I mobile-ffmpeg:   Metadata:
+07-03 01:46:26.372  5238  6009 I mobile-ffmpeg:     creation_time   : 
+07-03 01:46:26.372  5238  6009 I mobile-ffmpeg: 2020-03-12T08:50:30.000000Z
+07-03 01:46:26.372  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.372  5238  6009 I mobile-ffmpeg:     major_brand     : 
+07-03 01:46:26.372  5238  6009 I mobile-ffmpeg: mp42
+07-03 01:46:26.372  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.372  5238  6009 I mobile-ffmpeg:     minor_version   : 
+07-03 01:46:26.372  5238  6009 I mobile-ffmpeg: 1
+07-03 01:46:26.373  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.373  5238  6009 I mobile-ffmpeg:     compatible_brands: 
+07-03 01:46:26.373  5238  6009 I mobile-ffmpeg: mp42mp42
+07-03 01:46:26.373  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.373  5238  6009 I mobile-ffmpeg:   Duration: 
+07-03 01:46:26.373  5238  6009 I mobile-ffmpeg: 00:01:00.02
+07-03 01:46:26.373  5238  6009 I mobile-ffmpeg: , start: 
+07-03 01:46:26.373  5238  6009 I mobile-ffmpeg: 0.000000
+07-03 01:46:26.373  5238  6009 I mobile-ffmpeg: , bitrate: 
+07-03 01:46:26.373  5238  6009 I mobile-ffmpeg: 9328 kb/s
+07-03 01:46:26.373  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.373  5238  6009 I mobile-ffmpeg:     Stream #0:0
+07-03 01:46:26.373  5238  6009 I mobile-ffmpeg: (eng)
+07-03 01:46:26.373  5238  6009 I mobile-ffmpeg: : Video: h264 (avc1 / 0x31637661), yuvj420p(pc, bt709), 1280x720, 8383 kb/s
+07-03 01:46:26.373  5238  6009 I mobile-ffmpeg: , 
+07-03 01:46:26.373  5238  6009 I mobile-ffmpeg: 29.97 fps, 
+07-03 01:46:26.374  5238  6009 I mobile-ffmpeg: 29.97 tbr, 
+07-03 01:46:26.374  5238  6009 I mobile-ffmpeg: 1k tbn, 
+07-03 01:46:26.374  5238  6009 I mobile-ffmpeg: 2k tbc
+07-03 01:46:26.374  5238  6009 I mobile-ffmpeg:  (default)
+07-03 01:46:26.374  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.375  5238  6009 I mobile-ffmpeg:     Metadata:
+07-03 01:46:26.376  5238  6009 I mobile-ffmpeg:       creation_time   : 
+07-03 01:46:26.376  5238  6009 I mobile-ffmpeg: 2020-03-12T08:50:30.000000Z
+07-03 01:46:26.376  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.376  5238  6009 I mobile-ffmpeg:       handler_name    : 
+07-03 01:46:26.377  5238  6009 I mobile-ffmpeg: PittaSoft Video Media Handler
+07-03 01:46:26.377  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.377  5238  6009 I mobile-ffmpeg:     Stream #0:1
+07-03 01:46:26.377  5238  6009 I mobile-ffmpeg: (eng)
+07-03 01:46:26.378  5238  6009 I mobile-ffmpeg: : Audio: aac (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 47 kb/s
+07-03 01:46:26.379  5238  6009 I mobile-ffmpeg:  (default)
+07-03 01:46:26.379  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.379  5238  6009 I mobile-ffmpeg:     Metadata:
+07-03 01:46:26.379  5238  6009 I mobile-ffmpeg:       creation_time   : 
+07-03 01:46:26.379  5238  6009 I mobile-ffmpeg: 2020-03-12T08:50:30.000000Z
+07-03 01:46:26.380  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.381  5238  6009 I mobile-ffmpeg:       handler_name    : 
+07-03 01:46:26.381  5238  6009 I mobile-ffmpeg: PittaSoft Sound Media Handler
+07-03 01:46:26.381  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.389  5238  6009 I mobile-ffmpeg: Stream mapping:
+07-03 01:46:26.389  5238  6009 I mobile-ffmpeg:   Stream #0:0 (h264) -> trim
+07-03 01:46:26.389  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.390  5238  6009 I mobile-ffmpeg:   Stream #0:0 (h264) -> trim
+07-03 01:46:26.390  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.390  5238  6009 I mobile-ffmpeg:   Stream #0:1 (aac) -> atrim
+07-03 01:46:26.391  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.391  5238  6009 I mobile-ffmpeg:   Stream #0:1 (aac) -> atrim
+07-03 01:46:26.391  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.392  5238  6009 I mobile-ffmpeg:   concat:out:v0
+07-03 01:46:26.392  5238  6009 I mobile-ffmpeg:  -> Stream #0:0 (libx264)
+07-03 01:46:26.392  5238  6009 I mobile-ffmpeg:   concat:out:a0
+07-03 01:46:26.392  5238  6009 I mobile-ffmpeg:  -> Stream #0:1 (aac)
+07-03 01:46:26.392  5238  6009 I mobile-ffmpeg: Press [q] to stop, [?] for help
+07-03 01:46:26.393  5238  6009 I mobile-ffmpeg: frame=    0 fps=0.0 q=0.0 size=       0kB time=-577014:32:22.77 bitrate=  -0.0kbits/s speed=N/A    
+07-03 01:46:26.459  5238  6009 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a8b542b40] sws_param option is deprecated and ignored
+07-03 01:46:26.476  5238  6009 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7a8b543140] sws_param option is deprecated and ignored
+07-03 01:46:26.476  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] using cpu capabilities: ARMv8 NEON
+07-03 01:46:26.484  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] profile High, level 3.1, 4:2:0, 8-bit
+07-03 01:46:26.485  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] 264 - core 159 - H.264/MPEG-4 AVC codec - Copyleft 2003-2020 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=9 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+07-03 01:46:26.489  5238  6009 I mobile-ffmpeg: Output #0, mp4, to '/storage/emulated/0/Movies/summarised/20200312_194930.mp4':
+07-03 01:46:26.489  5238  6009 I mobile-ffmpeg:   Metadata:
+07-03 01:46:26.489  5238  6009 I mobile-ffmpeg:     compatible_brands: 
+07-03 01:46:26.489  5238  6009 I mobile-ffmpeg: mp42mp42
+07-03 01:46:26.489  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.489  5238  6009 I mobile-ffmpeg:     major_brand     : 
+07-03 01:46:26.489  5238  6009 I mobile-ffmpeg: mp42
+07-03 01:46:26.489  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.489  5238  6009 I mobile-ffmpeg:     minor_version   : 
+07-03 01:46:26.489  5238  6009 I mobile-ffmpeg: 1
+07-03 01:46:26.490  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.490  5238  6009 I mobile-ffmpeg:     encoder         : 
+07-03 01:46:26.490  5238  6009 I mobile-ffmpeg: Lavf58.42.100
+07-03 01:46:26.490  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.490  5238  6009 I mobile-ffmpeg:     Stream #0:0
+07-03 01:46:26.490  5238  6009 I mobile-ffmpeg: : Video: h264 (libx264) (avc1 / 0x31637661), yuvj420p(pc), 1280x720, q=-1--1
+07-03 01:46:26.491  5238  6009 I mobile-ffmpeg: , 
+07-03 01:46:26.491  5238  6009 I mobile-ffmpeg: 29.97 fps, 
+07-03 01:46:26.491  5238  6009 I mobile-ffmpeg: 30k tbn, 
+07-03 01:46:26.491  5238  6009 I mobile-ffmpeg: 29.97 tbc
+07-03 01:46:26.491  5238  6009 I mobile-ffmpeg:  (default)
+07-03 01:46:26.491  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.491  5238  6009 I mobile-ffmpeg:     Metadata:
+07-03 01:46:26.491  5238  6009 I mobile-ffmpeg:       encoder         : 
+07-03 01:46:26.491  5238  6009 I mobile-ffmpeg: Lavc58.78.102 libx264
+07-03 01:46:26.491  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.491  5238  6009 I mobile-ffmpeg:     Side data:
+07-03 01:46:26.491  5238  6009 I mobile-ffmpeg:       
+07-03 01:46:26.491  5238  6009 I mobile-ffmpeg: cpb: 
+07-03 01:46:26.491  5238  6009 I mobile-ffmpeg: bitrate max/min/avg: 0/0/0 buffer size: 0 
+07-03 01:46:26.492  5238  6009 I mobile-ffmpeg: vbv_delay: N/A
+07-03 01:46:26.492  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.492  5238  6009 I mobile-ffmpeg:     Stream #0:1
+07-03 01:46:26.492  5238  6009 I mobile-ffmpeg: : Audio: aac (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 128 kb/s
+07-03 01:46:26.492  5238  6009 I mobile-ffmpeg:  (default)
+07-03 01:46:26.492  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.492  5238  6009 I mobile-ffmpeg:     Metadata:
+07-03 01:46:26.492  5238  6009 I mobile-ffmpeg:       encoder         : 
+07-03 01:46:26.492  5238  6009 I mobile-ffmpeg: Lavc58.78.102 aac
+07-03 01:46:26.492  5238  6009 I mobile-ffmpeg: 
+07-03 01:46:26.895  5238  6009 I mobile-ffmpeg: frame=    0 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    
+07-03 01:46:27.403  5238  6009 I mobile-ffmpeg: frame=    0 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    
+07-03 01:46:27.912  5238  6009 I mobile-ffmpeg: frame=   20 fps= 13 q=0.0 size=       0kB time=00:00:00.76 bitrate=   0.5kbits/s speed=0.508x    
+07-03 01:46:28.878  5238  6009 I mobile-ffmpeg: frame=   46 fps= 19 q=0.0 size=       0kB time=00:00:01.60 bitrate=   0.2kbits/s speed=0.645x    
+07-03 01:46:29.396  5238  6009 I mobile-ffmpeg: frame=   57 fps= 19 q=29.0 size=       0kB time=00:00:01.98 bitrate=   0.2kbits/s speed=0.665x    
+07-03 01:46:29.916  5238  6009 I mobile-ffmpeg: frame=   66 fps= 19 q=29.0 size=       0kB time=00:00:02.24 bitrate=   0.2kbits/s speed=0.641x    
+07-03 01:46:30.429  5238  6009 I mobile-ffmpeg: frame=   73 fps= 18 q=29.0 size=       0kB time=00:00:02.49 bitrate=   0.2kbits/s speed=0.621x    
+07-03 01:46:31.034  5238  6009 I mobile-ffmpeg: frame=   83 fps= 18 q=29.0 size=       0kB time=00:00:02.75 bitrate=   0.1kbits/s speed=0.603x    
+07-03 01:46:31.741  5238  6009 I mobile-ffmpeg: frame=   90 fps= 18 q=29.0 size=       0kB time=00:00:03.00 bitrate=   0.1kbits/s speed=0.589x    
+07-03 01:46:32.124  5238  6009 I mobile-ffmpeg: frame=   98 fps= 17 q=29.0 size=       0kB time=00:00:03.26 bitrate=   0.1kbits/s speed=0.576x    
+07-03 01:46:32.615  5238  6009 I mobile-ffmpeg: frame=  100 fps= 16 q=29.0 size=       0kB time=00:00:03.39 bitrate=   0.1kbits/s speed=0.546x    
+07-03 01:46:33.193  5238  6009 I mobile-ffmpeg: frame=  109 fps= 16 q=29.0 size=     256kB time=00:00:03.71 bitrate= 565.0kbits/s speed=0.547x    
+07-03 01:46:33.930  5238  6009 I mobile-ffmpeg: frame=  116 fps= 15 q=29.0 size=     256kB time=00:00:03.96 bitrate= 528.5kbits/s speed=0.528x    
+07-03 01:46:34.445  5238  6009 I mobile-ffmpeg: frame=  122 fps= 15 q=29.0 size=     256kB time=00:00:04.16 bitrate= 504.2kbits/s speed=0.518x    
+07-03 01:46:34.930  5238  6009 I mobile-ffmpeg: frame=  130 fps= 15 q=29.0 size=     256kB time=00:00:04.35 bitrate= 481.9kbits/s speed=0.51x    
+07-03 01:46:35.525  5238  6009 I mobile-ffmpeg: frame=  135 fps= 15 q=29.0 size=     256kB time=00:00:04.54 bitrate= 461.6kbits/s speed=0.501x    
+07-03 01:46:36.040  5238  6009 I mobile-ffmpeg: frame=  141 fps= 15 q=29.0 size=     256kB time=00:00:04.73 bitrate= 442.9kbits/s speed=0.493x    
+07-03 01:46:36.815  5238  6009 I mobile-ffmpeg: frame=  151 fps= 15 q=29.0 size=     512kB time=00:00:05.05 bitrate= 829.6kbits/s speed=0.487x    
+07-03 01:46:37.548  5238  6009 I mobile-ffmpeg: frame=  160 fps= 14 q=29.0 size=     512kB time=00:00:05.37 bitrate= 780.3kbits/s speed=0.485x    
+07-03 01:46:38.215  5238  6009 I mobile-ffmpeg: frame=  170 fps= 15 q=29.0 size=     512kB time=00:00:05.69 bitrate= 736.4kbits/s speed=0.49x    
+07-03 01:46:38.582  5238  6009 I mobile-ffmpeg: frame=  174 fps= 14 q=29.0 size=     512kB time=00:00:05.88 bitrate= 712.4kbits/s speed=0.484x    
+07-03 01:46:39.117  5238  6009 I mobile-ffmpeg: frame=  182 fps= 14 q=29.0 size=     512kB time=00:00:06.08 bitrate= 689.9kbits/s speed=0.48x    
+07-03 01:46:39.597  5238  6009 I mobile-ffmpeg: frame=  190 fps= 14 q=29.0 size=     512kB time=00:00:06.40 bitrate= 655.4kbits/s speed=0.486x    
+07-03 01:46:40.149  5238  6009 I mobile-ffmpeg: frame=  199 fps= 15 q=29.0 size=     768kB time=00:00:06.65 bitrate= 945.3kbits/s speed=0.485x    
+07-03 01:46:40.641  5238  6009 I mobile-ffmpeg: frame=  206 fps= 14 q=29.0 size=     768kB time=00:00:06.97 bitrate= 901.9kbits/s speed=0.49x    
+07-03 01:46:41.142  5238  6009 I mobile-ffmpeg: frame=  213 fps= 14 q=29.0 size=     768kB time=00:00:07.16 bitrate= 877.7kbits/s speed=0.486x    
+07-03 01:46:41.665  5238  6009 I mobile-ffmpeg: frame=  221 fps= 14 q=29.0 size=     768kB time=00:00:07.42 bitrate= 847.4kbits/s speed=0.487x    
+07-03 01:46:42.196  5238  6009 I mobile-ffmpeg: frame=  229 fps= 15 q=29.0 size=     768kB time=00:00:07.68 bitrate= 819.2kbits/s speed=0.487x    
+07-03 01:46:42.727  5238  6009 I mobile-ffmpeg: frame=  238 fps= 15 q=29.0 size=     768kB time=00:00:08.00 bitrate= 786.4kbits/s speed=0.491x    
+07-03 01:46:43.212  5238  6009 I mobile-ffmpeg: frame=  242 fps= 14 q=29.0 size=     768kB time=00:00:08.12 bitrate= 774.0kbits/s speed=0.484x    
+07-03 01:46:43.732  5238  6009 I mobile-ffmpeg: frame=  252 fps= 15 q=29.0 size=    1024kB time=00:00:08.44 bitrate= 993.0kbits/s speed=0.488x    
+07-03 01:46:44.250  5238  6009 I mobile-ffmpeg: frame=  258 fps= 14 q=29.0 size=    1024kB time=00:00:08.70 bitrate= 963.8kbits/s speed=0.488x    
+07-03 01:46:44.769  5238  6009 I mobile-ffmpeg: frame=  267 fps= 15 q=29.0 size=    1024kB time=00:00:08.96 bitrate= 936.3kbits/s speed=0.488x    
+07-03 01:46:45.258  5238  6009 I mobile-ffmpeg: frame=  274 fps= 15 q=29.0 size=    1024kB time=00:00:09.15 bitrate= 916.4kbits/s speed=0.485x    
+07-03 01:46:45.778  5238  6009 I mobile-ffmpeg: frame=  282 fps= 15 q=29.0 size=    1024kB time=00:00:09.47 bitrate= 885.7kbits/s speed=0.489x    
+07-03 01:46:46.389  5238  6009 I mobile-ffmpeg: frame=  291 fps= 15 q=29.0 size=    1024kB time=00:00:09.79 bitrate= 856.7kbits/s speed=0.49x    
+07-03 01:46:46.911  5238  6009 I mobile-ffmpeg: frame=  299 fps= 15 q=29.0 size=    1024kB time=00:00:10.04 bitrate= 834.9kbits/s speed=0.49x    
+07-03 01:46:47.442  5238  6009 I mobile-ffmpeg: frame=  308 fps= 15 q=29.0 size=    1280kB time=00:00:10.30 bitrate=1017.6kbits/s speed=0.491x    
+07-03 01:46:47.922  5238  6009 I mobile-ffmpeg: frame=  315 fps= 15 q=29.0 size=    1280kB time=00:00:10.49 bitrate= 999.0kbits/s speed=0.488x    
+07-03 01:46:48.425  5238  6009 I mobile-ffmpeg: frame=  322 fps= 15 q=29.0 size=    1280kB time=00:00:10.81 bitrate= 969.5kbits/s speed=0.491x    
+07-03 01:46:48.968  5238  6009 I mobile-ffmpeg: frame=  329 fps= 15 q=29.0 size=    1280kB time=00:00:11.07 bitrate= 947.0kbits/s speed=0.491x    
+07-03 01:46:49.467  5238  6009 I mobile-ffmpeg: frame=  337 fps= 15 q=29.0 size=    1280kB time=00:00:11.07 bitrate= 947.0kbits/s speed=0.48x    
+07-03 01:46:49.968  5238  6009 I mobile-ffmpeg: frame=  337 fps= 14 q=29.0 size=    1280kB time=00:00:11.07 bitrate= 947.0kbits/s speed=0.47x    
+07-03 01:46:50.495  5238  6009 I mobile-ffmpeg: frame=  337 fps= 14 q=29.0 size=    1280kB time=00:00:11.07 bitrate= 947.0kbits/s speed=0.46x    
+07-03 01:46:50.981  5238  6009 I mobile-ffmpeg: frame=  337 fps= 14 q=29.0 size=    1280kB time=00:00:11.07 bitrate= 947.0kbits/s speed=0.45x    
+07-03 01:46:51.484  5238  6009 I mobile-ffmpeg: frame=  337 fps= 13 q=29.0 size=    1280kB time=00:00:11.07 bitrate= 947.0kbits/s speed=0.441x    
+07-03 01:46:51.992  5238  6009 I mobile-ffmpeg: frame=  337 fps= 13 q=29.0 size=    1280kB time=00:00:11.07 bitrate= 947.0kbits/s speed=0.432x    
+07-03 01:46:52.500  5238  6009 I mobile-ffmpeg: frame=  337 fps= 13 q=29.0 size=    1280kB time=00:00:11.07 bitrate= 947.0kbits/s speed=0.424x    
+07-03 01:46:53.010  5238  6009 I mobile-ffmpeg: frame=  337 fps= 13 q=29.0 size=    1280kB time=00:00:11.07 bitrate= 947.0kbits/s speed=0.416x    
+07-03 01:46:53.513  5238  6009 I mobile-ffmpeg: frame=  337 fps= 12 q=29.0 size=    1280kB time=00:00:11.07 bitrate= 947.0kbits/s speed=0.408x    
+07-03 01:46:54.025  5238  6009 I mobile-ffmpeg: frame=  337 fps= 12 q=29.0 size=    1280kB time=00:00:11.07 bitrate= 947.0kbits/s speed=0.401x    
+07-03 01:46:54.540  5238  6009 I mobile-ffmpeg: frame=  337 fps= 12 q=29.0 size=    1280kB time=00:00:11.07 bitrate= 947.0kbits/s speed=0.393x    
+07-03 01:46:55.046  5238  6009 I mobile-ffmpeg: frame=  337 fps= 12 q=29.0 size=    1280kB time=00:00:11.07 bitrate= 947.0kbits/s speed=0.386x    
+07-03 01:46:55.550  5238  6009 I mobile-ffmpeg: frame=  337 fps= 12 q=29.0 size=    1280kB time=00:00:11.07 bitrate= 947.0kbits/s speed=0.38x    
+07-03 01:46:56.087  5238  6009 I mobile-ffmpeg: frame=  343 fps= 12 q=29.0 size=    1280kB time=00:00:11.39 bitrate= 920.4kbits/s speed=0.384x    
+07-03 01:46:56.586  5238  6009 I mobile-ffmpeg: frame=  350 fps= 12 q=29.0 size=    1536kB time=00:00:11.71 bitrate=1074.3kbits/s speed=0.388x    
+07-03 01:46:57.287  5238  6009 I mobile-ffmpeg: frame=  360 fps= 12 q=29.0 size=    1536kB time=00:00:12.03 bitrate=1045.7kbits/s speed=0.39x    
+07-03 01:46:57.829  5238  6009 I mobile-ffmpeg: frame=  371 fps= 12 q=29.0 size=    1536kB time=00:00:12.41 bitrate=1013.4kbits/s speed=0.395x    
+07-03 01:46:58.442  5238  6009 I mobile-ffmpeg: frame=  379 fps= 12 q=29.0 size=    1536kB time=00:00:12.67 bitrate= 992.9kbits/s speed=0.396x    
+07-03 01:46:58.872  5238  6009 I mobile-ffmpeg: frame=  385 fps= 12 q=29.0 size=    1536kB time=00:00:12.86 bitrate= 978.1kbits/s speed=0.396x    
+07-03 01:46:59.391  5238  6009 I mobile-ffmpeg: frame=  392 fps= 12 q=29.0 size=    1536kB time=00:00:13.05 bitrate= 963.7kbits/s speed=0.396x    
+07-03 01:46:59.880  5238  6009 I mobile-ffmpeg: frame=  401 fps= 12 q=29.0 size=    1536kB time=00:00:13.37 bitrate= 940.7kbits/s speed= 0.4x    
+07-03 01:47:00.392  5238  6009 I mobile-ffmpeg: frame=  407 fps= 12 q=29.0 size=    1536kB time=00:00:13.56 bitrate= 927.4kbits/s speed=0.399x    
+07-03 01:47:00.961  5238  6009 I mobile-ffmpeg: frame=  411 fps= 12 q=29.0 size=    1536kB time=00:00:13.76 bitrate= 914.5kbits/s speed=0.398x    
+07-03 01:47:01.456  5238  6009 I mobile-ffmpeg: frame=  418 fps= 12 q=29.0 size=    1792kB time=00:00:13.95 bitrate=1052.2kbits/s speed=0.398x    
+07-03 01:47:02.252  5238  6009 I mobile-ffmpeg: frame=  424 fps= 12 q=29.0 size=    1792kB time=00:00:14.20 bitrate=1033.2kbits/s speed=0.396x    
+07-03 01:47:02.861  5238  6009 I mobile-ffmpeg: frame=  433 fps= 12 q=29.0 size=    1792kB time=00:00:14.46 bitrate=1014.9kbits/s speed=0.397x    
+07-03 01:47:03.394  5238  6009 I mobile-ffmpeg: frame=  438 fps= 12 q=29.0 size=    1792kB time=00:00:14.65 bitrate=1001.6kbits/s speed=0.396x    
+07-03 01:47:04.061  5238  6009 I mobile-ffmpeg: frame=  445 fps= 12 q=29.0 size=    1792kB time=00:00:14.84 bitrate= 988.6kbits/s speed=0.396x    
+07-03 01:47:04.528  5238  6009 I mobile-ffmpeg: frame=  450 fps= 12 q=29.0 size=    1792kB time=00:00:15.04 bitrate= 976.0kbits/s speed=0.395x    
+07-03 01:47:05.151  5238  6009 I mobile-ffmpeg: frame=  457 fps= 12 q=29.0 size=    1792kB time=00:00:15.29 bitrate= 959.7kbits/s speed=0.395x    
+07-03 01:47:05.778  5238  6009 I mobile-ffmpeg: frame=  465 fps= 12 q=29.0 size=    2048kB time=00:00:15.55 bitrate=1078.7kbits/s speed=0.395x    
+07-03 01:47:06.288  5238  6009 I mobile-ffmpeg: frame=  471 fps= 12 q=29.0 size=    2048kB time=00:00:15.74 bitrate=1065.6kbits/s speed=0.395x    
+07-03 01:47:07.015  5238  6009 I mobile-ffmpeg: frame=  477 fps= 12 q=29.0 size=    2048kB time=00:00:15.93 bitrate=1052.7kbits/s speed=0.393x    
+07-03 01:47:07.760  5238  6009 I mobile-ffmpeg: frame=  487 fps= 12 q=29.0 size=    2048kB time=00:00:16.19 bitrate=1036.1kbits/s speed=0.392x    
+07-03 01:47:08.248  5238  6009 I mobile-ffmpeg: frame=  494 fps= 12 q=29.0 size=    2048kB time=00:00:16.51 bitrate=1016.1kbits/s speed=0.395x    
+07-03 01:47:08.781  5238  6009 I mobile-ffmpeg: frame=  504 fps= 12 q=29.0 size=    2048kB time=00:00:16.83 bitrate= 996.7kbits/s speed=0.397x    
+07-03 01:47:09.425  5238  6009 I mobile-ffmpeg: frame=  508 fps= 12 q=29.0 size=    2304kB time=00:00:16.89 bitrate=1117.1kbits/s speed=0.393x    
+07-03 01:47:09.946  5238  6009 I mobile-ffmpeg: frame=  517 fps= 12 q=29.0 size=    2304kB time=00:00:17.28 bitrate=1092.3kbits/s speed=0.397x    
+07-03 01:47:10.512  5238  6009 I mobile-ffmpeg: frame=  525 fps= 12 q=29.0 size=    2304kB time=00:00:17.47 bitrate=1080.3kbits/s speed=0.396x    
+07-03 01:47:11.043  5238  6009 I mobile-ffmpeg: frame=  533 fps= 12 q=29.0 size=    2304kB time=00:00:17.79 bitrate=1060.8kbits/s speed=0.399x    
+07-03 01:47:11.513  5238  6009 I mobile-ffmpeg: frame=  540 fps= 12 q=29.0 size=    2304kB time=00:00:18.04 bitrate=1045.8kbits/s speed= 0.4x    
+07-03 01:47:12.108  5238  6009 I mobile-ffmpeg: frame=  549 fps= 12 q=29.0 size=    2304kB time=00:00:18.30 bitrate=1031.1kbits/s speed=0.401x    
+07-03 01:47:12.605  5238  6009 I mobile-ffmpeg: frame=  555 fps= 12 q=29.0 size=    2560kB time=00:00:18.49 bitrate=1133.8kbits/s speed=0.401x    
+07-03 01:47:13.116  5238  6009 I mobile-ffmpeg: frame=  563 fps= 12 q=29.0 size=    2560kB time=00:00:18.75 bitrate=1118.3kbits/s speed=0.402x    
+07-03 01:47:13.811  5238  6009 I mobile-ffmpeg: frame=  570 fps= 12 q=29.0 size=    2560kB time=00:00:19.00 bitrate=1103.3kbits/s speed=0.401x    
+07-03 01:47:14.475  5238  6009 I mobile-ffmpeg: frame=  578 fps= 12 q=29.0 size=    2560kB time=00:00:19.26 bitrate=1088.6kbits/s speed=0.402x    
+07-03 01:47:14.875  5238  6009 I mobile-ffmpeg: frame=  585 fps= 12 q=29.0 size=    2560kB time=00:00:19.52 bitrate=1074.3kbits/s speed=0.403x    
+07-03 01:47:15.387  5238  6009 I mobile-ffmpeg: frame=  592 fps= 12 q=29.0 size=    2560kB time=00:00:19.77 bitrate=1060.4kbits/s speed=0.404x    
+07-03 01:47:16.072  5238  6009 I mobile-ffmpeg: frame=  599 fps= 12 q=29.0 size=    2816kB time=00:00:20.03 bitrate=1151.6kbits/s speed=0.403x    
+07-03 01:47:16.599  5238  6009 I mobile-ffmpeg: frame=  609 fps= 12 q=29.0 size=    2816kB time=00:00:20.35 bitrate=1133.4kbits/s speed=0.406x    
+07-03 01:47:17.116  5238  6009 I mobile-ffmpeg: frame=  613 fps= 12 q=29.0 size=    2816kB time=00:00:20.48 bitrate=1126.4kbits/s speed=0.404x    
+07-03 01:47:17.697  5238  6009 I mobile-ffmpeg: frame=  623 fps= 12 q=29.0 size=    2816kB time=00:00:20.73 bitrate=1112.5kbits/s speed=0.405x    
+07-03 01:47:18.398  5238  6009 I mobile-ffmpeg: frame=  630 fps= 12 q=29.0 size=    2816kB time=00:00:20.99 bitrate=1098.9kbits/s speed=0.404x    
+07-03 01:47:18.922  5238  6009 I mobile-ffmpeg: frame=  639 fps= 12 q=29.0 size=    2816kB time=00:00:21.31 bitrate=1082.4kbits/s speed=0.406x    
+07-03 01:47:19.421  5238  6009 I mobile-ffmpeg: frame=  643 fps= 12 q=29.0 size=    2816kB time=00:00:21.44 bitrate=1076.0kbits/s speed=0.405x    
+07-03 01:47:19.896  5238  6009 I mobile-ffmpeg: frame=  649 fps= 12 q=29.0 size=    3072kB time=00:00:21.69 bitrate=1159.9kbits/s speed=0.406x    
+07-03 01:47:20.415  5238  6009 I mobile-ffmpeg: frame=  658 fps= 12 q=29.0 size=    3072kB time=00:00:21.95 bitrate=1146.4kbits/s speed=0.407x    
+07-03 01:47:20.979  5238  6009 I mobile-ffmpeg: frame=  665 fps= 12 q=29.0 size=    3072kB time=00:00:22.01 bitrate=1143.0kbits/s speed=0.404x    
+07-03 01:47:24.563  5238  6009 I mobile-ffmpeg: frame=  665 fps= 11 q=-1.0 Lsize=    3449kB time=00:00:22.20 bitrate=1272.3kbits/s speed=0.382x    
+07-03 01:47:24.563  5238  6009 I mobile-ffmpeg: video:3206kB audio:232kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 
+07-03 01:47:24.563  5238  6009 I mobile-ffmpeg: 0.329245%
+07-03 01:47:24.563  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.580  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] frame I:3     Avg QP:19.72  size: 36456
+07-03 01:47:24.581  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] frame P:479   Avg QP:21.68  size:  5511
+07-03 01:47:24.581  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] frame B:183   Avg QP:23.76  size:  2912
+07-03 01:47:24.581  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] consecutive B-frames: 62.4%  0.3%  7.2% 30.1%
+07-03 01:47:24.581  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] mb I  I16..4: 30.9% 51.4% 17.7%
+07-03 01:47:24.581  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] mb P  I16..4:  2.4%  2.8%  0.1%  P16..4: 32.2%  2.6%  3.7%  0.0%  0.0%    skip:56.2%
+07-03 01:47:24.581  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] mb B  I16..4:  0.6%  0.5%  0.0%  B16..8: 31.4%  1.3%  0.1%  direct: 1.7%  skip:64.4%  L0:46.1% L1:52.5% BI: 1.4%
+07-03 01:47:24.581  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] 8x8 transform intra:51.6% inter:87.8%
+07-03 01:47:24.581  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] coded y,uvDC,uvAC intra: 33.8% 65.8% 24.1% inter: 8.1% 19.6% 0.1%
+07-03 01:47:24.582  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] i16 v,h,dc,p: 34% 18% 19% 29%
+07-03 01:47:24.582  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 16% 10% 47%  5%  3%  4%  3%  6%  4%
+07-03 01:47:24.582  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29% 13% 26%  6%  7%  5%  6%  6%  3%
+07-03 01:47:24.582  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] i8c dc,h,v,p: 60% 17% 19%  4%
+07-03 01:47:24.583  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] Weighted P-Frames: Y:3.3% UV:1.0%
+07-03 01:47:24.583  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] ref P L0: 74.6%  6.4% 13.2%  5.5%  0.3%
+07-03 01:47:24.583  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] ref B L0: 92.7%  5.7%  1.6%
+07-03 01:47:24.583  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] ref B L1: 97.5%  2.5%
+07-03 01:47:24.584  5238  6009 I mobile-ffmpeg: [libx264 @ 0x7a8b4ffe00] kb/s:1183.29
+07-03 01:47:24.585  5238  6009 I mobile-ffmpeg: [aac @ 0x7a8b501200] Qavg: 64703.449
+07-03 01:47:24.597  5238  6009 W mobile-ffmpeg: [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7a9cea9800] Found duplicated MOOV Atom. Skipped it
+07-03 01:47:24.684  5238  6009 I mobile-ffmpeg: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/storage/emulated/0/Download/Nearby/20200312_194930.mp4':
+07-03 01:47:24.685  5238  6009 I mobile-ffmpeg:   Metadata:
+07-03 01:47:24.685  5238  6009 I mobile-ffmpeg:     creation_time   : 
+07-03 01:47:24.685  5238  6009 I mobile-ffmpeg: 2020-03-12T08:50:30.000000Z
+07-03 01:47:24.685  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.685  5238  6009 I mobile-ffmpeg:     major_brand     : 
+07-03 01:47:24.685  5238  6009 I mobile-ffmpeg: mp42
+07-03 01:47:24.685  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.685  5238  6009 I mobile-ffmpeg:     minor_version   : 
+07-03 01:47:24.685  5238  6009 I mobile-ffmpeg: 1
+07-03 01:47:24.686  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.686  5238  6009 I mobile-ffmpeg:     compatible_brands: 
+07-03 01:47:24.686  5238  6009 I mobile-ffmpeg: mp42mp42
+07-03 01:47:24.686  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.686  5238  6009 I mobile-ffmpeg:   Duration: 
+07-03 01:47:24.686  5238  6009 I mobile-ffmpeg: 00:01:00.02
+07-03 01:47:24.686  5238  6009 I mobile-ffmpeg: , start: 
+07-03 01:47:24.686  5238  6009 I mobile-ffmpeg: 0.000000
+07-03 01:47:24.686  5238  6009 I mobile-ffmpeg: , bitrate: 
+07-03 01:47:24.686  5238  6009 I mobile-ffmpeg: 9328 kb/s
+07-03 01:47:24.686  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.686  5238  6009 I mobile-ffmpeg:     Stream #0:0
+07-03 01:47:24.687  5238  6009 I mobile-ffmpeg: (eng)
+07-03 01:47:24.687  5238  6009 I mobile-ffmpeg: : Video: h264 (avc1 / 0x31637661), yuvj420p(pc, bt709), 1280x720, 8383 kb/s
+07-03 01:47:24.687  5238  6009 I mobile-ffmpeg: , 
+07-03 01:47:24.687  5238  6009 I mobile-ffmpeg: 29.97 fps, 
+07-03 01:47:24.687  5238  6009 I mobile-ffmpeg: 29.97 tbr, 
+07-03 01:47:24.687  5238  6009 I mobile-ffmpeg: 1k tbn, 
+07-03 01:47:24.687  5238  6009 I mobile-ffmpeg: 2k tbc
+07-03 01:47:24.687  5238  6009 I mobile-ffmpeg:  (default)
+07-03 01:47:24.687  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.687  5238  6009 I mobile-ffmpeg:     Metadata:
+07-03 01:47:24.688  5238  6009 I mobile-ffmpeg:       creation_time   : 
+07-03 01:47:24.688  5238  6009 I mobile-ffmpeg: 2020-03-12T08:50:30.000000Z
+07-03 01:47:24.688  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.688  5238  6009 I mobile-ffmpeg:       handler_name    : 
+07-03 01:47:24.688  5238  6009 I mobile-ffmpeg: PittaSoft Video Media Handler
+07-03 01:47:24.688  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.688  5238  6009 I mobile-ffmpeg:     Stream #0:1
+07-03 01:47:24.688  5238  6009 I mobile-ffmpeg: (eng)
+07-03 01:47:24.688  5238  6009 I mobile-ffmpeg: : Audio: aac (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 47 kb/s
+07-03 01:47:24.689  5238  6009 I mobile-ffmpeg:  (default)
+07-03 01:47:24.689  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.689  5238  6009 I mobile-ffmpeg:     Metadata:
+07-03 01:47:24.689  5238  6009 I mobile-ffmpeg:       creation_time   : 
+07-03 01:47:24.689  5238  6009 I mobile-ffmpeg: 2020-03-12T08:50:30.000000Z
+07-03 01:47:24.689  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.689  5238  6009 I mobile-ffmpeg:       handler_name    : 
+07-03 01:47:24.689  5238  6009 I mobile-ffmpeg: PittaSoft Sound Media Handler
+07-03 01:47:24.689  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.744  5238  6009 I mobile-ffmpeg: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/storage/emulated/0/Movies/summarised/20200312_194930.mp4':
+07-03 01:47:24.744  5238  6009 I mobile-ffmpeg:   Metadata:
+07-03 01:47:24.744  5238  6009 I mobile-ffmpeg:     major_brand     : 
+07-03 01:47:24.744  5238  6009 I mobile-ffmpeg: isom
+07-03 01:47:24.745  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.745  5238  6009 I mobile-ffmpeg:     minor_version   : 
+07-03 01:47:24.745  5238  6009 I mobile-ffmpeg: 512
+07-03 01:47:24.745  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.745  5238  6009 I mobile-ffmpeg:     compatible_brands: 
+07-03 01:47:24.745  5238  6009 I mobile-ffmpeg: isomiso2avc1mp41
+07-03 01:47:24.746  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.746  5238  6009 I mobile-ffmpeg:     encoder         : 
+07-03 01:47:24.746  5238  6009 I mobile-ffmpeg: Lavf58.42.100
+07-03 01:47:24.746  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.746  5238  6009 I mobile-ffmpeg:   Duration: 
+07-03 01:47:24.746  5238  6009 I mobile-ffmpeg: 00:00:22.25
+07-03 01:47:24.747  5238  6009 I mobile-ffmpeg: , start: 
+07-03 01:47:24.747  5238  6009 I mobile-ffmpeg: 0.000000
+07-03 01:47:24.747  5238  6009 I mobile-ffmpeg: , bitrate: 
+07-03 01:47:24.747  5238  6009 I mobile-ffmpeg: 1269 kb/s
+07-03 01:47:24.747  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.748  5238  6009 I mobile-ffmpeg:     Stream #0:0
+07-03 01:47:24.748  5238  6009 I mobile-ffmpeg: (und)
+07-03 01:47:24.748  5238  6009 I mobile-ffmpeg: : Video: h264 (avc1 / 0x31637661), yuvj420p(pc), 1280x720, 1183 kb/s
+07-03 01:47:24.748  5238  6009 I mobile-ffmpeg: , 
+07-03 01:47:24.748  5238  6009 I mobile-ffmpeg: 29.97 fps, 
+07-03 01:47:24.749  5238  6009 I mobile-ffmpeg: 29.97 tbr, 
+07-03 01:47:24.749  5238  6009 I mobile-ffmpeg: 30k tbn, 
+07-03 01:47:24.749  5238  6009 I mobile-ffmpeg: 59.94 tbc
+07-03 01:47:24.749  5238  6009 I mobile-ffmpeg:  (default)
+07-03 01:47:24.749  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.750  5238  6009 I mobile-ffmpeg:     Metadata:
+07-03 01:47:24.750  5238  6009 I mobile-ffmpeg:       handler_name    : 
+07-03 01:47:24.750  5238  6009 I mobile-ffmpeg: VideoHandler
+07-03 01:47:24.750  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.750  5238  6009 I mobile-ffmpeg:     Stream #0:1
+07-03 01:47:24.750  5238  6009 I mobile-ffmpeg: (und)
+07-03 01:47:24.751  5238  6009 I mobile-ffmpeg: : Audio: aac (mp4a / 0x6134706D), 16000 Hz, stereo, fltp, 85 kb/s
+07-03 01:47:24.751  5238  6009 I mobile-ffmpeg:  (default)
+07-03 01:47:24.751  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.751  5238  6009 I mobile-ffmpeg:     Metadata:
+07-03 01:47:24.751  5238  6009 I mobile-ffmpeg:       handler_name    : 
+07-03 01:47:24.751  5238  6009 I mobile-ffmpeg: SoundHandler
+07-03 01:47:24.752  5238  6009 I mobile-ffmpeg: 
+07-03 01:47:24.762  5238  6008 W Summariser: Summarisation completed
+07-03 01:47:24.762  5238  6008 W Summariser:   filename: 20200312_194930.mp4
+07-03 01:47:24.762  5238  6008 W Summariser:   active sections: 2
+07-03 01:47:24.762  5238  6008 W Summariser:   time: 71.321s
+07-03 01:47:24.762  5238  6008 W Summariser:   original duration: 60.02
+07-03 01:47:24.762  5238  6008 W Summariser:   summarised duration: 22.25
+07-03 01:47:24.762  5238  6008 W Summariser:   noise tolerance: 45.00
+07-03 01:47:24.762  5238  6008 W Summariser:   quality: 23
+07-03 01:47:24.762  5238  6008 W Summariser:   speed: medium
+07-03 01:47:24.762  5238  6008 W Summariser:   freeze duration: 1.00
+07-03 01:47:24.762  5238  6008 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_194930.mp4
+07-03 01:47:24.778  5238  6008 D VideoManager: videoCursor is null
+07-03 01:47:24.828  5238  6008 V VideoManager: videoFromCursor
+07-03 01:47:24.831  5238  6008 V SummarisedVideosEventHandler: onAdd
+07-03 01:47:24.834  5238  6008 W NearbyFragment: Sending 20200312_194930.mp4 to Nexus 5X [34d8]
+07-03 01:47:24.837  5238  6008 V ProcessingVideosEventHandler: onRemove
+07-03 01:47:24.861  5238  5238 V NearbyFragment: Transfer to 1NpN: 100%
+07-03 01:47:24.874  5238  5238 V NearbyFragment: Transfer to 1NpN: 1%
+07-03 01:47:24.874  5238  5238 V NearbyFragment: Transfer to 1NpN: 3%
+07-03 01:47:24.875  5238  5238 V NearbyFragment: Transfer to 1NpN: 100%
+07-03 01:47:24.876  5238  5238 V NearbyFragment: Transfer to 1NpN: 5%
+07-03 01:47:24.876  5238  5238 V NearbyFragment: Transfer to 1NpN: 7%
+07-03 01:47:24.879  5238  5238 V NearbyFragment: Transfer to 1NpN: 9%
+07-03 01:47:24.884  5238  5238 V NearbyFragment: Transfer to 1NpN: 11%
+07-03 01:47:24.888  5238  5238 V NearbyFragment: Transfer to 1NpN: 12%
+07-03 01:47:24.891  5238  5238 V NearbyFragment: Transfer to 1NpN: 14%
+07-03 01:47:24.895  5238  5238 V NearbyFragment: Transfer to 1NpN: 16%
+07-03 01:47:24.897  5238  5250 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-03 01:47:24.897  5238  5250 D SummariserIntentService:   -> uri=content://media/external/file/920
+07-03 01:47:24.899  5238  5238 V NearbyFragment: Transfer to 1NpN: 18%
+07-03 01:47:24.902  5238  5238 V NearbyFragment: Transfer to 1NpN: 20%
+07-03 01:47:24.905  5238  5238 V NearbyFragment: Transfer to 1NpN: 22%
+07-03 01:47:24.909  5238  5238 V NearbyFragment: Transfer to 1NpN: 24%
+07-03 01:47:24.914  5238  5238 V NearbyFragment: Transfer to 1NpN: 25%
+07-03 01:47:24.920  5238  5238 V NearbyFragment: Transfer to 1NpN: 27%
+07-03 01:47:24.924  5238  5238 V NearbyFragment: Transfer to 1NpN: 29%
+07-03 01:47:24.929  5238  5238 V NearbyFragment: Transfer to 1NpN: 31%
+07-03 01:47:24.933  5238  5238 V NearbyFragment: Transfer to 1NpN: 33%
+07-03 01:47:24.938  5238  5238 V NearbyFragment: Transfer to 1NpN: 35%
+07-03 01:47:24.942  5238  5238 V NearbyFragment: Transfer to 1NpN: 37%
+07-03 01:47:24.947  5238  5238 V NearbyFragment: Transfer to 1NpN: 38%
+07-03 01:47:24.951  5238  5238 V NearbyFragment: Transfer to 1NpN: 40%
+07-03 01:47:24.961  5238  5238 V NearbyFragment: Transfer to 1NpN: 42%
+07-03 01:47:24.962  5238  5238 V NearbyFragment: Transfer to 1NpN: 44%
+07-03 01:47:24.963  5238  5238 V NearbyFragment: Transfer to 1NpN: 46%
+07-03 01:47:24.966  5238  5238 V NearbyFragment: Transfer to 1NpN: 48%
+07-03 01:47:24.970  5238  5238 V NearbyFragment: Transfer to 1NpN: 50%
+07-03 01:47:24.974  5238  5238 V NearbyFragment: Transfer to 1NpN: 51%
+07-03 01:47:24.977  5238  5238 V NearbyFragment: Transfer to 1NpN: 53%
+07-03 01:47:24.982  5238  5238 V NearbyFragment: Transfer to 1NpN: 55%
+07-03 01:47:24.985  5238  5238 V NearbyFragment: Transfer to 1NpN: 57%
+07-03 01:47:24.990  5238  5238 V NearbyFragment: Transfer to 1NpN: 59%
+07-03 01:47:24.995  5238  5238 V NearbyFragment: Transfer to 1NpN: 61%
+07-03 01:47:25.001  5238  5238 V NearbyFragment: Transfer to 1NpN: 63%
+07-03 01:47:25.005  5238  5238 V NearbyFragment: Transfer to 1NpN: 64%
+07-03 01:47:25.010  5238  5238 V NearbyFragment: Transfer to 1NpN: 66%
+07-03 01:47:25.014  5238  5238 V NearbyFragment: Transfer to 1NpN: 68%
+07-03 01:47:25.017  5238  5238 V NearbyFragment: Transfer to 1NpN: 70%
+07-03 01:47:25.022  5238  5238 V NearbyFragment: Transfer to 1NpN: 72%
+07-03 01:47:25.026  5238  5238 V NearbyFragment: Transfer to 1NpN: 74%
+07-03 01:47:25.030  5238  5238 V NearbyFragment: Transfer to 1NpN: 76%
+07-03 01:47:25.037  5238  5238 V NearbyFragment: Transfer to 1NpN: 77%
+07-03 01:47:25.044  5238  5238 V NearbyFragment: Transfer to 1NpN: 79%
+07-03 01:47:25.050  5238  5238 V NearbyFragment: Transfer to 1NpN: 81%
+07-03 01:47:25.055  5238  5238 V NearbyFragment: Transfer to 1NpN: 83%
+07-03 01:47:25.059  5238  5238 V NearbyFragment: Transfer to 1NpN: 85%
+07-03 01:47:25.060  5238  5238 V NearbyFragment: Transfer to 1NpN: 87%
+07-03 01:47:25.064  5238  5238 V NearbyFragment: Transfer to 1NpN: 89%
+07-03 01:47:25.068  5238  5238 V NearbyFragment: Transfer to 1NpN: 90%
+07-03 01:47:25.073  5238  5238 V NearbyFragment: Transfer to 1NpN: 92%
+07-03 01:47:25.076  5238  5238 V NearbyFragment: Transfer to 1NpN: 94%
+07-03 01:47:25.081  5238  5238 V NearbyFragment: Transfer to 1NpN: 96%
+07-03 01:47:25.084  5238  5238 V NearbyFragment: Transfer to 1NpN: 98%
+07-03 01:47:25.088  5238  5238 V NearbyFragment: Transfer to 1NpN: 100%
+07-03 01:47:25.090  5238  5238 V NearbyFragment: Transfer to 1NpN: 100%

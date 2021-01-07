@@ -1,0 +1,796 @@
+--------- beginning of main
+07-04 23:11:05.462 11032 11032 I zygote64: Late-enabling -Xcheck:jni
+--------- beginning of system
+07-04 23:11:05.592 11032 11032 I ActivityThread: handleStopService: token=android.os.BinderProxy@c3162ac not found.
+07-04 23:11:05.597 11032 11032 I TransferService: Starting Transfer Service to listen for network connectivity changes.
+07-04 23:11:05.599 11032 11032 W LogFactory: Truncating log tag length as it exceed 23, the limit imposed by Android on certain API Levels
+07-04 23:11:05.625 11032 11032 I TransferService: Registering the network receiver
+07-04 23:11:05.630 11032 11032 I TransferService: Moving the service out of the Foreground state.
+07-04 23:11:05.631 11032 11032 I TransferService: De-registering the network receiver.
+07-04 23:11:40.670 11032 11032 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-04 23:11:40.671 11032 11032 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-04 23:11:40.671 11032 11032 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 23:11:40.671 11032 11032 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 23:11:40.671 11032 11032 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 23:11:40.671 11032 11032 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-nqHbQDZi6bCWpRO6wKVXog==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-nqHbQDZi6bCWpRO6wKVXog==/lib/arm64, /data/app/com.example.edgesum-nqHbQDZi6bCWpRO6wKVXog==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-04 23:11:40.671 11032 11032 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-04 23:11:40.671 11032 11032 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-04 23:11:40.671 11032 11032 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-04 23:11:40.671 11032 11032 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 23:11:40.671 11032 11032 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 23:11:40.671 11032 11032 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 23:11:40.671 11032 11032 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 23:11:40.671 11032 11032 I zygote64: 
+07-04 23:11:40.672 11032 11032 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-04 23:11:40.672 11032 11032 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-04 23:11:40.672 11032 11032 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 23:11:40.672 11032 11032 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 23:11:40.672 11032 11032 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 23:11:40.672 11032 11032 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-nqHbQDZi6bCWpRO6wKVXog==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-nqHbQDZi6bCWpRO6wKVXog==/lib/arm64, /data/app/com.example.edgesum-nqHbQDZi6bCWpRO6wKVXog==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-04 23:11:40.672 11032 11032 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-04 23:11:40.672 11032 11032 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-04 23:11:40.672 11032 11032 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-04 23:11:40.672 11032 11032 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 23:11:40.672 11032 11032 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 23:11:40.672 11032 11032 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 23:11:40.672 11032 11032 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 23:11:40.673 11032 11032 I zygote64: 
+07-04 23:11:40.673 11032 11032 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-04 23:11:40.673 11032 11032 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-04 23:11:40.673 11032 11032 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 23:11:40.673 11032 11032 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 23:11:40.673 11032 11032 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 23:11:40.673 11032 11032 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-nqHbQDZi6bCWpRO6wKVXog==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-nqHbQDZi6bCWpRO6wKVXog==/lib/arm64, /data/app/com.example.edgesum-nqHbQDZi6bCWpRO6wKVXog==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-04 23:11:40.673 11032 11032 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-04 23:11:40.673 11032 11032 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-04 23:11:40.673 11032 11032 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(android.view.View, androidx.core.view.OnApplyWindowInsetsListener) (ViewCompat.java:2421)
+07-04 23:11:40.673 11032 11032 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:779)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void com.example.edgesum.page.main.MainActivity.onCreate(android.os.Bundle) (MainActivity.java:95)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-04 23:11:40.673 11032 11032 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-04 23:11:40.673 11032 11032 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-04 23:11:40.673 11032 11032 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-04 23:11:40.673 11032 11032 I zygote64: 
+07-04 23:11:40.848 11032 11032 V Repo    : /storage/emulated/0/Movies/raw
+07-04 23:11:40.849 11032 11032 V Repo    : /storage/emulated/0/Movies/summarised
+07-04 23:11:40.864 11032 11032 V FileManager: External storage is readable
+07-04 23:11:40.865 11032 11032 V FileManager: Directory already exists: /storage/emulated/0/Movies/raw
+07-04 23:11:40.875 11032 11032 V FileManager: External storage is readable
+07-04 23:11:40.876 11032 11032 V FileManager: Directory already exists: /storage/emulated/0/Movies/summarised
+07-04 23:11:40.882 11032 11032 V FileManager: External storage is readable
+07-04 23:11:40.883 11032 11032 V FileManager: Directory already exists: /storage/emulated/0/Download/nearby
+07-04 23:11:40.890 11032 11032 V FileManager: External storage is readable
+07-04 23:11:40.892 11032 11032 V FileManager: Directory already exists: /storage/emulated/0/Movies/segment
+07-04 23:11:40.899 11032 11032 V FileManager: External storage is readable
+07-04 23:11:40.899 11032 11032 V FileManager: Directory already exists: /storage/emulated/0/Movies/segment-sum
+07-04 23:11:41.034 11032 11032 V VideoManager: getAllVideoFromExternalStorageFolder
+07-04 23:11:41.040 11032 11032 D VideoManager: /storage/emulated/0/Movies/summarised
+07-04 23:11:41.053 11032 11032 D VideoManager: 0 videos return
+07-04 23:11:41.083 11032 11032 V VideoManager: getAllVideoFromExternalStorageFolder
+07-04 23:11:41.088 11032 11032 D VideoManager: /storage/emulated/0/Movies/raw
+07-04 23:11:41.094 11032 11032 D VideoManager: 0 videos return
+07-04 23:11:41.137 11032 11065 D OpenGLRenderer: HWUI GL Pipeline
+07-04 23:11:41.148 11032 11032 I TransferService: Starting Transfer Service to listen for network connectivity changes.
+07-04 23:11:41.148 11032 11032 I TransferService: Registering the network receiver
+07-04 23:11:41.152 11032 11032 E TransferService: No notification is passed in the intent. Unable to transition to foreground.
+07-04 23:11:41.193 11032 11063 D MainActivity: Scanned /storage/emulated/0/Movies/summarised
+07-04 23:11:41.193 11032 11063 D MainActivity:   -> uri=content://media/external/file/7686
+07-04 23:11:41.217 11032 11045 D MainActivity: Scanned /storage/emulated/0/Movies/raw
+07-04 23:11:41.217 11032 11045 D MainActivity:   -> uri=content://media/external/file/7685
+07-04 23:11:41.245 11032 11065 I Adreno  : QUALCOMM build                   : 8e59954, I0be83d0d26
+07-04 23:11:41.245 11032 11065 I Adreno  : Build Date                       : 09/22/17
+07-04 23:11:41.245 11032 11065 I Adreno  : OpenGL ES Shader Compiler Version: EV031.21.02.00
+07-04 23:11:41.245 11032 11065 I Adreno  : Local Branch                     : O17A
+07-04 23:11:41.245 11032 11065 I Adreno  : Remote Branch                    : 
+07-04 23:11:41.245 11032 11065 I Adreno  : Remote Branch                    : 
+07-04 23:11:41.245 11032 11065 I Adreno  : Reconstruct Branch               : 
+07-04 23:11:41.246 11032 11065 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-04 23:11:41.260 11032 11065 I Adreno  : PFP: 0x00000000, ME: 0x00000000
+07-04 23:11:41.268 11032 11065 I zygote64: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+07-04 23:11:41.277 11032 11037 I zygote64: Do partial code cache collection, code=23KB, data=29KB
+07-04 23:11:41.279 11032 11032 I TransferNetworkLossHand: Network connectivity changed detected.
+07-04 23:11:41.279 11032 11037 I zygote64: After code cache collection, code=23KB, data=29KB
+07-04 23:11:41.280 11032 11037 I zygote64: Increasing code cache capacity to 128KB
+07-04 23:11:41.280 11032 11065 I OpenGLRenderer: Initialized EGL, version 1.4
+07-04 23:11:41.280 11032 11065 D OpenGLRenderer: Swap behavior 2
+07-04 23:11:41.281 11032 11032 I TransferNetworkLossHand: Network connected: true
+07-04 23:11:41.371 11032 11065 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+07-04 23:11:41.372 11032 11065 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-04 23:11:58.617 11032 11032 V MainActivity: Connect button clicked
+07-04 23:11:59.493 11032 11032 V ConnectionFragment: Advertisement switch checked
+07-04 23:12:02.120 11032 11032 D NearbyFragment: Started advertising
+07-04 23:12:15.882 11032 11032 D NearbyFragment: Initiated connection with d-d8: Galaxy S8 [2802]
+07-04 23:12:16.007 11032 11037 I zygote64: Do partial code cache collection, code=51KB, data=58KB
+07-04 23:12:16.007 11032 11037 I zygote64: After code cache collection, code=51KB, data=58KB
+07-04 23:12:16.007 11032 11037 I zygote64: Increasing code cache capacity to 256KB
+07-04 23:12:16.008 11032 11037 I zygote64: Compiler allocated 4MB to compile void android.view.View.<init>(android.content.Context, android.util.AttributeSet, int, int)
+07-04 23:12:16.994 11032 11037 I zygote64: Do full code cache collection, code=125KB, data=103KB
+07-04 23:12:16.995 11032 11037 I zygote64: After code cache collection, code=123KB, data=62KB
+07-04 23:12:17.452 11032 11032 I NearbyFragment: Connected to Endpoint{id=d-d8, name=Galaxy S8 [2802]}
+07-04 23:12:17.513 11032 11037 I zygote64: Do partial code cache collection, code=124KB, data=70KB
+07-04 23:12:17.514 11032 11037 I zygote64: After code cache collection, code=124KB, data=70KB
+07-04 23:12:17.514 11032 11037 I zygote64: Increasing code cache capacity to 512KB
+07-04 23:12:25.939 11032 11032 D NearbyFragment: Initiated connection with 5zqo: Nexus 5 [1825]
+07-04 23:12:27.726 11032 11032 I NearbyFragment: Connected to Endpoint{id=5zqo, name=Nexus 5 [1825]}
+07-04 23:13:13.390 11032 11032 D NearbyFragment: Initiated connection with lHSy: Nexus 5X [9c8f]
+07-04 23:13:15.993 11032 11032 I NearbyFragment: Connected to Endpoint{id=lHSy, name=Nexus 5X [9c8f]}
+07-04 23:13:18.018 11032 11032 V ConnectionFragment: Advertisement switch unchecked
+07-04 23:13:18.019 11032 11032 D NearbyFragment: Stopped advertising
+07-04 23:13:18.023 11032 11037 I zygote64: Do full code cache collection, code=251KB, data=178KB
+07-04 23:13:18.025 11032 11037 I zygote64: After code cache collection, code=250KB, data=141KB
+07-04 23:13:18.228 11032 11037 I zygote64: Do partial code cache collection, code=251KB, data=144KB
+07-04 23:13:18.229 11032 11037 I zygote64: After code cache collection, code=251KB, data=144KB
+07-04 23:13:18.230 11032 11037 I zygote64: Increasing code cache capacity to 1024KB
+07-04 23:13:41.185 11032 11032 V ConnectionFragment: Auto-send switch checked
+07-04 23:13:41.379 11032 11032 W NearbyFragment: Preferences:
+07-04 23:13:41.379 11032 11032 W NearbyFragment:   Auto download: true
+07-04 23:13:41.379 11032 11032 W NearbyFragment:   Algorithm: best_or_local
+07-04 23:13:41.379 11032 11032 W NearbyFragment:   Fast scheduling: false
+07-04 23:13:41.379 11032 11032 W NearbyFragment:   Segmentation: false
+07-04 23:13:41.379 11032 11032 W NearbyFragment:   Auto segmentation: false
+07-04 23:13:41.379 11032 11032 W NearbyFragment:   Segment number: 4
+07-04 23:13:41.379 11032 11032 W NearbyFragment:   Noise tolerance: 45.00
+07-04 23:13:41.379 11032 11032 W NearbyFragment:   Quality: 23
+07-04 23:13:41.379 11032 11032 W NearbyFragment:   Speed: medium
+07-04 23:13:41.379 11032 11032 W NearbyFragment:   Freeze duration: 1.00
+07-04 23:13:41.380 11032 11032 W NearbyFragment: Download delay: 1s
+07-04 23:13:41.380 11032 11032 W NearbyFragment: Started downloading from dashcam
+07-04 23:13:41.382 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:13:41.388 11032 11262 V DashDownloadManager: Started downloading: 20200312_150643.mp4
+07-04 23:13:41.397 11032 11262 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-04 23:14:00.089 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_150643.mp4
+07-04 23:14:00.107 11032 11262 D VideoManager: videoCursor is null
+07-04 23:14:00.150 11032 11262 V VideoManager: videoFromCursor
+07-04 23:14:00.154 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_150643.mp4 in 18.689s
+07-04 23:14:00.155 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_150643.mp4
+07-04 23:14:00.160 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:14:00.165 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:14:00.173 11032 11262 W NearbyFragment: Sending 20200312_150643.mp4 to Galaxy S8 [2802]
+07-04 23:14:00.207 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:14:01.180 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:14:01.189 11032 11262 V DashDownloadManager: Started downloading: 20200312_150744.mp4
+07-04 23:14:08.840 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:14:09.381 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@4d2faea)
+07-04 23:14:09.388 11032 11032 D NearbyFragment: Endpoint{id=d-d8, name=Galaxy S8 [2802]} has finished downloading 20200312_150643.mp4
+07-04 23:14:09.394 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_150643.mp4
+07-04 23:14:09.411 11032 11032 V VideoManager: videoFromCursor
+07-04 23:14:09.417 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:14:09.418 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:14:09.445 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:14:16.584 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@5ddbb6)
+07-04 23:14:16.589 11032 11032 D NearbyFragment: 20200312_150643.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]} contained no activity
+07-04 23:14:16.594 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_150643.mp4
+07-04 23:14:16.610 11032 11032 V VideoManager: videoFromCursor
+07-04 23:14:16.615 11032 11032 V ProcessingVideosEventHandler: onRemove
+07-04 23:14:16.618 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:14:16.646 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:14:26.402 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_150744.mp4
+07-04 23:14:26.430 11032 11262 D VideoManager: videoCursor is null
+07-04 23:14:26.460 11032 11262 V VideoManager: videoFromCursor
+07-04 23:14:26.466 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_150744.mp4 in 25.210s
+07-04 23:14:26.467 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_150744.mp4
+07-04 23:14:26.468 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:14:26.471 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:14:26.475 11032 11262 W NearbyFragment: Sending 20200312_150744.mp4 to Galaxy S8 [2802]
+07-04 23:14:26.496 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:14:27.482 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:14:27.494 11032 11262 V DashDownloadManager: Started downloading: 20200312_150844.mp4
+07-04 23:14:33.196 11032 11032 V MainActivity: Navigation summarised button clicked
+07-04 23:14:37.261 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:14:37.705 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@b34e231)
+07-04 23:14:37.712 11032 11032 D NearbyFragment: Endpoint{id=d-d8, name=Galaxy S8 [2802]} has finished downloading 20200312_150744.mp4
+07-04 23:14:37.718 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_150744.mp4
+07-04 23:14:37.735 11032 11032 V VideoManager: videoFromCursor
+07-04 23:14:37.740 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:14:37.741 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:14:37.827 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:14:53.952 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_150844.mp4
+07-04 23:14:53.967 11032 11262 D VideoManager: videoCursor is null
+07-04 23:14:54.018 11032 11262 V VideoManager: videoFromCursor
+07-04 23:14:54.024 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_150844.mp4 in 26.455s
+07-04 23:14:54.026 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_150844.mp4
+07-04 23:14:54.028 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:14:54.032 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:14:54.040 11032 11262 W NearbyFragment: Sending 20200312_150844.mp4 to Nexus 5 [1825]
+07-04 23:14:54.069 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:14:55.049 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:14:55.065 11032 11262 V DashDownloadManager: Started downloading: 20200312_150944.mp4
+07-04 23:14:55.408 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@689c533)
+07-04 23:14:55.412 11032 11032 V NearbyFragment: Started downloading 20200312_150744.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]}
+07-04 23:14:55.414 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:14:55.419 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:14:55.503 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@b30b0f0)
+07-04 23:14:55.740 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:14:55.743 11032 11032 W NearbyFragment: Completed downloading 20200312_150744.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]} in 00.327s
+07-04 23:14:55.796 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_150744.mp4
+07-04 23:14:55.805 11032 11032 D VideoManager: videoCursor is null
+07-04 23:14:55.830 11032 11032 V VideoManager: videoFromCursor
+07-04 23:14:55.833 11032 11032 V SummarisedVideosEventHandler: onAdd
+07-04 23:14:55.834 11032 11032 V ProcessingVideosEventHandler: removeByName
+07-04 23:15:08.126 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:15:08.737 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=5zqo, payload=com.google.android.gms.nearby.connection.Payload@3ecb505)
+07-04 23:15:08.742 11032 11032 D NearbyFragment: Endpoint{id=5zqo, name=Nexus 5 [1825]} has finished downloading 20200312_150844.mp4
+07-04 23:15:08.747 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_150844.mp4
+07-04 23:15:08.763 11032 11032 V VideoManager: videoFromCursor
+07-04 23:15:08.767 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:15:08.768 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:15:09.007 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:15:21.518 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_150944.mp4
+07-04 23:15:21.535 11032 11262 D VideoManager: videoCursor is null
+07-04 23:15:21.567 11032 11262 V VideoManager: videoFromCursor
+07-04 23:15:21.572 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_150944.mp4 in 26.451s
+07-04 23:15:21.573 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_150944.mp4
+07-04 23:15:21.575 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:15:21.579 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:15:21.583 11032 11262 W NearbyFragment: Sending 20200312_150944.mp4 to Galaxy S8 [2802]
+07-04 23:15:21.605 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:15:22.592 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:15:22.601 11032 11262 V DashDownloadManager: Started downloading: 20200312_151044.mp4
+07-04 23:15:31.067 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:15:31.713 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@42be167)
+07-04 23:15:31.719 11032 11032 D NearbyFragment: Endpoint{id=d-d8, name=Galaxy S8 [2802]} has finished downloading 20200312_150944.mp4
+07-04 23:15:31.722 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_150944.mp4
+07-04 23:15:31.736 11032 11032 V VideoManager: videoFromCursor
+07-04 23:15:31.739 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:15:31.740 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:15:31.762 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:15:35.244 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=5zqo, payload=com.google.android.gms.nearby.connection.Payload@2dd29b2)
+07-04 23:15:35.249 11032 11032 V NearbyFragment: Started downloading 20200312_150844.mp4 from Endpoint{id=5zqo, name=Nexus 5 [1825]}
+07-04 23:15:35.252 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:15:35.256 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:15:35.287 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=5zqo, payload=com.google.android.gms.nearby.connection.Payload@c8b2d03)
+07-04 23:15:45.925 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@24b4480)
+07-04 23:15:45.927 11032 11032 V NearbyFragment: Started downloading 20200312_150944.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]}
+07-04 23:15:45.928 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:15:45.929 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:15:46.071 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@3eb5ab9)
+07-04 23:15:46.746 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:15:46.748 11032 11032 W NearbyFragment: Completed downloading 20200312_150944.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]} in 00.819s
+07-04 23:15:46.817 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_150944.mp4
+07-04 23:15:46.826 11032 11032 D VideoManager: videoCursor is null
+07-04 23:15:46.856 11032 11032 V VideoManager: videoFromCursor
+07-04 23:15:46.859 11032 11032 V SummarisedVideosEventHandler: onAdd
+07-04 23:15:46.860 11032 11032 V ProcessingVideosEventHandler: removeByName
+07-04 23:15:47.310 11032 11037 I zygote64: Compiler allocated 4MB to compile void android.view.ViewRootImpl.performTraversals()
+07-04 23:15:49.482 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:15:49.485 11032 11032 W NearbyFragment: Completed downloading 20200312_150844.mp4 from Endpoint{id=5zqo, name=Nexus 5 [1825]} in 14.233s
+07-04 23:15:52.970 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_150844.mp4
+07-04 23:15:52.986 11032 11032 D VideoManager: videoCursor is null
+07-04 23:15:53.013 11032 11032 V VideoManager: videoFromCursor
+07-04 23:15:53.016 11032 11032 V SummarisedVideosEventHandler: onAdd
+07-04 23:15:53.016 11032 11032 V ProcessingVideosEventHandler: removeByName
+07-04 23:15:56.661 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_151044.mp4
+07-04 23:15:56.675 11032 11262 D VideoManager: videoCursor is null
+07-04 23:15:56.704 11032 11262 V VideoManager: videoFromCursor
+07-04 23:15:56.708 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_151044.mp4 in 34.058s
+07-04 23:15:56.709 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_151044.mp4
+07-04 23:15:56.710 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:15:56.715 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:15:56.720 11032 11262 W NearbyFragment: Sending 20200312_151044.mp4 to Galaxy S8 [2802]
+07-04 23:15:56.739 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:15:57.729 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:15:57.746 11032 11262 V DashDownloadManager: Started downloading: 20200312_193528.mp4
+07-04 23:16:05.632 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:16:06.259 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@118a999)
+07-04 23:16:06.265 11032 11032 D NearbyFragment: Endpoint{id=d-d8, name=Galaxy S8 [2802]} has finished downloading 20200312_151044.mp4
+07-04 23:16:06.267 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_151044.mp4
+07-04 23:16:06.283 11032 11032 V VideoManager: videoFromCursor
+07-04 23:16:06.288 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:16:06.289 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:16:06.308 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:16:13.251 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@9b56d0c)
+07-04 23:16:13.253 11032 11032 D NearbyFragment: 20200312_151044.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]} contained no activity
+07-04 23:16:13.254 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_151044.mp4
+07-04 23:16:13.271 11032 11032 V VideoManager: videoFromCursor
+07-04 23:16:13.274 11032 11032 V ProcessingVideosEventHandler: onRemove
+07-04 23:16:13.275 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:16:13.277 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:16:18.003 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193528.mp4
+07-04 23:16:18.017 11032 11262 D VideoManager: videoCursor is null
+07-04 23:16:18.046 11032 11262 V VideoManager: videoFromCursor
+07-04 23:16:18.050 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_193528.mp4 in 20.255s
+07-04 23:16:18.050 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_193528.mp4
+07-04 23:16:18.051 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:16:18.054 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:16:18.057 11032 11262 W NearbyFragment: Sending 20200312_193528.mp4 to Galaxy S8 [2802]
+07-04 23:16:18.076 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:16:19.063 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:16:19.067 11032 11262 V DashDownloadManager: Started downloading: 20200312_193628.mp4
+07-04 23:16:27.910 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:16:28.491 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@d1cf2d1)
+07-04 23:16:28.497 11032 11032 D NearbyFragment: Endpoint{id=d-d8, name=Galaxy S8 [2802]} has finished downloading 20200312_193528.mp4
+07-04 23:16:28.499 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193528.mp4
+07-04 23:16:28.510 11032 11032 V VideoManager: videoFromCursor
+07-04 23:16:28.514 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:16:28.515 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:16:28.540 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:16:35.885 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@eda51a4)
+07-04 23:16:35.895 11032 11032 D NearbyFragment: 20200312_193528.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]} contained no activity
+07-04 23:16:35.898 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193528.mp4
+07-04 23:16:35.907 11032 11032 V VideoManager: videoFromCursor
+07-04 23:16:35.911 11032 11032 V ProcessingVideosEventHandler: onRemove
+07-04 23:16:35.912 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:16:35.914 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:16:39.552 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193628.mp4
+07-04 23:16:39.566 11032 11262 D VideoManager: videoCursor is null
+07-04 23:16:39.679 11032 11262 V VideoManager: videoFromCursor
+07-04 23:16:39.683 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_193628.mp4 in 20.484s
+07-04 23:16:39.684 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_193628.mp4
+07-04 23:16:39.685 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:16:39.688 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:16:39.693 11032 11262 W NearbyFragment: Sending 20200312_193628.mp4 to Galaxy S8 [2802]
+07-04 23:16:39.712 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:16:40.700 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:16:40.705 11032 11262 V DashDownloadManager: Started downloading: 20200312_193728.mp4
+07-04 23:16:48.845 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:16:49.371 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@2ca2b09)
+07-04 23:16:49.372 11032 11032 D NearbyFragment: Endpoint{id=d-d8, name=Galaxy S8 [2802]} has finished downloading 20200312_193628.mp4
+07-04 23:16:49.373 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193628.mp4
+07-04 23:16:49.382 11032 11032 V VideoManager: videoFromCursor
+07-04 23:16:49.387 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:16:49.387 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:16:49.390 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:17:01.966 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193728.mp4
+07-04 23:17:01.980 11032 11262 D VideoManager: videoCursor is null
+07-04 23:17:02.010 11032 11262 V VideoManager: videoFromCursor
+07-04 23:17:02.014 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_193728.mp4 in 21.259s
+07-04 23:17:02.015 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_193728.mp4
+07-04 23:17:02.016 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:17:02.018 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:17:02.022 11032 11262 W NearbyFragment: Sending 20200312_193728.mp4 to Nexus 5 [1825]
+07-04 23:17:02.042 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:17:03.028 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:17:03.040 11032 11262 V DashDownloadManager: Started downloading: 20200312_193828.mp4
+07-04 23:17:08.586 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@41f074b)
+07-04 23:17:08.587 11032 11032 V NearbyFragment: Started downloading 20200312_193628.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]}
+07-04 23:17:08.589 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:17:08.603 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:17:09.851 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@4712528)
+07-04 23:17:09.978 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:17:09.980 11032 11032 W NearbyFragment: Completed downloading 20200312_193628.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]} in 01.390s
+07-04 23:17:10.067 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_193628.mp4
+07-04 23:17:10.086 11032 11032 D VideoManager: videoCursor is null
+07-04 23:17:10.110 11032 11032 V VideoManager: videoFromCursor
+07-04 23:17:10.114 11032 11032 V SummarisedVideosEventHandler: onAdd
+07-04 23:17:10.115 11032 11032 V ProcessingVideosEventHandler: removeByName
+07-04 23:17:17.815 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:17:18.527 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=5zqo, payload=com.google.android.gms.nearby.connection.Payload@5a4593b)
+07-04 23:17:18.529 11032 11032 D NearbyFragment: Endpoint{id=5zqo, name=Nexus 5 [1825]} has finished downloading 20200312_193728.mp4
+07-04 23:17:18.532 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193728.mp4
+07-04 23:17:18.547 11032 11032 V VideoManager: videoFromCursor
+07-04 23:17:18.550 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:17:18.551 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:17:18.573 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:17:30.669 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193828.mp4
+07-04 23:17:30.683 11032 11262 D VideoManager: videoCursor is null
+07-04 23:17:30.715 11032 11262 V VideoManager: videoFromCursor
+07-04 23:17:30.719 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_193828.mp4 in 27.628s
+07-04 23:17:30.720 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_193828.mp4
+07-04 23:17:30.721 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:17:30.724 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:17:30.729 11032 11262 W NearbyFragment: Sending 20200312_193828.mp4 to Galaxy S8 [2802]
+07-04 23:17:30.757 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:17:31.736 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:17:31.740 11032 11262 V DashDownloadManager: Started downloading: 20200312_193928.mp4
+07-04 23:17:38.835 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:17:39.107 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@900f3ed)
+07-04 23:17:39.109 11032 11032 D NearbyFragment: Endpoint{id=d-d8, name=Galaxy S8 [2802]} has finished downloading 20200312_193828.mp4
+07-04 23:17:39.110 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193828.mp4
+07-04 23:17:39.123 11032 11032 V VideoManager: videoFromCursor
+07-04 23:17:39.127 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:17:39.128 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:17:39.161 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:17:45.079 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=5zqo, payload=com.google.android.gms.nearby.connection.Payload@28baa70)
+07-04 23:17:45.082 11032 11032 V NearbyFragment: Started downloading 20200312_193728.mp4 from Endpoint{id=5zqo, name=Nexus 5 [1825]}
+07-04 23:17:45.085 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:17:45.089 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:17:45.192 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=5zqo, payload=com.google.android.gms.nearby.connection.Payload@605e1e9)
+07-04 23:18:00.280 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@e8c5e6e)
+07-04 23:18:00.281 11032 11032 V NearbyFragment: Started downloading 20200312_193828.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]}
+07-04 23:18:00.283 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:18:00.296 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:18:00.354 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@d9de90f)
+07-04 23:18:01.348 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:18:01.350 11032 11032 W NearbyFragment: Completed downloading 20200312_193828.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]} in 01.067s
+07-04 23:18:01.516 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_193828.mp4
+07-04 23:18:01.525 11032 11032 D VideoManager: videoCursor is null
+07-04 23:18:01.588 11032 11032 V VideoManager: videoFromCursor
+07-04 23:18:01.591 11032 11032 V SummarisedVideosEventHandler: onAdd
+07-04 23:18:01.592 11032 11032 V ProcessingVideosEventHandler: removeByName
+07-04 23:18:03.628 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193928.mp4
+07-04 23:18:03.638 11032 11262 D VideoManager: videoCursor is null
+07-04 23:18:03.665 11032 11262 V VideoManager: videoFromCursor
+07-04 23:18:03.668 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_193928.mp4 in 31.887s
+07-04 23:18:03.669 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_193928.mp4
+07-04 23:18:03.670 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:18:03.673 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:18:03.676 11032 11262 W NearbyFragment: Sending 20200312_193928.mp4 to Galaxy S8 [2802]
+07-04 23:18:03.693 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:18:04.036 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:18:04.037 11032 11032 W NearbyFragment: Completed downloading 20200312_193728.mp4 from Endpoint{id=5zqo, name=Nexus 5 [1825]} in 18.954s
+07-04 23:18:04.681 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:18:04.685 11032 11262 V DashDownloadManager: Started downloading: 20200312_194129.mp4
+07-04 23:18:09.309 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_193728.mp4
+07-04 23:18:09.319 11032 11032 D VideoManager: videoCursor is null
+07-04 23:18:09.354 11032 11032 V VideoManager: videoFromCursor
+07-04 23:18:09.357 11032 11032 V SummarisedVideosEventHandler: onAdd
+07-04 23:18:09.358 11032 11032 V ProcessingVideosEventHandler: removeByName
+07-04 23:18:12.048 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:18:12.327 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@ca51aef)
+07-04 23:18:12.331 11032 11032 D NearbyFragment: Endpoint{id=d-d8, name=Galaxy S8 [2802]} has finished downloading 20200312_193928.mp4
+07-04 23:18:12.333 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193928.mp4
+07-04 23:18:12.347 11032 11032 V VideoManager: videoFromCursor
+07-04 23:18:12.350 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:18:12.351 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:18:12.369 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:18:19.380 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@e3ab6da)
+07-04 23:18:19.384 11032 11032 D NearbyFragment: 20200312_193928.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]} contained no activity
+07-04 23:18:19.387 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_193928.mp4
+07-04 23:18:19.403 11032 11032 V VideoManager: videoFromCursor
+07-04 23:18:19.407 11032 11032 V ProcessingVideosEventHandler: onRemove
+07-04 23:18:19.411 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:18:19.412 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:18:25.795 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194129.mp4
+07-04 23:18:25.808 11032 11262 D VideoManager: videoCursor is null
+07-04 23:18:25.838 11032 11262 V VideoManager: videoFromCursor
+07-04 23:18:25.842 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_194129.mp4 in 21.108s
+07-04 23:18:25.843 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_194129.mp4
+07-04 23:18:25.844 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:18:25.846 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:18:25.851 11032 11262 W NearbyFragment: Sending 20200312_194129.mp4 to Galaxy S8 [2802]
+07-04 23:18:25.876 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:18:26.859 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:18:26.862 11032 11262 V DashDownloadManager: Started downloading: 20200312_194229.mp4
+07-04 23:18:33.999 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:18:34.276 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@22f78e7)
+07-04 23:18:34.280 11032 11032 D NearbyFragment: Endpoint{id=d-d8, name=Galaxy S8 [2802]} has finished downloading 20200312_194129.mp4
+07-04 23:18:34.283 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194129.mp4
+07-04 23:18:34.299 11032 11032 V VideoManager: videoFromCursor
+07-04 23:18:34.302 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:18:34.303 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:18:34.322 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:18:46.988 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194229.mp4
+07-04 23:18:47.004 11032 11262 D VideoManager: videoCursor is null
+07-04 23:18:47.039 11032 11262 V VideoManager: videoFromCursor
+07-04 23:18:47.043 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_194229.mp4 in 20.124s
+07-04 23:18:47.044 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_194229.mp4
+07-04 23:18:47.045 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:18:47.049 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:18:47.053 11032 11262 W NearbyFragment: Sending 20200312_194229.mp4 to Nexus 5 [1825]
+07-04 23:18:47.081 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:18:48.061 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:18:48.066 11032 11262 V DashDownloadManager: Started downloading: 20200312_194330.mp4
+07-04 23:18:55.425 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@fe63639)
+07-04 23:18:55.431 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@2a0a47e)
+07-04 23:18:55.433 11032 11032 V NearbyFragment: Started downloading 20200312_194129.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]}
+07-04 23:18:55.434 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:18:55.463 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:18:55.780 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:18:55.781 11032 11032 W NearbyFragment: Completed downloading 20200312_194129.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]} in 00.348s
+07-04 23:18:55.894 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_194129.mp4
+07-04 23:18:55.903 11032 11032 D VideoManager: videoCursor is null
+07-04 23:18:55.932 11032 11032 V VideoManager: videoFromCursor
+07-04 23:18:55.936 11032 11032 V SummarisedVideosEventHandler: onAdd
+07-04 23:18:55.937 11032 11032 V ProcessingVideosEventHandler: removeByName
+07-04 23:18:56.422 11032 11037 I zygote64: Do full code cache collection, code=503KB, data=326KB
+07-04 23:18:56.424 11032 11037 I zygote64: After code cache collection, code=472KB, data=262KB
+07-04 23:19:01.914 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:19:02.632 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=5zqo, payload=com.google.android.gms.nearby.connection.Payload@ee41fa9)
+07-04 23:19:02.634 11032 11032 D NearbyFragment: Endpoint{id=5zqo, name=Nexus 5 [1825]} has finished downloading 20200312_194229.mp4
+07-04 23:19:02.635 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194229.mp4
+07-04 23:19:02.648 11032 11032 V VideoManager: videoFromCursor
+07-04 23:19:02.653 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:19:02.654 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:19:02.706 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:19:14.459 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194330.mp4
+07-04 23:19:14.468 11032 11262 D VideoManager: videoCursor is null
+07-04 23:19:14.489 11032 11262 V VideoManager: videoFromCursor
+07-04 23:19:14.492 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_194330.mp4 in 26.393s
+07-04 23:19:14.492 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_194330.mp4
+07-04 23:19:14.493 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:19:14.496 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:19:14.500 11032 11262 W NearbyFragment: Sending 20200312_194330.mp4 to Galaxy S8 [2802]
+07-04 23:19:14.516 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:19:15.506 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:19:15.509 11032 11262 V DashDownloadManager: Started downloading: 20200312_194730.mp4
+07-04 23:19:23.705 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:19:24.165 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@50056eb)
+07-04 23:19:24.166 11032 11032 D NearbyFragment: Endpoint{id=d-d8, name=Galaxy S8 [2802]} has finished downloading 20200312_194330.mp4
+07-04 23:19:24.167 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194330.mp4
+07-04 23:19:24.178 11032 11032 V VideoManager: videoFromCursor
+07-04 23:19:24.183 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:19:24.184 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:19:24.223 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:19:30.933 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@d53006)
+07-04 23:19:30.934 11032 11032 D NearbyFragment: 20200312_194330.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]} contained no activity
+07-04 23:19:30.936 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194330.mp4
+07-04 23:19:30.954 11032 11032 V VideoManager: videoFromCursor
+07-04 23:19:30.959 11032 11032 V ProcessingVideosEventHandler: onRemove
+07-04 23:19:30.961 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:19:30.962 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:19:36.480 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194730.mp4
+07-04 23:19:36.495 11032 11262 D VideoManager: videoCursor is null
+07-04 23:19:36.523 11032 11262 V VideoManager: videoFromCursor
+07-04 23:19:36.526 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_194730.mp4 in 20.970s
+07-04 23:19:36.526 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_194730.mp4
+07-04 23:19:36.527 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:19:36.529 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:19:36.532 11032 11262 W NearbyFragment: Sending 20200312_194730.mp4 to Galaxy S8 [2802]
+07-04 23:19:36.549 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:19:37.538 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:19:37.541 11032 11262 V DashDownloadManager: Started downloading: 20200312_194830.mp4
+07-04 23:19:46.150 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:19:46.695 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@bbeb863)
+07-04 23:19:46.696 11032 11032 D NearbyFragment: Endpoint{id=d-d8, name=Galaxy S8 [2802]} has finished downloading 20200312_194730.mp4
+07-04 23:19:46.697 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194730.mp4
+07-04 23:19:46.713 11032 11032 V VideoManager: videoFromCursor
+07-04 23:19:46.717 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:19:46.718 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:19:46.720 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:19:53.989 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@c9c39de)
+07-04 23:19:53.990 11032 11032 D NearbyFragment: 20200312_194730.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]} contained no activity
+07-04 23:19:53.991 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194730.mp4
+07-04 23:19:54.010 11032 11032 V VideoManager: videoFromCursor
+07-04 23:19:54.014 11032 11032 V ProcessingVideosEventHandler: onRemove
+07-04 23:19:54.016 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:19:54.074 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:20:02.916 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194830.mp4
+07-04 23:20:02.928 11032 11262 D VideoManager: videoCursor is null
+07-04 23:20:02.971 11032 11262 V VideoManager: videoFromCursor
+07-04 23:20:02.974 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_194830.mp4 in 25.374s
+07-04 23:20:02.975 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_194830.mp4
+07-04 23:20:02.976 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:20:02.977 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:20:02.980 11032 11262 W NearbyFragment: Sending 20200312_194830.mp4 to Galaxy S8 [2802]
+07-04 23:20:03.000 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:20:03.987 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:20:03.990 11032 11262 V DashDownloadManager: Started downloading: 20200312_194930.mp4
+07-04 23:20:08.829 11032 11043 I zygote64: Background concurrent copying GC freed 100549(2MB) AllocSpace objects, 0(0B) LOS objects, 50% free, 2MB/5MB, paused 89us total 100.151ms
+07-04 23:20:12.277 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:20:12.563 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@dc8d0db)
+07-04 23:20:12.566 11032 11032 D NearbyFragment: Endpoint{id=d-d8, name=Galaxy S8 [2802]} has finished downloading 20200312_194830.mp4
+07-04 23:20:12.568 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194830.mp4
+07-04 23:20:12.586 11032 11032 V VideoManager: videoFromCursor
+07-04 23:20:12.590 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:20:12.590 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:20:12.607 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:20:28.188 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194930.mp4
+07-04 23:20:28.203 11032 11262 D VideoManager: videoCursor is null
+07-04 23:20:28.243 11032 11262 V VideoManager: videoFromCursor
+07-04 23:20:28.247 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_194930.mp4 in 24.197s
+07-04 23:20:28.247 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_194930.mp4
+07-04 23:20:28.249 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:20:28.252 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:20:28.256 11032 11262 W NearbyFragment: Sending 20200312_194930.mp4 to Nexus 5X [9c8f]
+07-04 23:20:28.278 11032 11032 V NearbyFragment: Transfer to Endpoint{id=lHSy, name=Nexus 5X [9c8f]} complete
+07-04 23:20:29.113 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=5zqo, payload=com.google.android.gms.nearby.connection.Payload@6a0ae8d)
+07-04 23:20:29.114 11032 11032 V NearbyFragment: Started downloading 20200312_194229.mp4 from Endpoint{id=5zqo, name=Nexus 5 [1825]}
+07-04 23:20:29.115 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:20:29.124 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:20:29.263 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:20:29.266 11032 11262 V DashDownloadManager: Started downloading: 20200312_195230.mp4
+07-04 23:20:29.265 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=5zqo, payload=com.google.android.gms.nearby.connection.Payload@5a77842)
+07-04 23:20:29.886 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:20:29.888 11032 11032 W NearbyFragment: Completed downloading 20200312_194229.mp4 from Endpoint{id=5zqo, name=Nexus 5 [1825]} in 00.773s
+07-04 23:20:30.049 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_194229.mp4
+07-04 23:20:30.060 11032 11032 D VideoManager: videoCursor is null
+07-04 23:20:30.095 11032 11032 V VideoManager: videoFromCursor
+07-04 23:20:30.102 11032 11032 V SummarisedVideosEventHandler: onAdd
+07-04 23:20:30.105 11032 11032 V ProcessingVideosEventHandler: removeByName
+07-04 23:20:42.126 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@76754fd)
+07-04 23:20:42.127 11032 11032 V NearbyFragment: Started downloading 20200312_194830.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]}
+07-04 23:20:42.128 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:20:42.129 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:20:42.150 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@b9275f2)
+07-04 23:20:42.733 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:20:42.735 11032 11032 W NearbyFragment: Completed downloading 20200312_194830.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]} in 00.606s
+07-04 23:20:42.941 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_194830.mp4
+07-04 23:20:42.952 11032 11032 D VideoManager: videoCursor is null
+07-04 23:20:42.990 11032 11032 V VideoManager: videoFromCursor
+07-04 23:20:42.994 11032 11032 V SummarisedVideosEventHandler: onAdd
+07-04 23:20:42.994 11032 11032 V ProcessingVideosEventHandler: removeByName
+07-04 23:20:44.154 11032 11032 V NearbyFragment: Transfer to Endpoint{id=lHSy, name=Nexus 5X [9c8f]} complete
+07-04 23:20:44.693 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=lHSy, payload=com.google.android.gms.nearby.connection.Payload@51c776d)
+07-04 23:20:44.695 11032 11032 D NearbyFragment: Endpoint{id=lHSy, name=Nexus 5X [9c8f]} has finished downloading 20200312_194930.mp4
+07-04 23:20:44.696 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_194930.mp4
+07-04 23:20:44.715 11032 11032 V VideoManager: videoFromCursor
+07-04 23:20:44.720 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:20:44.722 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:20:44.725 11032 11032 V NearbyFragment: Transfer to Endpoint{id=lHSy, name=Nexus 5X [9c8f]} complete
+07-04 23:20:56.351 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_195230.mp4
+07-04 23:20:56.361 11032 11262 D VideoManager: videoCursor is null
+07-04 23:20:56.382 11032 11262 V VideoManager: videoFromCursor
+07-04 23:20:56.385 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_195230.mp4 in 27.085s
+07-04 23:20:56.386 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_195230.mp4
+07-04 23:20:56.387 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:20:56.391 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:20:56.395 11032 11262 W NearbyFragment: Sending 20200312_195230.mp4 to Galaxy S8 [2802]
+07-04 23:20:56.413 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:20:57.401 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:20:57.404 11032 11262 V DashDownloadManager: Started downloading: 20200312_195330.mp4
+07-04 23:21:04.825 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:21:05.231 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@11508f)
+07-04 23:21:05.233 11032 11032 D NearbyFragment: Endpoint{id=d-d8, name=Galaxy S8 [2802]} has finished downloading 20200312_195230.mp4
+07-04 23:21:05.234 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_195230.mp4
+07-04 23:21:05.249 11032 11032 V VideoManager: videoFromCursor
+07-04 23:21:05.255 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:21:05.256 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:21:05.273 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:21:21.206 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_195330.mp4
+07-04 23:21:21.217 11032 11262 D VideoManager: videoCursor is null
+07-04 23:21:21.243 11032 11262 V VideoManager: videoFromCursor
+07-04 23:21:21.247 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_195330.mp4 in 23.801s
+07-04 23:21:21.248 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_195330.mp4
+07-04 23:21:21.249 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:21:21.251 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:21:21.255 11032 11262 W NearbyFragment: Sending 20200312_195330.mp4 to Nexus 5 [1825]
+07-04 23:21:21.278 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:21:21.987 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@d3b10a1)
+07-04 23:21:21.988 11032 11032 V NearbyFragment: Started downloading 20200312_195230.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]}
+07-04 23:21:21.989 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:21:22.001 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:21:22.126 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@ebd52c6)
+07-04 23:21:22.264 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:21:22.271 11032 11262 V DashDownloadManager: Started downloading: 20200312_195430.mp4
+07-04 23:21:22.643 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:21:22.644 11032 11032 W NearbyFragment: Completed downloading 20200312_195230.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]} in 00.655s
+07-04 23:21:22.725 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_195230.mp4
+07-04 23:21:22.736 11032 11032 D VideoManager: videoCursor is null
+07-04 23:21:22.768 11032 11032 V VideoManager: videoFromCursor
+07-04 23:21:22.771 11032 11032 V SummarisedVideosEventHandler: onAdd
+07-04 23:21:22.771 11032 11032 V ProcessingVideosEventHandler: removeByName
+07-04 23:21:36.697 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:21:37.732 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=5zqo, payload=com.google.android.gms.nearby.connection.Payload@7786411)
+07-04 23:21:37.735 11032 11032 D NearbyFragment: Endpoint{id=5zqo, name=Nexus 5 [1825]} has finished downloading 20200312_195330.mp4
+07-04 23:21:37.737 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_195330.mp4
+07-04 23:21:37.752 11032 11032 V VideoManager: videoFromCursor
+07-04 23:21:37.756 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:21:37.756 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:21:37.803 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:21:51.920 11032 11262 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_195430.mp4
+07-04 23:21:51.935 11032 11262 D VideoManager: videoCursor is null
+07-04 23:21:51.961 11032 11262 V VideoManager: videoFromCursor
+07-04 23:21:51.964 11032 11262 W DashDownloadManager: Successfully downloaded 20200312_195430.mp4 in 29.647s
+07-04 23:21:51.965 11032 11262 V DownloadTestVideosTask: Entering callback for download completion of 20200312_195430.mp4
+07-04 23:21:51.966 11032 11262 V RawFootageEventHandler: onAdd
+07-04 23:21:51.969 11032 11262 V NearbyFragment: nextTransfer with selected algorithm: best_or_local
+07-04 23:21:51.973 11032 11262 W NearbyFragment: Sending 20200312_195430.mp4 to Galaxy S8 [2802]
+07-04 23:21:51.990 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:21:52.980 11032 11262 V DownloadTestVideosTask: Starting DownloadTestVideosTask
+07-04 23:21:53.002 11032 11262 D DownloadTestVideosTask: No new videos
+07-04 23:21:53.012 11032 11262 W NearbyFragment: Stopped downloading from dashcam
+07-04 23:21:55.531 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=lHSy, payload=com.google.android.gms.nearby.connection.Payload@1d63813)
+07-04 23:21:55.532 11032 11032 V NearbyFragment: Started downloading 20200312_194930.mp4 from Endpoint{id=lHSy, name=Nexus 5X [9c8f]}
+07-04 23:21:55.533 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:21:55.548 11032 11032 V NearbyFragment: Transfer to Endpoint{id=lHSy, name=Nexus 5X [9c8f]} complete
+07-04 23:21:55.595 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=lHSy, payload=com.google.android.gms.nearby.connection.Payload@efdda50)
+07-04 23:21:56.676 11032 11032 V NearbyFragment: Transfer to Endpoint{id=lHSy, name=Nexus 5X [9c8f]} complete
+07-04 23:21:56.677 11032 11032 W NearbyFragment: Completed downloading 20200312_194930.mp4 from Endpoint{id=lHSy, name=Nexus 5X [9c8f]} in 01.143s
+07-04 23:21:56.914 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_194930.mp4
+07-04 23:21:56.924 11032 11032 D VideoManager: videoCursor is null
+07-04 23:21:56.952 11032 11032 V VideoManager: videoFromCursor
+07-04 23:21:56.955 11032 11032 V SummarisedVideosEventHandler: onAdd
+07-04 23:21:56.956 11032 11032 V ProcessingVideosEventHandler: removeByName
+07-04 23:21:57.531 11032 11037 I zygote64: Do partial code cache collection, code=502KB, data=318KB
+07-04 23:21:57.533 11032 11037 I zygote64: After code cache collection, code=502KB, data=318KB
+07-04 23:21:57.533 11032 11037 I zygote64: Increasing code cache capacity to 2MB
+07-04 23:21:59.997 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:22:00.439 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@a8d4c03)
+07-04 23:22:00.441 11032 11032 D NearbyFragment: Endpoint{id=d-d8, name=Galaxy S8 [2802]} has finished downloading 20200312_195430.mp4
+07-04 23:22:00.442 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/raw/20200312_195430.mp4
+07-04 23:22:00.462 11032 11032 V VideoManager: videoFromCursor
+07-04 23:22:00.469 11032 11032 V ProcessingVideosEventHandler: onAdd
+07-04 23:22:00.470 11032 11032 V RawFootageEventHandler: onRemove
+07-04 23:22:00.486 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:22:28.900 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@e3419fe)
+07-04 23:22:28.901 11032 11032 V NearbyFragment: Started downloading 20200312_195430.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]}
+07-04 23:22:28.902 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:22:28.963 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:22:28.996 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=d-d8, payload=com.google.android.gms.nearby.connection.Payload@48ea55f)
+07-04 23:22:29.253 11032 11032 V NearbyFragment: Transfer to Endpoint{id=d-d8, name=Galaxy S8 [2802]} complete
+07-04 23:22:29.254 11032 11032 W NearbyFragment: Completed downloading 20200312_195430.mp4 from Endpoint{id=d-d8, name=Galaxy S8 [2802]} in 00.351s
+07-04 23:22:29.431 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_195430.mp4
+07-04 23:22:29.447 11032 11032 D VideoManager: videoCursor is null
+07-04 23:22:29.491 11032 11032 V VideoManager: videoFromCursor
+07-04 23:22:29.495 11032 11032 V SummarisedVideosEventHandler: onAdd
+07-04 23:22:29.496 11032 11032 V ProcessingVideosEventHandler: removeByName
+07-04 23:23:33.060 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=5zqo, payload=com.google.android.gms.nearby.connection.Payload@e98feae)
+07-04 23:23:33.062 11032 11032 V NearbyFragment: Started downloading 20200312_195330.mp4 from Endpoint{id=5zqo, name=Nexus 5 [1825]}
+07-04 23:23:33.073 11032 11032 I NearbyFragment: Transfer queue is empty
+07-04 23:23:33.078 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:23:33.101 11032 11032 D NearbyFragment: onPayloadReceived(endpointId=5zqo, payload=com.google.android.gms.nearby.connection.Payload@d51a44f)
+07-04 23:23:33.802 11032 11032 V NearbyFragment: Transfer to Endpoint{id=5zqo, name=Nexus 5 [1825]} complete
+07-04 23:23:33.803 11032 11032 W NearbyFragment: Completed downloading 20200312_195330.mp4 from Endpoint{id=5zqo, name=Nexus 5 [1825]} in 00.739s
+07-04 23:23:33.951 11032 11032 V VideoManager: Retrieving video from /storage/emulated/0/Movies/summarised/20200312_195330.mp4
+07-04 23:23:33.973 11032 11032 D VideoManager: videoCursor is null
+07-04 23:23:34.126 11032 11032 V VideoManager: videoFromCursor
+07-04 23:23:34.129 11032 11032 V SummarisedVideosEventHandler: onAdd
+07-04 23:23:34.130 11032 11032 V ProcessingVideosEventHandler: removeByName

@@ -1,0 +1,600 @@
+--------- beginning of main
+07-12 18:55:18.387   351   351 E Zygote  : isWhitelistProcess - Process is Whitelisted
+07-12 18:55:18.390   351   351 E Zygote  : accessInfo : 1
+--------- beginning of system
+07-12 18:55:19.940   351   351 W LogFactory: Truncating log tag length as it exceed 23, the limit imposed by Android on certain API Levels
+07-12 18:55:35.045   351   351 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@f897b1f
+07-12 18:55:35.126   351   351 W example.edgesu: Accessing hidden method Landroid/graphics/drawable/Drawable;->getOpticalInsets()Landroid/graphics/Insets; (light greylist, linking)
+07-12 18:55:35.126   351   351 W example.edgesu: Accessing hidden field Landroid/graphics/Insets;->left:I (light greylist, linking)
+07-12 18:55:35.126   351   351 W example.edgesu: Accessing hidden field Landroid/graphics/Insets;->right:I (light greylist, linking)
+07-12 18:55:35.126   351   351 W example.edgesu: Accessing hidden field Landroid/graphics/Insets;->top:I (light greylist, linking)
+07-12 18:55:35.126   351   351 W example.edgesu: Accessing hidden field Landroid/graphics/Insets;->bottom:I (light greylist, linking)
+07-12 18:55:35.209   351   351 W example.edgesu: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (light greylist, reflection)
+07-12 18:55:35.210   351   351 W example.edgesu: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (light greylist, reflection)
+07-12 18:55:35.224   351   351 W example.edgesu: Accessing hidden method Landroid/widget/TextView;->getTextDirectionHeuristic()Landroid/text/TextDirectionHeuristic; (light greylist, linking)
+07-12 18:55:35.360   351   373 W LogFactory: Truncating log tag length as it exceed 23, the limit imposed by Android on certain API Levels
+07-12 18:55:35.361   351   373 W LogFactory: Truncating log tag length as it exceed 23, the limit imposed by Android on certain API Levels
+07-12 18:55:35.448   351   373 W LogFactory: Truncating log tag length as it exceed 23, the limit imposed by Android on certain API Levels
+07-12 18:55:35.564   351   351 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@9484f39
+07-12 18:55:35.658   351   351 W example.edgesu: Accessing hidden field Landroid/view/View;->mAccessibilityDelegate:Landroid/view/View$AccessibilityDelegate; (light greylist, reflection)
+07-12 18:55:35.776   351   351 W example.edgesu: Accessing hidden method Landroid/app/ActivityThread;->currentApplication()Landroid/app/Application; (light greylist, reflection)
+07-12 18:55:35.779   351   351 W System.err: org.json.JSONException: No value for manufacturer
+07-12 18:55:35.780   351   351 W System.err: 	at org.json.JSONObject.get(JSONObject.java:392)
+07-12 18:55:35.780   351   351 W System.err: 	at org.json.JSONObject.getString(JSONObject.java:553)
+07-12 18:55:35.780   351   351 W System.err: 	at com.jaredrummler.android.device.DeviceName$DeviceInfo.<init>(DeviceName.java:374)
+07-12 18:55:35.780   351   351 W System.err: 	at com.jaredrummler.android.device.DeviceName$DeviceInfo.<init>(DeviceName.java:347)
+07-12 18:55:35.780   351   351 W System.err: 	at com.jaredrummler.android.device.DeviceName.getDeviceInfo(DeviceName.java:186)
+07-12 18:55:35.780   351   351 W System.err: 	at com.jaredrummler.android.device.DeviceName.getDeviceName(DeviceName.java:138)
+07-12 18:55:35.780   351   351 W System.err: 	at com.jaredrummler.android.device.DeviceName.getDeviceName(DeviceName.java:111)
+07-12 18:55:35.780   351   351 W System.err: 	at com.example.edgesum.util.nearby.NearbyFragment.setLocalName(NearbyFragment.java:118)
+07-12 18:55:35.780   351   351 W System.err: 	at com.example.edgesum.util.nearby.NearbyFragment.onCreate(NearbyFragment.java:110)
+07-12 18:55:35.780   351   351 W System.err: 	at com.example.edgesum.page.main.ConnectionFragment.onCreate(ConnectionFragment.java:30)
+07-12 18:55:35.780   351   351 W System.err: 	at androidx.fragment.app.Fragment.performCreate(Fragment.java:2684)
+07-12 18:55:35.780   351   351 W System.err: 	at androidx.fragment.app.FragmentStateManager.create(FragmentStateManager.java:280)
+07-12 18:55:35.780   351   351 W System.err: 	at androidx.fragment.app.FragmentManager.moveToState(FragmentManager.java:1175)
+07-12 18:55:35.780   351   351 W System.err: 	at androidx.fragment.app.FragmentTransition.addToFirstInLastOut(FragmentTransition.java:1255)
+07-12 18:55:35.780   351   351 W System.err: 	at androidx.fragment.app.FragmentTransition.calculateFragments(FragmentTransition.java:1138)
+07-12 18:55:35.781   351   351 W System.err: 	at androidx.fragment.app.FragmentTransition.startTransitions(FragmentTransition.java:136)
+07-12 18:55:35.781   351   351 W System.err: 	at androidx.fragment.app.FragmentManager.executeOpsTogether(FragmentManager.java:1989)
+07-12 18:55:35.781   351   351 W System.err: 	at androidx.fragment.app.FragmentManager.removeRedundantOperationsAndExecute(FragmentManager.java:1947)
+07-12 18:55:35.781   351   351 W System.err: 	at androidx.fragment.app.FragmentManager.execPendingActions(FragmentManager.java:1849)
+07-12 18:55:35.781   351   351 W System.err: 	at androidx.fragment.app.FragmentManager.dispatchStateChange(FragmentManager.java:2629)
+07-12 18:55:35.781   351   351 W System.err: 	at androidx.fragment.app.FragmentManager.dispatchActivityCreated(FragmentManager.java:2577)
+07-12 18:55:35.781   351   351 W System.err: 	at androidx.fragment.app.FragmentController.dispatchActivityCreated(FragmentController.java:247)
+07-12 18:55:35.781   351   351 W System.err: 	at androidx.fragment.app.FragmentActivity.onStart(FragmentActivity.java:541)
+07-12 18:55:35.781   351   351 W System.err: 	at androidx.appcompat.app.AppCompatActivity.onStart(AppCompatActivity.java:201)
+07-12 18:55:35.781   351   351 W System.err: 	at com.example.edgesum.page.main.MainActivity.onStart(MainActivity.java:88)
+07-12 18:55:35.781   351   351 W System.err: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1391)
+07-12 18:55:35.781   351   351 W System.err: 	at android.app.Activity.performStart(Activity.java:7348)
+07-12 18:55:35.781   351   351 W System.err: 	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:3138)
+07-12 18:55:35.781   351   351 W System.err: 	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+07-12 18:55:35.781   351   351 W System.err: 	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+07-12 18:55:35.782   351   351 W System.err: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+07-12 18:55:35.782   351   351 W System.err: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+07-12 18:55:35.782   351   351 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1948)
+07-12 18:55:35.782   351   351 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+07-12 18:55:35.782   351   351 W System.err: 	at android.os.Looper.loop(Looper.java:214)
+07-12 18:55:35.782   351   351 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:7050)
+07-12 18:55:35.782   351   351 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+07-12 18:55:35.782   351   351 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+07-12 18:55:35.782   351   351 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:965)
+07-12 18:55:35.979   351   351 E TransferService: No notification is passed in the intent. Unable to transition to foreground.
+07-12 18:55:36.024   351   351 W StaticLayout: maxLineHeight should not be -1.  maxLines:1 lineCount:1
+07-12 18:55:36.033   351   351 W StaticLayout: maxLineHeight should not be -1.  maxLines:1 lineCount:1
+07-12 18:55:36.038   351   351 W StaticLayout: maxLineHeight should not be -1.  maxLines:1 lineCount:1
+07-12 18:55:36.042   351   351 W StaticLayout: maxLineHeight should not be -1.  maxLines:1 lineCount:1
+07-12 18:55:36.060   351   351 W StaticLayout: maxLineHeight should not be -1.  maxLines:1 lineCount:1
+07-12 18:55:36.064   351   351 W StaticLayout: maxLineHeight should not be -1.  maxLines:1 lineCount:1
+07-12 18:55:36.457   351   378 W libEGL  : EGLNativeWindowType 0x720e7f9010 disconnect failed
+07-12 18:56:04.383   351   351 W example.edgesu: Accessing hidden method Landroid/graphics/FontFamily;-><init>()V (light greylist, reflection)
+07-12 18:56:04.383   351   351 W example.edgesu: Accessing hidden method Landroid/graphics/FontFamily;->addFontFromAssetManager(Landroid/content/res/AssetManager;Ljava/lang/String;IZIII[Landroid/graphics/fonts/FontVariationAxis;)Z (light greylist, reflection)
+07-12 18:56:04.383   351   351 W example.edgesu: Accessing hidden method Landroid/graphics/FontFamily;->addFontFromBuffer(Ljava/nio/ByteBuffer;I[Landroid/graphics/fonts/FontVariationAxis;II)Z (light greylist, reflection)
+07-12 18:56:04.383   351   351 W example.edgesu: Accessing hidden method Landroid/graphics/FontFamily;->freeze()Z (light greylist, reflection)
+07-12 18:56:04.383   351   351 W example.edgesu: Accessing hidden method Landroid/graphics/FontFamily;->abortCreation()V (light greylist, reflection)
+07-12 18:56:04.384   351   351 W example.edgesu: Accessing hidden method Landroid/graphics/Typeface;->createFromFamiliesWithDefault([Landroid/graphics/FontFamily;Ljava/lang/String;II)Landroid/graphics/Typeface; (light greylist, reflection)
+07-12 18:56:08.980   351   378 W libEGL  : EGLNativeWindowType 0x71f5feb010 disconnect failed
+07-12 18:56:09.039   351   378 W libEGL  : EGLNativeWindowType 0x71f58da010 disconnect failed
+07-12 18:56:09.125   351   351 E ViewRootImpl: sendUserActionEvent() returned.
+07-12 18:56:15.132   351  1355 W LogFactory: Truncating log tag length as it exceed 23, the limit imposed by Android on certain API Levels
+07-12 18:56:44.367   351   351 W NearbyFragment: Completed downloading 20200312_150643!000.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 03.033s
+07-12 18:56:44.671   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663f40] sws_param option is deprecated and ignored
+07-12 18:56:46.807   351  1536 W Summariser: No activity detected
+07-12 18:56:46.842   351  1536 W Summariser: Summarisation completed
+07-12 18:56:46.842   351  1536 W Summariser:   filename: 20200312_150643!000.mp4
+07-12 18:56:46.842   351  1536 W Summariser:   active sections: 0
+07-12 18:56:46.842   351  1536 W Summariser:   time: 02.329s
+07-12 18:56:46.842   351  1536 W Summariser:   original duration: 16.07
+07-12 18:56:46.842   351  1536 W Summariser:   summarised duration: -1.00
+07-12 18:56:46.842   351  1536 W Summariser:   noise tolerance: 45.00
+07-12 18:56:46.842   351  1536 W Summariser:   quality: 23
+07-12 18:56:46.842   351  1536 W Summariser:   speed: medium
+07-12 18:56:46.842   351  1536 W Summariser:   freeze duration: 1.00
+07-12 18:56:50.791   351   351 W NearbyFragment: Completed downloading 20200312_150643!002.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 03.881s
+07-12 18:56:51.048   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663f40] sws_param option is deprecated and ignored
+07-12 18:56:53.135   351  1580 W Summariser: No activity detected
+07-12 18:56:53.178   351  1580 W Summariser: Summarisation completed
+07-12 18:56:53.178   351  1580 W Summariser:   filename: 20200312_150643!002.mp4
+07-12 18:56:53.178   351  1580 W Summariser:   active sections: 0
+07-12 18:56:53.178   351  1580 W Summariser:   time: 02.259s
+07-12 18:56:53.178   351  1580 W Summariser:   original duration: 16.01
+07-12 18:56:53.178   351  1580 W Summariser:   summarised duration: -1.00
+07-12 18:56:53.178   351  1580 W Summariser:   noise tolerance: 45.00
+07-12 18:56:53.178   351  1580 W Summariser:   quality: 23
+07-12 18:56:53.178   351  1580 W Summariser:   speed: medium
+07-12 18:56:53.178   351  1580 W Summariser:   freeze duration: 1.00
+07-12 18:57:12.981   351   351 W NearbyFragment: Completed downloading 20200312_150744!000.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 02.931s
+07-12 18:57:13.162   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663f40] sws_param option is deprecated and ignored
+07-12 18:57:15.275   351  1619 W Summariser: No activity detected
+07-12 18:57:15.306   351  1619 W Summariser: Summarisation completed
+07-12 18:57:15.306   351  1619 W Summariser:   filename: 20200312_150744!000.mp4
+07-12 18:57:15.306   351  1619 W Summariser:   active sections: 0
+07-12 18:57:15.306   351  1619 W Summariser:   time: 02.232s
+07-12 18:57:15.306   351  1619 W Summariser:   original duration: 16.07
+07-12 18:57:15.306   351  1619 W Summariser:   summarised duration: -1.00
+07-12 18:57:15.306   351  1619 W Summariser:   noise tolerance: 45.00
+07-12 18:57:15.306   351  1619 W Summariser:   quality: 23
+07-12 18:57:15.306   351  1619 W Summariser:   speed: medium
+07-12 18:57:15.306   351  1619 W Summariser:   freeze duration: 1.00
+07-12 18:57:18.970   351   351 W NearbyFragment: Completed downloading 20200312_150744!002.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 03.615s
+07-12 18:57:19.149   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663f40] sws_param option is deprecated and ignored
+07-12 18:57:21.290   351  1651 W Summariser: No activity detected
+07-12 18:57:21.332   351  1651 W Summariser: Summarisation completed
+07-12 18:57:21.332   351  1651 W Summariser:   filename: 20200312_150744!002.mp4
+07-12 18:57:21.332   351  1651 W Summariser:   active sections: 0
+07-12 18:57:21.332   351  1651 W Summariser:   time: 02.265s
+07-12 18:57:21.332   351  1651 W Summariser:   original duration: 16.01
+07-12 18:57:21.332   351  1651 W Summariser:   summarised duration: -1.00
+07-12 18:57:21.332   351  1651 W Summariser:   noise tolerance: 45.00
+07-12 18:57:21.332   351  1651 W Summariser:   quality: 23
+07-12 18:57:21.332   351  1651 W Summariser:   speed: medium
+07-12 18:57:21.332   351  1651 W Summariser:   freeze duration: 1.00
+07-12 18:57:46.336   351   351 W NearbyFragment: Completed downloading 20200312_150844!000.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 03.900s
+07-12 18:57:46.541   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663f40] sws_param option is deprecated and ignored
+07-12 18:57:48.683   351  1696 W Summariser: Whole video is active
+07-12 18:57:49.196   351  1696 W Summariser: Summarisation completed
+07-12 18:57:49.196   351  1696 W Summariser:   filename: 20200312_150844!000.mp4
+07-12 18:57:49.196   351  1696 W Summariser:   active sections: -1
+07-12 18:57:49.196   351  1696 W Summariser:   time: 02.732s
+07-12 18:57:49.196   351  1696 W Summariser:   original duration: 16.06
+07-12 18:57:49.196   351  1696 W Summariser:   summarised duration: 16.06
+07-12 18:57:49.196   351  1696 W Summariser:   noise tolerance: 45.00
+07-12 18:57:49.196   351  1696 W Summariser:   quality: 23
+07-12 18:57:49.196   351  1696 W Summariser:   speed: medium
+07-12 18:57:49.196   351  1696 W Summariser:   freeze duration: 1.00
+07-12 18:57:49.224   351  1696 W NearbyFragment: Sending 20200312_150844!000.mp4 to Nexus 5 [1825]
+07-12 18:57:50.685   351   360 W System  : A resource failed to call close. 
+07-12 18:57:50.688   351   360 W System  : A resource failed to call close. 
+07-12 18:57:50.690   351   360 W System  : A resource failed to call close. 
+07-12 18:57:50.694   351   360 W System  : A resource failed to call close. 
+07-12 18:57:50.694   351   360 W System  : A resource failed to call close. 
+07-12 18:57:50.695   351   360 W System  : A resource failed to call close. 
+07-12 18:57:56.511   351   351 W NearbyFragment: Completed downloading 20200312_150844!002.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 07.222s
+07-12 18:57:56.719   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663f40] sws_param option is deprecated and ignored
+07-12 18:57:58.829   351  1738 W Summariser: Whole video is active
+07-12 18:57:59.288   351  1738 W Summariser: Summarisation completed
+07-12 18:57:59.288   351  1738 W Summariser:   filename: 20200312_150844!002.mp4
+07-12 18:57:59.288   351  1738 W Summariser:   active sections: -1
+07-12 18:57:59.288   351  1738 W Summariser:   time: 02.639s
+07-12 18:57:59.288   351  1738 W Summariser:   original duration: 16.01
+07-12 18:57:59.288   351  1738 W Summariser:   summarised duration: 16.01
+07-12 18:57:59.288   351  1738 W Summariser:   noise tolerance: 45.00
+07-12 18:57:59.288   351  1738 W Summariser:   quality: 23
+07-12 18:57:59.288   351  1738 W Summariser:   speed: medium
+07-12 18:57:59.288   351  1738 W Summariser:   freeze duration: 1.00
+07-12 18:57:59.319   351  1738 W NearbyFragment: Sending 20200312_150844!002.mp4 to Nexus 5 [1825]
+07-12 18:58:20.803   351   351 W NearbyFragment: Completed downloading 20200312_150944!000.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 03.162s
+07-12 18:58:21.037   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663ac0] sws_param option is deprecated and ignored
+07-12 18:58:23.126   351  1784 W Summariser: 1 active sections found
+07-12 18:58:23.176   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663a00] sws_param option is deprecated and ignored
+07-12 18:58:29.989   351  1784 W Summariser: Summarisation completed
+07-12 18:58:29.989   351  1784 W Summariser:   filename: 20200312_150944!000.mp4
+07-12 18:58:29.989   351  1784 W Summariser:   active sections: 1
+07-12 18:58:29.989   351  1784 W Summariser:   time: 08.999s
+07-12 18:58:29.989   351  1784 W Summariser:   original duration: 16.06
+07-12 18:58:29.989   351  1784 W Summariser:   summarised duration: 7.07
+07-12 18:58:29.989   351  1784 W Summariser:   noise tolerance: 45.00
+07-12 18:58:29.989   351  1784 W Summariser:   quality: 23
+07-12 18:58:29.989   351  1784 W Summariser:   speed: medium
+07-12 18:58:29.989   351  1784 W Summariser:   freeze duration: 1.00
+07-12 18:58:30.016   351  1784 W NearbyFragment: Sending 20200312_150944!000.mp4 to Nexus 5 [1825]
+07-12 18:58:33.619   351   351 W NearbyFragment: Completed downloading 20200312_150944!002.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 03.506s
+07-12 18:58:33.884   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663ac0] sws_param option is deprecated and ignored
+07-12 18:58:35.993   351  1876 W Summariser: No activity detected
+07-12 18:58:36.033   351  1876 W Summariser: Summarisation completed
+07-12 18:58:36.033   351  1876 W Summariser:   filename: 20200312_150944!002.mp4
+07-12 18:58:36.033   351  1876 W Summariser:   active sections: 0
+07-12 18:58:36.033   351  1876 W Summariser:   time: 02.301s
+07-12 18:58:36.033   351  1876 W Summariser:   original duration: 16.01
+07-12 18:58:36.033   351  1876 W Summariser:   summarised duration: -1.00
+07-12 18:58:36.033   351  1876 W Summariser:   noise tolerance: 45.00
+07-12 18:58:36.033   351  1876 W Summariser:   quality: 23
+07-12 18:58:36.033   351  1876 W Summariser:   speed: medium
+07-12 18:58:36.033   351  1876 W Summariser:   freeze duration: 1.00
+07-12 18:58:50.674   351   351 W NearbyFragment: Completed downloading 20200312_151044!000.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 03.338s
+07-12 18:58:50.900   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663ac0] sws_param option is deprecated and ignored
+07-12 18:58:53.180   351  1909 W Summariser: No activity detected
+07-12 18:58:53.210   351  1909 W Summariser: Summarisation completed
+07-12 18:58:53.210   351  1909 W Summariser:   filename: 20200312_151044!000.mp4
+07-12 18:58:53.210   351  1909 W Summariser:   active sections: 0
+07-12 18:58:53.210   351  1909 W Summariser:   time: 02.421s
+07-12 18:58:53.210   351  1909 W Summariser:   original duration: 16.07
+07-12 18:58:53.210   351  1909 W Summariser:   summarised duration: -1.00
+07-12 18:58:53.210   351  1909 W Summariser:   noise tolerance: 45.00
+07-12 18:58:53.210   351  1909 W Summariser:   quality: 23
+07-12 18:58:53.210   351  1909 W Summariser:   speed: medium
+07-12 18:58:53.210   351  1909 W Summariser:   freeze duration: 1.00
+07-12 18:58:58.351   351   351 W NearbyFragment: Completed downloading 20200312_151044!002.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 05.075s
+07-12 18:58:58.578   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663ac0] sws_param option is deprecated and ignored
+07-12 18:59:00.683   351  1937 W Summariser: No activity detected
+07-12 18:59:00.724   351  1937 W Summariser: Summarisation completed
+07-12 18:59:00.724   351  1937 W Summariser:   filename: 20200312_151044!002.mp4
+07-12 18:59:00.724   351  1937 W Summariser:   active sections: 0
+07-12 18:59:00.724   351  1937 W Summariser:   time: 02.257s
+07-12 18:59:00.724   351  1937 W Summariser:   original duration: 16.01
+07-12 18:59:00.724   351  1937 W Summariser:   summarised duration: -1.00
+07-12 18:59:00.724   351  1937 W Summariser:   noise tolerance: 45.00
+07-12 18:59:00.724   351  1937 W Summariser:   quality: 23
+07-12 18:59:00.724   351  1937 W Summariser:   speed: medium
+07-12 18:59:00.724   351  1937 W Summariser:   freeze duration: 1.00
+07-12 18:59:22.852   351   351 W NearbyFragment: Completed downloading 20200312_193528!000.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 03.978s
+07-12 18:59:23.058   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663ac0] sws_param option is deprecated and ignored
+07-12 18:59:25.115   351  2055 W Summariser: No activity detected
+07-12 18:59:25.143   351  2055 W Summariser: Summarisation completed
+07-12 18:59:25.143   351  2055 W Summariser:   filename: 20200312_193528!000.mp4
+07-12 18:59:25.143   351  2055 W Summariser:   active sections: 0
+07-12 18:59:25.143   351  2055 W Summariser:   time: 02.184s
+07-12 18:59:25.143   351  2055 W Summariser:   original duration: 16.06
+07-12 18:59:25.143   351  2055 W Summariser:   summarised duration: -1.00
+07-12 18:59:25.143   351  2055 W Summariser:   noise tolerance: 45.00
+07-12 18:59:25.143   351  2055 W Summariser:   quality: 23
+07-12 18:59:25.143   351  2055 W Summariser:   speed: medium
+07-12 18:59:25.143   351  2055 W Summariser:   freeze duration: 1.00
+07-12 18:59:30.483   351   351 W NearbyFragment: Completed downloading 20200312_193528!002.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 05.270s
+07-12 18:59:30.714   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663ac0] sws_param option is deprecated and ignored
+07-12 18:59:32.868   351  2086 W Summariser: No activity detected
+07-12 18:59:32.897   351  2086 W Summariser: Summarisation completed
+07-12 18:59:32.897   351  2086 W Summariser:   filename: 20200312_193528!002.mp4
+07-12 18:59:32.897   351  2086 W Summariser:   active sections: 0
+07-12 18:59:32.897   351  2086 W Summariser:   time: 02.310s
+07-12 18:59:32.897   351  2086 W Summariser:   original duration: 16.06
+07-12 18:59:32.897   351  2086 W Summariser:   summarised duration: -1.00
+07-12 18:59:32.897   351  2086 W Summariser:   noise tolerance: 45.00
+07-12 18:59:32.897   351  2086 W Summariser:   quality: 23
+07-12 18:59:32.897   351  2086 W Summariser:   speed: medium
+07-12 18:59:32.897   351  2086 W Summariser:   freeze duration: 1.00
+07-12 18:59:52.515   351   351 W NearbyFragment: Completed downloading 20200312_193628!000.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 03.945s
+07-12 18:59:52.748   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663a00] sws_param option is deprecated and ignored
+07-12 18:59:54.934   351  2134 W Summariser: No activity detected
+07-12 18:59:54.960   351  2134 W Summariser: Summarisation completed
+07-12 18:59:54.960   351  2134 W Summariser:   filename: 20200312_193628!000.mp4
+07-12 18:59:54.960   351  2134 W Summariser:   active sections: 0
+07-12 18:59:54.960   351  2134 W Summariser:   time: 02.343s
+07-12 18:59:54.960   351  2134 W Summariser:   original duration: 16.07
+07-12 18:59:54.960   351  2134 W Summariser:   summarised duration: -1.00
+07-12 18:59:54.960   351  2134 W Summariser:   noise tolerance: 45.00
+07-12 18:59:54.960   351  2134 W Summariser:   quality: 23
+07-12 18:59:54.960   351  2134 W Summariser:   speed: medium
+07-12 18:59:54.960   351  2134 W Summariser:   freeze duration: 1.00
+07-12 19:00:00.492   351   351 W NearbyFragment: Completed downloading 20200312_193628!002.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 05.395s
+07-12 19:00:00.712   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663a00] sws_param option is deprecated and ignored
+07-12 19:00:02.839   351  2162 W Summariser: No activity detected
+07-12 19:00:02.877   351  2162 W Summariser: Summarisation completed
+07-12 19:00:02.877   351  2162 W Summariser:   filename: 20200312_193628!002.mp4
+07-12 19:00:02.877   351  2162 W Summariser:   active sections: 0
+07-12 19:00:02.877   351  2162 W Summariser:   time: 02.273s
+07-12 19:00:02.877   351  2162 W Summariser:   original duration: 16.02
+07-12 19:00:02.877   351  2162 W Summariser:   summarised duration: -1.00
+07-12 19:00:02.877   351  2162 W Summariser:   noise tolerance: 45.00
+07-12 19:00:02.877   351  2162 W Summariser:   quality: 23
+07-12 19:00:02.877   351  2162 W Summariser:   speed: medium
+07-12 19:00:02.877   351  2162 W Summariser:   freeze duration: 1.00
+07-12 19:00:31.222   351   351 W NearbyFragment: Completed downloading 20200312_193728!000.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 06.814s
+07-12 19:00:31.440   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663a00] sws_param option is deprecated and ignored
+07-12 19:00:33.726   351  2198 W Summariser: Whole video is active
+07-12 19:00:34.164   351  2198 W Summariser: Summarisation completed
+07-12 19:00:34.164   351  2198 W Summariser:   filename: 20200312_193728!000.mp4
+07-12 19:00:34.164   351  2198 W Summariser:   active sections: -1
+07-12 19:00:34.164   351  2198 W Summariser:   time: 02.817s
+07-12 19:00:34.164   351  2198 W Summariser:   original duration: 16.06
+07-12 19:00:34.164   351  2198 W Summariser:   summarised duration: 16.06
+07-12 19:00:34.164   351  2198 W Summariser:   noise tolerance: 45.00
+07-12 19:00:34.164   351  2198 W Summariser:   quality: 23
+07-12 19:00:34.164   351  2198 W Summariser:   speed: medium
+07-12 19:00:34.164   351  2198 W Summariser:   freeze duration: 1.00
+07-12 19:00:34.193   351  2198 W NearbyFragment: Sending 20200312_193728!000.mp4 to Nexus 5 [1825]
+07-12 19:00:46.723   351   351 W NearbyFragment: Completed downloading 20200312_193728!002.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 12.407s
+07-12 19:00:46.957   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663700] sws_param option is deprecated and ignored
+07-12 19:00:49.178   351  2249 W Summariser: Whole video is active
+07-12 19:00:49.638   351  2249 W Summariser: Summarisation completed
+07-12 19:00:49.638   351  2249 W Summariser:   filename: 20200312_193728!002.mp4
+07-12 19:00:49.638   351  2249 W Summariser:   active sections: -1
+07-12 19:00:49.638   351  2249 W Summariser:   time: 02.766s
+07-12 19:00:49.638   351  2249 W Summariser:   original duration: 16.01
+07-12 19:00:49.638   351  2249 W Summariser:   summarised duration: 16.01
+07-12 19:00:49.638   351  2249 W Summariser:   noise tolerance: 45.00
+07-12 19:00:49.638   351  2249 W Summariser:   quality: 23
+07-12 19:00:49.638   351  2249 W Summariser:   speed: medium
+07-12 19:00:49.638   351  2249 W Summariser:   freeze duration: 1.00
+07-12 19:00:49.668   351  2249 W NearbyFragment: Sending 20200312_193728!002.mp4 to Nexus 5 [1825]
+07-12 19:01:08.201   351   351 W NearbyFragment: Completed downloading 20200312_193828!000.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 04.260s
+07-12 19:01:08.449   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663700] sws_param option is deprecated and ignored
+07-12 19:01:10.697   351  2309 W Summariser: 1 active sections found
+07-12 19:01:10.743   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663580] sws_param option is deprecated and ignored
+07-12 19:01:24.549   351  2309 W Summariser: Summarisation completed
+07-12 19:01:24.549   351  2309 W Summariser:   filename: 20200312_193828!000.mp4
+07-12 19:01:24.549   351  2309 W Summariser:   active sections: 1
+07-12 19:01:24.549   351  2309 W Summariser:   time: 16.174s
+07-12 19:01:24.549   351  2309 W Summariser:   original duration: 16.06
+07-12 19:01:24.549   351  2309 W Summariser:   summarised duration: 14.28
+07-12 19:01:24.549   351  2309 W Summariser:   noise tolerance: 45.00
+07-12 19:01:24.549   351  2309 W Summariser:   quality: 23
+07-12 19:01:24.549   351  2309 W Summariser:   speed: medium
+07-12 19:01:24.549   351  2309 W Summariser:   freeze duration: 1.00
+07-12 19:01:24.564   351  2309 W NearbyFragment: Sending 20200312_193828!000.mp4 to Nexus 5 [1825]
+07-12 19:01:29.406   351   351 W NearbyFragment: Completed downloading 20200312_193828!002.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 04.764s
+07-12 19:01:29.760   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663700] sws_param option is deprecated and ignored
+07-12 19:01:32.006   351  2384 W Summariser: No activity detected
+07-12 19:01:32.043   351  2384 W Summariser: Summarisation completed
+07-12 19:01:32.043   351  2384 W Summariser:   filename: 20200312_193828!002.mp4
+07-12 19:01:32.043   351  2384 W Summariser:   active sections: 0
+07-12 19:01:32.043   351  2384 W Summariser:   time: 02.437s
+07-12 19:01:32.043   351  2384 W Summariser:   original duration: 16.01
+07-12 19:01:32.043   351  2384 W Summariser:   summarised duration: -1.00
+07-12 19:01:32.043   351  2384 W Summariser:   noise tolerance: 45.00
+07-12 19:01:32.043   351  2384 W Summariser:   quality: 23
+07-12 19:01:32.043   351  2384 W Summariser:   speed: medium
+07-12 19:01:32.043   351  2384 W Summariser:   freeze duration: 1.00
+07-12 19:01:41.506   351   351 W NearbyFragment: Completed downloading 20200312_193928!000.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 06.445s
+07-12 19:01:41.711   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663700] sws_param option is deprecated and ignored
+07-12 19:01:43.785   351  2417 W Summariser: No activity detected
+07-12 19:01:43.812   351  2417 W Summariser: Summarisation completed
+07-12 19:01:43.812   351  2417 W Summariser:   filename: 20200312_193928!000.mp4
+07-12 19:01:43.812   351  2417 W Summariser:   active sections: 0
+07-12 19:01:43.812   351  2417 W Summariser:   time: 02.223s
+07-12 19:01:43.812   351  2417 W Summariser:   original duration: 16.90
+07-12 19:01:43.812   351  2417 W Summariser:   summarised duration: -1.00
+07-12 19:01:43.812   351  2417 W Summariser:   noise tolerance: 45.00
+07-12 19:01:43.812   351  2417 W Summariser:   quality: 23
+07-12 19:01:43.812   351  2417 W Summariser:   speed: medium
+07-12 19:01:43.812   351  2417 W Summariser:   freeze duration: 1.00
+07-12 19:01:50.750   351   351 W NearbyFragment: Completed downloading 20200312_193928!002.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 06.874s
+07-12 19:01:50.973   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663700] sws_param option is deprecated and ignored
+07-12 19:01:53.086   351  2458 W Summariser: No activity detected
+07-12 19:01:53.114   351  2458 W Summariser: Summarisation completed
+07-12 19:01:53.114   351  2458 W Summariser:   filename: 20200312_193928!002.mp4
+07-12 19:01:53.114   351  2458 W Summariser:   active sections: 0
+07-12 19:01:53.114   351  2458 W Summariser:   time: 02.292s
+07-12 19:01:53.114   351  2458 W Summariser:   original duration: 16.06
+07-12 19:01:53.114   351  2458 W Summariser:   summarised duration: -1.00
+07-12 19:01:53.114   351  2458 W Summariser:   noise tolerance: 45.00
+07-12 19:01:53.114   351  2458 W Summariser:   quality: 23
+07-12 19:01:53.114   351  2458 W Summariser:   speed: medium
+07-12 19:01:53.114   351  2458 W Summariser:   freeze duration: 1.00
+07-12 19:02:11.274   351   351 W NearbyFragment: Completed downloading 20200312_194129!000.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 04.467s
+07-12 19:02:11.477   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663700] sws_param option is deprecated and ignored
+07-12 19:02:13.643   351  2503 W Summariser: No activity detected
+07-12 19:02:13.668   351  2503 W Summariser: Summarisation completed
+07-12 19:02:13.668   351  2503 W Summariser:   filename: 20200312_194129!000.mp4
+07-12 19:02:13.668   351  2503 W Summariser:   active sections: 0
+07-12 19:02:13.668   351  2503 W Summariser:   time: 02.313s
+07-12 19:02:13.668   351  2503 W Summariser:   original duration: 16.07
+07-12 19:02:13.668   351  2503 W Summariser:   summarised duration: -1.00
+07-12 19:02:13.668   351  2503 W Summariser:   noise tolerance: 45.00
+07-12 19:02:13.668   351  2503 W Summariser:   quality: 23
+07-12 19:02:13.668   351  2503 W Summariser:   speed: medium
+07-12 19:02:13.668   351  2503 W Summariser:   freeze duration: 1.00
+07-12 19:02:19.884   351   351 W NearbyFragment: Completed downloading 20200312_194129!002.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 06.177s
+07-12 19:02:20.076   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663700] sws_param option is deprecated and ignored
+07-12 19:02:22.265   351  2533 W Summariser: 1 active sections found
+07-12 19:02:22.325   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663580] sws_param option is deprecated and ignored
+07-12 19:02:29.272   351  2533 W Summariser: Summarisation completed
+07-12 19:02:29.272   351  2533 W Summariser:   filename: 20200312_194129!002.mp4
+07-12 19:02:29.272   351  2533 W Summariser:   active sections: 1
+07-12 19:02:29.272   351  2533 W Summariser:   time: 09.208s
+07-12 19:02:29.272   351  2533 W Summariser:   original duration: 16.01
+07-12 19:02:29.272   351  2533 W Summariser:   summarised duration: 7.37
+07-12 19:02:29.272   351  2533 W Summariser:   noise tolerance: 45.00
+07-12 19:02:29.272   351  2533 W Summariser:   quality: 23
+07-12 19:02:29.272   351  2533 W Summariser:   speed: medium
+07-12 19:02:29.272   351  2533 W Summariser:   freeze duration: 1.00
+07-12 19:02:29.290   351  2533 W NearbyFragment: Sending 20200312_194129!002.mp4 to Nexus 5 [1825]
+07-12 19:02:49.759   351   351 W NearbyFragment: Completed downloading 20200312_194229!000.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 04.556s
+07-12 19:02:49.988   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663700] sws_param option is deprecated and ignored
+07-12 19:02:52.197   351  2606 W Summariser: 1 active sections found
+07-12 19:02:52.247   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663580] sws_param option is deprecated and ignored
+07-12 19:02:59.031   351  2606 W Summariser: Summarisation completed
+07-12 19:02:59.031   351  2606 W Summariser:   filename: 20200312_194229!000.mp4
+07-12 19:02:59.031   351  2606 W Summariser:   active sections: 1
+07-12 19:02:59.031   351  2606 W Summariser:   time: 09.179s
+07-12 19:02:59.031   351  2606 W Summariser:   original duration: 16.06
+07-12 19:02:59.031   351  2606 W Summariser:   summarised duration: 5.62
+07-12 19:02:59.031   351  2606 W Summariser:   noise tolerance: 45.00
+07-12 19:02:59.031   351  2606 W Summariser:   quality: 23
+07-12 19:02:59.031   351  2606 W Summariser:   speed: medium
+07-12 19:02:59.031   351  2606 W Summariser:   freeze duration: 1.00
+07-12 19:02:59.041   351  2606 W NearbyFragment: Sending 20200312_194229!000.mp4 to Nexus 5 [1825]
+07-12 19:03:05.383   351   351 W NearbyFragment: Completed downloading 20200312_194229!002.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 06.264s
+07-12 19:03:05.646   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663700] sws_param option is deprecated and ignored
+07-12 19:03:07.738   351  2673 W Summariser: No activity detected
+07-12 19:03:07.775   351  2673 W Summariser: Summarisation completed
+07-12 19:03:07.775   351  2673 W Summariser:   filename: 20200312_194229!002.mp4
+07-12 19:03:07.775   351  2673 W Summariser:   active sections: 0
+07-12 19:03:07.775   351  2673 W Summariser:   time: 02.300s
+07-12 19:03:07.775   351  2673 W Summariser:   original duration: 16.01
+07-12 19:03:07.775   351  2673 W Summariser:   summarised duration: -1.00
+07-12 19:03:07.775   351  2673 W Summariser:   noise tolerance: 45.00
+07-12 19:03:07.775   351  2673 W Summariser:   quality: 23
+07-12 19:03:07.775   351  2673 W Summariser:   speed: medium
+07-12 19:03:07.775   351  2673 W Summariser:   freeze duration: 1.00
+07-12 19:03:28.288   351   351 W NearbyFragment: Completed downloading 20200312_194330!000.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 06.934s
+07-12 19:03:28.492   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663700] sws_param option is deprecated and ignored
+07-12 19:03:30.631   351  2706 W Summariser: No activity detected
+07-12 19:03:30.656   351  2706 W Summariser: Summarisation completed
+07-12 19:03:30.656   351  2706 W Summariser:   filename: 20200312_194330!000.mp4
+07-12 19:03:30.656   351  2706 W Summariser:   active sections: 0
+07-12 19:03:30.656   351  2706 W Summariser:   time: 02.293s
+07-12 19:03:30.656   351  2706 W Summariser:   original duration: 16.07
+07-12 19:03:30.656   351  2706 W Summariser:   summarised duration: -1.00
+07-12 19:03:30.656   351  2706 W Summariser:   noise tolerance: 45.00
+07-12 19:03:30.656   351  2706 W Summariser:   quality: 23
+07-12 19:03:30.656   351  2706 W Summariser:   speed: medium
+07-12 19:03:30.656   351  2706 W Summariser:   freeze duration: 1.00
+07-12 19:03:37.577   351   351 W NearbyFragment: Completed downloading 20200312_194330!002.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 06.859s
+07-12 19:03:37.770   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x71f5663700] sws_param option is deprecated and ignored
+07-12 19:03:39.865   351  2737 W Summariser: No activity detected
+07-12 19:03:39.896   351   360 W System  : A resource failed to call close. 
+07-12 19:03:39.904   351   360 W System  : A resource failed to call close. 
+07-12 19:03:39.904   351  2737 W Summariser: Summarisation completed
+07-12 19:03:39.904   351  2737 W Summariser:   filename: 20200312_194330!002.mp4
+07-12 19:03:39.904   351  2737 W Summariser:   active sections: 0
+07-12 19:03:39.904   351  2737 W Summariser:   time: 02.246s
+07-12 19:03:39.904   351  2737 W Summariser:   original duration: 16.01
+07-12 19:03:39.904   351  2737 W Summariser:   summarised duration: -1.00
+07-12 19:03:39.904   351  2737 W Summariser:   noise tolerance: 45.00
+07-12 19:03:39.904   351  2737 W Summariser:   quality: 23
+07-12 19:03:39.904   351  2737 W Summariser:   speed: medium
+07-12 19:03:39.904   351  2737 W Summariser:   freeze duration: 1.00
+07-12 19:04:02.209   351   351 W NearbyFragment: Completed downloading 20200312_194730!000.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 08.217s
+07-12 19:04:02.464   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a840] sws_param option is deprecated and ignored
+07-12 19:04:04.670   351  2780 W Summariser: No activity detected
+07-12 19:04:04.696   351  2780 W Summariser: Summarisation completed
+07-12 19:04:04.696   351  2780 W Summariser:   filename: 20200312_194730!000.mp4
+07-12 19:04:04.696   351  2780 W Summariser:   active sections: 0
+07-12 19:04:04.696   351  2780 W Summariser:   time: 02.368s
+07-12 19:04:04.696   351  2780 W Summariser:   original duration: 16.07
+07-12 19:04:04.696   351  2780 W Summariser:   summarised duration: -1.00
+07-12 19:04:04.696   351  2780 W Summariser:   noise tolerance: 45.00
+07-12 19:04:04.696   351  2780 W Summariser:   quality: 23
+07-12 19:04:04.696   351  2780 W Summariser:   speed: medium
+07-12 19:04:04.696   351  2780 W Summariser:   freeze duration: 1.00
+07-12 19:04:14.287   351   351 W NearbyFragment: Completed downloading 20200312_194730!002.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 09.475s
+07-12 19:04:14.515   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a840] sws_param option is deprecated and ignored
+07-12 19:04:16.633   351  2812 W Summariser: No activity detected
+07-12 19:04:16.670   351  2812 W Summariser: Summarisation completed
+07-12 19:04:16.670   351  2812 W Summariser:   filename: 20200312_194730!002.mp4
+07-12 19:04:16.670   351  2812 W Summariser:   active sections: 0
+07-12 19:04:16.670   351  2812 W Summariser:   time: 02.263s
+07-12 19:04:16.670   351  2812 W Summariser:   original duration: 16.01
+07-12 19:04:16.670   351  2812 W Summariser:   summarised duration: -1.00
+07-12 19:04:16.670   351  2812 W Summariser:   noise tolerance: 45.00
+07-12 19:04:16.670   351  2812 W Summariser:   quality: 23
+07-12 19:04:16.670   351  2812 W Summariser:   speed: medium
+07-12 19:04:16.670   351  2812 W Summariser:   freeze duration: 1.00
+07-12 19:04:32.976   351   351 W NearbyFragment: Completed downloading 20200312_194830!000.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 09.364s
+07-12 19:04:33.142   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a840] sws_param option is deprecated and ignored
+07-12 19:04:35.330   351  2845 W Summariser: 1 active sections found
+07-12 19:04:35.380   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a780] sws_param option is deprecated and ignored
+07-12 19:04:40.371   351  2845 W Summariser: Summarisation completed
+07-12 19:04:40.371   351  2845 W Summariser:   filename: 20200312_194830!000.mp4
+07-12 19:04:40.371   351  2845 W Summariser:   active sections: 1
+07-12 19:04:40.371   351  2845 W Summariser:   time: 07.249s
+07-12 19:04:40.371   351  2845 W Summariser:   original duration: 16.06
+07-12 19:04:40.371   351  2845 W Summariser:   summarised duration: 3.97
+07-12 19:04:40.371   351  2845 W Summariser:   noise tolerance: 45.00
+07-12 19:04:40.371   351  2845 W Summariser:   quality: 23
+07-12 19:04:40.371   351  2845 W Summariser:   speed: medium
+07-12 19:04:40.371   351  2845 W Summariser:   freeze duration: 1.00
+07-12 19:04:40.393   351  2845 W NearbyFragment: Sending 20200312_194830!000.mp4 to Nexus 5 [1825]
+07-12 19:04:47.671   351   351 W NearbyFragment: Completed downloading 20200312_194830!002.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 07.186s
+07-12 19:04:47.967   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a840] sws_param option is deprecated and ignored
+07-12 19:04:50.148   351  2913 W Summariser: 2 active sections found
+07-12 19:04:50.207   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a840] sws_param option is deprecated and ignored
+07-12 19:04:50.207   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812ac00] sws_param option is deprecated and ignored
+07-12 19:04:59.450   351  2913 W Summariser: Summarisation completed
+07-12 19:04:59.450   351  2913 W Summariser:   filename: 20200312_194830!002.mp4
+07-12 19:04:59.450   351  2913 W Summariser:   active sections: 2
+07-12 19:04:59.450   351  2913 W Summariser:   time: 11.583s
+07-12 19:04:59.450   351  2913 W Summariser:   original duration: 16.01
+07-12 19:04:59.450   351  2913 W Summariser:   summarised duration: 8.84
+07-12 19:04:59.450   351  2913 W Summariser:   noise tolerance: 45.00
+07-12 19:04:59.450   351  2913 W Summariser:   quality: 23
+07-12 19:04:59.450   351  2913 W Summariser:   speed: medium
+07-12 19:04:59.450   351  2913 W Summariser:   freeze duration: 1.00
+07-12 19:04:59.476   351  2913 W NearbyFragment: Sending 20200312_194830!002.mp4 to Nexus 5 [1825]
+07-12 19:05:06.819   351   351 W NearbyFragment: Completed downloading 20200312_194930!001.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 07.238s
+07-12 19:05:07.132   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a840] sws_param option is deprecated and ignored
+07-12 19:05:09.344   351  2981 W Summariser: 1 active sections found
+07-12 19:05:09.404   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a780] sws_param option is deprecated and ignored
+07-12 19:05:11.571   351  2981 W Summariser: Summarisation completed
+07-12 19:05:11.571   351  2981 W Summariser:   filename: 20200312_194930!001.mp4
+07-12 19:05:11.571   351  2981 W Summariser:   active sections: 1
+07-12 19:05:11.571   351  2981 W Summariser:   time: 04.548s
+07-12 19:05:11.571   351  2981 W Summariser:   original duration: 16.01
+07-12 19:05:11.571   351  2981 W Summariser:   summarised duration: 2.02
+07-12 19:05:11.571   351  2981 W Summariser:   noise tolerance: 45.00
+07-12 19:05:11.571   351  2981 W Summariser:   quality: 23
+07-12 19:05:11.571   351  2981 W Summariser:   speed: medium
+07-12 19:05:11.571   351  2981 W Summariser:   freeze duration: 1.00
+07-12 19:05:11.614   351  2981 W NearbyFragment: Sending 20200312_194930!001.mp4 to Nexus 5 [1825]
+07-12 19:05:16.836   351   351 W NearbyFragment: Completed downloading 20200312_194930!003.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 04.973s
+07-12 19:05:17.095   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a840] sws_param option is deprecated and ignored
+07-12 19:05:18.855   351  3045 W Summariser: 1 active sections found
+07-12 19:05:18.899   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a780] sws_param option is deprecated and ignored
+07-12 19:05:29.671   351  3045 W Summariser: Summarisation completed
+07-12 19:05:29.671   351  3045 W Summariser:   filename: 20200312_194930!003.mp4
+07-12 19:05:29.671   351  3045 W Summariser:   active sections: 1
+07-12 19:05:29.671   351  3045 W Summariser:   time: 12.670s
+07-12 19:05:29.671   351  3045 W Summariser:   original duration: 12.01
+07-12 19:05:29.671   351  3045 W Summariser:   summarised duration: 10.95
+07-12 19:05:29.671   351  3045 W Summariser:   noise tolerance: 45.00
+07-12 19:05:29.671   351  3045 W Summariser:   quality: 23
+07-12 19:05:29.671   351  3045 W Summariser:   speed: medium
+07-12 19:05:29.671   351  3045 W Summariser:   freeze duration: 1.00
+07-12 19:05:29.689   351  3045 W NearbyFragment: Sending 20200312_194930!003.mp4 to Nexus 5 [1825]
+07-12 19:05:36.186   351   351 W NearbyFragment: Completed downloading 20200312_195230!001.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 06.395s
+07-12 19:05:36.430   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a840] sws_param option is deprecated and ignored
+07-12 19:05:38.555   351  3216 W Summariser: 1 active sections found
+07-12 19:05:38.612   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a780] sws_param option is deprecated and ignored
+07-12 19:05:46.345   351  3216 W Summariser: Summarisation completed
+07-12 19:05:46.345   351  3216 W Summariser:   filename: 20200312_195230!001.mp4
+07-12 19:05:46.345   351  3216 W Summariser:   active sections: 1
+07-12 19:05:46.345   351  3216 W Summariser:   time: 09.971s
+07-12 19:05:46.345   351  3216 W Summariser:   original duration: 16.01
+07-12 19:05:46.345   351  3216 W Summariser:   summarised duration: 6.97
+07-12 19:05:46.345   351  3216 W Summariser:   noise tolerance: 45.00
+07-12 19:05:46.345   351  3216 W Summariser:   quality: 23
+07-12 19:05:46.345   351  3216 W Summariser:   speed: medium
+07-12 19:05:46.345   351  3216 W Summariser:   freeze duration: 1.00
+07-12 19:05:46.390   351  3216 W NearbyFragment: Sending 20200312_195230!001.mp4 to Nexus 5 [1825]
+07-12 19:05:56.934   351   351 W NearbyFragment: Completed downloading 20200312_195330!000.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 10.288s
+07-12 19:05:57.137   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a9c0] sws_param option is deprecated and ignored
+07-12 19:05:59.282   351  3378 W Summariser: 1 active sections found
+07-12 19:05:59.331   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a900] sws_param option is deprecated and ignored
+07-12 19:06:02.058   351  3378 W Summariser: Summarisation completed
+07-12 19:06:02.058   351  3378 W Summariser:   filename: 20200312_195330!000.mp4
+07-12 19:06:02.058   351  3378 W Summariser:   active sections: 1
+07-12 19:06:02.058   351  3378 W Summariser:   time: 05.011s
+07-12 19:06:02.058   351  3378 W Summariser:   original duration: 16.07
+07-12 19:06:02.058   351  3378 W Summariser:   summarised duration: 1.11
+07-12 19:06:02.058   351  3378 W Summariser:   noise tolerance: 45.00
+07-12 19:06:02.058   351  3378 W Summariser:   quality: 23
+07-12 19:06:02.058   351  3378 W Summariser:   speed: medium
+07-12 19:06:02.058   351  3378 W Summariser:   freeze duration: 1.00
+07-12 19:06:02.073   351  3378 W NearbyFragment: Sending 20200312_195330!000.mp4 to Nexus 5 [1825]
+07-12 19:06:09.167   351   351 W NearbyFragment: Completed downloading 20200312_195330!002.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 07.051s
+07-12 19:06:09.430   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a9c0] sws_param option is deprecated and ignored
+07-12 19:06:11.675   351  3593 W Summariser: 2 active sections found
+07-12 19:06:11.737   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a9c0] sws_param option is deprecated and ignored
+07-12 19:06:11.737   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812ad80] sws_param option is deprecated and ignored
+07-12 19:06:20.476   351  3593 W Summariser: Summarisation completed
+07-12 19:06:20.476   351  3593 W Summariser:   filename: 20200312_195330!002.mp4
+07-12 19:06:20.476   351  3593 W Summariser:   active sections: 2
+07-12 19:06:20.476   351  3593 W Summariser:   time: 11.114s
+07-12 19:06:20.476   351  3593 W Summariser:   original duration: 16.01
+07-12 19:06:20.476   351  3593 W Summariser:   summarised duration: 9.07
+07-12 19:06:20.476   351  3593 W Summariser:   noise tolerance: 45.00
+07-12 19:06:20.476   351  3593 W Summariser:   quality: 23
+07-12 19:06:20.476   351  3593 W Summariser:   speed: medium
+07-12 19:06:20.476   351  3593 W Summariser:   freeze duration: 1.00
+07-12 19:06:20.498   351  3593 W NearbyFragment: Sending 20200312_195330!002.mp4 to Nexus 5 [1825]
+07-12 19:06:26.784   351   351 W NearbyFragment: Completed downloading 20200312_195430!001.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 06.150s
+07-12 19:06:27.023   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a9c0] sws_param option is deprecated and ignored
+07-12 19:06:29.194   351  3693 W Summariser: 2 active sections found
+07-12 19:06:29.251   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a9c0] sws_param option is deprecated and ignored
+07-12 19:06:29.251   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812ad80] sws_param option is deprecated and ignored
+07-12 19:06:35.422   351  3693 W Summariser: Summarisation completed
+07-12 19:06:35.422   351  3693 W Summariser:   filename: 20200312_195430!001.mp4
+07-12 19:06:35.422   351  3693 W Summariser:   active sections: 2
+07-12 19:06:35.422   351  3693 W Summariser:   time: 08.385s
+07-12 19:06:35.422   351  3693 W Summariser:   original duration: 16.01
+07-12 19:06:35.422   351  3693 W Summariser:   summarised duration: 5.90
+07-12 19:06:35.422   351  3693 W Summariser:   noise tolerance: 45.00
+07-12 19:06:35.422   351  3693 W Summariser:   quality: 23
+07-12 19:06:35.422   351  3693 W Summariser:   speed: medium
+07-12 19:06:35.422   351  3693 W Summariser:   freeze duration: 1.00
+07-12 19:06:35.447   351  3693 W NearbyFragment: Sending 20200312_195430!001.mp4 to Nexus 5 [1825]
+07-12 19:06:40.517   351   351 W NearbyFragment: Completed downloading 20200312_195430!003.mp4 from Endpoint{id=my_o, name=Nexus 5 [1825]} in 05.001s
+07-12 19:06:40.716   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a9c0] sws_param option is deprecated and ignored
+07-12 19:06:42.320   351  3760 W Summariser: 1 active sections found
+07-12 19:06:42.370   351  1537 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x720812a900] sws_param option is deprecated and ignored
+07-12 19:06:46.504   351  3760 W Summariser: Summarisation completed
+07-12 19:06:46.504   351  3760 W Summariser:   filename: 20200312_195430!003.mp4
+07-12 19:06:46.504   351  3760 W Summariser:   active sections: 1
+07-12 19:06:46.504   351  3760 W Summariser:   time: 05.803s
+07-12 19:06:46.504   351  3760 W Summariser:   original duration: 11.98
+07-12 19:06:46.504   351  3760 W Summariser:   summarised duration: 4.54
+07-12 19:06:46.504   351  3760 W Summariser:   noise tolerance: 45.00
+07-12 19:06:46.504   351  3760 W Summariser:   quality: 23
+07-12 19:06:46.504   351  3760 W Summariser:   speed: medium
+07-12 19:06:46.504   351  3760 W Summariser:   freeze duration: 1.00
+07-12 19:06:46.521   351  3760 W NearbyFragment: Sending 20200312_195430!003.mp4 to Nexus 5 [1825]

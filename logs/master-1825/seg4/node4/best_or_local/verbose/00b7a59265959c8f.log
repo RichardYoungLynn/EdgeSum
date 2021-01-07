@@ -1,0 +1,1291 @@
+--------- beginning of main
+07-12 19:34:04.887  5169  5169 I zygote64: Late-enabling -Xcheck:jni
+07-12 19:34:05.255  5169  5169 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-12 19:34:05.255  5169  5169 I zygote64:   at void androidx.core.view.ViewCompat.setBackground(android.view.View, android.graphics.drawable.Drawable) (ViewCompat.java:2559)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void androidx.appcompat.widget.ActionBarContainer.<init>(android.content.Context, android.util.AttributeSet) (ActionBarContainer.java:63)
+07-12 19:34:05.255  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Constructor.newInstance0(java.lang.Object[]) (Constructor.java:-2)
+07-12 19:34:05.255  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Constructor.newInstance(java.lang.Object[]) (Constructor.java:334)
+07-12 19:34:05.255  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createView(java.lang.String, java.lang.String, android.util.AttributeSet) (LayoutInflater.java:647)
+07-12 19:34:05.255  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createViewFromTag(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet, boolean) (LayoutInflater.java:790)
+07-12 19:34:05.255  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createViewFromTag(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet) (LayoutInflater.java:730)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void android.view.LayoutInflater.rInflate(org.xmlpull.v1.XmlPullParser, android.view.View, android.content.Context, android.util.AttributeSet, boolean) (LayoutInflater.java:863)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void android.view.LayoutInflater.rInflateChildren(org.xmlpull.v1.XmlPullParser, android.view.View, android.util.AttributeSet, boolean) (LayoutInflater.java:824)
+07-12 19:34:05.255  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(org.xmlpull.v1.XmlPullParser, android.view.ViewGroup, boolean) (LayoutInflater.java:515)
+07-12 19:34:05.255  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(int, android.view.ViewGroup, boolean) (LayoutInflater.java:423)
+07-12 19:34:05.255  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(int, android.view.ViewGroup) (LayoutInflater.java:374)
+07-12 19:34:05.255  5169  5169 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:749)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:24)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.255  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.255  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.255  5169  5169 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/lib/arm64, /data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-12 19:34:05.255  5169  5169 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-12 19:34:05.255  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-12 19:34:05.255  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void androidx.core.view.ViewCompat.setBackground(android.view.View, android.graphics.drawable.Drawable) (ViewCompat.java:2559)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void androidx.appcompat.widget.ActionBarContainer.<init>(android.content.Context, android.util.AttributeSet) (ActionBarContainer.java:63)
+07-12 19:34:05.255  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Constructor.newInstance0(java.lang.Object[]) (Constructor.java:-2)
+07-12 19:34:05.255  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Constructor.newInstance(java.lang.Object[]) (Constructor.java:334)
+07-12 19:34:05.255  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createView(java.lang.String, java.lang.String, android.util.AttributeSet) (LayoutInflater.java:647)
+07-12 19:34:05.255  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createViewFromTag(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet, boolean) (LayoutInflater.java:790)
+07-12 19:34:05.255  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createViewFromTag(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet) (LayoutInflater.java:730)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void android.view.LayoutInflater.rInflate(org.xmlpull.v1.XmlPullParser, android.view.View, android.content.Context, android.util.AttributeSet, boolean) (LayoutInflater.java:863)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void android.view.LayoutInflater.rInflateChildren(org.xmlpull.v1.XmlPullParser, android.view.View, android.util.AttributeSet, boolean) (LayoutInflater.java:824)
+07-12 19:34:05.255  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(org.xmlpull.v1.XmlPullParser, android.view.ViewGroup, boolean) (LayoutInflater.java:515)
+07-12 19:34:05.255  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(int, android.view.ViewGroup, boolean) (LayoutInflater.java:423)
+07-12 19:34:05.255  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(int, android.view.ViewGroup) (LayoutInflater.java:374)
+07-12 19:34:05.255  5169  5169 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:749)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:24)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.255  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.256  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.256  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.256  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.256  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.256  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.256  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.256  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.256  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.256  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.256  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.256  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.256  5169  5169 I zygote64: 
+07-12 19:34:05.256  5169  5169 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-12 19:34:05.256  5169  5169 I zygote64:   at void androidx.core.view.ViewCompat.setBackground(android.view.View, android.graphics.drawable.Drawable) (ViewCompat.java:2559)
+07-12 19:34:05.256  5169  5169 I zygote64:   at void androidx.appcompat.widget.ActionBarContainer.<init>(android.content.Context, android.util.AttributeSet) (ActionBarContainer.java:63)
+07-12 19:34:05.256  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Constructor.newInstance0(java.lang.Object[]) (Constructor.java:-2)
+07-12 19:34:05.256  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Constructor.newInstance(java.lang.Object[]) (Constructor.java:334)
+07-12 19:34:05.256  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createView(java.lang.String, java.lang.String, android.util.AttributeSet) (LayoutInflater.java:647)
+07-12 19:34:05.256  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createViewFromTag(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet, boolean) (LayoutInflater.java:790)
+07-12 19:34:05.256  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createViewFromTag(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet) (LayoutInflater.java:730)
+07-12 19:34:05.256  5169  5169 I zygote64:   at void android.view.LayoutInflater.rInflate(org.xmlpull.v1.XmlPullParser, android.view.View, android.content.Context, android.util.AttributeSet, boolean) (LayoutInflater.java:863)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.view.LayoutInflater.rInflateChildren(org.xmlpull.v1.XmlPullParser, android.view.View, android.util.AttributeSet, boolean) (LayoutInflater.java:824)
+07-12 19:34:05.257  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(org.xmlpull.v1.XmlPullParser, android.view.ViewGroup, boolean) (LayoutInflater.java:515)
+07-12 19:34:05.257  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(int, android.view.ViewGroup, boolean) (LayoutInflater.java:423)
+07-12 19:34:05.257  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(int, android.view.ViewGroup) (LayoutInflater.java:374)
+07-12 19:34:05.257  5169  5169 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:749)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:24)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.257  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.257  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.257  5169  5169 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/lib/arm64, /data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-12 19:34:05.257  5169  5169 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-12 19:34:05.257  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-12 19:34:05.257  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void androidx.core.view.ViewCompat.setBackground(android.view.View, android.graphics.drawable.Drawable) (ViewCompat.java:2559)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void androidx.appcompat.widget.ActionBarContainer.<init>(android.content.Context, android.util.AttributeSet) (ActionBarContainer.java:63)
+07-12 19:34:05.257  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Constructor.newInstance0(java.lang.Object[]) (Constructor.java:-2)
+07-12 19:34:05.257  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Constructor.newInstance(java.lang.Object[]) (Constructor.java:334)
+07-12 19:34:05.257  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createView(java.lang.String, java.lang.String, android.util.AttributeSet) (LayoutInflater.java:647)
+07-12 19:34:05.257  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createViewFromTag(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet, boolean) (LayoutInflater.java:790)
+07-12 19:34:05.257  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createViewFromTag(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet) (LayoutInflater.java:730)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.view.LayoutInflater.rInflate(org.xmlpull.v1.XmlPullParser, android.view.View, android.content.Context, android.util.AttributeSet, boolean) (LayoutInflater.java:863)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.view.LayoutInflater.rInflateChildren(org.xmlpull.v1.XmlPullParser, android.view.View, android.util.AttributeSet, boolean) (LayoutInflater.java:824)
+07-12 19:34:05.257  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(org.xmlpull.v1.XmlPullParser, android.view.ViewGroup, boolean) (LayoutInflater.java:515)
+07-12 19:34:05.257  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(int, android.view.ViewGroup, boolean) (LayoutInflater.java:423)
+07-12 19:34:05.257  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(int, android.view.ViewGroup) (LayoutInflater.java:374)
+07-12 19:34:05.257  5169  5169 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:749)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:24)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.257  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.257  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.257  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.257  5169  5169 I zygote64: 
+07-12 19:34:05.258  5169  5169 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+07-12 19:34:05.258  5169  5169 I zygote64:   at void androidx.core.view.ViewCompat.setBackground(android.view.View, android.graphics.drawable.Drawable) (ViewCompat.java:2559)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void androidx.appcompat.widget.ActionBarContainer.<init>(android.content.Context, android.util.AttributeSet) (ActionBarContainer.java:63)
+07-12 19:34:05.258  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Constructor.newInstance0(java.lang.Object[]) (Constructor.java:-2)
+07-12 19:34:05.258  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Constructor.newInstance(java.lang.Object[]) (Constructor.java:334)
+07-12 19:34:05.258  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createView(java.lang.String, java.lang.String, android.util.AttributeSet) (LayoutInflater.java:647)
+07-12 19:34:05.258  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createViewFromTag(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet, boolean) (LayoutInflater.java:790)
+07-12 19:34:05.258  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createViewFromTag(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet) (LayoutInflater.java:730)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void android.view.LayoutInflater.rInflate(org.xmlpull.v1.XmlPullParser, android.view.View, android.content.Context, android.util.AttributeSet, boolean) (LayoutInflater.java:863)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void android.view.LayoutInflater.rInflateChildren(org.xmlpull.v1.XmlPullParser, android.view.View, android.util.AttributeSet, boolean) (LayoutInflater.java:824)
+07-12 19:34:05.258  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(org.xmlpull.v1.XmlPullParser, android.view.ViewGroup, boolean) (LayoutInflater.java:515)
+07-12 19:34:05.258  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(int, android.view.ViewGroup, boolean) (LayoutInflater.java:423)
+07-12 19:34:05.258  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(int, android.view.ViewGroup) (LayoutInflater.java:374)
+07-12 19:34:05.258  5169  5169 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:749)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:24)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.258  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.258  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.258  5169  5169 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/lib/arm64, /data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-12 19:34:05.258  5169  5169 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-12 19:34:05.258  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-12 19:34:05.258  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void androidx.core.view.ViewCompat.setBackground(android.view.View, android.graphics.drawable.Drawable) (ViewCompat.java:2559)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void androidx.appcompat.widget.ActionBarContainer.<init>(android.content.Context, android.util.AttributeSet) (ActionBarContainer.java:63)
+07-12 19:34:05.258  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Constructor.newInstance0(java.lang.Object[]) (Constructor.java:-2)
+07-12 19:34:05.258  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Constructor.newInstance(java.lang.Object[]) (Constructor.java:334)
+07-12 19:34:05.258  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createView(java.lang.String, java.lang.String, android.util.AttributeSet) (LayoutInflater.java:647)
+07-12 19:34:05.258  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createViewFromTag(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet, boolean) (LayoutInflater.java:790)
+07-12 19:34:05.258  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.createViewFromTag(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet) (LayoutInflater.java:730)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void android.view.LayoutInflater.rInflate(org.xmlpull.v1.XmlPullParser, android.view.View, android.content.Context, android.util.AttributeSet, boolean) (LayoutInflater.java:863)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void android.view.LayoutInflater.rInflateChildren(org.xmlpull.v1.XmlPullParser, android.view.View, android.util.AttributeSet, boolean) (LayoutInflater.java:824)
+07-12 19:34:05.258  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(org.xmlpull.v1.XmlPullParser, android.view.ViewGroup, boolean) (LayoutInflater.java:515)
+07-12 19:34:05.258  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(int, android.view.ViewGroup, boolean) (LayoutInflater.java:423)
+07-12 19:34:05.258  5169  5169 I zygote64:   at android.view.View android.view.LayoutInflater.inflate(int, android.view.ViewGroup) (LayoutInflater.java:374)
+07-12 19:34:05.258  5169  5169 I zygote64:   at android.view.ViewGroup androidx.appcompat.app.AppCompatDelegateImpl.createSubDecor() (AppCompatDelegateImpl.java:749)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.ensureSubDecor() (AppCompatDelegateImpl.java:659)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatDelegateImpl.setContentView(int) (AppCompatDelegateImpl.java:552)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void androidx.appcompat.app.AppCompatActivity.setContentView(int) (AppCompatActivity.java:161)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:24)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.258  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.259  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.259  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.259  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.259  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.259  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.259  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.259  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.259  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.259  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.259  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.259  5169  5169 I zygote64: 
+07-12 19:34:05.345  5169  5169 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<com.amazonaws.mobile.client.AWSMobileClient$12>: java.lang.NoClassDefFoundError: Failed resolution of: Lcom/amazonaws/mobileconnectors/cognitoauth/handlers/AuthHandler;
+07-12 19:34:05.345  5169  5169 I zygote64:   at com.amazonaws.mobile.client.AWSMobileClient com.amazonaws.mobile.client.AWSMobileClient.getInstance() (AWSMobileClient.java:-1)
+07-12 19:34:05.345  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:27)
+07-12 19:34:05.345  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.345  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.345  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.345  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.345  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.345  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.345  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.345  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.345  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.345  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.345  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.345  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.345  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.345  5169  5169 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.amazonaws.mobileconnectors.cognitoauth.handlers.AuthHandler" on path: DexPathList[[zip file "/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/lib/arm64, /data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-12 19:34:05.345  5169  5169 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-12 19:34:05.345  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-12 19:34:05.345  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-12 19:34:05.345  5169  5169 I zygote64:   at com.amazonaws.mobile.client.AWSMobileClient com.amazonaws.mobile.client.AWSMobileClient.getInstance() (AWSMobileClient.java:-1)
+07-12 19:34:05.345  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:27)
+07-12 19:34:05.345  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.345  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.345  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.346  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.346  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.346  5169  5169 I zygote64: 
+07-12 19:34:05.346  5169  5169 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<com.amazonaws.mobile.client.AWSMobileClient$12>: java.lang.NoClassDefFoundError: Failed resolution of: Lcom/amazonaws/mobileconnectors/cognitoauth/handlers/AuthHandler;
+07-12 19:34:05.346  5169  5169 I zygote64:   at com.amazonaws.mobile.client.AWSMobileClient com.amazonaws.mobile.client.AWSMobileClient.getInstance() (AWSMobileClient.java:-1)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:27)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.346  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.346  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.346  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.347  5169  5169 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.amazonaws.mobileconnectors.cognitoauth.handlers.AuthHandler" on path: DexPathList[[zip file "/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/lib/arm64, /data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-12 19:34:05.347  5169  5169 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-12 19:34:05.347  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-12 19:34:05.347  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-12 19:34:05.347  5169  5169 I zygote64:   at com.amazonaws.mobile.client.AWSMobileClient com.amazonaws.mobile.client.AWSMobileClient.getInstance() (AWSMobileClient.java:-1)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:27)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.347  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.347  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.347  5169  5169 I zygote64: 
+07-12 19:34:05.347  5169  5169 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<com.amazonaws.mobile.client.AWSMobileClient$12>: java.lang.NoClassDefFoundError: Failed resolution of: Lcom/amazonaws/mobileconnectors/cognitoauth/handlers/AuthHandler;
+07-12 19:34:05.347  5169  5169 I zygote64:   at com.amazonaws.mobile.client.AWSMobileClient com.amazonaws.mobile.client.AWSMobileClient.getInstance() (AWSMobileClient.java:-1)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:27)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.347  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.347  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.347  5169  5169 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.amazonaws.mobileconnectors.cognitoauth.handlers.AuthHandler" on path: DexPathList[[zip file "/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/lib/arm64, /data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-12 19:34:05.347  5169  5169 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-12 19:34:05.347  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-12 19:34:05.347  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-12 19:34:05.347  5169  5169 I zygote64:   at com.amazonaws.mobile.client.AWSMobileClient com.amazonaws.mobile.client.AWSMobileClient.getInstance() (AWSMobileClient.java:-1)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:27)
+07-12 19:34:05.347  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.348  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.348  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.348  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.348  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.348  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.348  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.348  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.348  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.348  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.348  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.348  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.348  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.348  5169  5169 I zygote64: 
+07-12 19:34:05.351  5169  5169 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<com.amazonaws.mobile.client.AWSMobileClient$3>: java.lang.NoClassDefFoundError: Failed resolution of: Lcom/amazonaws/mobileconnectors/cognitoauth/handlers/AuthHandler;
+07-12 19:34:05.351  5169  5169 I zygote64:   at com.amazonaws.mobile.client.AWSMobileClient com.amazonaws.mobile.client.AWSMobileClient.getInstance() (AWSMobileClient.java:-1)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:27)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.352  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.352  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.352  5169  5169 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.amazonaws.mobileconnectors.cognitoauth.handlers.AuthHandler" on path: DexPathList[[zip file "/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/lib/arm64, /data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-12 19:34:05.352  5169  5169 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-12 19:34:05.352  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-12 19:34:05.352  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-12 19:34:05.352  5169  5169 I zygote64:   at com.amazonaws.mobile.client.AWSMobileClient com.amazonaws.mobile.client.AWSMobileClient.getInstance() (AWSMobileClient.java:-1)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:27)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.352  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.352  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.352  5169  5169 I zygote64: 
+07-12 19:34:05.352  5169  5169 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<com.amazonaws.mobile.client.AWSMobileClient$3>: java.lang.NoClassDefFoundError: Failed resolution of: Lcom/amazonaws/mobileconnectors/cognitoauth/handlers/AuthHandler;
+07-12 19:34:05.352  5169  5169 I zygote64:   at com.amazonaws.mobile.client.AWSMobileClient com.amazonaws.mobile.client.AWSMobileClient.getInstance() (AWSMobileClient.java:-1)
+07-12 19:34:05.352  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:27)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.353  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.353  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.353  5169  5169 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.amazonaws.mobileconnectors.cognitoauth.handlers.AuthHandler" on path: DexPathList[[zip file "/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/lib/arm64, /data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-12 19:34:05.353  5169  5169 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-12 19:34:05.353  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-12 19:34:05.353  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-12 19:34:05.353  5169  5169 I zygote64:   at com.amazonaws.mobile.client.AWSMobileClient com.amazonaws.mobile.client.AWSMobileClient.getInstance() (AWSMobileClient.java:-1)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:27)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.353  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.353  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.353  5169  5169 I zygote64: 
+07-12 19:34:05.353  5169  5169 I zygote64: Rejecting re-init on previously-failed class java.lang.Class<com.amazonaws.mobile.client.AWSMobileClient$3>: java.lang.NoClassDefFoundError: Failed resolution of: Lcom/amazonaws/mobileconnectors/cognitoauth/handlers/AuthHandler;
+07-12 19:34:05.353  5169  5169 I zygote64:   at com.amazonaws.mobile.client.AWSMobileClient com.amazonaws.mobile.client.AWSMobileClient.getInstance() (AWSMobileClient.java:-1)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:27)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.353  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.353  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.353  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.353  5169  5169 I zygote64: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.amazonaws.mobileconnectors.cognitoauth.handlers.AuthHandler" on path: DexPathList[[zip file "/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk"],nativeLibraryDirectories=[/data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/lib/arm64, /data/app/com.example.edgesum-utqyx_E3HME0Dxvyu2v5Nw==/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]
+07-12 19:34:05.353  5169  5169 I zygote64:   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:125)
+07-12 19:34:05.353  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:379)
+07-12 19:34:05.354  5169  5169 I zygote64:   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+07-12 19:34:05.354  5169  5169 I zygote64:   at com.amazonaws.mobile.client.AWSMobileClient com.amazonaws.mobile.client.AWSMobileClient.getInstance() (AWSMobileClient.java:-1)
+07-12 19:34:05.354  5169  5169 I zygote64:   at void com.example.edgesum.page.authentication.AuthenticationActivity.onCreate(android.os.Bundle) (AuthenticationActivity.java:27)
+07-12 19:34:05.354  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle, android.os.PersistableBundle) (Activity.java:7009)
+07-12 19:34:05.354  5169  5169 I zygote64:   at void android.app.Activity.performCreate(android.os.Bundle) (Activity.java:7000)
+07-12 19:34:05.354  5169  5169 I zygote64:   at void android.app.Instrumentation.callActivityOnCreate(android.app.Activity, android.os.Bundle) (Instrumentation.java:1214)
+07-12 19:34:05.354  5169  5169 I zygote64:   at android.app.Activity android.app.ActivityThread.performLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent) (ActivityThread.java:2731)
+07-12 19:34:05.354  5169  5169 I zygote64:   at void android.app.ActivityThread.handleLaunchActivity(android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:2856)
+07-12 19:34:05.354  5169  5169 I zygote64:   at void android.app.ActivityThread.-wrap11(android.app.ActivityThread, android.app.ActivityThread$ActivityClientRecord, android.content.Intent, java.lang.String) (ActivityThread.java:-1)
+07-12 19:34:05.354  5169  5169 I zygote64:   at void android.app.ActivityThread$H.handleMessage(android.os.Message) (ActivityThread.java:1589)
+07-12 19:34:05.354  5169  5169 I zygote64:   at void android.os.Handler.dispatchMessage(android.os.Message) (Handler.java:106)
+07-12 19:34:05.354  5169  5169 I zygote64:   at void android.os.Looper.loop() (Looper.java:164)
+07-12 19:34:05.354  5169  5169 I zygote64:   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6494)
+07-12 19:34:05.354  5169  5169 I zygote64:   at java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+07-12 19:34:05.354  5169  5169 I zygote64:   at void com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run() (RuntimeInit.java:438)
+07-12 19:34:05.354  5169  5169 I zygote64:   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:807)
+07-12 19:34:05.354  5169  5169 I zygote64: 
+07-12 19:34:05.418  5169  5186 I AWSKeyValueStore: Detected Android API Level = 27
+07-12 19:34:05.418  5169  5186 I AWSKeyValueStore: Creating the AWSKeyValueStore with key for sharedPreferencesForData = com.amazonaws.mobile.client
+07-12 19:34:05.432  5169  5189 D OpenGLRenderer: HWUI GL Pipeline
+07-12 19:34:05.439  5169  5186 I AWSKeyValueStore: Detected Android API Level = 27
+07-12 19:34:05.440  5169  5186 I AWSKeyValueStore: Creating the AWSKeyValueStore with key for sharedPreferencesForData = com.amazonaws.android.auth
+07-12 19:34:05.485  5169  5189 I Adreno  : QUALCOMM build                   : 8e59954, I0be83d0d26
+07-12 19:34:05.485  5169  5189 I Adreno  : Build Date                       : 09/22/17
+07-12 19:34:05.485  5169  5189 I Adreno  : OpenGL ES Shader Compiler Version: EV031.21.02.00
+07-12 19:34:05.485  5169  5189 I Adreno  : Local Branch                     : O17A
+07-12 19:34:05.485  5169  5189 I Adreno  : Remote Branch                    : 
+07-12 19:34:05.485  5169  5189 I Adreno  : Remote Branch                    : 
+07-12 19:34:05.485  5169  5189 I Adreno  : Reconstruct Branch               : 
+07-12 19:34:05.485  5169  5189 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-12 19:34:05.497  5169  5189 I Adreno  : PFP: 0x00000000, ME: 0x00000000
+07-12 19:34:05.508  5169  5189 I zygote64: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+07-12 19:34:05.512  5169  5189 I OpenGLRenderer: Initialized EGL, version 1.4
+07-12 19:34:05.512  5169  5189 D OpenGLRenderer: Swap behavior 2
+07-12 19:34:05.534  5169  5189 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+07-12 19:34:05.548  5169  5189 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8992.so from current namespace instead of sphal namespace.
+07-12 19:34:05.557  5169  5186 W LogFactory: Truncating log tag length as it exceed 23, the limit imposed by Android on certain API Levels
+07-12 19:34:05.562  5169  5186 W LogFactory: Truncating log tag length as it exceed 23, the limit imposed by Android on certain API Levels
+07-12 19:34:05.573  5169  5186 I AWSKeyValueStore: Detected Android API Level = 27
+07-12 19:34:05.573  5169  5186 I AWSKeyValueStore: Creating the AWSKeyValueStore with key for sharedPreferencesForData = com.amazonaws.android.auth
+07-12 19:34:05.736  5169  5186 W LogFactory: Truncating log tag length as it exceed 23, the limit imposed by Android on certain API Levels
+07-12 19:34:05.775  5169  5186 I AWSKeyValueStore: Detected Android API Level = 27
+07-12 19:34:05.775  5169  5186 I AWSKeyValueStore: Creating the AWSKeyValueStore with key for sharedPreferencesForData = CognitoIdentityProviderCache
+07-12 19:34:05.897  5169  5186 D AWSMobileClient: Inspecting user state details
+07-12 19:34:05.898  5169  5186 I AuthenticationActivity: SIGNED_IN
+07-12 19:34:06.121  5169  5169 V Repo    : /storage/emulated/0/Movies/raw
+07-12 19:34:06.121  5169  5169 V Repo    : /storage/emulated/0/Movies/summarised
+07-12 19:34:06.137  5169  5169 V FileManager: External storage is readable
+07-12 19:34:06.142  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/raw
+07-12 19:34:06.148  5169  5169 V FileManager: External storage is readable
+07-12 19:34:06.149  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/summarised
+07-12 19:34:06.155  5169  5169 V FileManager: External storage is readable
+07-12 19:34:06.158  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Download/nearby
+07-12 19:34:06.166  5169  5169 V FileManager: External storage is readable
+07-12 19:34:06.167  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment
+07-12 19:34:06.173  5169  5169 V FileManager: External storage is readable
+07-12 19:34:06.175  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum
+07-12 19:34:06.177  5169  5175 I zygote64: Do partial code cache collection, code=29KB, data=29KB
+07-12 19:34:06.177  5169  5175 I zygote64: After code cache collection, code=29KB, data=29KB
+07-12 19:34:06.177  5169  5175 I zygote64: Increasing code cache capacity to 128KB
+07-12 19:34:06.217  5169  5169 W System.err: org.json.JSONException: No value for manufacturer
+07-12 19:34:06.222  5169  5169 W System.err: 	at org.json.JSONObject.get(JSONObject.java:392)
+07-12 19:34:06.222  5169  5169 W System.err: 	at org.json.JSONObject.getString(JSONObject.java:553)
+07-12 19:34:06.222  5169  5169 W System.err: 	at com.jaredrummler.android.device.DeviceName$DeviceInfo.<init>(DeviceName.java:374)
+07-12 19:34:06.222  5169  5169 W System.err: 	at com.jaredrummler.android.device.DeviceName$DeviceInfo.<init>(DeviceName.java:347)
+07-12 19:34:06.222  5169  5169 W System.err: 	at com.jaredrummler.android.device.DeviceName.getDeviceInfo(DeviceName.java:186)
+07-12 19:34:06.222  5169  5169 W System.err: 	at com.jaredrummler.android.device.DeviceName.getDeviceName(DeviceName.java:138)
+07-12 19:34:06.222  5169  5169 W System.err: 	at com.jaredrummler.android.device.DeviceName.getDeviceName(DeviceName.java:111)
+07-12 19:34:06.223  5169  5169 W System.err: 	at com.example.edgesum.util.nearby.NearbyFragment.setLocalName(NearbyFragment.java:118)
+07-12 19:34:06.223  5169  5169 W System.err: 	at com.example.edgesum.util.nearby.NearbyFragment.onCreate(NearbyFragment.java:110)
+07-12 19:34:06.223  5169  5169 W System.err: 	at com.example.edgesum.page.main.ConnectionFragment.onCreate(ConnectionFragment.java:30)
+07-12 19:34:06.223  5169  5169 W System.err: 	at androidx.fragment.app.Fragment.performCreate(Fragment.java:2684)
+07-12 19:34:06.223  5169  5169 W System.err: 	at androidx.fragment.app.FragmentStateManager.create(FragmentStateManager.java:280)
+07-12 19:34:06.224  5169  5169 W System.err: 	at androidx.fragment.app.FragmentManager.moveToState(FragmentManager.java:1175)
+07-12 19:34:06.224  5169  5169 W System.err: 	at androidx.fragment.app.FragmentTransition.addToFirstInLastOut(FragmentTransition.java:1255)
+07-12 19:34:06.224  5169  5169 W System.err: 	at androidx.fragment.app.FragmentTransition.calculateFragments(FragmentTransition.java:1138)
+07-12 19:34:06.224  5169  5169 W System.err: 	at androidx.fragment.app.FragmentTransition.startTransitions(FragmentTransition.java:136)
+07-12 19:34:06.224  5169  5169 W System.err: 	at androidx.fragment.app.FragmentManager.executeOpsTogether(FragmentManager.java:1989)
+07-12 19:34:06.224  5169  5169 W System.err: 	at androidx.fragment.app.FragmentManager.removeRedundantOperationsAndExecute(FragmentManager.java:1947)
+07-12 19:34:06.224  5169  5169 W System.err: 	at androidx.fragment.app.FragmentManager.execPendingActions(FragmentManager.java:1849)
+07-12 19:34:06.225  5169  5169 W System.err: 	at androidx.fragment.app.FragmentManager.dispatchStateChange(FragmentManager.java:2629)
+07-12 19:34:06.225  5169  5169 W System.err: 	at androidx.fragment.app.FragmentManager.dispatchActivityCreated(FragmentManager.java:2577)
+07-12 19:34:06.225  5169  5169 W System.err: 	at androidx.fragment.app.FragmentController.dispatchActivityCreated(FragmentController.java:247)
+07-12 19:34:06.225  5169  5169 W System.err: 	at androidx.fragment.app.FragmentActivity.onStart(FragmentActivity.java:541)
+07-12 19:34:06.225  5169  5169 W System.err: 	at androidx.appcompat.app.AppCompatActivity.onStart(AppCompatActivity.java:201)
+07-12 19:34:06.225  5169  5169 W System.err: 	at com.example.edgesum.page.main.MainActivity.onStart(MainActivity.java:88)
+07-12 19:34:06.225  5169  5169 W System.err: 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1334)
+07-12 19:34:06.225  5169  5169 W System.err: 	at android.app.Activity.performStart(Activity.java:7029)
+07-12 19:34:06.226  5169  5169 W System.err: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2741)
+07-12 19:34:06.226  5169  5169 W System.err: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2856)
+07-12 19:34:06.226  5169  5169 W System.err: 	at android.app.ActivityThread.-wrap11(Unknown Source:0)
+07-12 19:34:06.226  5169  5169 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1589)
+07-12 19:34:06.226  5169  5169 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+07-12 19:34:06.226  5169  5169 W System.err: 	at android.os.Looper.loop(Looper.java:164)
+07-12 19:34:06.227  5169  5169 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+07-12 19:34:06.227  5169  5169 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+07-12 19:34:06.227  5169  5169 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+07-12 19:34:06.227  5169  5169 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+07-12 19:34:06.440  5169  5169 V VideoManager: getAllVideoFromExternalStorageFolder
+07-12 19:34:06.444  5169  5169 D VideoManager: /storage/emulated/0/Movies/summarised
+07-12 19:34:06.458  5169  5169 D VideoManager: 0 videos return
+07-12 19:34:06.512  5169  5169 V VideoManager: getAllVideoFromExternalStorageFolder
+07-12 19:34:06.518  5169  5169 D VideoManager: /storage/emulated/0/Movies/raw
+07-12 19:34:06.528  5169  5169 D VideoManager: 0 videos return
+07-12 19:34:06.573  5169  5169 I TransferService: Starting Transfer Service to listen for network connectivity changes.
+07-12 19:34:06.574  5169  5169 W LogFactory: Truncating log tag length as it exceed 23, the limit imposed by Android on certain API Levels
+07-12 19:34:06.588  5169  5169 I TransferService: Registering the network receiver
+07-12 19:34:06.590  5169  5169 E TransferService: No notification is passed in the intent. Unable to transition to foreground.
+07-12 19:34:06.599  5169  5183 D MainActivity: Scanned /storage/emulated/0/Movies/raw
+07-12 19:34:06.599  5169  5183 D MainActivity:   -> uri=content://media/external/file/1383
+07-12 19:34:06.664  5169  5182 D MainActivity: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:34:06.664  5169  5182 D MainActivity:   -> uri=content://media/external/file/1384
+07-12 19:34:06.764  5169  5175 I zygote64: Do partial code cache collection, code=54KB, data=57KB
+07-12 19:34:06.765  5169  5175 I zygote64: After code cache collection, code=54KB, data=57KB
+07-12 19:34:06.765  5169  5175 I zygote64: Increasing code cache capacity to 256KB
+07-12 19:34:06.765  5169  5175 I zygote64: Compiler allocated 4MB to compile void android.view.View.<init>(android.content.Context, android.util.AttributeSet, int, int)
+07-12 19:34:14.010  5169  5169 V MainActivity: Connect button clicked
+07-12 19:34:20.847  5169  5169 V ConnectionFragment: Discovery switch checked
+07-12 19:34:23.018  5169  5169 D NearbyFragment: Started discovering
+07-12 19:34:23.163  5169  5169 D NearbyFragment: Found endpoint y2y7: Nexus 5 [1825]
+07-12 19:34:23.201  5169  5175 I zygote64: Do full code cache collection, code=124KB, data=95KB
+07-12 19:34:23.202  5169  5175 I zygote64: After code cache collection, code=108KB, data=53KB
+07-12 19:34:41.799  5169  5169 D NearbyFragment: Selected 'Endpoint{id=y2y7, name=Nexus 5 [1825]}'
+07-12 19:34:44.687  5169  5169 D NearbyFragment: Initiated connection with y2y7: Nexus 5 [1825]
+07-12 19:34:44.813  5169  5169 D NearbyFragment: Requested connection with Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:34:44.908  5169  5175 I zygote64: Do partial code cache collection, code=117KB, data=81KB
+07-12 19:34:44.909  5169  5175 I zygote64: After code cache collection, code=117KB, data=81KB
+07-12 19:34:44.909  5169  5175 I zygote64: Increasing code cache capacity to 512KB
+07-12 19:34:46.300  5169  5169 I NearbyFragment: Connected to Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:34:47.218  5169  5169 V ConnectionFragment: Discovery switch unchecked
+07-12 19:34:47.218  5169  5169 D NearbyFragment: Stopped discovering
+07-12 19:34:55.167  5169  5169 I TransferNetworkLossHand: Network connectivity changed detected.
+07-12 19:34:55.177  5169  5169 I TransferNetworkLossHand: Network connected: true
+07-12 19:35:42.833  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@a504723)
+07-12 19:35:42.840  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-4687763723862272570:20200312_150643!003.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:35:42.853  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:35:47.082  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@21b279e)
+07-12 19:35:51.868  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:35:51.881  5169  5169 W NearbyFragment: Completed downloading 20200312_150643!003.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 09.020s
+07-12 19:35:51.888  5169  5169 V FileManager: External storage is readable
+07-12 19:35:51.890  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_150643
+07-12 19:35:51.892  5169  5169 D NearbyFragment: Summarising 20200312_150643!003.mp4
+07-12 19:35:51.893  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_150643!003.mp4
+07-12 19:35:51.904  5169  5169 D VideoManager: videoCursor is null
+07-12 19:35:51.948  5169  5169 V VideoManager: videoFromCursor
+07-12 19:35:51.952  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:35:51.952  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:35:51.963  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:35:51.971  5169  5826 V SummariserIntentService: onHandleIntent
+07-12 19:35:51.972  5169  5826 D SummariserIntentService: Video{id='1386', data='/storage/emulated/0/Download/Nearby/20200312_150643!003.mp4', name='20200312_150643!003.mp4', size=12603801, visible=true, mimeType='video/mp4'}
+07-12 19:35:51.972  5169  5826 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_150643/20200312_150643!003.mp4
+07-12 19:35:51.976  5169  5826 I mobile-ffmpeg: Loading mobile-ffmpeg.
+07-12 19:35:52.087  5169  5175 I zygote64: Compiler allocated 4MB to compile void android.view.ViewRootImpl.performTraversals()
+07-12 19:35:52.414  5169  5826 I mobile-ffmpeg: Loaded mobile-ffmpeg-full-gpl-arm64-v8a-4.3.2-20200415.
+07-12 19:35:52.416  5169  5827 D mobile-ffmpeg: Callback thread started.
+07-12 19:35:52.431  5169  5826 I FfmpegTools: Running ffmpeg with:
+07-12 19:35:52.431  5169  5826 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_150643!003.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_150643!003.txt -f null -
+07-12 19:35:52.606  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da5175ec0] sws_param option is deprecated and ignored
+07-12 19:35:54.685  5169  5826 W Summariser: No activity detected
+07-12 19:35:54.687  5169  5826 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_150643!003.mp4
+07-12 19:35:54.735  5169  5826 W Summariser: Summarisation completed
+07-12 19:35:54.735  5169  5826 W Summariser:   filename: 20200312_150643!003.mp4
+07-12 19:35:54.735  5169  5826 W Summariser:   active sections: 0
+07-12 19:35:54.735  5169  5826 W Summariser:   time: 02.711s
+07-12 19:35:54.735  5169  5826 W Summariser:   original duration: 12.01
+07-12 19:35:54.735  5169  5826 W Summariser:   summarised duration: -1.00
+07-12 19:35:54.735  5169  5826 W Summariser:   noise tolerance: 45.00
+07-12 19:35:54.735  5169  5826 W Summariser:   quality: 23
+07-12 19:35:54.735  5169  5826 W Summariser:   speed: medium
+07-12 19:35:54.735  5169  5826 W Summariser:   freeze duration: 1.00
+07-12 19:35:54.737  5169  5826 V ProcessingVideosEventHandler: onRemove
+07-12 19:35:54.762  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:35:54.781  5169  5182 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:35:54.781  5169  5182 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:36:09.314  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@2466349)
+07-12 19:36:09.322  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-6312821069396230926:20200312_150744!003.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:36:09.330  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:36:19.427  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@daeb44e)
+07-12 19:36:25.019  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:36:25.021  5169  5169 W NearbyFragment: Completed downloading 20200312_150744!003.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 15.696s
+07-12 19:36:25.030  5169  5169 V FileManager: External storage is readable
+07-12 19:36:25.031  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_150744
+07-12 19:36:25.032  5169  5169 D NearbyFragment: Summarising 20200312_150744!003.mp4
+07-12 19:36:25.033  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_150744!003.mp4
+07-12 19:36:25.041  5169  5169 D VideoManager: videoCursor is null
+07-12 19:36:25.074  5169  5169 V VideoManager: videoFromCursor
+07-12 19:36:25.076  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:36:25.077  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:36:25.082  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:36:25.089  5169  5862 V SummariserIntentService: onHandleIntent
+07-12 19:36:25.090  5169  5862 D SummariserIntentService: Video{id='1387', data='/storage/emulated/0/Download/Nearby/20200312_150744!003.mp4', name='20200312_150744!003.mp4', size=12638441, visible=true, mimeType='video/mp4'}
+07-12 19:36:25.090  5169  5862 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_150744/20200312_150744!003.mp4
+07-12 19:36:25.093  5169  5862 I FfmpegTools: Running ffmpeg with:
+07-12 19:36:25.093  5169  5862 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_150744!003.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_150744!003.txt -f null -
+07-12 19:36:25.180  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da5175ec0] sws_param option is deprecated and ignored
+07-12 19:36:27.291  5169  5862 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_150744!003.mp4
+07-12 19:36:27.331  5169  5862 W Summariser: 1 active sections found
+07-12 19:36:27.332  5169  5862 I FfmpegTools: Running ffmpeg with:
+07-12 19:36:27.332  5169  5862 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_150744!003.mp4 -filter_complex [0:v]trim=7.206000:12.030000,setpts=PTS-STARTPTS[v0];[0:a]atrim=7.206000:12.030000,asetpts=PTS-STARTPTS[a0];[v0][a0]concat=n=1:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/segment-sum/20200312_150744/20200312_150744!003.mp4
+07-12 19:36:27.408  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da5175e00] sws_param option is deprecated and ignored
+07-12 19:36:38.272  5169  5862 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_150744!003.mp4
+07-12 19:36:38.320  5169  5862 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/segment-sum/20200312_150744/20200312_150744!003.mp4
+07-12 19:36:38.350  5169  5862 W Summariser: Summarisation completed
+07-12 19:36:38.350  5169  5862 W Summariser:   filename: 20200312_150744!003.mp4
+07-12 19:36:38.350  5169  5862 W Summariser:   active sections: 1
+07-12 19:36:38.350  5169  5862 W Summariser:   time: 13.180s
+07-12 19:36:38.350  5169  5862 W Summariser:   original duration: 12.03
+07-12 19:36:38.350  5169  5862 W Summariser:   summarised duration: 4.89
+07-12 19:36:38.350  5169  5862 W Summariser:   noise tolerance: 45.00
+07-12 19:36:38.350  5169  5862 W Summariser:   quality: 23
+07-12 19:36:38.350  5169  5862 W Summariser:   speed: medium
+07-12 19:36:38.350  5169  5862 W Summariser:   freeze duration: 1.00
+07-12 19:36:38.350  5169  5862 V VideoManager: Retrieving video from /storage/emulated/0/Movies/segment-sum/20200312_150744/20200312_150744!003.mp4
+07-12 19:36:38.354  5169  5862 D VideoManager: videoCursor is null
+07-12 19:36:38.411  5169  5862 V VideoManager: videoFromCursor
+07-12 19:36:38.414  5169  5862 W NearbyFragment: Sending 20200312_150744!003.mp4 to Nexus 5 [1825]
+07-12 19:36:38.416  5169  5862 V ProcessingVideosEventHandler: onRemove
+07-12 19:36:38.455  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:36:38.489  5169  5183 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:36:38.489  5169  5183 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:36:38.501  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:36:39.341  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@4159914)
+07-12 19:36:39.345  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-6006686979196807973:20200312_150844!002.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:36:39.406  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:36:43.299  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@b4e75bd)
+07-12 19:36:54.363  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:36:54.366  5169  5169 W NearbyFragment: Completed downloading 20200312_150844!002.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 15.017s
+07-12 19:36:54.380  5169  5169 V FileManager: External storage is readable
+07-12 19:36:54.381  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_150844
+07-12 19:36:54.382  5169  5169 D NearbyFragment: Summarising 20200312_150844!002.mp4
+07-12 19:36:54.383  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_150844!002.mp4
+07-12 19:36:54.390  5169  5169 D VideoManager: videoCursor is null
+07-12 19:36:54.410  5169  5169 V VideoManager: videoFromCursor
+07-12 19:36:54.412  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:36:54.413  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:36:54.419  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:36:54.425  5169  5934 V SummariserIntentService: onHandleIntent
+07-12 19:36:54.425  5169  5934 D SummariserIntentService: Video{id='1391', data='/storage/emulated/0/Download/Nearby/20200312_150844!002.mp4', name='20200312_150844!002.mp4', size=16805379, visible=true, mimeType='video/mp4'}
+07-12 19:36:54.425  5169  5934 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_150844/20200312_150844!002.mp4
+07-12 19:36:54.429  5169  5934 I FfmpegTools: Running ffmpeg with:
+07-12 19:36:54.429  5169  5934 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_150844!002.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_150844!002.txt -f null -
+07-12 19:36:54.567  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da5175ec0] sws_param option is deprecated and ignored
+07-12 19:36:57.482  5169  5934 D Summariser: No freeze file
+07-12 19:36:57.482  5169  5934 W Summariser: Whole video is active
+07-12 19:36:58.053  5169  5934 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_150844!002.mp4
+07-12 19:36:58.123  5169  5934 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/segment-sum/20200312_150844/20200312_150844!002.mp4
+07-12 19:36:58.182  5169  5934 W Summariser: Summarisation completed
+07-12 19:36:58.182  5169  5934 W Summariser:   filename: 20200312_150844!002.mp4
+07-12 19:36:58.182  5169  5934 W Summariser:   active sections: -1
+07-12 19:36:58.182  5169  5934 W Summariser:   time: 03.625s
+07-12 19:36:58.182  5169  5934 W Summariser:   original duration: 16.01
+07-12 19:36:58.182  5169  5934 W Summariser:   summarised duration: 16.01
+07-12 19:36:58.182  5169  5934 W Summariser:   noise tolerance: 45.00
+07-12 19:36:58.182  5169  5934 W Summariser:   quality: 23
+07-12 19:36:58.182  5169  5934 W Summariser:   speed: medium
+07-12 19:36:58.182  5169  5934 W Summariser:   freeze duration: 1.00
+07-12 19:36:58.182  5169  5934 V VideoManager: Retrieving video from /storage/emulated/0/Movies/segment-sum/20200312_150844/20200312_150844!002.mp4
+07-12 19:36:58.186  5169  5934 D VideoManager: videoCursor is null
+07-12 19:36:58.258  5169  5934 V VideoManager: videoFromCursor
+07-12 19:36:58.263  5169  5934 W NearbyFragment: Sending 20200312_150844!002.mp4 to Nexus 5 [1825]
+07-12 19:36:58.265  5169  5934 V ProcessingVideosEventHandler: onRemove
+07-12 19:36:58.304  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:36:58.326  5169  5183 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:36:58.326  5169  5183 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:37:03.336  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:37:28.765  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@bedf7b)
+07-12 19:37:28.771  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-7446649637824588174:20200312_150944!002.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:37:28.776  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:37:28.870  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@d7ed198)
+07-12 19:37:35.427  5169  5175 I zygote64: Do full code cache collection, code=251KB, data=178KB
+07-12 19:37:35.431  5169  5175 I zygote64: After code cache collection, code=218KB, data=122KB
+07-12 19:37:35.908  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:37:35.911  5169  5169 W NearbyFragment: Completed downloading 20200312_150944!002.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 07.135s
+07-12 19:37:35.919  5169  5169 V FileManager: External storage is readable
+07-12 19:37:35.921  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_150944
+07-12 19:37:35.923  5169  5169 D NearbyFragment: Summarising 20200312_150944!002.mp4
+07-12 19:37:35.923  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_150944!002.mp4
+07-12 19:37:35.933  5169  5169 D VideoManager: videoCursor is null
+07-12 19:37:35.965  5169  5169 V VideoManager: videoFromCursor
+07-12 19:37:35.968  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:37:35.968  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:37:35.975  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:37:35.980  5169  5972 V SummariserIntentService: onHandleIntent
+07-12 19:37:35.982  5169  5972 D SummariserIntentService: Video{id='1394', data='/storage/emulated/0/Download/Nearby/20200312_150944!002.mp4', name='20200312_150944!002.mp4', size=16854256, visible=true, mimeType='video/mp4'}
+07-12 19:37:35.982  5169  5972 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_150944/20200312_150944!002.mp4
+07-12 19:37:35.985  5169  5972 I FfmpegTools: Running ffmpeg with:
+07-12 19:37:35.985  5169  5972 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_150944!002.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_150944!002.txt -f null -
+07-12 19:37:36.106  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da5175ec0] sws_param option is deprecated and ignored
+07-12 19:37:38.866  5169  5972 W Summariser: No activity detected
+07-12 19:37:38.868  5169  5972 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_150944!002.mp4
+07-12 19:37:38.928  5169  5972 W Summariser: Summarisation completed
+07-12 19:37:38.928  5169  5972 W Summariser:   filename: 20200312_150944!002.mp4
+07-12 19:37:38.928  5169  5972 W Summariser:   active sections: 0
+07-12 19:37:38.928  5169  5972 W Summariser:   time: 02.884s
+07-12 19:37:38.928  5169  5972 W Summariser:   original duration: 16.01
+07-12 19:37:38.928  5169  5972 W Summariser:   summarised duration: -1.00
+07-12 19:37:38.928  5169  5972 W Summariser:   noise tolerance: 45.00
+07-12 19:37:38.928  5169  5972 W Summariser:   quality: 23
+07-12 19:37:38.928  5169  5972 W Summariser:   speed: medium
+07-12 19:37:38.928  5169  5972 W Summariser:   freeze duration: 1.00
+07-12 19:37:38.929  5169  5972 V ProcessingVideosEventHandler: onRemove
+07-12 19:37:38.959  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:37:38.980  5169  5183 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:37:38.980  5169  5183 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:38:02.265  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@3833a29)
+07-12 19:38:02.270  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-6944221663548445983:20200312_151044!003.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:38:02.295  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:38:05.823  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@f4e71ae)
+07-12 19:38:08.582  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:38:08.584  5169  5169 W NearbyFragment: Completed downloading 20200312_151044!003.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 06.311s
+07-12 19:38:08.592  5169  5169 V FileManager: External storage is readable
+07-12 19:38:08.593  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_151044
+07-12 19:38:08.595  5169  5169 D NearbyFragment: Summarising 20200312_151044!003.mp4
+07-12 19:38:08.595  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_151044!003.mp4
+07-12 19:38:08.602  5169  5169 D VideoManager: videoCursor is null
+07-12 19:38:08.621  5169  5169 V VideoManager: videoFromCursor
+07-12 19:38:08.624  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:38:08.624  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:38:08.629  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:38:08.635  5169  5997 V SummariserIntentService: onHandleIntent
+07-12 19:38:08.637  5169  5997 D SummariserIntentService: Video{id='1395', data='/storage/emulated/0/Download/Nearby/20200312_151044!003.mp4', name='20200312_151044!003.mp4', size=12683996, visible=true, mimeType='video/mp4'}
+07-12 19:38:08.637  5169  5997 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_151044/20200312_151044!003.mp4
+07-12 19:38:08.640  5169  5997 I FfmpegTools: Running ffmpeg with:
+07-12 19:38:08.640  5169  5997 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_151044!003.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_151044!003.txt -f null -
+07-12 19:38:08.720  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da5175ec0] sws_param option is deprecated and ignored
+07-12 19:38:10.895  5169  5997 W Summariser: No activity detected
+07-12 19:38:10.896  5169  5997 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_151044!003.mp4
+07-12 19:38:10.937  5169  5997 W Summariser: Summarisation completed
+07-12 19:38:10.937  5169  5997 W Summariser:   filename: 20200312_151044!003.mp4
+07-12 19:38:10.937  5169  5997 W Summariser:   active sections: 0
+07-12 19:38:10.937  5169  5997 W Summariser:   time: 02.257s
+07-12 19:38:10.937  5169  5997 W Summariser:   original duration: 12.03
+07-12 19:38:10.937  5169  5997 W Summariser:   summarised duration: -1.00
+07-12 19:38:10.937  5169  5997 W Summariser:   noise tolerance: 45.00
+07-12 19:38:10.937  5169  5997 W Summariser:   quality: 23
+07-12 19:38:10.937  5169  5997 W Summariser:   speed: medium
+07-12 19:38:10.937  5169  5997 W Summariser:   freeze duration: 1.00
+07-12 19:38:10.938  5169  5997 V ProcessingVideosEventHandler: onRemove
+07-12 19:38:10.962  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:38:11.116  5169  5182 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:38:11.116  5169  5182 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:38:30.519  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@4eba547)
+07-12 19:38:30.523  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-5628154525484562423:20200312_193528!003.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:38:30.535  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:38:34.813  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@9b3174)
+07-12 19:38:39.487  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:38:39.493  5169  5169 W NearbyFragment: Completed downloading 20200312_193528!003.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 08.962s
+07-12 19:38:39.507  5169  5169 V FileManager: External storage is readable
+07-12 19:38:39.509  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_193528
+07-12 19:38:39.511  5169  5169 D NearbyFragment: Summarising 20200312_193528!003.mp4
+07-12 19:38:39.512  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_193528!003.mp4
+07-12 19:38:39.521  5169  5169 D VideoManager: videoCursor is null
+07-12 19:38:39.544  5169  5169 V VideoManager: videoFromCursor
+07-12 19:38:39.547  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:38:39.547  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:38:39.554  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:38:39.560  5169  6035 V SummariserIntentService: onHandleIntent
+07-12 19:38:39.561  5169  6035 D SummariserIntentService: Video{id='1396', data='/storage/emulated/0/Download/Nearby/20200312_193528!003.mp4', name='20200312_193528!003.mp4', size=12631917, visible=true, mimeType='video/mp4'}
+07-12 19:38:39.561  5169  6035 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_193528/20200312_193528!003.mp4
+07-12 19:38:39.564  5169  6035 I FfmpegTools: Running ffmpeg with:
+07-12 19:38:39.564  5169  6035 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_193528!003.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_193528!003.txt -f null -
+07-12 19:38:39.736  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da5175ec0] sws_param option is deprecated and ignored
+07-12 19:38:41.806  5169  6035 W Summariser: No activity detected
+07-12 19:38:41.807  5169  6035 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_193528!003.mp4
+07-12 19:38:41.865  5169  6035 W Summariser: Summarisation completed
+07-12 19:38:41.865  5169  6035 W Summariser:   filename: 20200312_193528!003.mp4
+07-12 19:38:41.865  5169  6035 W Summariser:   active sections: 0
+07-12 19:38:41.865  5169  6035 W Summariser:   time: 02.245s
+07-12 19:38:41.865  5169  6035 W Summariser:   original duration: 12.01
+07-12 19:38:41.865  5169  6035 W Summariser:   summarised duration: -1.00
+07-12 19:38:41.865  5169  6035 W Summariser:   noise tolerance: 45.00
+07-12 19:38:41.865  5169  6035 W Summariser:   quality: 23
+07-12 19:38:41.865  5169  6035 W Summariser:   speed: medium
+07-12 19:38:41.865  5169  6035 W Summariser:   freeze duration: 1.00
+07-12 19:38:41.867  5169  6035 V ProcessingVideosEventHandler: onRemove
+07-12 19:38:41.894  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:38:41.912  5169  5916 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:38:41.912  5169  5916 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:39:04.203  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@669fc55)
+07-12 19:39:04.208  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-6819954474389552878:20200312_193628!003.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:39:04.221  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:39:08.192  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@4c0866a)
+07-12 19:39:12.984  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:39:12.987  5169  5169 W NearbyFragment: Completed downloading 20200312_193628!003.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 08.773s
+07-12 19:39:12.996  5169  5169 V FileManager: External storage is readable
+07-12 19:39:12.998  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_193628
+07-12 19:39:12.999  5169  5169 D NearbyFragment: Summarising 20200312_193628!003.mp4
+07-12 19:39:12.999  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_193628!003.mp4
+07-12 19:39:13.007  5169  5169 D VideoManager: videoCursor is null
+07-12 19:39:13.038  5169  5169 V VideoManager: videoFromCursor
+07-12 19:39:13.041  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:39:13.041  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:39:13.051  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:39:13.058  5169  6078 V SummariserIntentService: onHandleIntent
+07-12 19:39:13.059  5169  6078 D SummariserIntentService: Video{id='1397', data='/storage/emulated/0/Download/Nearby/20200312_193628!003.mp4', name='20200312_193628!003.mp4', size=12749496, visible=true, mimeType='video/mp4'}
+07-12 19:39:13.059  5169  6078 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_193628/20200312_193628!003.mp4
+07-12 19:39:13.061  5169  6078 I FfmpegTools: Running ffmpeg with:
+07-12 19:39:13.061  5169  6078 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_193628!003.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_193628!003.txt -f null -
+07-12 19:39:13.182  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db280] sws_param option is deprecated and ignored
+07-12 19:39:15.342  5169  6078 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_193628!003.mp4
+07-12 19:39:15.380  5169  6078 W Summariser: 1 active sections found
+07-12 19:39:15.380  5169  6078 I FfmpegTools: Running ffmpeg with:
+07-12 19:39:15.380  5169  6078 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_193628!003.mp4 -filter_complex [0:v]trim=5.938000:12.030000,setpts=PTS-STARTPTS[v0];[0:a]atrim=5.938000:12.030000,asetpts=PTS-STARTPTS[a0];[v0][a0]concat=n=1:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/segment-sum/20200312_193628/20200312_193628!003.mp4
+07-12 19:39:15.458  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db1c0] sws_param option is deprecated and ignored
+07-12 19:39:29.867  5169  6078 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_193628!003.mp4
+07-12 19:39:29.919  5169  6078 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/segment-sum/20200312_193628/20200312_193628!003.mp4
+07-12 19:39:29.950  5169  6078 W Summariser: Summarisation completed
+07-12 19:39:29.950  5169  6078 W Summariser:   filename: 20200312_193628!003.mp4
+07-12 19:39:29.950  5169  6078 W Summariser:   active sections: 1
+07-12 19:39:29.950  5169  6078 W Summariser:   time: 16.806s
+07-12 19:39:29.950  5169  6078 W Summariser:   original duration: 12.03
+07-12 19:39:29.950  5169  6078 W Summariser:   summarised duration: 6.16
+07-12 19:39:29.950  5169  6078 W Summariser:   noise tolerance: 45.00
+07-12 19:39:29.950  5169  6078 W Summariser:   quality: 23
+07-12 19:39:29.950  5169  6078 W Summariser:   speed: medium
+07-12 19:39:29.950  5169  6078 W Summariser:   freeze duration: 1.00
+07-12 19:39:29.950  5169  6078 V VideoManager: Retrieving video from /storage/emulated/0/Movies/segment-sum/20200312_193628/20200312_193628!003.mp4
+07-12 19:39:29.956  5169  6078 D VideoManager: videoCursor is null
+07-12 19:39:30.005  5169  6078 V VideoManager: videoFromCursor
+07-12 19:39:30.009  5169  6078 W NearbyFragment: Sending 20200312_193628!003.mp4 to Nexus 5 [1825]
+07-12 19:39:30.011  5169  6078 V ProcessingVideosEventHandler: onRemove
+07-12 19:39:30.044  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:39:30.069  5169  6077 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:39:30.069  5169  6077 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:39:30.088  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:39:30.127  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@6d55210)
+07-12 19:39:30.128  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-7864784833613571078:20200312_193728!002.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:39:30.169  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:39:39.322  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@350109)
+07-12 19:39:49.556  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:39:49.560  5169  5169 W NearbyFragment: Completed downloading 20200312_193728!002.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 19.429s
+07-12 19:39:49.577  5169  5169 V FileManager: External storage is readable
+07-12 19:39:49.580  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_193728
+07-12 19:39:49.582  5169  5169 D NearbyFragment: Summarising 20200312_193728!002.mp4
+07-12 19:39:49.583  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_193728!002.mp4
+07-12 19:39:49.595  5169  5169 D VideoManager: videoCursor is null
+07-12 19:39:49.631  5169  5169 V VideoManager: videoFromCursor
+07-12 19:39:49.635  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:39:49.636  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:39:49.644  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:39:49.651  5169  6136 V SummariserIntentService: onHandleIntent
+07-12 19:39:49.653  5169  6136 D SummariserIntentService: Video{id='1400', data='/storage/emulated/0/Download/Nearby/20200312_193728!002.mp4', name='20200312_193728!002.mp4', size=16928276, visible=true, mimeType='video/mp4'}
+07-12 19:39:49.653  5169  6136 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_193728/20200312_193728!002.mp4
+07-12 19:39:49.655  5169  6136 I FfmpegTools: Running ffmpeg with:
+07-12 19:39:49.655  5169  6136 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_193728!002.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_193728!002.txt -f null -
+07-12 19:39:49.856  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db280] sws_param option is deprecated and ignored
+07-12 19:39:52.842  5169  6136 D Summariser: No freeze file
+07-12 19:39:52.842  5169  6136 W Summariser: Whole video is active
+07-12 19:39:53.359  5169  6136 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_193728!002.mp4
+07-12 19:39:53.425  5169  6136 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/segment-sum/20200312_193728/20200312_193728!002.mp4
+07-12 19:39:53.478  5169  6136 W Summariser: Summarisation completed
+07-12 19:39:53.478  5169  6136 W Summariser:   filename: 20200312_193728!002.mp4
+07-12 19:39:53.478  5169  6136 W Summariser:   active sections: -1
+07-12 19:39:53.478  5169  6136 W Summariser:   time: 03.704s
+07-12 19:39:53.478  5169  6136 W Summariser:   original duration: 16.01
+07-12 19:39:53.478  5169  6136 W Summariser:   summarised duration: 16.01
+07-12 19:39:53.478  5169  6136 W Summariser:   noise tolerance: 45.00
+07-12 19:39:53.478  5169  6136 W Summariser:   quality: 23
+07-12 19:39:53.478  5169  6136 W Summariser:   speed: medium
+07-12 19:39:53.478  5169  6136 W Summariser:   freeze duration: 1.00
+07-12 19:39:53.479  5169  6136 V VideoManager: Retrieving video from /storage/emulated/0/Movies/segment-sum/20200312_193728/20200312_193728!002.mp4
+07-12 19:39:53.483  5169  6136 D VideoManager: videoCursor is null
+07-12 19:39:53.509  5169  6136 V VideoManager: videoFromCursor
+07-12 19:39:53.511  5169  6136 W NearbyFragment: Sending 20200312_193728!002.mp4 to Nexus 5 [1825]
+07-12 19:39:53.513  5169  6136 V ProcessingVideosEventHandler: onRemove
+07-12 19:39:53.546  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:39:53.568  5169  5182 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:39:53.568  5169  5182 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:39:59.904  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:40:27.139  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@7955327)
+07-12 19:40:27.144  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-8461182806858940168:20200312_193828!002.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:40:27.152  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:40:27.231  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@11479d4)
+07-12 19:40:33.937  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:40:33.939  5169  5169 W NearbyFragment: Completed downloading 20200312_193828!002.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 06.792s
+07-12 19:40:33.948  5169  5169 V FileManager: External storage is readable
+07-12 19:40:33.950  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_193828
+07-12 19:40:33.951  5169  5169 D NearbyFragment: Summarising 20200312_193828!002.mp4
+07-12 19:40:33.951  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_193828!002.mp4
+07-12 19:40:33.966  5169  5169 D VideoManager: videoCursor is null
+07-12 19:40:33.997  5169  5169 V VideoManager: videoFromCursor
+07-12 19:40:33.999  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:40:34.000  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:40:34.004  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:40:34.010  5169  6176 V SummariserIntentService: onHandleIntent
+07-12 19:40:34.011  5169  6176 D SummariserIntentService: Video{id='1403', data='/storage/emulated/0/Download/Nearby/20200312_193828!002.mp4', name='20200312_193828!002.mp4', size=16949349, visible=true, mimeType='video/mp4'}
+07-12 19:40:34.011  5169  6176 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_193828/20200312_193828!002.mp4
+07-12 19:40:34.014  5169  6176 I FfmpegTools: Running ffmpeg with:
+07-12 19:40:34.014  5169  6176 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_193828!002.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_193828!002.txt -f null -
+07-12 19:40:34.136  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db280] sws_param option is deprecated and ignored
+07-12 19:40:36.946  5169  6176 W Summariser: No activity detected
+07-12 19:40:36.947  5169  6176 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_193828!002.mp4
+07-12 19:40:37.006  5169  6176 W Summariser: Summarisation completed
+07-12 19:40:37.006  5169  6176 W Summariser:   filename: 20200312_193828!002.mp4
+07-12 19:40:37.006  5169  6176 W Summariser:   active sections: 0
+07-12 19:40:37.006  5169  6176 W Summariser:   time: 02.935s
+07-12 19:40:37.006  5169  6176 W Summariser:   original duration: 16.01
+07-12 19:40:37.006  5169  6176 W Summariser:   summarised duration: -1.00
+07-12 19:40:37.006  5169  6176 W Summariser:   noise tolerance: 45.00
+07-12 19:40:37.006  5169  6176 W Summariser:   quality: 23
+07-12 19:40:37.006  5169  6176 W Summariser:   speed: medium
+07-12 19:40:37.006  5169  6176 W Summariser:   freeze duration: 1.00
+07-12 19:40:37.007  5169  6176 V ProcessingVideosEventHandler: onRemove
+07-12 19:40:37.028  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:40:37.046  5169  5183 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:40:37.046  5169  5183 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:40:59.421  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@5904935)
+07-12 19:40:59.424  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-5926041862130092145:20200312_193928!003.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:40:59.430  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:41:04.173  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@8bb81ca)
+07-12 19:41:09.606  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:41:09.607  5169  5169 W NearbyFragment: Completed downloading 20200312_193928!003.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 10.179s
+07-12 19:41:09.616  5169  5169 V FileManager: External storage is readable
+07-12 19:41:09.620  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_193928
+07-12 19:41:09.622  5169  5169 D NearbyFragment: Summarising 20200312_193928!003.mp4
+07-12 19:41:09.622  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_193928!003.mp4
+07-12 19:41:09.636  5169  5169 D VideoManager: videoCursor is null
+07-12 19:41:09.677  5169  5169 V VideoManager: videoFromCursor
+07-12 19:41:09.680  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:41:09.680  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:41:09.685  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:41:09.693  5169  6202 V SummariserIntentService: onHandleIntent
+07-12 19:41:09.694  5169  6202 D SummariserIntentService: Video{id='1404', data='/storage/emulated/0/Download/Nearby/20200312_193928!003.mp4', name='20200312_193928!003.mp4', size=12686780, visible=true, mimeType='video/mp4'}
+07-12 19:41:09.694  5169  6202 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_193928/20200312_193928!003.mp4
+07-12 19:41:09.697  5169  6202 I FfmpegTools: Running ffmpeg with:
+07-12 19:41:09.697  5169  6202 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_193928!003.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_193928!003.txt -f null -
+07-12 19:41:09.715  5169  5175 I zygote64: Do partial code cache collection, code=248KB, data=162KB
+07-12 19:41:09.716  5169  5175 I zygote64: After code cache collection, code=248KB, data=162KB
+07-12 19:41:09.716  5169  5175 I zygote64: Increasing code cache capacity to 1024KB
+07-12 19:41:09.861  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db280] sws_param option is deprecated and ignored
+07-12 19:41:11.987  5169  6202 W Summariser: No activity detected
+07-12 19:41:11.988  5169  6202 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_193928!003.mp4
+07-12 19:41:12.045  5169  6202 W Summariser: Summarisation completed
+07-12 19:41:12.045  5169  6202 W Summariser:   filename: 20200312_193928!003.mp4
+07-12 19:41:12.045  5169  6202 W Summariser:   active sections: 0
+07-12 19:41:12.045  5169  6202 W Summariser:   time: 02.293s
+07-12 19:41:12.045  5169  6202 W Summariser:   original duration: 12.01
+07-12 19:41:12.045  5169  6202 W Summariser:   summarised duration: -1.00
+07-12 19:41:12.045  5169  6202 W Summariser:   noise tolerance: 45.00
+07-12 19:41:12.045  5169  6202 W Summariser:   quality: 23
+07-12 19:41:12.045  5169  6202 W Summariser:   speed: medium
+07-12 19:41:12.045  5169  6202 W Summariser:   freeze duration: 1.00
+07-12 19:41:12.047  5169  6202 V ProcessingVideosEventHandler: onRemove
+07-12 19:41:12.076  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:41:12.102  5169  5916 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:41:12.102  5169  5916 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:41:32.811  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@2bf1ab3)
+07-12 19:41:32.814  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-4818738824858498443:20200312_194129!003.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:41:32.842  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:41:35.842  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@ef31870)
+07-12 19:41:40.493  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:41:40.495  5169  5169 W NearbyFragment: Completed downloading 20200312_194129!003.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 07.678s
+07-12 19:41:40.503  5169  5169 V FileManager: External storage is readable
+07-12 19:41:40.505  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_194129
+07-12 19:41:40.506  5169  5169 D NearbyFragment: Summarising 20200312_194129!003.mp4
+07-12 19:41:40.506  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_194129!003.mp4
+07-12 19:41:40.515  5169  5169 D VideoManager: videoCursor is null
+07-12 19:41:40.545  5169  5169 V VideoManager: videoFromCursor
+07-12 19:41:40.548  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:41:40.549  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:41:40.557  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:41:40.564  5169  6230 V SummariserIntentService: onHandleIntent
+07-12 19:41:40.565  5169  6230 D SummariserIntentService: Video{id='1405', data='/storage/emulated/0/Download/Nearby/20200312_194129!003.mp4', name='20200312_194129!003.mp4', size=12644882, visible=true, mimeType='video/mp4'}
+07-12 19:41:40.565  5169  6230 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_194129/20200312_194129!003.mp4
+07-12 19:41:40.568  5169  6230 I FfmpegTools: Running ffmpeg with:
+07-12 19:41:40.568  5169  6230 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_194129!003.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_194129!003.txt -f null -
+07-12 19:41:40.688  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db1c0] sws_param option is deprecated and ignored
+07-12 19:41:42.774  5169  6230 W Summariser: 1 active sections found
+07-12 19:41:42.774  5169  6230 I FfmpegTools: Running ffmpeg with:
+07-12 19:41:42.774  5169  6230 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_194129!003.mp4 -filter_complex [0:v]trim=1.868000:2.502000,setpts=PTS-STARTPTS[v0];[0:a]atrim=1.868000:2.502000,asetpts=PTS-STARTPTS[a0];[v0][a0]concat=n=1:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/segment-sum/20200312_194129/20200312_194129!003.mp4
+07-12 19:41:42.842  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db100] sws_param option is deprecated and ignored
+07-12 19:41:44.455  5169  6230 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_194129!003.mp4
+07-12 19:41:44.506  5169  6230 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/segment-sum/20200312_194129/20200312_194129!003.mp4
+07-12 19:41:44.533  5169  6230 W Summariser: Summarisation completed
+07-12 19:41:44.533  5169  6230 W Summariser:   filename: 20200312_194129!003.mp4
+07-12 19:41:44.533  5169  6230 W Summariser:   active sections: 1
+07-12 19:41:44.533  5169  6230 W Summariser:   time: 03.889s
+07-12 19:41:44.533  5169  6230 W Summariser:   original duration: 12.03
+07-12 19:41:44.533  5169  6230 W Summariser:   summarised duration: 0.70
+07-12 19:41:44.533  5169  6230 W Summariser:   noise tolerance: 45.00
+07-12 19:41:44.533  5169  6230 W Summariser:   quality: 23
+07-12 19:41:44.533  5169  6230 W Summariser:   speed: medium
+07-12 19:41:44.533  5169  6230 W Summariser:   freeze duration: 1.00
+07-12 19:41:44.533  5169  6230 V VideoManager: Retrieving video from /storage/emulated/0/Movies/segment-sum/20200312_194129/20200312_194129!003.mp4
+07-12 19:41:44.538  5169  6230 D VideoManager: videoCursor is null
+07-12 19:41:44.578  5169  6230 V VideoManager: videoFromCursor
+07-12 19:41:44.582  5169  6230 W NearbyFragment: Sending 20200312_194129!003.mp4 to Nexus 5 [1825]
+07-12 19:41:44.584  5169  6230 V ProcessingVideosEventHandler: onRemove
+07-12 19:41:44.617  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:41:44.618  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:41:44.635  5169  5192 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:41:44.635  5169  5192 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:42:02.979  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@2bab46)
+07-12 19:42:02.981  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-8326087340257974247:20200312_194229!002.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:42:04.004  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@eeb7107)
+07-12 19:42:04.008  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:42:08.369  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:42:08.370  5169  5169 W NearbyFragment: Completed downloading 20200312_194229!002.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 05.387s
+07-12 19:42:08.377  5169  5169 V FileManager: External storage is readable
+07-12 19:42:08.379  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_194229
+07-12 19:42:08.379  5169  5169 D NearbyFragment: Summarising 20200312_194229!002.mp4
+07-12 19:42:08.380  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_194229!002.mp4
+07-12 19:42:08.387  5169  5169 D VideoManager: videoCursor is null
+07-12 19:42:08.408  5169  5169 V VideoManager: videoFromCursor
+07-12 19:42:08.410  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:42:08.411  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:42:08.415  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:42:08.420  5169  6280 V SummariserIntentService: onHandleIntent
+07-12 19:42:08.420  5169  6280 D SummariserIntentService: Video{id='1408', data='/storage/emulated/0/Download/Nearby/20200312_194229!002.mp4', name='20200312_194229!002.mp4', size=16848151, visible=true, mimeType='video/mp4'}
+07-12 19:42:08.420  5169  6280 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_194229/20200312_194229!002.mp4
+07-12 19:42:08.423  5169  6280 I FfmpegTools: Running ffmpeg with:
+07-12 19:42:08.423  5169  6280 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_194229!002.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_194229!002.txt -f null -
+07-12 19:42:08.539  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db1c0] sws_param option is deprecated and ignored
+07-12 19:42:11.377  5169  6280 W Summariser: No activity detected
+07-12 19:42:11.378  5169  6280 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_194229!002.mp4
+07-12 19:42:11.435  5169  6280 W Summariser: Summarisation completed
+07-12 19:42:11.435  5169  6280 W Summariser:   filename: 20200312_194229!002.mp4
+07-12 19:42:11.435  5169  6280 W Summariser:   active sections: 0
+07-12 19:42:11.435  5169  6280 W Summariser:   time: 02.957s
+07-12 19:42:11.435  5169  6280 W Summariser:   original duration: 16.01
+07-12 19:42:11.435  5169  6280 W Summariser:   summarised duration: -1.00
+07-12 19:42:11.435  5169  6280 W Summariser:   noise tolerance: 45.00
+07-12 19:42:11.435  5169  6280 W Summariser:   quality: 23
+07-12 19:42:11.435  5169  6280 W Summariser:   speed: medium
+07-12 19:42:11.435  5169  6280 W Summariser:   freeze duration: 1.00
+07-12 19:42:11.437  5169  6280 V ProcessingVideosEventHandler: onRemove
+07-12 19:42:11.461  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:42:11.481  5169  6077 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:42:11.481  5169  6077 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:42:30.784  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@6c4d3cc)
+07-12 19:42:30.788  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-6046237851083401051:20200312_194330!002.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:42:30.792  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:42:35.395  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@61e8615)
+07-12 19:42:39.752  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:42:39.753  5169  5169 W NearbyFragment: Completed downloading 20200312_194330!002.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 08.963s
+07-12 19:42:39.762  5169  5169 V FileManager: External storage is readable
+07-12 19:42:39.763  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_194330
+07-12 19:42:39.764  5169  5169 D NearbyFragment: Summarising 20200312_194330!002.mp4
+07-12 19:42:39.764  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_194330!002.mp4
+07-12 19:42:39.771  5169  5169 D VideoManager: videoCursor is null
+07-12 19:42:39.795  5169  5169 V VideoManager: videoFromCursor
+07-12 19:42:39.798  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:42:39.798  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:42:39.802  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:42:39.807  5169  6314 V SummariserIntentService: onHandleIntent
+07-12 19:42:39.809  5169  6314 D SummariserIntentService: Video{id='1409', data='/storage/emulated/0/Download/Nearby/20200312_194330!002.mp4', name='20200312_194330!002.mp4', size=16896472, visible=true, mimeType='video/mp4'}
+07-12 19:42:39.809  5169  6314 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_194330/20200312_194330!002.mp4
+07-12 19:42:39.811  5169  6314 I FfmpegTools: Running ffmpeg with:
+07-12 19:42:39.811  5169  6314 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_194330!002.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_194330!002.txt -f null -
+07-12 19:42:39.945  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db1c0] sws_param option is deprecated and ignored
+07-12 19:42:42.918  5169  6314 W Summariser: No activity detected
+07-12 19:42:42.918  5169  6314 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_194330!002.mp4
+07-12 19:42:42.977  5169  6314 W Summariser: Summarisation completed
+07-12 19:42:42.977  5169  6314 W Summariser:   filename: 20200312_194330!002.mp4
+07-12 19:42:42.977  5169  6314 W Summariser:   active sections: 0
+07-12 19:42:42.977  5169  6314 W Summariser:   time: 03.108s
+07-12 19:42:42.977  5169  6314 W Summariser:   original duration: 16.01
+07-12 19:42:42.977  5169  6314 W Summariser:   summarised duration: -1.00
+07-12 19:42:42.977  5169  6314 W Summariser:   noise tolerance: 45.00
+07-12 19:42:42.977  5169  6314 W Summariser:   quality: 23
+07-12 19:42:42.977  5169  6314 W Summariser:   speed: medium
+07-12 19:42:42.977  5169  6314 W Summariser:   freeze duration: 1.00
+07-12 19:42:42.978  5169  6314 V ProcessingVideosEventHandler: onRemove
+07-12 19:42:43.008  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:42:43.027  5169  6077 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:42:43.027  5169  6077 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:43:10.604  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@444b782)
+07-12 19:43:10.605  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-8701537640663873232:20200312_194730!003.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:43:10.627  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:43:14.014  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@1b7ee93)
+07-12 19:43:17.177  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:43:17.178  5169  5169 W NearbyFragment: Completed downloading 20200312_194730!003.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 06.570s
+07-12 19:43:17.185  5169  5169 V FileManager: External storage is readable
+07-12 19:43:17.187  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_194730
+07-12 19:43:17.187  5169  5169 D NearbyFragment: Summarising 20200312_194730!003.mp4
+07-12 19:43:17.187  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_194730!003.mp4
+07-12 19:43:17.195  5169  5169 D VideoManager: videoCursor is null
+07-12 19:43:17.227  5169  5169 V VideoManager: videoFromCursor
+07-12 19:43:17.229  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:43:17.230  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:43:17.235  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:43:17.242  5169  6351 V SummariserIntentService: onHandleIntent
+07-12 19:43:17.242  5169  6351 D SummariserIntentService: Video{id='1410', data='/storage/emulated/0/Download/Nearby/20200312_194730!003.mp4', name='20200312_194730!003.mp4', size=12635242, visible=true, mimeType='video/mp4'}
+07-12 19:43:17.243  5169  6351 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_194730/20200312_194730!003.mp4
+07-12 19:43:17.245  5169  6351 I FfmpegTools: Running ffmpeg with:
+07-12 19:43:17.245  5169  6351 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_194730!003.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_194730!003.txt -f null -
+07-12 19:43:17.317  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db1c0] sws_param option is deprecated and ignored
+07-12 19:43:19.380  5169  6351 W Summariser: No activity detected
+07-12 19:43:19.381  5169  6351 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_194730!003.mp4
+07-12 19:43:19.417  5169  6351 W Summariser: Summarisation completed
+07-12 19:43:19.417  5169  6351 W Summariser:   filename: 20200312_194730!003.mp4
+07-12 19:43:19.417  5169  6351 W Summariser:   active sections: 0
+07-12 19:43:19.417  5169  6351 W Summariser:   time: 02.137s
+07-12 19:43:19.417  5169  6351 W Summariser:   original duration: 12.03
+07-12 19:43:19.417  5169  6351 W Summariser:   summarised duration: -1.00
+07-12 19:43:19.417  5169  6351 W Summariser:   noise tolerance: 45.00
+07-12 19:43:19.417  5169  6351 W Summariser:   quality: 23
+07-12 19:43:19.417  5169  6351 W Summariser:   speed: medium
+07-12 19:43:19.417  5169  6351 W Summariser:   freeze duration: 1.00
+07-12 19:43:19.418  5169  6351 V ProcessingVideosEventHandler: onRemove
+07-12 19:43:19.438  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:43:19.465  5169  5182 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:43:19.465  5169  5182 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:43:43.135  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@53a67e8)
+07-12 19:43:43.138  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-5643581927564826078:20200312_194830!002.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:43:43.144  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:43:43.283  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@af71e01)
+07-12 19:43:49.701  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:43:49.702  5169  5169 W NearbyFragment: Completed downloading 20200312_194830!002.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 06.561s
+07-12 19:43:49.709  5169  5169 V FileManager: External storage is readable
+07-12 19:43:49.711  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_194830
+07-12 19:43:49.712  5169  5169 D NearbyFragment: Summarising 20200312_194830!002.mp4
+07-12 19:43:49.712  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_194830!002.mp4
+07-12 19:43:49.721  5169  5169 D VideoManager: videoCursor is null
+07-12 19:43:49.752  5169  5169 V VideoManager: videoFromCursor
+07-12 19:43:49.755  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:43:49.755  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:43:49.759  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:43:49.764  5169  6379 V SummariserIntentService: onHandleIntent
+07-12 19:43:49.766  5169  6379 D SummariserIntentService: Video{id='1411', data='/storage/emulated/0/Download/Nearby/20200312_194830!002.mp4', name='20200312_194830!002.mp4', size=16791932, visible=true, mimeType='video/mp4'}
+07-12 19:43:49.766  5169  6379 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_194830/20200312_194830!002.mp4
+07-12 19:43:49.768  5169  6379 I FfmpegTools: Running ffmpeg with:
+07-12 19:43:49.768  5169  6379 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_194830!002.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_194830!002.txt -f null -
+07-12 19:43:49.868  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db1c0] sws_param option is deprecated and ignored
+07-12 19:43:52.774  5169  6379 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_194830!002.mp4
+07-12 19:43:52.830  5169  6379 W Summariser: 2 active sections found
+07-12 19:43:52.831  5169  6379 I FfmpegTools: Running ffmpeg with:
+07-12 19:43:52.831  5169  6379 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_194830!002.mp4 -filter_complex [0:v]trim=0.000000:3.703000,setpts=PTS-STARTPTS[v0];[0:a]atrim=0.000000:3.703000,asetpts=PTS-STARTPTS[a0];[0:v]trim=10.943000:16.010000,setpts=PTS-STARTPTS[v1];[0:a]atrim=10.943000:16.010000,asetpts=PTS-STARTPTS[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/segment-sum/20200312_194830/20200312_194830!002.mp4
+07-12 19:43:52.925  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db1c0] sws_param option is deprecated and ignored
+07-12 19:43:52.925  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db580] sws_param option is deprecated and ignored
+07-12 19:44:13.173  5169  6379 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_194830!002.mp4
+07-12 19:44:13.240  5169  6379 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/segment-sum/20200312_194830/20200312_194830!002.mp4
+07-12 19:44:13.270  5169  6379 W Summariser: Summarisation completed
+07-12 19:44:13.270  5169  6379 W Summariser:   filename: 20200312_194830!002.mp4
+07-12 19:44:13.270  5169  6379 W Summariser:   active sections: 2
+07-12 19:44:13.270  5169  6379 W Summariser:   time: 23.406s
+07-12 19:44:13.270  5169  6379 W Summariser:   original duration: 16.01
+07-12 19:44:13.270  5169  6379 W Summariser:   summarised duration: 8.84
+07-12 19:44:13.270  5169  6379 W Summariser:   noise tolerance: 45.00
+07-12 19:44:13.270  5169  6379 W Summariser:   quality: 23
+07-12 19:44:13.270  5169  6379 W Summariser:   speed: medium
+07-12 19:44:13.270  5169  6379 W Summariser:   freeze duration: 1.00
+07-12 19:44:13.270  5169  6379 V VideoManager: Retrieving video from /storage/emulated/0/Movies/segment-sum/20200312_194830/20200312_194830!002.mp4
+07-12 19:44:13.279  5169  6379 D VideoManager: videoCursor is null
+07-12 19:44:13.319  5169  6379 V VideoManager: videoFromCursor
+07-12 19:44:13.323  5169  6379 W NearbyFragment: Sending 20200312_194830!002.mp4 to Nexus 5 [1825]
+07-12 19:44:13.325  5169  6379 V ProcessingVideosEventHandler: onRemove
+07-12 19:44:13.344  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:44:13.373  5169  6077 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:44:13.373  5169  6077 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:44:13.401  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:44:13.462  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@339e3df)
+07-12 19:44:13.463  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-4942280328187572944:20200312_194930!003.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:44:13.480  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:44:15.947  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@8e282c)
+07-12 19:44:19.325  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:44:19.326  5169  5169 W NearbyFragment: Completed downloading 20200312_194930!003.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 05.862s
+07-12 19:44:19.335  5169  5169 V FileManager: External storage is readable
+07-12 19:44:19.336  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_194930
+07-12 19:44:19.336  5169  5169 D NearbyFragment: Summarising 20200312_194930!003.mp4
+07-12 19:44:19.337  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_194930!003.mp4
+07-12 19:44:19.343  5169  5169 D VideoManager: videoCursor is null
+07-12 19:44:19.366  5169  5169 V VideoManager: videoFromCursor
+07-12 19:44:19.368  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:44:19.368  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:44:19.372  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:44:19.379  5169  6431 V SummariserIntentService: onHandleIntent
+07-12 19:44:19.380  5169  6431 D SummariserIntentService: Video{id='1414', data='/storage/emulated/0/Download/Nearby/20200312_194930!003.mp4', name='20200312_194930!003.mp4', size=12672704, visible=true, mimeType='video/mp4'}
+07-12 19:44:19.380  5169  6431 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_194930/20200312_194930!003.mp4
+07-12 19:44:19.382  5169  6431 I FfmpegTools: Running ffmpeg with:
+07-12 19:44:19.382  5169  6431 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_194930!003.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_194930!003.txt -f null -
+07-12 19:44:19.502  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db1c0] sws_param option is deprecated and ignored
+07-12 19:44:22.345  5169  6431 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_194930!003.mp4
+07-12 19:44:22.392  5169  6431 W Summariser: 1 active sections found
+07-12 19:44:22.392  5169  6431 I FfmpegTools: Running ffmpeg with:
+07-12 19:44:22.392  5169  6431 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_194930!003.mp4 -filter_complex [0:v]trim=1.101000:12.010000,setpts=PTS-STARTPTS[v0];[0:a]atrim=1.101000:12.010000,asetpts=PTS-STARTPTS[a0];[v0][a0]concat=n=1:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/segment-sum/20200312_194930/20200312_194930!003.mp4
+07-12 19:44:22.474  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db100] sws_param option is deprecated and ignored
+07-12 19:44:50.425  5169  6431 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_194930!003.mp4
+07-12 19:44:50.489  5169  6431 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/segment-sum/20200312_194930/20200312_194930!003.mp4
+07-12 19:44:50.543  5169  6431 W Summariser: Summarisation completed
+07-12 19:44:50.543  5169  6431 W Summariser:   filename: 20200312_194930!003.mp4
+07-12 19:44:50.543  5169  6431 W Summariser:   active sections: 1
+07-12 19:44:50.543  5169  6431 W Summariser:   time: 31.044s
+07-12 19:44:50.543  5169  6431 W Summariser:   original duration: 12.01
+07-12 19:44:50.543  5169  6431 W Summariser:   summarised duration: 10.95
+07-12 19:44:50.543  5169  6431 W Summariser:   noise tolerance: 45.00
+07-12 19:44:50.543  5169  6431 W Summariser:   quality: 23
+07-12 19:44:50.543  5169  6431 W Summariser:   speed: medium
+07-12 19:44:50.543  5169  6431 W Summariser:   freeze duration: 1.00
+07-12 19:44:50.543  5169  6431 V VideoManager: Retrieving video from /storage/emulated/0/Movies/segment-sum/20200312_194930/20200312_194930!003.mp4
+07-12 19:44:50.554  5169  6431 D VideoManager: videoCursor is null
+07-12 19:44:50.590  5169  6431 V VideoManager: videoFromCursor
+07-12 19:44:50.594  5169  6431 W NearbyFragment: Sending 20200312_194930!003.mp4 to Nexus 5 [1825]
+07-12 19:44:50.598  5169  6431 V ProcessingVideosEventHandler: onRemove
+07-12 19:44:50.630  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:44:50.656  5169  5916 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:44:50.656  5169  5916 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:44:50.718  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:45:11.726  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@87e1ee2)
+07-12 19:45:11.728  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-6489939937229307652:20200312_195330!001.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:45:11.735  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:45:11.806  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@fe83273)
+07-12 19:45:16.557  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:45:16.559  5169  5169 W NearbyFragment: Completed downloading 20200312_195330!001.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 04.827s
+07-12 19:45:16.578  5169  5169 V FileManager: External storage is readable
+07-12 19:45:16.580  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_195330
+07-12 19:45:16.580  5169  5169 D NearbyFragment: Summarising 20200312_195330!001.mp4
+07-12 19:45:16.581  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_195330!001.mp4
+07-12 19:45:16.591  5169  5169 D VideoManager: videoCursor is null
+07-12 19:45:16.623  5169  5169 V VideoManager: videoFromCursor
+07-12 19:45:16.669  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:45:16.670  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:45:16.675  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:45:16.681  5169  6498 V SummariserIntentService: onHandleIntent
+07-12 19:45:16.682  5169  6498 D SummariserIntentService: Video{id='1417', data='/storage/emulated/0/Download/Nearby/20200312_195330!001.mp4', name='20200312_195330!001.mp4', size=16792709, visible=true, mimeType='video/mp4'}
+07-12 19:45:16.682  5169  6498 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_195330/20200312_195330!001.mp4
+07-12 19:45:16.684  5169  6498 I FfmpegTools: Running ffmpeg with:
+07-12 19:45:16.684  5169  6498 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_195330!001.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_195330!001.txt -f null -
+07-12 19:45:16.864  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db1c0] sws_param option is deprecated and ignored
+07-12 19:45:20.475  5169  6498 W Summariser: 2 active sections found
+07-12 19:45:20.475  5169  6498 I FfmpegTools: Running ffmpeg with:
+07-12 19:45:20.475  5169  6498 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_195330!001.mp4 -filter_complex [0:v]trim=0.000000:7.040000,setpts=PTS-STARTPTS[v0];[0:a]atrim=0.000000:7.040000,asetpts=PTS-STARTPTS[a0];[0:v]trim=8.741000:12.545000,setpts=PTS-STARTPTS[v1];[0:a]atrim=8.741000:12.545000,asetpts=PTS-STARTPTS[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/segment-sum/20200312_195330/20200312_195330!001.mp4
+07-12 19:45:20.616  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db400] sws_param option is deprecated and ignored
+07-12 19:45:20.616  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db580] sws_param option is deprecated and ignored
+07-12 19:45:48.175  5169  6498 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_195330!001.mp4
+07-12 19:45:48.280  5169  6498 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/segment-sum/20200312_195330/20200312_195330!001.mp4
+07-12 19:45:48.337  5169  6498 W Summariser: Summarisation completed
+07-12 19:45:48.337  5169  6498 W Summariser:   filename: 20200312_195330!001.mp4
+07-12 19:45:48.337  5169  6498 W Summariser:   active sections: 2
+07-12 19:45:48.337  5169  6498 W Summariser:   time: 31.491s
+07-12 19:45:48.337  5169  6498 W Summariser:   original duration: 16.02
+07-12 19:45:48.337  5169  6498 W Summariser:   summarised duration: 10.91
+07-12 19:45:48.337  5169  6498 W Summariser:   noise tolerance: 45.00
+07-12 19:45:48.337  5169  6498 W Summariser:   quality: 23
+07-12 19:45:48.337  5169  6498 W Summariser:   speed: medium
+07-12 19:45:48.337  5169  6498 W Summariser:   freeze duration: 1.00
+07-12 19:45:48.337  5169  6498 V VideoManager: Retrieving video from /storage/emulated/0/Movies/segment-sum/20200312_195330/20200312_195330!001.mp4
+07-12 19:45:48.346  5169  6498 D VideoManager: videoCursor is null
+07-12 19:45:48.385  5169  6498 V VideoManager: videoFromCursor
+07-12 19:45:48.390  5169  6498 W NearbyFragment: Sending 20200312_195330!001.mp4 to Nexus 5 [1825]
+07-12 19:45:48.394  5169  6498 V ProcessingVideosEventHandler: onRemove
+07-12 19:45:48.426  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:45:48.456  5169  5916 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:45:48.456  5169  5916 D SummariserIntentService:   -> uri=content://media/external/file/1384
+07-12 19:45:48.513  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@837b0e1)
+07-12 19:45:48.514  5169  5169 V NearbyFragment: Started downloading SUMMARISE_SEGMENT:-8342505178451474548:20200312_195430!002.mp4:45.0_1.0_23_medium from Endpoint{id=y2y7, name=Nexus 5 [1825]}
+07-12 19:45:48.517  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:45:48.532  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:45:48.616  5169  5169 D NearbyFragment: onPayloadReceived(endpointId=y2y7, payload=com.google.android.gms.nearby.connection.Payload@6a10e06)
+07-12 19:45:53.613  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:45:53.614  5169  5169 W NearbyFragment: Completed downloading 20200312_195430!002.mp4 from Endpoint{id=y2y7, name=Nexus 5 [1825]} in 05.099s
+07-12 19:45:53.622  5169  5169 V FileManager: External storage is readable
+07-12 19:45:53.624  5169  5169 V FileManager: Created new directory: /storage/emulated/0/Movies/segment-sum/20200312_195430
+07-12 19:45:53.624  5169  5169 D NearbyFragment: Summarising 20200312_195430!002.mp4
+07-12 19:45:53.625  5169  5169 V VideoManager: Retrieving video from /storage/emulated/0/Download/Nearby/20200312_195430!002.mp4
+07-12 19:45:53.632  5169  5169 D VideoManager: videoCursor is null
+07-12 19:45:53.652  5169  5169 V VideoManager: videoFromCursor
+07-12 19:45:53.655  5169  5169 V ProcessingVideosEventHandler: onAdd
+07-12 19:45:53.656  5169  5169 V RawFootageEventHandler: onRemove
+07-12 19:45:53.660  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:45:53.665  5169  6549 V SummariserIntentService: onHandleIntent
+07-12 19:45:53.666  5169  6549 D SummariserIntentService: Video{id='1420', data='/storage/emulated/0/Download/Nearby/20200312_195430!002.mp4', name='20200312_195430!002.mp4', size=16840890, visible=true, mimeType='video/mp4'}
+07-12 19:45:53.666  5169  6549 D SummariserIntentService: /storage/emulated/0/Movies/segment-sum/20200312_195430/20200312_195430!002.mp4
+07-12 19:45:53.668  5169  6549 I FfmpegTools: Running ffmpeg with:
+07-12 19:45:53.668  5169  6549 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_195430!002.mp4 -vf freezedetect=n=-45.000000dB:d=1.000000,metadata=mode=print:file=/storage/emulated/0/Movies/raw/20200312_195430!002.txt -f null -
+07-12 19:45:53.874  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db1c0] sws_param option is deprecated and ignored
+07-12 19:45:59.266  5169  6549 W Summariser: 2 active sections found
+07-12 19:45:59.267  5169  6549 I FfmpegTools: Running ffmpeg with:
+07-12 19:45:59.267  5169  6549 I FfmpegTools:   -y -i /storage/emulated/0/Download/Nearby/20200312_195430!002.mp4 -filter_complex [0:v]trim=0.000000:2.235000,setpts=PTS-STARTPTS[v0];[0:a]atrim=0.000000:2.235000,asetpts=PTS-STARTPTS[a0];[0:v]trim=6.773000:10.643000,setpts=PTS-STARTPTS[v1];[0:a]atrim=6.773000:10.643000,asetpts=PTS-STARTPTS[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[outv][outa] -map [outv] -map [outa] -crf 23 -preset medium /storage/emulated/0/Movies/segment-sum/20200312_195430/20200312_195430!002.mp4
+07-12 19:45:59.420  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db700] sws_param option is deprecated and ignored
+07-12 19:45:59.420  5169  5827 W mobile-ffmpeg: [graph 0 input from stream 0:0 @ 0x7da62db880] sws_param option is deprecated and ignored
+07-12 19:46:19.153  5169  6549 V FfmpegTools: Retrieving duration of /storage/emulated/0/Download/Nearby/20200312_195430!002.mp4
+07-12 19:46:19.260  5169  6549 V FfmpegTools: Retrieving duration of /storage/emulated/0/Movies/segment-sum/20200312_195430/20200312_195430!002.mp4
+07-12 19:46:19.315  5169  6549 W Summariser: Summarisation completed
+07-12 19:46:19.315  5169  6549 W Summariser:   filename: 20200312_195430!002.mp4
+07-12 19:46:19.315  5169  6549 W Summariser:   active sections: 2
+07-12 19:46:19.315  5169  6549 W Summariser:   time: 25.486s
+07-12 19:46:19.315  5169  6549 W Summariser:   original duration: 16.01
+07-12 19:46:19.315  5169  6549 W Summariser:   summarised duration: 6.17
+07-12 19:46:19.315  5169  6549 W Summariser:   noise tolerance: 45.00
+07-12 19:46:19.315  5169  6549 W Summariser:   quality: 23
+07-12 19:46:19.315  5169  6549 W Summariser:   speed: medium
+07-12 19:46:19.315  5169  6549 W Summariser:   freeze duration: 1.00
+07-12 19:46:19.315  5169  6549 V VideoManager: Retrieving video from /storage/emulated/0/Movies/segment-sum/20200312_195430/20200312_195430!002.mp4
+07-12 19:46:19.326  5169  6549 D VideoManager: videoCursor is null
+07-12 19:46:19.357  5169  6549 V VideoManager: videoFromCursor
+07-12 19:46:19.362  5169  6549 W NearbyFragment: Sending 20200312_195430!002.mp4 to Nexus 5 [1825]
+07-12 19:46:19.366  5169  6549 V ProcessingVideosEventHandler: onRemove
+07-12 19:46:19.401  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:46:19.431  5169  5169 V NearbyFragment: Transfer to Endpoint{id=y2y7, name=Nexus 5 [1825]} complete
+07-12 19:46:19.438  5169  5192 D SummariserIntentService: Scanned /storage/emulated/0/Movies/summarised
+07-12 19:46:19.438  5169  5192 D SummariserIntentService:   -> uri=content://media/external/file/1384
