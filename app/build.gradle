@@ -11,6 +11,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            moduleName "ncnn"
+            abiFilters "armeabi-v7a", "arm64-v8a", "x86"
+        }
     }
     buildTypes {
         release {
@@ -19,10 +23,37 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    externalNativeBuild {
+        cmake {
+            version "3.10.2"
+            path file('src/main/jni/CMakeLists.txt')
+        }
+    }
     compileOptions {
         coreLibraryDesugaringEnabled true
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
+    }
+    packagingOptions {
+        pickFirst 'lib/x86/libswscale.so'
+        pickFirst 'lib/arm64-v8a/libswscale.so'
+        pickFirst 'lib/armeabi-v7a/libswscale.so'
+        pickFirst 'lib/x86_64/libswscale.so'
+
+        pickFirst 'lib/x86/libavcodec.so'
+        pickFirst 'lib/arm64-v8a/libavcodec.so'
+        pickFirst 'lib/armeabi-v7a/libavcodec.so'
+        pickFirst 'lib/x86_64/libavcodec.so'
+
+        pickFirst 'lib/x86/libavutil.so'
+        pickFirst 'lib/arm64-v8a/libavutil.so'
+        pickFirst 'lib/armeabi-v7a/libavutil.so'
+        pickFirst 'lib/x86_64/libavutil.so'
+
+        pickFirst 'lib/x86/libavformat.so'
+        pickFirst 'lib/arm64-v8a/libavformat.so'
+        pickFirst 'lib/armeabi-v7a/libavformat.so'
+        pickFirst 'lib/x86_64/libavformat.so'
     }
 }
 
@@ -79,4 +110,11 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview-selection:1.0.0'
 
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.0.9'
+
+    // FFMMR
+    implementation 'com.github.wseemann:FFmpegMediaMetadataRetriever-core:1.0.15'
+    implementation 'com.github.wseemann:FFmpegMediaMetadataRetriever-native:1.0.15'
+
+    // PanterDialog
+    compile 'com.eminayar.panterdialog:panter-dialog:0.0.2.1'
 }

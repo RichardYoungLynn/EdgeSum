@@ -21,10 +21,15 @@ import androidx.preference.PreferenceManager;
 
 import com.amazonaws.mobile.client.AWSMobileClient;
 import com.amazonaws.mobileconnectors.s3.transferutility.TransferService;
+import com.eminayar.panter.DialogType;
+import com.eminayar.panter.PanterDialog;
+import com.eminayar.panter.enums.Animation;
+import com.eminayar.panter.interfaces.OnSingleCallbackConfirmListener;
 import com.example.edgesum.R;
 import com.example.edgesum.data.VideosRepository;
 import com.example.edgesum.model.Video;
 import com.example.edgesum.page.authentication.AuthenticationActivity;
+import com.example.edgesum.page.objectdetection.ObjectDetectionActivity;
 import com.example.edgesum.page.setting.SettingsActivity;
 import com.example.edgesum.util.Injection;
 import com.example.edgesum.util.dashcam.DashName;
@@ -200,6 +205,10 @@ public class MainActivity extends AppCompatActivity implements VideoFragment.OnL
                 startActivity(i);
                 finish();
                 return true;
+            case R.id.action_object_detection:
+                Log.v(TAG, "Object detection button clicked");
+                goToObjectDetectionActivity();
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -211,6 +220,26 @@ public class MainActivity extends AppCompatActivity implements VideoFragment.OnL
     private void goToSettingsActivity() {
         Intent settingsIntent = new Intent(getApplicationContext(), SettingsActivity.class);
         startActivity(settingsIntent);
+    }
+
+    private void goToObjectDetectionActivity() {
+        new PanterDialog(this)
+                .setHeaderBackground(R.drawable.pattern_bg_blue)
+                .setDialogType(DialogType.SINGLECHOICE)
+                .withAnimation(Animation.SLIDE)
+                .setPositive("I GOT IT")
+                .setNegative("DISMISS")
+                .items(R.array.sample_array, new OnSingleCallbackConfirmListener() {
+                    @Override
+                    public void onSingleCallbackConfirmed(PanterDialog dialog, int pos, String text) {
+                        Toast.makeText(MainActivity.this, "position : " + String.valueOf(pos) +
+                                        " value = " + text,
+                                Toast.LENGTH_LONG).show();
+                    }
+                })
+                .show();
+        Intent objectDetectionIntent = new Intent(getApplicationContext(), ObjectDetectionActivity.class);
+        startActivity(objectDetectionIntent);
     }
 
     @Override
