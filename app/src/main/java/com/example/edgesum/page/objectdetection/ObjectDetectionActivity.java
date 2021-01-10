@@ -32,6 +32,14 @@ import static android.os.Environment.getExternalStorageDirectory;
 
 public class ObjectDetectionActivity extends AppCompatActivity {
 
+    public static int YOLOV5 = 1;
+    public static int SQUEEZENET = 2;
+    public static int STYLETRANSFER = 3;
+    public static int MOBILENETSSD = 4;
+    public static int MTCNN = 5;
+
+    public static int USE_MODEL = YOLOV5;
+
     private static final int SELECT_IMAGE = 1;
     private static final int SELECT_VIDEO = 2;
 
@@ -69,9 +77,31 @@ public class ObjectDetectionActivity extends AppCompatActivity {
     }
 
     private void initModel() {
-        boolean ret_init = yolov5ncnn.Init(getAssets());
-        if (!ret_init) {
-            Log.e("MainActivity", "yolov5ncnn Init failed");
+        if (USE_MODEL == YOLOV5) {
+            boolean ret_init = yolov5ncnn.Init(getAssets());
+            if (!ret_init) {
+                Log.e("ObjectDetectionActivity", "yolov5ncnn Init failed");
+            }
+        } else if (USE_MODEL == SQUEEZENET) {
+            boolean ret_init = yolov5ncnn.Init(getAssets());
+            if (!ret_init) {
+                Log.e("ObjectDetectionActivity", "squeezenet Init failed");
+            }
+        } else if (USE_MODEL == STYLETRANSFER) {
+            boolean ret_init = yolov5ncnn.Init(getAssets());
+            if (!ret_init) {
+                Log.e("ObjectDetectionActivity", "styletransfer Init failed");
+            }
+        } else if (USE_MODEL == MOBILENETSSD) {
+            boolean ret_init = yolov5ncnn.Init(getAssets());
+            if (!ret_init) {
+                Log.e("ObjectDetectionActivity", "mobilenetssd Init failed");
+            }
+        } else if (USE_MODEL == MTCNN) {
+            boolean ret_init = yolov5ncnn.Init(getAssets());
+            if (!ret_init) {
+                Log.e("ObjectDetectionActivity", "mtcnn Init failed");
+            }
         }
     }
 

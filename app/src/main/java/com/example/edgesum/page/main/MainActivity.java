@@ -227,19 +227,18 @@ public class MainActivity extends AppCompatActivity implements VideoFragment.OnL
                 .setHeaderBackground(R.drawable.pattern_bg_blue)
                 .setDialogType(DialogType.SINGLECHOICE)
                 .withAnimation(Animation.SLIDE)
-                .setPositive("I GOT IT")
-                .setNegative("DISMISS")
-                .items(R.array.sample_array, new OnSingleCallbackConfirmListener() {
+                .items(R.array.object_detection_models, new OnSingleCallbackConfirmListener() {
                     @Override
                     public void onSingleCallbackConfirmed(PanterDialog dialog, int pos, String text) {
-                        Toast.makeText(MainActivity.this, "position : " + String.valueOf(pos) +
-                                        " value = " + text,
-                                Toast.LENGTH_LONG).show();
+//                        Toast.makeText(MainActivity.this, "position : " + String.valueOf(pos) +
+//                                        " value = " + text,
+//                                Toast.LENGTH_LONG).show();
+                        ObjectDetectionActivity.USE_MODEL = ObjectDetectionActivity.YOLOV5;
+                        Intent objectDetectionIntent = new Intent(getApplicationContext(), ObjectDetectionActivity.class);
+                        startActivity(objectDetectionIntent);
                     }
                 })
                 .show();
-        Intent objectDetectionIntent = new Intent(getApplicationContext(), ObjectDetectionActivity.class);
-        startActivity(objectDetectionIntent);
     }
 
     @Override
