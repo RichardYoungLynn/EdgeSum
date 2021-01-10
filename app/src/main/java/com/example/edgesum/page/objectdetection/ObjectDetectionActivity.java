@@ -24,13 +24,14 @@ import com.example.edgesum.R;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Locale;
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import wseemann.media.FFmpegMediaMetadataRetriever;
 
 import static android.os.Environment.getExternalStorageDirectory;
 
-public class ObjectDetectionActivity extends AppCompatActivity {
+public class ObjectDetectionActivity<mobilenetssdObjects, yolov5Objects> extends AppCompatActivity {
 
     public static int YOLOV5 = 1;
     public static int SQUEEZENET = 2;
@@ -48,12 +49,15 @@ public class ObjectDetectionActivity extends AppCompatActivity {
     private Button buttonImage;
     private Button buttonVideo;
     private Button buttonDetect;
-    private Button buttonDetectGPU;
 
     private Bitmap bitmap = null;
     private Bitmap detectedImage = null;
 
     private YoloV5Ncnn yolov5ncnn = new YoloV5Ncnn();
+    private MobilenetSSDNcnn mobilenetssdncnn = new MobilenetSSDNcnn();
+
+    private YoloV5Ncnn.Obj[] yolov5Objects;
+    private MobilenetSSDNcnn.Obj[] mobilenetssdObjects;
 
     FFmpegMediaMetadataRetriever mmr;
 
@@ -83,25 +87,16 @@ public class ObjectDetectionActivity extends AppCompatActivity {
                 Log.e("ObjectDetectionActivity", "yolov5ncnn Init failed");
             }
         } else if (USE_MODEL == SQUEEZENET) {
-            boolean ret_init = yolov5ncnn.Init(getAssets());
-            if (!ret_init) {
-                Log.e("ObjectDetectionActivity", "squeezenet Init failed");
-            }
+
         } else if (USE_MODEL == STYLETRANSFER) {
-            boolean ret_init = yolov5ncnn.Init(getAssets());
-            if (!ret_init) {
-                Log.e("ObjectDetectionActivity", "styletransfer Init failed");
-            }
+
         } else if (USE_MODEL == MOBILENETSSD) {
-            boolean ret_init = yolov5ncnn.Init(getAssets());
+            boolean ret_init = mobilenetssdncnn.Init(getAssets());
             if (!ret_init) {
                 Log.e("ObjectDetectionActivity", "mobilenetssd Init failed");
             }
         } else if (USE_MODEL == MTCNN) {
-            boolean ret_init = yolov5ncnn.Init(getAssets());
-            if (!ret_init) {
-                Log.e("ObjectDetectionActivity", "mtcnn Init failed");
-            }
+
         }
     }
 
@@ -111,7 +106,6 @@ public class ObjectDetectionActivity extends AppCompatActivity {
         buttonImage = (Button) findViewById(R.id.buttonImage);
         buttonVideo = (Button) findViewById(R.id.buttonVideo);
         buttonDetect = (Button) findViewById(R.id.buttonDetect);
-        buttonDetectGPU = (Button) findViewById(R.id.buttonDetectGPU);
     }
 
     private void initViewListener() {
@@ -136,22 +130,100 @@ public class ObjectDetectionActivity extends AppCompatActivity {
             public void onClick(View arg0) {
                 if (detectedImage == null)
                     return;
-                YoloV5Ncnn.Obj[] objects = yolov5ncnn.Detect(detectedImage, false);
-                showObjects(objects);
-            }
-        });
-        buttonDetectGPU.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                if (detectedImage == null)
-                    return;
-                YoloV5Ncnn.Obj[] objects = yolov5ncnn.Detect(detectedImage, true);
-                showObjects(objects);
+                if (USE_MODEL == YOLOV5) {
+                    YoloV5Ncnn.Obj[] yolov5Objects = yolov5ncnn.Detect(detectedImage, true);
+                    showObjects(yolov5Objects);
+                    Log.v("ObjectDetectionActivity", "yolov5 detecting");
+                } else if (USE_MODEL == SQUEEZENET) {
+
+                } else if (USE_MODEL == STYLETRANSFER) {
+
+                } else if (USE_MODEL == MOBILENETSSD) {
+                    MobilenetSSDNcnn.Obj[] mobilenetssdObjects = mobilenetssdncnn.Detect(detectedImage, true);
+                    showObjects(mobilenetssdObjects);
+                    Log.v("ObjectDetectionActivity", "mobilenetssd detecting");
+                } else if (USE_MODEL == MTCNN) {
+
+                }
             }
         });
     }
 
     private void showObjects(YoloV5Ncnn.Obj[] objects) {
+        if (objects == null) {
+            detectedImageView.setImageBitmap(bitmap);
+            return;
+        }
+
+        // draw objects on bitmap
+        Bitmap rgba = bitmap.copy(Bitmap.Config.ARGB_8888, true);
+
+        final int[] colors = new int[] {
+                Color.rgb( 54,  67, 244),
+                Color.rgb( 99,  30, 233),
+                Color.rgb(176,  39, 156),
+                Color.rgb(183,  58, 103),
+                Color.rgb(181,  81,  63),
+                Color.rgb(243, 150,  33),
+                Color.rgb(244, 169,   3),
+                Color.rgb(212, 188,   0),
+                Color.rgb(136, 150,   0),
+                Color.rgb( 80, 175,  76),
+                Color.rgb( 74, 195, 139),
+                Color.rgb( 57, 220, 205),
+                Color.rgb( 59, 235, 255),
+                Color.rgb(  7, 193, 255),
+                Color.rgb(  0, 152, 255),
+                Color.rgb( 34,  87, 255),
+                Color.rgb( 72,  85, 121),
+                Color.rgb(158, 158, 158),
+                Color.rgb(139, 125,  96)
+        };
+
+        Canvas canvas = new Canvas(rgba);
+
+        Paint paint = new Paint();
+        paint.setStyle(Paint.Style.STROKE);
+        paint.setStrokeWidth(4);
+
+        Paint textbgpaint = new Paint();
+        textbgpaint.setColor(Color.WHITE);
+        textbgpaint.setStyle(Paint.Style.FILL);
+
+        Paint textpaint = new Paint();
+        textpaint.setColor(Color.BLACK);
+        textpaint.setTextSize(26);
+        textpaint.setTextAlign(Paint.Align.LEFT);
+
+        for (int i = 0; i < objects.length; i++) {
+            paint.setColor(colors[i % 19]);
+
+            canvas.drawRect(objects[i].x, objects[i].y, objects[i].x + objects[i].w, objects[i].y + objects[i].h, paint);
+
+            // draw filled text inside image
+            {
+                String text = objects[i].label + " = " + String.format("%.1f", objects[i].prob * 100) + "%";
+
+                float text_width = textpaint.measureText(text);
+                float text_height = - textpaint.ascent() + textpaint.descent();
+
+                float x = objects[i].x;
+                float y = objects[i].y - text_height;
+                if (y < 0)
+                    y = 0;
+                if (x + text_width > rgba.getWidth())
+                    x = rgba.getWidth() - text_width;
+
+                canvas.drawRect(x, y, x + text_width, y + text_height, textbgpaint);
+
+                canvas.drawText(text, x, y - textpaint.ascent(), textpaint);
+            }
+        }
+
+        detectedImageView.setImageBitmap(rgba);
+    }
+
+    private void showObjects(MobilenetSSDNcnn.Obj[] objects) {
         if (objects == null) {
             detectedImageView.setImageBitmap(bitmap);
             return;
@@ -243,7 +315,7 @@ public class ObjectDetectionActivity extends AppCompatActivity {
                 }
             }
             catch (FileNotFoundException e) {
-                Log.e("MainActivity", "FileNotFoundException");
+                Log.e("ObjectDetectionActivity", "FileNotFoundException");
                 return;
             }
         }

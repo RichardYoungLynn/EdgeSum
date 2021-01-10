@@ -227,13 +227,14 @@ public class MainActivity extends AppCompatActivity implements VideoFragment.OnL
                 .setHeaderBackground(R.drawable.pattern_bg_blue)
                 .setDialogType(DialogType.SINGLECHOICE)
                 .withAnimation(Animation.SLIDE)
+                .setTitle("CHOOSE MODEL")
                 .items(R.array.object_detection_models, new OnSingleCallbackConfirmListener() {
                     @Override
                     public void onSingleCallbackConfirmed(PanterDialog dialog, int pos, String text) {
 //                        Toast.makeText(MainActivity.this, "position : " + String.valueOf(pos) +
 //                                        " value = " + text,
 //                                Toast.LENGTH_LONG).show();
-                        ObjectDetectionActivity.USE_MODEL = ObjectDetectionActivity.YOLOV5;
+                        ObjectDetectionActivity.USE_MODEL = pos + 1;
                         Intent objectDetectionIntent = new Intent(getApplicationContext(), ObjectDetectionActivity.class);
                         startActivity(objectDetectionIntent);
                     }
