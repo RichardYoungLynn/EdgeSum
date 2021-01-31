@@ -1,8 +1,11 @@
 package com.example.edgesum.page.objectdetection;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -34,10 +37,7 @@ import static android.os.Environment.getExternalStorageDirectory;
 public class ObjectDetectionActivity<mobilenetssdObjects, yolov5Objects> extends AppCompatActivity {
 
     public static int YOLOV5 = 1;
-    public static int SQUEEZENET = 2;
-    public static int STYLETRANSFER = 3;
-    public static int MOBILENETSSD = 4;
-    public static int MTCNN = 5;
+    public static int MOBILENETSSD = 2;
 
     public static int USE_MODEL = YOLOV5;
 
@@ -56,9 +56,6 @@ public class ObjectDetectionActivity<mobilenetssdObjects, yolov5Objects> extends
     private YoloV5Ncnn yolov5ncnn = new YoloV5Ncnn();
     private MobilenetSSDNcnn mobilenetssdncnn = new MobilenetSSDNcnn();
 
-    private YoloV5Ncnn.Obj[] yolov5Objects;
-    private MobilenetSSDNcnn.Obj[] mobilenetssdObjects;
-
     FFmpegMediaMetadataRetriever mmr;
 
     protected long videoCurFrameLoc = 0;
@@ -75,6 +72,16 @@ public class ObjectDetectionActivity<mobilenetssdObjects, yolov5Objects> extends
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_object_detection);
 
+        int permission = ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
+        if (permission != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                    this,
+                    PERMISSIONS_CAMERA,
+                    REQUEST_CAMERA
+            );
+            finish();
+        }
+
         initModel();
         initViewID();
         initViewListener();
@@ -86,17 +93,11 @@ public class ObjectDetectionActivity<mobilenetssdObjects, yolov5Objects> extends
             if (!ret_init) {
                 Log.e("ObjectDetectionActivity", "yolov5ncnn Init failed");
             }
-        } else if (USE_MODEL == SQUEEZENET) {
-
-        } else if (USE_MODEL == STYLETRANSFER) {
-
         } else if (USE_MODEL == MOBILENETSSD) {
             boolean ret_init = mobilenetssdncnn.Init(getAssets());
             if (!ret_init) {
                 Log.e("ObjectDetectionActivity", "mobilenetssd Init failed");
             }
-        } else if (USE_MODEL == MTCNN) {
-
         }
     }
 
@@ -131,19 +132,13 @@ public class ObjectDetectionActivity<mobilenetssdObjects, yolov5Objects> extends
                 if (detectedImage == null)
                     return;
                 if (USE_MODEL == YOLOV5) {
-                    YoloV5Ncnn.Obj[] yolov5Objects = yolov5ncnn.Detect(detectedImage, true);
+                    YoloV5Ncnn.Obj[] yolov5Objects = yolov5ncnn.Detect(detectedImage, false);
                     showObjects(yolov5Objects);
                     Log.v("ObjectDetectionActivity", "yolov5 detecting");
-                } else if (USE_MODEL == SQUEEZENET) {
-
-                } else if (USE_MODEL == STYLETRANSFER) {
-
                 } else if (USE_MODEL == MOBILENETSSD) {
-                    MobilenetSSDNcnn.Obj[] mobilenetssdObjects = mobilenetssdncnn.Detect(detectedImage, true);
+                    MobilenetSSDNcnn.Obj[] mobilenetssdObjects = mobilenetssdncnn.Detect(detectedImage, false);
                     showObjects(mobilenetssdObjects);
                     Log.v("ObjectDetectionActivity", "mobilenetssd detecting");
-                } else if (USE_MODEL == MTCNN) {
-
                 }
             }
         });
@@ -367,16 +362,21 @@ public class ObjectDetectionActivity<mobilenetssdObjects, yolov5Objects> extends
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                YoloV5Ncnn.Obj[] objects = yolov5ncnn.Detect(image, true);
-                showObjects(objects);
+                if (USE_MODEL == YOLOV5) {
+                    YoloV5Ncnn.Obj[] objects = yolov5ncnn.Detect(image, true);
+                    showObjects(objects);
+                } else if (USE_MODEL == MOBILENETSSD) {
+                    MobilenetSSDNcnn.Obj[] objects = mobilenetssdncnn.Detect(image, true);
+                    showObjects(objects);
+                }
                 endTime = System.currentTimeMillis();
                 long dur = endTime - startTime;
                 float fps = (float) (1000.0 / dur);
                 total_fps = (total_fps == 0) ? fps : (total_fps + fps);
                 fps_count++;
                 detectInfo.setText(String.format(Locale.CHINESE,
-                        "%s\nSize: %dx%d\nTime: %.3f s\nFPS: %.3f\nAVG_FPS: %.3f",
-                        "yolov5", height, width, dur / 1000.0, fps, (float) total_fps / fps_count));
+                        "ize: %dx%d\nTime: %.3f s\nFPS: %.3f\nAVG_FPS: %.3f",
+                        height, width, dur / 1000.0, fps, (float) total_fps / fps_count));
             }
         });
     }
