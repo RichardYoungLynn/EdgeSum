@@ -67,6 +67,7 @@ public class ObjectDetectionActivity extends AppCompatActivity {
 
     public static int YOLOV5S = 1;
     public static int YOLOV4_TINY = 2;
+    public static int YOLOV3_NANO = 3;
 
     public static int USE_MODEL = YOLOV5S;
     public static boolean USE_GPU = false;
@@ -144,6 +145,8 @@ public class ObjectDetectionActivity extends AppCompatActivity {
             YOLOv5.init(getAssets(), USE_GPU);
         } else if (USE_MODEL == YOLOV4_TINY) {
             YOLOv4.init(getAssets(), 0, USE_GPU);
+        } else if (USE_MODEL == YOLOV3_NANO) {
+            YOLOv4.init(getAssets(), 1, USE_GPU);
         }
     }
 
@@ -172,7 +175,7 @@ public class ObjectDetectionActivity extends AppCompatActivity {
         toolbar.setNavigationIcon(R.drawable.actionbar_dark_back_icon);
         toolbar.setNavigationOnClickListener(v -> finish());
 
-        if (USE_MODEL != YOLOV5S) {
+        if (USE_MODEL == YOLOV3_NANO) {
             nmsSeekBar.setEnabled(false);
             thresholdSeekBar.setEnabled(false);
             tvNMS.setVisibility(View.GONE);
@@ -709,25 +712,27 @@ public class ObjectDetectionActivity extends AppCompatActivity {
         float[] enetMasks = null;
         if (USE_MODEL == YOLOV5S) {
             result = YOLOv5.detect(image, threshold, nms_threshold);
-        } else if (USE_MODEL == YOLOV4_TINY) {
+        } else if (USE_MODEL == YOLOV4_TINY || USE_MODEL == YOLOV3_NANO) {
             result = YOLOv4.detect(image, threshold, nms_threshold);
         }
         if (result == null && keyPoints == null && yolactMasks == null && enetMasks == null && faceKeyPoints == null) {
             detectCamera.set(false);
             return image;
         }
-        if (USE_MODEL == YOLOV5S || USE_MODEL == YOLOV4_TINY) {
+        if (USE_MODEL == YOLOV5S || USE_MODEL == YOLOV4_TINY || USE_MODEL == YOLOV3_NANO) {
             mutableBitmap = drawBoxRects(image, result);
         }
         return mutableBitmap;
     }
 
     protected String getModelName() {
-        String modelName = "ohhhhh";
+        String modelName = "";
         if (USE_MODEL == YOLOV5S) {
             modelName = "YOLOv5s";
         } else if (USE_MODEL == YOLOV4_TINY) {
             modelName = "YOLOv4-tiny";
+        } else if (USE_MODEL == YOLOV3_NANO) {
+            modelName = "YOLOv3-Nano";
         }
         return USE_GPU ? "[ GPU ] " + modelName : "[ CPU ] " + modelName;
     }
