@@ -67,7 +67,8 @@ public class ObjectDetectionActivity extends AppCompatActivity {
 
     public static int YOLOV5S = 1;
     public static int YOLOV4_TINY = 2;
-    public static int YOLOV3_NANO = 3;
+    public static int MOBILENETV2_YOLOV3_NANO = 3;
+    public static int YOLO_FASTEST_XL = 4;
 
     public static int USE_MODEL = YOLOV5S;
     public static boolean USE_GPU = false;
@@ -145,8 +146,10 @@ public class ObjectDetectionActivity extends AppCompatActivity {
             YOLOv5.init(getAssets(), USE_GPU);
         } else if (USE_MODEL == YOLOV4_TINY) {
             YOLOv4.init(getAssets(), 0, USE_GPU);
-        } else if (USE_MODEL == YOLOV3_NANO) {
+        } else if (USE_MODEL == MOBILENETV2_YOLOV3_NANO) {
             YOLOv4.init(getAssets(), 1, USE_GPU);
+        } else if (USE_MODEL == YOLO_FASTEST_XL) {
+            YOLOv4.init(getAssets(), 2, USE_GPU);
         }
     }
 
@@ -175,7 +178,7 @@ public class ObjectDetectionActivity extends AppCompatActivity {
         toolbar.setNavigationIcon(R.drawable.actionbar_dark_back_icon);
         toolbar.setNavigationOnClickListener(v -> finish());
 
-        if (USE_MODEL == YOLOV3_NANO) {
+        if (USE_MODEL == MOBILENETV2_YOLOV3_NANO || USE_MODEL == YOLO_FASTEST_XL) {
             nmsSeekBar.setEnabled(false);
             thresholdSeekBar.setEnabled(false);
             tvNMS.setVisibility(View.GONE);
@@ -463,158 +466,6 @@ public class ObjectDetectionActivity extends AppCompatActivity {
         });
     }
 
-    protected Bitmap drawDBFaceLandmark(Bitmap mutableBitmap, KeyPoint[] keyPoints) {
-        if (keyPoints == null || keyPoints.length <= 0) {
-            return mutableBitmap;
-        }
-        Canvas canvas = new Canvas(mutableBitmap);
-        final Paint keyPointPaint = new Paint();
-        keyPointPaint.setAlpha(200);
-        keyPointPaint.setStyle(Paint.Style.STROKE);
-        keyPointPaint.setColor(Color.BLUE);
-//        Log.d("wzt", "dbface size:" + keyPoints.length);
-        for (int i = 0; i < keyPoints.length; i++) {
-            // 其它随机颜色
-            Random random = new Random(i + 2020);
-            int color = Color.argb(255, random.nextInt(256), 125, random.nextInt(256));
-            keyPointPaint.setColor(color);
-            keyPointPaint.setStrokeWidth(9 * mutableBitmap.getWidth() / 800.0f);
-            for (int j = 0; j < 5; j++) {
-                canvas.drawPoint(keyPoints[i].x[j], keyPoints[i].y[j], keyPointPaint);
-            }
-            keyPointPaint.setStrokeWidth(4 * mutableBitmap.getWidth() / 800.0f);
-            canvas.drawRect(keyPoints[i].x0, keyPoints[i].y0, keyPoints[i].x1, keyPoints[i].y1, keyPointPaint);
-        }
-        return mutableBitmap;
-    }
-
-    protected Bitmap drawENetMask(Bitmap mutableBitmap, float[] results) {
-        if (results == null || results.length <= 0) {
-            return mutableBitmap;
-        }
-        // 0, "road" 1, "sidewalk" 2, "building" 3, "wall" 4, "fence" 5, "pole" 6, "traffic light" 7, "traffic sign" 8, "vegetation"
-        // 9, "terrain" 10, "sky" 11, "person" 12, "rider" 13, "car" 14, "truck" 15, "bus" 16, "train" 17, "motorcycle" 18, "bicycle"
-        int[][] cityspace_colormap = {
-                {128, 64, 128}, {244, 35, 232}, {70, 70, 70}, {102, 102, 156}, {190, 153, 153}, {153, 153, 153},
-                {250, 170, 30}, {220, 220, 0}, {107, 142, 35}, {152, 251, 152}, {70, 130, 180}, {220, 20, 60},
-                {255, 0, 0}, {0, 0, 142}, {0, 0, 70}, {0, 60, 100}, {0, 80, 100}, {0, 0, 230}, {119, 11, 32}
-        };
-        Canvas canvas = new Canvas(mutableBitmap);
-        final Paint maskPaint = new Paint();
-        maskPaint.setStyle(Paint.Style.STROKE);
-        maskPaint.setStrokeWidth(4 * mutableBitmap.getWidth() / 800.0f);
-        maskPaint.setTextSize(30 * mutableBitmap.getWidth() / 800.0f);
-        float mask = 0;
-        int color = 0;
-        float tempC = 0;
-        int lengthW = 1;
-        for (int y = 0; y < mutableBitmap.getHeight(); y++) {
-            for (int x = 0; x < mutableBitmap.getWidth(); x++) {
-                mask = results[y * mutableBitmap.getWidth() + x];
-                if (mask >= cityspace_colormap.length) {
-                    continue;
-                }
-//                color = Color.argb(255,
-//                        cityspace_colormap[(int) mask][0],
-//                        cityspace_colormap[(int) mask][1],
-//                        cityspace_colormap[(int) mask][2]);
-//                maskPaint.setColor(color);
-//                maskPaint.setAlpha(100);
-//                canvas.drawPoint(x, y, maskPaint);
-                // fast
-                if (mask != tempC) {
-                    color = Color.argb(255,
-                            cityspace_colormap[(int) tempC][0],
-                            cityspace_colormap[(int) tempC][1],
-                            cityspace_colormap[(int) tempC][2]);
-                    maskPaint.setColor(color);
-                    maskPaint.setAlpha(100);
-                    canvas.drawLine(x - lengthW, y, x, y, maskPaint);
-                    tempC = mask;
-                    lengthW = 1;
-                } else {
-                    lengthW++;
-                }
-            }
-            // fast
-            color = Color.argb(255,
-                    cityspace_colormap[(int) tempC][0],
-                    cityspace_colormap[(int) tempC][1],
-                    cityspace_colormap[(int) tempC][2]);
-            maskPaint.setColor(color);
-            maskPaint.setAlpha(100);
-            canvas.drawLine(mutableBitmap.getWidth() - lengthW, y, mutableBitmap.getWidth(), y, maskPaint);
-            tempC = mask;
-            lengthW = 1;
-        }
-        return mutableBitmap;
-    }
-
-    protected Bitmap drawYolactMask(Bitmap mutableBitmap, YolactMask[] results) {
-        if (results == null || results.length <= 0) {
-            return mutableBitmap;
-        }
-        Canvas canvas = new Canvas(mutableBitmap);
-        final Paint maskPaint = new Paint();
-        maskPaint.setAlpha(200);
-        maskPaint.setStyle(Paint.Style.STROKE);
-        maskPaint.setStrokeWidth(4 * mutableBitmap.getWidth() / 800.0f);
-        maskPaint.setTextSize(30 * mutableBitmap.getWidth() / 800.0f);
-        maskPaint.setColor(Color.BLUE);
-        for (YolactMask mask : results) {
-            if (mask.prob < 0.4f) {
-                continue;
-            }
-            int index = 0;
-            char tempC = 0;
-            int lengthW = 1;
-            for (int y = 0; y < mutableBitmap.getHeight(); y++) {
-                for (int x = 0; x < mutableBitmap.getWidth(); x++) {
-//                    if (mask.mask[index] != 0) {
-//                        maskPaint.setColor(mask.getColor());
-//                        maskPaint.setAlpha(100);
-//                        canvas.drawPoint(x, y, maskPaint);
-//                    }
-//                    index++;
-                    // fast
-                    if (mask.mask[index] != 0) {
-                        if (mask.mask[index] != tempC) {
-                            maskPaint.setColor(mask.getColor());
-                            maskPaint.setAlpha(100);
-                            canvas.drawLine(x - lengthW, y, x, y, maskPaint);
-                            tempC = mask.mask[index];
-                            lengthW = 1;
-                        } else {
-                            lengthW++;
-                        }
-                    } else if (lengthW > 1) {
-                        maskPaint.setColor(mask.getColor());
-                        maskPaint.setAlpha(100);
-                        canvas.drawLine(x - lengthW, y, x, y, maskPaint);
-                        tempC = mask.mask[index];
-                        lengthW = 1;
-                    }
-                    index++;
-                }
-                // fast
-                if (lengthW > 1) {
-                    maskPaint.setColor(mask.getColor());
-                    maskPaint.setAlpha(100);
-                    canvas.drawLine(mutableBitmap.getWidth() - lengthW, y, mutableBitmap.getWidth(), y, maskPaint);
-                    tempC = mask.mask[index - 1];
-                    lengthW = 1;
-                }
-            }
-            // 标签跟框放后面画，防止被 mask 挡住
-            maskPaint.setColor(mask.getColor());
-            maskPaint.setStyle(Paint.Style.FILL);
-            canvas.drawText(mask.getLabel() + String.format(Locale.CHINESE, " %.3f", mask.getProb()), mask.left, mask.top - 15 * mutableBitmap.getWidth() / 1000.0f, maskPaint);
-            maskPaint.setStyle(Paint.Style.STROKE);
-            canvas.drawRect(new RectF(mask.left, mask.top, mask.right, mask.bottom), maskPaint);
-        }
-        return mutableBitmap;
-    }
-
     protected Bitmap drawBoxRects(Bitmap mutableBitmap, Box[] results) {
         if (results == null || results.length <= 0) {
             return mutableBitmap;
@@ -635,91 +486,19 @@ public class ObjectDetectionActivity extends AppCompatActivity {
         return mutableBitmap;
     }
 
-    protected Bitmap drawFaceLandmark(Bitmap mutableBitmap, FaceKeyPoint[] keyPoints) {
-        if (keyPoints == null || keyPoints.length <= 0) {
-            return mutableBitmap;
-        }
-        Canvas canvas = new Canvas(mutableBitmap);
-        final Paint keyPointPaint = new Paint();
-        keyPointPaint.setAlpha(200);
-        keyPointPaint.setStyle(Paint.Style.STROKE);
-        keyPointPaint.setStrokeWidth(8 * mutableBitmap.getWidth() / 800.0f);
-        keyPointPaint.setColor(Color.BLUE);
-//        Log.d("wzt", "facePoint length:" + keyPoints.length);
-        for (int i = 0; i < keyPoints.length; i++) {
-            // 其它随机颜色
-            Random random = new Random(i / 106 + 2020);
-            int color = Color.argb(255, random.nextInt(256), 125, random.nextInt(256));
-            keyPointPaint.setColor(color);
-            canvas.drawPoint(keyPoints[i].x, keyPoints[i].y, keyPointPaint);
-        }
-        return mutableBitmap;
-    }
-
-    protected Bitmap drawPersonPose(Bitmap mutableBitmap, KeyPoint[] keyPoints) {
-        if (keyPoints == null || keyPoints.length <= 0) {
-            return mutableBitmap;
-        }
-        // draw bone
-        // 0 nose, 1 left_eye, 2 right_eye, 3 left_Ear, 4 right_Ear, 5 left_Shoulder, 6 rigth_Shoulder, 7 left_Elbow, 8 right_Elbow,
-        // 9 left_Wrist, 10 right_Wrist, 11 left_Hip, 12 right_Hip, 13 left_Knee, 14 right_Knee, 15 left_Ankle, 16 right_Ankle
-        int[][] joint_pairs = {{0, 1}, {1, 3}, {0, 2}, {2, 4}, {5, 6}, {5, 7}, {7, 9}, {6, 8}, {8, 10}, {5, 11}, {6, 12}, {11, 12}, {11, 13}, {12, 14}, {13, 15}, {14, 16}};
-        Canvas canvas = new Canvas(mutableBitmap);
-        final Paint keyPointPaint = new Paint();
-        keyPointPaint.setAlpha(200);
-        keyPointPaint.setStyle(Paint.Style.STROKE);
-        keyPointPaint.setColor(Color.BLUE);
-        int color = Color.BLUE;
-        // 画线、画框、画点
-        for (int i = 0; i < keyPoints.length; i++) {
-            // 其它随机颜色
-            Random random = new Random(i + 2020);
-            color = Color.argb(255, random.nextInt(256), random.nextInt(256), random.nextInt(256));
-            // 画线
-            keyPointPaint.setStrokeWidth(5 * mutableBitmap.getWidth() / 800.0f);
-            for (int j = 0; j < 16; j++) {  // 17个点连成16条线
-                int pl0 = joint_pairs[j][0];
-                int pl1 = joint_pairs[j][1];
-                // 人体左侧改为红线
-                if ((pl0 % 2 == 1) && (pl1 % 2 == 1) && pl0 >= 5 && pl1 >= 5) {
-                    keyPointPaint.setColor(Color.RED);
-                } else {
-                    keyPointPaint.setColor(color);
-                }
-                canvas.drawLine(keyPoints[i].x[joint_pairs[j][0]], keyPoints[i].y[joint_pairs[j][0]],
-                        keyPoints[i].x[joint_pairs[j][1]], keyPoints[i].y[joint_pairs[j][1]],
-                        keyPointPaint);
-            }
-            // 画点
-            keyPointPaint.setColor(Color.GREEN);
-            keyPointPaint.setStrokeWidth(8 * mutableBitmap.getWidth() / 800.0f);
-            for (int n = 0; n < 17; n++) {
-                canvas.drawPoint(keyPoints[i].x[n], keyPoints[i].y[n], keyPointPaint);
-            }
-            // 画框
-            keyPointPaint.setColor(color);
-            keyPointPaint.setStrokeWidth(3 * mutableBitmap.getWidth() / 800.0f);
-            canvas.drawRect(keyPoints[i].x0, keyPoints[i].y0, keyPoints[i].x1, keyPoints[i].y1, keyPointPaint);
-        }
-        return mutableBitmap;
-    }
-
     protected Bitmap detectAndDraw(Bitmap image) {
         Box[] result = null;
-        KeyPoint[] keyPoints = null;
-        YolactMask[] yolactMasks = null;
-        FaceKeyPoint[] faceKeyPoints = null;
         float[] enetMasks = null;
         if (USE_MODEL == YOLOV5S) {
             result = YOLOv5.detect(image, threshold, nms_threshold);
-        } else if (USE_MODEL == YOLOV4_TINY || USE_MODEL == YOLOV3_NANO) {
+        } else if (USE_MODEL == YOLOV4_TINY || USE_MODEL == MOBILENETV2_YOLOV3_NANO || USE_MODEL == YOLO_FASTEST_XL) {
             result = YOLOv4.detect(image, threshold, nms_threshold);
         }
-        if (result == null && keyPoints == null && yolactMasks == null && enetMasks == null && faceKeyPoints == null) {
+        if (result == null) {
             detectCamera.set(false);
             return image;
         }
-        if (USE_MODEL == YOLOV5S || USE_MODEL == YOLOV4_TINY || USE_MODEL == YOLOV3_NANO) {
+        if (USE_MODEL == YOLOV5S || USE_MODEL == YOLOV4_TINY || USE_MODEL == MOBILENETV2_YOLOV3_NANO || USE_MODEL == YOLO_FASTEST_XL) {
             mutableBitmap = drawBoxRects(image, result);
         }
         return mutableBitmap;
@@ -731,8 +510,10 @@ public class ObjectDetectionActivity extends AppCompatActivity {
             modelName = "YOLOv5s";
         } else if (USE_MODEL == YOLOV4_TINY) {
             modelName = "YOLOv4-tiny";
-        } else if (USE_MODEL == YOLOV3_NANO) {
-            modelName = "YOLOv3-Nano";
+        } else if (USE_MODEL == MOBILENETV2_YOLOV3_NANO) {
+            modelName = "MobileNetV2-YOLOv3-Nano";
+        } else if (USE_MODEL == YOLO_FASTEST_XL) {
+            modelName = "YOLO-Fastest-xl";
         }
         return USE_GPU ? "[ GPU ] " + modelName : "[ CPU ] " + modelName;
     }
